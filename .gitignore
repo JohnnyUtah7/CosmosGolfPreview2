@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+.Trash/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Browser logs
+.cursor/browser-logs/

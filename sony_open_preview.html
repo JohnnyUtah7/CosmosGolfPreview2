@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Sony Open Betting Preview | COSMOS Golf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --nasa-blue: #0B3D91;
+            --nasa-red: #FC3D21;
+            --space-black: #0a0a0f;
+            --cyber-cyan: #00d4ff;
+            --grid-green: #00ff88;
+            --warning-gold: #ffd700;
+            --panel-bg: rgba(11, 61, 145, 0.15);
+            --border-glow: rgba(0, 212, 255, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--space-black);
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated star background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(11, 61, 145, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(0, 212, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(ellipse at 50% 50%, rgba(252, 61, 33, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Grid overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 30px 40px;
+            border-bottom: 1px solid var(--border-glow);
+            background: linear-gradient(180deg, rgba(11, 61, 145, 0.2) 0%, transparent 100%);
+            position: relative;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .mission-tag {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            color: var(--cyber-cyan);
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 20px;
+            color: var(--cyber-cyan);
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .logo-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .logo-container img {
+            height: 70px;
+            width: auto;
+            opacity: 1;
+            filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+        }
+
+        /* Event Info Panel */
+        .event-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px 40px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-glow);
+            margin: 30px 40px;
+            border-radius: 4px;
+        }
+
+        .info-block {
+            text-align: center;
+            padding: 15px;
+            border-right: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .info-block:last-child {
+            border-right: none;
+        }
+
+        .info-label {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 11px;
+            color: var(--cyber-cyan);
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Course Image */
+        .course-image {
+            width: 100%;
+            max-width: 1800px;
+            margin: 30px 40px;
+            border: 1px solid var(--border-glow);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+        }
+
+        .course-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.9;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 40px 20px;
+        }
+
+        .section-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--cyber-cyan), transparent);
+        }
+
+        /* Table Container */
+        .table-container {
+            margin: 20px 40px;
+            overflow-x: auto;
+            border: 1px solid var(--border-glow);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        thead {
+            background: linear-gradient(180deg, rgba(11, 61, 145, 0.6) 0%, rgba(11, 61, 145, 0.3) 100%);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        th {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--cyber-cyan);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 18px 12px;
+            text-align: left;
+            border-bottom: 2px solid var(--cyber-cyan);
+            white-space: nowrap;
+        }
+
+        th.center {
+            text-align: center;
+        }
+
+        td {
+            padding: 16px 12px;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        /* Player Column */
+        .player-cell {
+            min-width: 140px;
+        }
+
+        .player-name {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .player-name a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .player-name a:hover {
+            color: var(--cyber-cyan);
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .player-country {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 10px;
+            color: var(--cyber-cyan);
+            letter-spacing: 1px;
+        }
+
+        /* Storyline Column */
+        .storyline-cell {
+            min-width: 350px;
+            max-width: 450px;
+        }
+
+        .storyline-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #b0b0b0;
+        }
+
+        /* Historical Results */
+        .result-cell {
+            text-align: center;
+            min-width: 70px;
+        }
+
+        .result-value {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .result-win {
+            color: var(--grid-green);
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        .result-top5 {
+            color: var(--warning-gold);
+        }
+
+        .result-top10 {
+            color: var(--cyber-cyan);
+        }
+
+        .result-top25 {
+            color: #8ecae6;
+        }
+
+        .result-made {
+            color: #6c757d;
+        }
+
+        .result-mc {
+            color: #dc3545;
+            opacity: 0.7;
+        }
+
+        .result-na {
+            color: #444;
+            font-style: italic;
+        }
+
+        /* Odds Columns */
+        .odds-cell {
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .odds-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--grid-green);
+        }
+
+        .odds-favorite {
+            color: var(--warning-gold);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .odds-longshot {
+            color: var(--cyber-cyan);
+        }
+
+        /* Tier badges */
+        .tier-badge {
+            display: inline-block;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 9px;
+            padding: 3px 8px;
+            border-radius: 2px;
+            margin-top: 4px;
+            letter-spacing: 1px;
+        }
+
+        .tier-favorite {
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--warning-gold);
+            border: 1px solid var(--warning-gold);
+        }
+
+        .tier-contender {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--grid-green);
+            border: 1px solid var(--grid-green);
+        }
+
+        .tier-value {
+            background: rgba(0, 212, 255, 0.15);
+            color: var(--cyber-cyan);
+            border: 1px solid var(--cyber-cyan);
+        }
+
+        .tier-longshot {
+            background: rgba(252, 61, 33, 0.15);
+            color: var(--nasa-red);
+            border: 1px solid var(--nasa-red);
+        }
+
+        /* Asian Player Highlight */
+        tr.asian-player {
+            background: rgba(252, 61, 33, 0.05);
+        }
+
+        tr.asian-player .player-name::after {
+            content: '🌏';
+            margin-left: 8px;
+            font-size: 12px;
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px 40px;
+            margin: 20px 40px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-glow);
+            border-radius: 4px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-glow);
+        }
+
+        .footer-text {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 11px;
+            color: #555;
+            letter-spacing: 2px;
+        }
+
+        .data-source {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 12px;
+            color: var(--cyber-cyan);
+            margin-top: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 28px;
+            }
+            .storyline-cell {
+                min-width: 280px;
+            }
+        }
+
+        /* Scanline effect */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.03),
+                rgba(0, 0, 0, 0.03) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanlines"></div>
+    
+    <header>
+        <div class="header-left">
+            <div class="mission-tag">// MISSION BRIEFING - JANUARY 2026</div>
+            <h1>2026 Sony Open</h1>
+            <div class="subtitle">Waialae Country Club · Honolulu, Hawaii · January 16-19, 2026</div>
+        </div>
+        <div class="logo-container">
+            <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/COSMOS_Golf-Dec-Logo_001.png?v=1768281723" alt="COSMOS Golf" style="max-width: 200px;">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="event-info">
+            <div class="info-block">
+                <div class="info-label">Total Purse</div>
+                <div class="info-value">$9.1M</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Winner's Share</div>
+                <div class="info-value">$1.638M</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Course</div>
+                <div class="info-value">7,044 YDS</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Par</div>
+                <div class="info-value">70</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Field Size</div>
+                <div class="info-value">120</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">FedExCup Pts</div>
+                <div class="info-value">500</div>
+            </div>
+        </div>
+
+        <div class="course-image">
+            <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/waialae.jpg?v=1768281715" alt="Waialae Country Club - Sony Open">
+        </div>
+
+        <div class="section-header">
+            <h2>Complete Betting Board</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--grid-green);"></div>
+                <span>WIN / 1st</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--warning-gold);"></div>
+                <span>TOP 5 (2nd-5th)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: var(--cyber-cyan);"></div>
+                <span>TOP 10 (6th-10th)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #8ecae6;"></div>
+                <span>TOP 25 (11th-25th)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #6c757d;"></div>
+                <span>MADE CUT (26th+)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #dc3545;"></div>
+                <span>MC = MISSED CUT</span>
+            </div>
+            <div class="legend-item">
+                <span>🌏 = ASIAN PLAYER</span>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Player</th>
+                        <th>Why They Could Win</th>
+                        <th class="center">2025</th>
+                        <th class="center">2024</th>
+                        <th class="center">2023</th>
+                        <th class="center">Win Odds</th>
+                        <th class="center">Top 5</th>
+                        <th class="center">Top 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Russell+Henley+PGA+Tour" target="_blank">Russell Henley</a></div>
+                            <div class="player-country">USA · OWGR #5</div>
+                            <span class="tier-badge tier-favorite">FAVORITE</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The course specialist won his first PGA Tour event here in 2013, shooting a record 24-under as a rookie. His 66.73 scoring average at Waialae is the best among active players. Coming off his best season ever with an Arnold Palmer Invitational win and Ryder Cup selection. The ultimate horse-for-course play.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top10">T10</span></td>
+                        <td class="result-cell"><span class="result-value result-top5">T4</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T32</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-favorite">+1200</span></td>
+                        <td class="odds-cell"><span class="odds-value">+280</span></td>
+                        <td class="odds-cell"><span class="odds-value">+140</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Ben+Griffin+PGA+Tour" target="_blank">Ben Griffin</a></div>
+                            <div class="player-country">USA · OWGR #8</div>
+                            <span class="tier-badge tier-favorite">HOT STREAK</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The hottest player on Tour with three 2025 wins (Zurich Classic, Charles Schwab, WWT Championship) matching only Scottie Scheffler and Rory McIlroy. His November win featured a Sunday 63 and 29-under total—the type of low-scoring clinic Waialae can reward. Momentum personified.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T43</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T33</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-favorite">+1400</span></td>
+                        <td class="odds-cell"><span class="odds-value">+320</span></td>
+                        <td class="odds-cell"><span class="odds-value">+160</span></td>
+                    </tr>
+                    <tr class="asian-player">
+                        <td>3</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Hideki+Matsuyama+PGA+Tour" target="_blank">Hideki Matsuyama</a></div>
+                            <div class="player-country">JPN · OWGR #17</div>
+                            <span class="tier-badge tier-contender">2022 CHAMP</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">Japan's trailblazer won this event in 2022 with a stunning 276-yard 3-wood playoff approach. Ranks #1 in strokes gained approaching at Waialae over last 24 rounds. Bookended 2025 with victories (record 35-under at The Sentry, Hero World Challenge). Family vacation vibes in Hawaii where he's beloved by fans.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top25">T16</span></td>
+                        <td class="result-cell"><span class="result-value result-top10">T7</span></td>
+                        <td class="result-cell"><span class="result-value result-top10">T7</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+400</span></td>
+                        <td class="odds-cell"><span class="odds-value">+200</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=J.J.+Spaun+PGA+Tour" target="_blank">J.J. Spaun</a></div>
+                            <div class="player-country">USA · OWGR #6</div>
+                            <span class="tier-badge tier-contender">U.S. OPEN CHAMP</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The 2025 U.S. Open champion had a breakout year at age 34, jumping to world #6. Finished T3 here last year and hasn't finished worse than T11 in three fall starts. His iron precision and clutch putting match Waialae's demands. Could've sealed the deal in 2025—returns hungry.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top5">T3</span></td>
+                        <td class="result-cell"><span class="result-value result-mc">MC</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T12</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+400</span></td>
+                        <td class="odds-cell"><span class="odds-value">+200</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Robert+MacIntyre+PGA+Tour" target="_blank">Robert MacIntyre</a></div>
+                            <div class="player-country">SCO · OWGR #7</div>
+                            <span class="tier-badge tier-contender">DP WORLD STAR</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Scottish sensation arrives with elite ball-striking and momentum from his DP World Tour success. First Sony Open appearance means no course history, but his precision-over-power game fits Waialae perfectly. A dark horse with massive upside in his Hawaii debut.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+400</span></td>
+                        <td class="odds-cell"><span class="odds-value">+200</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Collin+Morikawa+PGA+Tour" target="_blank">Collin Morikawa</a></div>
+                            <div class="player-country">USA · OWGR #16</div>
+                            <span class="tier-badge tier-contender">HAWAII ROOTS</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The two-time major winner has deep Hawaii roots—his father is from Lahaina, Maui. Emotionally connected to the islands after the 2023 wildfires devastated his family's hometown. His elite iron play is tailor-made for Waialae. T7 in 2021 proves he can contend here. This one's personal.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+400</span></td>
+                        <td class="odds-cell"><span class="odds-value">+200</span></td>
+                    </tr>
+                    <tr class="asian-player">
+                        <td>7</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Si+Woo+Kim+PGA+Tour" target="_blank">Si Woo Kim</a></div>
+                            <div class="player-country">KOR</div>
+                            <span class="tier-badge tier-contender">2023 CHAMP</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The consistency machine: 10 Sony Open starts, 10 weekends made. Won here in 2023 with clutch birdies on the final two holes. Recently rejected LIV Golf to recommit to the PGA Tour. Now a father to son Theo—the family Hawaii vacation takes on new meaning. Precision ball-striker with unmatched course history.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T33</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T14</span></td>
+                        <td class="result-cell"><span class="result-value result-win">WIN</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2200</span></td>
+                        <td class="odds-cell"><span class="odds-value">+450</span></td>
+                        <td class="odds-cell"><span class="odds-value">+220</span></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Keegan+Bradley+PGA+Tour" target="_blank">Keegan Bradley</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-contender">RYDER CUP CAPT</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The 2025 U.S. Ryder Cup captain enters with back-to-back top-6 finishes at Waialae (T2 in 2024, T6 in 2025). Top-12 here in three of the last four years. Leadership confidence could translate to Sunday success. His steady game thrives on this precision-focused layout.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top10">T6</span></td>
+                        <td class="result-cell"><span class="result-value result-top5">P2</span></td>
+                        <td class="result-cell"><span class="result-value result-mc">MC</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2200</span></td>
+                        <td class="odds-cell"><span class="odds-value">+450</span></td>
+                        <td class="odds-cell"><span class="odds-value">+220</span></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Harry+Hall+PGA+Tour" target="_blank">Harry Hall</a></div>
+                            <div class="player-country">ENG</div>
+                            <span class="tier-badge tier-value">VALUE PLAY</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Englishman has shown steady improvement at Waialae with a T10 in 2025. His game travels well and he's made the cut in every Sony Open start. A player on the rise who could break through in Hawaii's relaxed atmosphere. One of the best value plays in the mid-tier.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top10">T10</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T30</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T28</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+250</span></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Maverick+McNealy+PGA+Tour" target="_blank">Maverick McNealy</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">VALUE PLAY</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Stanford grad has quietly built a consistent record at Waialae, never missing a cut. His analytical approach and steady game suit the precision demands of this course. Looking to convert consistent contention into a breakthrough win in 2026.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T28</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T18</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T35</span></td>
+                        <td class="odds-cell"><span class="odds-value">+2500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+250</span></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Nick+Taylor+PGA+Tour" target="_blank">Nick Taylor</a></div>
+                            <div class="player-country">CAN</div>
+                            <span class="tier-badge tier-contender">DEF. CHAMPION</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The defending champion won in dramatic fashion with a 60-foot chip-in eagle on the 72nd hole. Has won his last three PGA Tour titles in playoffs—clutch personified. Three consecutive top-10s at Waialae (T7, T7, Win). If this goes to a playoff, he's your man.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-win">WIN</span></td>
+                        <td class="result-cell"><span class="result-value result-top10">T7</span></td>
+                        <td class="result-cell"><span class="result-value result-top10">T7</span></td>
+                        <td class="odds-cell"><span class="odds-value">+3000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+550</span></td>
+                        <td class="odds-cell"><span class="odds-value">+275</span></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Corey+Conners+PGA+Tour" target="_blank">Corey Conners</a></div>
+                            <div class="player-country">CAN</div>
+                            <span class="tier-badge tier-value">BALL STRIKER</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">One of the best pure ball-strikers on Tour, Conners ranks in the top-10 in total strokes gained at Waialae. Multiple top-15 finishes here over the past five years. His precision iron play is perfectly suited for this short-course test. Always in the mix at Waialae.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top25">T17</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T18</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T24</span></td>
+                        <td class="odds-cell"><span class="odds-value">+3500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+650</span></td>
+                        <td class="odds-cell"><span class="odds-value">+300</span></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Chris+Kirk+PGA+Tour" target="_blank">Chris Kirk</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">COURSE LOVER</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">Kirk has finished top-5 at the Sony Open four times in his career, including T2 in 2022 and T3 in 2023. Only finished outside the top-20 once at Waialae over the last four seasons. A proven course specialist who knows how to score here.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T40</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T18</span></td>
+                        <td class="result-cell"><span class="result-value result-top5">T3</span></td>
+                        <td class="odds-cell"><span class="odds-value">+3500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+650</span></td>
+                        <td class="odds-cell"><span class="odds-value">+300</span></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Kurt+Kitayama+PGA+Tour" target="_blank">Kurt Kitayama</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">VALUE PLAY</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The California native is more of an off-the-tee maestro, but he's shown he can score at Waialae with a T24 in 2023. If tougher conditions arrive, his elite ball-striking could be an advantage. A contrarian pick with solid upside.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T24</span></td>
+                        <td class="odds-cell"><span class="odds-value">+3500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+650</span></td>
+                        <td class="odds-cell"><span class="odds-value">+300</span></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Jordan+Spieth+PGA+Tour" target="_blank">Jordan Spieth</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-longshot">RUST CONCERN</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The three-time major winner has elite course history at Waialae, ranking top-10 in total strokes gained. However, he finished last at the Hero World Challenge and hasn't played competitive golf since fall. Rust and form concerns make his odds deceivingly short. High risk, high reward.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top25">T23</span></td>
+                        <td class="result-cell"><span class="result-value result-mc">MC</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T35</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+3500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+650</span></td>
+                        <td class="odds-cell"><span class="odds-value">+300</span></td>
+                    </tr>
+                    <tr class="asian-player">
+                        <td>16</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Sungjae+Im+PGA+Tour" target="_blank">Sungjae Im</a></div>
+                            <div class="player-country">KOR</div>
+                            <span class="tier-badge tier-value">IRONMAN</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Korean "ironman" has six consecutive Tour Championship qualifications since 2019. A newlywed at 26, he brings world-class ball-striking perfectly suited for Waialae. Finished solo third at the 2025 Sentry with a 65 final round. His workmanlike approach thrives in Hawaii's relaxed atmosphere.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T56</span></td>
+                        <td class="result-cell"><span class="result-value result-mc">MC</span></td>
+                        <td class="result-cell"><span class="result-value result-top10">T6</span></td>
+                        <td class="odds-cell"><span class="odds-value">+3500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+650</span></td>
+                        <td class="odds-cell"><span class="odds-value">+300</span></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Adam+Scott+PGA+Tour" target="_blank">Adam Scott</a></div>
+                            <div class="player-country">AUS</div>
+                            <span class="tier-badge tier-value">VETERAN</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The 2013 Masters champion brings veteran experience and a silky-smooth swing to Waialae. His precision ball-striking remains elite, and he's consistently made cuts at this venue. At 45, still capable of weekend magic when his putter cooperates.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T30</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T35</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T28</span></td>
+                        <td class="odds-cell"><span class="odds-value">+4000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+700</span></td>
+                        <td class="odds-cell"><span class="odds-value">+350</span></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Aaron+Rai+PGA+Tour" target="_blank">Aaron Rai</a></div>
+                            <div class="player-country">ENG</div>
+                            <span class="tier-badge tier-value">VALUE PLAY</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Englishman is a rising star with excellent ball-striking metrics. His precision-focused game aligns perfectly with Waialae's demands. A player on the verge of a breakthrough who could make noise in Hawaii.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value">+4000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+700</span></td>
+                        <td class="odds-cell"><span class="odds-value">+350</span></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Keith+Mitchell+PGA+Tour" target="_blank">Keith Mitchell</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">COURSE FORM</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">Mitchell has multiple top-15 finishes at the Sony Open over the past five years. His power game is less suited to Waialae's precision demands, but he's proven he can adjust his approach and score at this venue. A solid mid-tier option.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top25">T16</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T14</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T32</span></td>
+                        <td class="odds-cell"><span class="odds-value">+4000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+700</span></td>
+                        <td class="odds-cell"><span class="odds-value">+350</span></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Rico+Hoey+PGA+Tour" target="_blank">Rico Hoey</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-longshot">LONGSHOT</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Filipino-American rookie brings exciting potential to Hawaii. His ball-striking ability suits Waialae's demands, and he'll have strong gallery support from Hawaii's large Filipino community. A fun longshot with hometown energy.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+4500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+800</span></td>
+                        <td class="odds-cell"><span class="odds-value">+400</span></td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Chris+Gotterup+PGA+Tour" target="_blank">Chris Gotterup</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-longshot">LONGSHOT</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The former Oklahoma star is building momentum on Tour with his aggressive style. His length won't provide much advantage at Waialae, but his improving iron play could make him a factor. One of the young guns to watch in 2026.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T40</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+4500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+800</span></td>
+                        <td class="odds-cell"><span class="odds-value">+400</span></td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Jake+Knapp+PGA+Tour" target="_blank">Jake Knapp</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-longshot">LONGSHOT</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The big-hitting Knapp made waves in 2024 and looks to build on that momentum. His power game needs adjustment for Waialae's precision demands, but he has the talent to contend anywhere when his approach shots are on.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+5000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+900</span></td>
+                        <td class="odds-cell"><span class="odds-value">+450</span></td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Denny+McCarthy+PGA+Tour" target="_blank">Denny McCarthy</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">TRENDING UP</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">McCarthy's trajectory at Waialae shows steady improvement: T32→T24→T16 over the past three years. His putting excellence on Bermuda greens is a major asset here. A grinder who could put together four solid rounds.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top25">T16</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T24</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T32</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+5000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+900</span></td>
+                        <td class="odds-cell"><span class="odds-value">+450</span></td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Brian+Harman+PGA+Tour" target="_blank">Brian Harman</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">VALUE PLAY</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The 2023 Open Championship winner has never missed a cut at Waialae over the last five years. His scrappy, precise style suits this layout perfectly. A major champion flying under the radar at attractive odds.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T33</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T30</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T32</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+5000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+900</span></td>
+                        <td class="odds-cell"><span class="odds-value">+450</span></td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Nico+Echavarria+PGA+Tour" target="_blank">Nico Echavarria</a></div>
+                            <div class="player-country">COL</div>
+                            <span class="tier-badge tier-contender">REVENGE GAME</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Colombian was playoff runner-up here in 2025, losing to Nick Taylor's dramatic chip-in. Also finished T4 at the RSM Classic—his third top-15 in four starts to close the year. Ranks 6th in strokes gained at Waialae over last 12 rounds. Motivated for redemption.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top5">P2</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T66</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T12</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+5000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+900</span></td>
+                        <td class="odds-cell"><span class="odds-value">+450</span></td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Eric+Cole+PGA+Tour" target="_blank">Eric Cole</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">TRENDING UP</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">Cole's trajectory at Waialae is remarkable: T61→T13→5th over three years. Has clearly figured out this course and improved dramatically each season. A player who could take the next step and contend for the title in 2026.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top10">5th</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T13</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T61</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+5500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+500</span></td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Taylor+Pendrith+PGA+Tour" target="_blank">Taylor Pendrith</a></div>
+                            <div class="player-country">CAN</div>
+                            <span class="tier-badge tier-longshot">LONGSHOT</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Canadian bomber won the Byron Nelson in 2024 and has game-changing length. Waialae doesn't reward distance as much as other courses, but Pendrith's improving iron play makes him dangerous when he's hitting greens.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+5500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+500</span></td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Matt+McCarty+PGA+Tour" target="_blank">Matt McCarty</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-value">BREAKOUT PICK</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The rookie sensation closed 2025 with four top-15s in his last five starts, including a T14 in Japan. His game travels globally and he's proven he can adjust to different conditions. Poised for a breakout sophomore campaign.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+6000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1100</span></td>
+                        <td class="odds-cell"><span class="odds-value">+550</span></td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Stephan+Jaeger+PGA+Tour" target="_blank">Stephan Jaeger</a></div>
+                            <div class="player-country">GER</div>
+                            <span class="tier-badge tier-value">TRENDING UP</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">Jaeger's Waialae trajectory screams course fit improvement: T28→T18→T3. Steadily climbing the leaderboard each year suggests he's cracked the code on this layout. One of the best value longshots in the field.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-top5">T3</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T18</span></td>
+                        <td class="result-cell"><span class="result-value result-made">T28</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+6000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1100</span></td>
+                        <td class="odds-cell"><span class="odds-value">+550</span></td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Daniel+Berger+PGA+Tour" target="_blank">Daniel Berger</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-longshot">COMEBACK</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The former top-15 player returns from injury with elite Waialae history—ranks top-10 in total strokes gained at this venue. If healthy, his silky ball-striking makes him dangerous. A comeback story worth monitoring.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+6500</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1200</span></td>
+                        <td class="odds-cell"><span class="odds-value">+600</span></td>
+                    </tr>
+                    <tr class="asian-player">
+                        <td>31</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Tom+Kim+PGA+Tour" target="_blank">Tom Kim</a></div>
+                            <div class="player-country">KOR</div>
+                            <span class="tier-badge tier-longshot">REDEMPTION</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The 23-year-old Korean star faces a pivotal moment after a frustrating 2025. Lost Signature Event eligibility, parted with his caddie, and admitted to debilitating perfectionism. New caddie Joel Stock and renewed perspective could spark a turnaround. Hawaii's Korean-American fans will rally behind him.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-made">T65</span></td>
+                        <td class="result-cell"><span class="result-value result-top25">T18</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+4000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+700</span></td>
+                        <td class="odds-cell"><span class="odds-value">+350</span></td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=Gary+Woodland+PGA+Tour" target="_blank">Gary Woodland</a></div>
+                            <div class="player-country">USA</div>
+                            <span class="tier-badge tier-longshot">COMEBACK</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The 2019 U.S. Open champion continues his inspiring comeback from brain surgery. His precision game suits Waialae, and a strong finish here would be one of golf's great stories. Heart and determination personified.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+7000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1300</span></td>
+                        <td class="odds-cell"><span class="odds-value">+650</span></td>
+                    </tr>
+                    <tr class="asian-player">
+                        <td>33</td>
+                        <td class="player-cell">
+                            <div class="player-name"><a href="https://www.google.com/search?q=S.H.+Kim+PGA+Tour" target="_blank">S.H. Kim</a></div>
+                            <div class="player-country">KOR</div>
+                            <span class="tier-badge tier-longshot">DEEP VALUE</span>
+                        </td>
+                        <td class="storyline-cell">
+                            <div class="storyline-text">The Korean veteran won on the DP World Tour in France during the fall, proving his game is sharp. Made five cuts in five DP World Tour starts with a top-10 in India. Overlooked value at these long odds for a winner on the rise.</div>
+                        </td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="result-cell"><span class="result-value result-na">NA</span></td>
+                        <td class="odds-cell"><span class="odds-value odds-longshot">+17000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+3000</span></td>
+                        <td class="odds-cell"><span class="odds-value">+1500</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <div class="footer-text">// COSMOS GOLF · GOLF IN THE COSMOS · 2026 SEASON PREVIEW //</div>
+            <div class="data-source">Data Source: DraftKings Sportsbook · Odds as of January 12, 2026</div>
+            <div class="footer-text" style="margin-top: 15px; opacity: 0.5;">Gamble Responsibly · 21+ · For Entertainment Purposes Only</div>
+        </footer>
+    </div>
+</body>
+</html>
