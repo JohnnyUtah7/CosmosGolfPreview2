@@ -1,0 +1,88 @@
+{
+  "tournament": "U.S. Open",
+  "generated_at": "2026-06-15T18:37:56Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the undeniable top play at the U.S. Open at Shinnecock Hills Golf Club, with our model projecting a 12.0% win probability against implied odds of just 0.1% — the largest edge in the field by a wide margin. His +2.81 SG Total leads every player in the 156-man field, and his +1.09 SG Approach is the best iron game on the planet heading into a course that punishes imprecision. Beyond Scheffler, Tommy Fleetwood (+2412) and Russell Henley (+4381) flash elite course-fit scores of +0.143 and +0.183 respectively, making them premier each-way targets. In the longshot tier, Patrick Cantlay at +5609 quietly ranks fifth in the field in SG Total (+1.56) with a robust 17.6% top-10 probability, offering a compelling value window.",
+  "insights": [
+    {
+      "title": "Scheffler Is the Slam-Dunk Top Pick",
+      "insight": "Scottie Scheffler's +2.81 SG Total leads the entire 156-player field by over half a stroke, and his 12.0% model win probability dwarfs the next closest player (Rory McIlroy at 5.8%). He also owns the field's best SG Approach mark at +1.09, a critical advantage at a demanding Shinnecock Hills Golf Club. His U.S. Open history includes a 3rd-place finish in 2023 and a T7 in 2025.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Fleetwood's Course Fit Is Elite",
+      "insight": "Tommy Fleetwood carries a +0.143 course-fit score — tied for the second-highest among the top 10 favorites — and a strong +1.85 SG Total (7th in the field). At +2412, our model gives him a 4.0% win probability, representing nearly 40x implied edge. The missed cut in 2025 may have suppressed his price, but his T5 at the 2023 U.S. Open and overall skill profile scream value.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Russell Henley: Best Course Fit, Underpriced",
+      "insight": "Henley boasts the highest course-fit adjustment among the top 10 at +0.183 and has been a U.S. Open machine: T10 (2025), T7 (2024), and T14 (2023) in his last three starts. At +4381 with a 2.2% model win probability, he profiles as one of the best each-way plays on the board.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Cantlay Is the Premium Longshot",
+      "insight": "Patrick Cantlay at +5609 ranks 11th in SG Total at +1.56 but carries a 17.6% top-10 probability — the second-highest among all longshots. His elite ball-striking and calm demeanor under major-championship pressure make him an ideal top-10 or top-20 bet at Shinnecock Hills Golf Club.",
+      "players": [
+        "Patrick Cantlay"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "McIlroy's Agonizing Near-Misses Continue?",
+      "insight": "Rory McIlroy has finished 2nd in back-to-back U.S. Opens (2023 and 2024) and our model gives him a 5.8% win probability at +1634. His +2.23 SG Total ranks second in the field. The slight -0.008 course-fit ding is negligible — he's the clear number-two behind Scheffler and offers legitimate outright value.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Fitzpatrick's Irons Can Dominate Here",
+      "insight": "Matt Fitzpatrick ranks 4th in SG Approach at +0.84 and carries a +0.123 course-fit score, suggesting Shinnecock Hills Golf Club's precise approach-shot demands suit his game perfectly. At +2420 with a 4.0% model win probability, he's priced nearly identically to Fleetwood but with a stronger iron game.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Defending Champion Spaun Brings Live Iron Game",
+      "insight": "Defending champion J.J. Spaun ranks an eye-popping 2nd in SG Approach at +0.93, trailing only Scheffler. At +6861, he's deep in longshot territory, but his elite ball-striking gives him a legitimate path to contend again. He's worth a small-stakes top-20 look.",
+      "players": [
+        "J.J. Spaun"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Si Woo Kim: Sneaky Course-Fit Standout",
+      "insight": "Si Woo Kim's +0.146 course-fit score is the highest among the top 10 favorites, and his +1.80 SG Total (9th in the field) supports a 2.3% win probability at +4220. He's consistently made U.S. Open cuts (T42, T32, T39 the last three years), making him a solid top-20 play at an inflated price.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "DeChambeau Offers Marquee Longshot Appeal",
+      "insight": "The 2024 U.S. Open champion Bryson DeChambeau is available at +5369 with a 16.3% top-10 probability and a +1.31 SG Total. While his current form doesn't match the elite tier, his proven ability to peak at this specific major makes him a worthwhile longshot flier, especially for top-10 and top-20 markets.",
+      "players": [
+        "Bryson DeChambeau"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Aberg's MC Should Suppress, Not Scare",
+      "insight": "Ludvig Aberg's missed cut in the 2025 U.S. Open likely inflated his price to +2863, but his +1.90 SG Total ranks 5th in the entire field and his model win probability sits at 3.4%. At just 25, he has the firepower and ball-striking to contend — buy the dip if the market is reacting to one bad week.",
+      "players": [
+        "Ludvig Aberg"
+      ],
+      "category": "form"
+    }
+  ]
+}

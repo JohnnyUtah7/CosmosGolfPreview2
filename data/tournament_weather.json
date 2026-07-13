@@ -1,0 +1,54 @@
+{
+  "tournament": "Genesis Scottish Open",
+  "location": "North Berwick, Scotland",
+  "dates": "July 9-12, 2026",
+  "forecast": "Expect partly cloudy skies with highs in the 59F range and breezy conditions up to 20 mph throughout the week. No rain is forecast, making for challenging scoring conditions.",
+  "source": "Open-Meteo (free global forecast)",
+  "coordinates": {
+    "lat": 56.0546,
+    "lon": -2.6612
+  },
+  "fetched_at": "2026-07-06T12:20:40.530437",
+  "raw_periods": [
+    {
+      "name": "2026-07-09",
+      "temperature": 61,
+      "temperatureLow": 58,
+      "temperatureUnit": "F",
+      "windSpeed": "14 mph",
+      "shortForecast": "Partly Cloudy",
+      "probabilityOfPrecipitation": 0,
+      "isDaytime": true
+    },
+    {
+      "name": "2026-07-10",
+      "temperature": 60,
+      "temperatureLow": 57,
+      "temperatureUnit": "F",
+      "windSpeed": "20 mph",
+      "shortForecast": "Partly Cloudy",
+      "probabilityOfPrecipitation": 8,
+      "isDaytime": true
+    },
+    {
+      "name": "2026-07-11",
+      "temperature": 58,
+      "temperatureLow": 56,
+      "temperatureUnit": "F",
+      "windSpeed": "19 mph",
+      "shortForecast": "Partly Cloudy",
+      "probabilityOfPrecipitation": 14,
+      "isDaytime": true
+    },
+    {
+      "name": "2026-07-12",
+      "temperature": 57,
+      "temperatureLow": 56,
+      "temperatureUnit": "F",
+      "windSpeed": "11 mph",
+      "shortForecast": "Partly Cloudy",
+      "probabilityOfPrecipitation": 2,
+      "isDaytime": true
+    }
+  ]
+}

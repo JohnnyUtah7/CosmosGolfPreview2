@@ -1,0 +1,80 @@
+{
+  "tournament": "WM Phoenix Open",
+  "generated_at": "2026-02-04T19:15:07Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "TPC Scottsdale rewards precision iron play and putting, making Scottie Scheffler the standout play despite +225 odds - our model gives him a massive 26.0% win probability with elite approach play (+1.30 SG) and putting (+0.56 SG). Value hunters should target Maverick McNealy at +3300, who ranks 9th in total strokes gained (+1.25) with strong recent course form (T9 in 2025, T6 in 2024) and positive course fit (+0.045). Among longshots, Harry Hall at +5200 offers compelling upside as the field's top putter (+0.72 SG) with a 14.2% top-10 probability.",
+  "insights": [
+    {
+      "title": "Scheffler Massive Model Edge",
+      "insight": "Despite short +225 odds, our model gives Scheffler a 26.0% win probability - a staggering 25.7% edge. He leads the field in approach play (+1.30 SG) and ranks 3rd in putting (+0.56 SG), perfect for TPC Scottsdale's demands.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "McNealy Outstanding Course Value",
+      "insight": "At +3300 odds, McNealy offers 2.3% model win probability with excellent recent course history (T9 in 2025, T6 in 2024). His +1.25 total strokes gained ranks 9th in the field with strong course fit (+0.045).",
+      "players": [
+        "Maverick McNealy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Griffin Undervalued Ball-Striker",
+      "insight": "Ben Griffin at +2900 presents 2.4% model win probability despite ranking 4th in total strokes gained (+1.54). His positive course fit (+0.048) aligns perfectly with TPC Scottsdale's premium on iron play.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Hall Elite Putting Longshot",
+      "insight": "Harry Hall leads the field in putting (+0.72 SG) at +5200 odds with 14.2% top-10 probability. His putting dominance could be decisive on TPC Scottsdale's tricky bentgrass greens.",
+      "players": [
+        "Harry Hall"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Young Strong Recent Form",
+      "insight": "Cameron Young at +2400 offers 3.5% model win probability with solid course history (T12 in 2025, T8 in 2024). He ranks 4th in putting (+0.45 SG) and 5th in total strokes gained (+1.49).",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Matsuyama Course History King",
+      "insight": "Hideki Matsuyama leads all players in course history adjustment (+0.162 strokes) with a 2023 victory here. At +2500, he offers 3.3% model win probability despite recent middling form.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Thorbjornsen Sleeper Pick",
+      "insight": "Michael Thorbjornsen at +5600 presents excellent longshot value with +1.01 total strokes gained and 14.6% top-10 probability. His well-rounded game suits TPC Scottsdale's varied demands.",
+      "players": [
+        "Michael Thorbjornsen"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Si Woo Kim Overpriced Favorite",
+      "insight": "Despite +2700 odds placing him 5th in betting favorites, Si Woo Kim ranks just 71st in total strokes gained (+0.15) with only 0.3% model win probability. Avoid at current price.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Spieth Course History Boost",
+      "insight": "Jordan Spieth gets a significant +0.096 course history adjustment at +5500 odds with 11.0% top-10 probability. His past success here provides value despite recent inconsistent form.",
+      "players": [
+        "Jordan Spieth"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

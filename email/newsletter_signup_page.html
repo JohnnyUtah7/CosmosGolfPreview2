@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Weekly Edge — Cosmos Golf Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-500: #6b7280;
+      --gray-700: #374151;
+      --gray-900: #111827;
+      --green-400: #4ade80;
+      --green-500: #22c55e;
+      --green-600: #16a34a;
+      --green-700: #15803d;
+      --green-900: #14532d;
+      --accent: #22c55e;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      color: rgba(0,0,0,0.85);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Compact white headline ── */
+    .topline {
+      text-align: center;
+      padding: 40px 24px 8px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--green-700);
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 18px;
+    }
+    .topline h1 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      color: var(--gray-900);
+    }
+    .topline h1 span { color: var(--green-500); }
+
+    /* ── Containers ── */
+    .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    .container-wide { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Section ── */
+    section { padding: 48px 0 64px; }
+    .section-head { text-align: center; margin-bottom: 8px; }
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green-600);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      color: var(--gray-900);
+    }
+    .section-sub {
+      font-size: 1.02rem;
+      color: var(--gray-500);
+      max-width: 600px;
+      margin: 14px auto 0;
+      font-weight: 400;
+    }
+
+    /* ── 3 preview tiles (IMAGE FIRST, caption below) ── */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 8px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .tiles { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
+    }
+    .tile { text-align: center; }
+
+    .frame {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      box-shadow: 0 6px 22px rgba(0,0,0,0.07);
+      transition: all 0.2s;
+    }
+    .frame:hover { border-color: var(--green-500); box-shadow: 0 10px 30px rgba(34,197,94,0.16); transform: translateY(-3px); }
+    .frame .accent { height: 4px; background: var(--green-500); }
+    .frame .shot { position: relative; height: 540px; overflow: hidden; background: #fff; }
+    .frame .shot img { display: block; width: 100%; height: auto; }
+    .frame .fade { position: absolute; left: 0; right: 0; bottom: 0; height: 84px; background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.96)); }
+
+    .tile-cap { margin-top: 22px; }
+    .tile-cap h3 { font-size: 1.2rem; font-weight: 700; color: var(--gray-900); letter-spacing: -0.3px; margin-bottom: 8px; }
+    .tile-cap p { font-size: 0.95rem; color: var(--gray-500); line-height: 1.55; max-width: 320px; margin: 0 auto; }
+
+    /* ── Steps (how it works) ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .step {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 14px;
+      padding: 28px 24px;
+      transition: all 0.2s;
+    }
+    .step:hover { background: var(--white); border-color: var(--green-500); box-shadow: 0 2px 14px rgba(34,197,94,0.1); }
+    .step-ic {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 46px; height: 46px;
+      background: var(--black); border-radius: 12px;
+      font-size: 1.4rem; margin-bottom: 14px;
+    }
+    .step h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: var(--gray-900); }
+    .step p { font-size: 0.92rem; color: var(--gray-500); margin: 0; line-height: 1.55; }
+
+    /* ── Callout ── */
+    .callout {
+      background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border: 1px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-top: 40px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .callout-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .callout p { margin: 0; color: var(--green-900); font-size: 0.98rem; }
+    .callout strong { color: var(--green-700); }
+  </style>
+</head>
+<body>
+
+<!-- ════════ COMPACT HEADLINE (white) ════════ -->
+<div class="topline">
+  <span class="badge">⛳ Free Weekly Preview</span>
+  <h1>Best-in-Class Golf <span>Research</span> 📊</h1>
+</div>
+
+<!-- ════════ LEAD WITH THE IMAGES ════════ -->
+<div class="container-wide">
+  <section style="padding-top:24px;">
+    <div class="tiles">
+      <!-- Tile 1 -->
+      <div class="tile">
+        <div class="frame">
+          <div class="accent"></div>
+          <div class="shot">
+            <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/Screenshot_2026-05-25_at_9.20.38_PM.png?v=1779769290" alt="Tournament preview — The Take">
+            <div class="fade"></div>
+          </div>
+        </div>
+        <div class="tile-cap">
+          <h3>🎯 Prediction Models</h3>
+          <p>Model win &amp; top-10 probabilities vs. the betting board — the edges, ranked.</p>
+        </div>
+      </div>
+
+      <!-- Tile 2 -->
+      <div class="tile">
+        <div class="frame">
+          <div class="accent"></div>
+          <div class="shot">
+            <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/Screenshot_2026-05-25_at_9.20.49_PM.png?v=1779769290" alt="Top storylines — model vs. board">
+            <div class="fade"></div>
+          </div>
+        </div>
+        <div class="tile-cap">
+          <h3>📡 GolfData API</h3>
+          <p>Live odds and Strokes Gained — off-the-tee, approach, around the green, putting.</p>
+        </div>
+      </div>
+
+      <!-- Tile 3 -->
+      <div class="tile">
+        <div class="frame">
+          <div class="accent"></div>
+          <div class="shot">
+            <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/Screenshot_2026-05-25_at_9.20.59_PM.png?v=1779769290" alt="Value and longshot plays">
+            <div class="fade"></div>
+          </div>
+        </div>
+        <div class="tile-cap">
+          <h3>🏆 Course History &amp; Form</h3>
+          <p>Three years of finishes at the host venue, plus recent-form trends per player.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ════════ WHAT'S INSIDE / VALUE PROPS ════════ -->
+<div class="container-wide">
+  <section style="border-top:1px solid var(--gray-200);">
+    <div class="section-head">
+      <div class="section-label">📬 Every Single Week</div>
+      <h2>What's Packed Into Every Issue</h2>
+      <p class="section-sub">Everything we build in our weekly run — laid out clean so you can act on it in minutes, not hours.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-ic">🎯</div>
+        <h3>Prediction Models</h3>
+        <p>True win &amp; top-10 probabilities from thousands of simulations, ranked against the board to expose where the market is wrong.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">📡</div>
+        <h3>Live Odds + Strokes Gained</h3>
+        <p>Win / Top-5 / Top-10 prices and full SG splits — off-the-tee, approach, around the green, putting — straight from the GolfData API.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">🏆</div>
+        <h3>Course History &amp; Fit</h3>
+        <p>Three years of finishes at the host venue plus a course-fit adjustment for every player in the field.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">📈</div>
+        <h3>Recent Form &amp; Trends</h3>
+        <p>Each player's last six starts, recency-weighted, to catch who's heating up before the betting board reacts.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">🤖</div>
+        <h3>AI Storylines</h3>
+        <p>A sharp, freshly-written "why they could win" on every contender — real analysis, never recycled boilerplate.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">👥</div>
+        <h3>The Crew's Picks</h3>
+        <p>The Cosmos crew's own Win / Top-5 / Top-10 cards for the week, each with live odds attached.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">⛅</div>
+        <h3>Tournament Weather</h3>
+        <p>The week's forecast — wind, rain, and scoring conditions — because the weather moves the board too.</p>
+      </div>
+      <div class="step">
+        <div class="step-ic">🥊</div>
+        <h3>Daily Matchups</h3>
+        <p>Head-to-head matchup edges for the day's groupings, surfaced straight from the model.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-icon">🏌️</div>
+      <div>
+        <p><strong>We don't sell picks.</strong> We hand you the same model outputs, live odds, and course-fit data we use ourselves — laid out clean — then you make the call. 100% free, every tour week.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer / CTA intentionally omitted — prebuilt in the Shopify theme. -->
+
+</body>
+</html>

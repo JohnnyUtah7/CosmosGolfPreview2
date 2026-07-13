@@ -1,0 +1,40 @@
+{
+  "crew_picks": [
+    {
+      "name": "Miller",
+      "photo_url": "https://via.placeholder.com/80/00d4ff/ffffff?text=M",
+      "picks": [
+        {"type": "Win", "player": "TBD - Update with actual pick", "odds": "+1800"},
+        {"type": "Top 5", "player": "TBD - Update with actual pick", "odds": "+400"},
+        {"type": "Top 10", "player": "TBD - Update with actual pick", "odds": "+200"}
+      ]
+    },
+    {
+      "name": "Kevin",
+      "photo_url": "https://via.placeholder.com/80/00ff88/ffffff?text=K",
+      "picks": [
+        {"type": "Win", "player": "TBD - Update with actual pick", "odds": "+2200"},
+        {"type": "Top 5", "player": "TBD - Update with actual pick", "odds": "+400"},
+        {"type": "Top 10", "player": "TBD - Update with actual pick", "odds": "+350"}
+      ]
+    },
+    {
+      "name": "Andrew",
+      "photo_url": "https://via.placeholder.com/80/ffd700/000000?text=A",
+      "picks": [
+        {"type": "Win", "player": "TBD - Update with actual pick", "odds": "+4500"},
+        {"type": "Top 5", "player": "TBD - Update with actual pick", "odds": "+950"},
+        {"type": "Top 10", "player": "TBD - Update with actual pick", "odds": "+210"}
+      ]
+    },
+    {
+      "name": "Kcon",
+      "photo_url": "https://via.placeholder.com/80/0B3D91/ffffff?text=Z",
+      "picks": [
+        {"type": "Win", "player": "TBD - Update with actual pick", "odds": "+1700"},
+        {"type": "Top 5", "player": "TBD - Update with actual pick", "odds": "+360"},
+        {"type": "Top 10", "player": "TBD - Update with actual pick", "odds": "+425"}
+      ]
+    }
+  ]
+}

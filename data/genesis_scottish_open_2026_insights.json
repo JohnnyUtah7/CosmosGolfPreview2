@@ -1,0 +1,88 @@
+{
+  "tournament": "Genesis Scottish Open",
+  "generated_at": "2026-07-06T19:20:39Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the most compelling play in the Genesis Scottish Open field, with a 10.9% model win probability at +816 odds and the best SG Total (+2.84) and SG Approach (+1.12) in the entire 156-player field. Rory McIlroy, the 2023 champion at The Renaissance Club, profiles as a strong secondary target at +1199 with elite course history (1st, T4, T2 in his last three trips) and a positive course fit adjustment of +0.105 strokes. Further down the board, defending champion Chris Gotterup at +2944 offers genuine value with a 3.3% model win probability, a positive +0.118 course fit, and obvious comfort at The Renaissance Club after his victory here last year.",
+  "insights": [
+    {
+      "title": "Scheffler Is a Must-Play Favorite",
+      "insight": "Scottie Scheffler leads the field in SG Total (+2.84), SG Approach (+1.12), and ranks 2nd in SG Putting (+0.53). His 10.9% model win probability represents a massive edge against implied odds, and his Renaissance Club history (T3 in 2023, T8 in 2025) confirms he handles links-influenced conditions.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "McIlroy's Course History Is Elite",
+      "insight": "Rory McIlroy won this event in 2023 and has finishes of 1st, T4, and T2 in his last three appearances at The Renaissance Club. His +0.105 course fit adjustment is one of the best among favorites, and his 7.7% model win probability at +1199 odds represents significant value.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Defending Champion Gotterup Has Edge",
+      "insight": "Chris Gotterup, the defending champion, has the best course fit among the top 10 favorites at +0.118 strokes. At +2944 with a 3.3% model win probability and clear comfort at The Renaissance Club, he offers a compelling profile to run it back.",
+      "players": [
+        "Chris Gotterup"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "MacIntyre Combines Course Fit and Putting",
+      "insight": "Robert MacIntyre, the 2024 champion, has the 3rd-best course history adjustment in the field (+0.077 strokes) and ranks 4th in SG Putting (+0.48). At +5055 with an 18.4% top-10 probability, the Scot playing on home soil is a prime longshot target.",
+      "players": [
+        "Robert MacIntyre"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Fitzpatrick's Iron Play Demands Attention",
+      "insight": "Matt Fitzpatrick ranks 2nd in the entire field in SG Approach at +0.85 and 4th in SG Total at +1.89, yet sits at +3085 odds. His T4 finish at The Renaissance Club in 2025 shows he's figured out the venue after two previous missed cuts, and his 3.1% model win probability suggests clear value.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Hovland Is the Deepest Sleeper",
+      "insight": "Viktor Hovland at +5248 has a SG Total of +1.49, which would rank 12th in the field — yet his odds imply he's a 50/1+ outsider. With a 17.5% top-10 probability, he's significantly underpriced by the market relative to his current ball-striking form.",
+      "players": [
+        "Viktor Hovland"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Fleetwood's Course Fit Is Concerning",
+      "insight": "Despite ranking 5th in SG Total (+1.84) and carrying +2362 odds, Tommy Fleetwood has the worst course fit adjustment among the top 10 favorites at -0.293 strokes. His Renaissance Club results (T34, T34, T6) have been inconsistent, making him a potential fade relative to other favorites.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Nicolai Hojgaard Fits The Renaissance Club",
+      "insight": "Nicolai Hojgaard has the 4th-best course history adjustment in the field at +0.066 strokes and a solid 17.1% top-10 probability at +5090 odds. His SG Total of +0.97 is modest but his venue-specific performance suggests a higher ceiling than his raw numbers indicate.",
+      "players": [
+        "Nicolai Hojgaard"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Rahm Returns with Elite Strokes Gained",
+      "insight": "Jon Rahm ranks 3rd in the field with a SG Total of +2.01 and carries a 4.4% model win probability at +2157 odds. While he lacks Renaissance Club history, his raw skill level — third-best in a 156-player field — makes him a top-tier contender in any conditions.",
+      "players": [
+        "Jon Rahm"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Kitayama Offers Ball-Striking Upside at Price",
+      "insight": "Kurt Kitayama ranks 4th in the field in SG Approach (+0.79) and carries a SG Total of +1.27 with a 16.1% top-10 probability at +5492 odds. His elite iron play profiles well for The Renaissance Club's demanding approach shots, making him a strong each-way longshot.",
+      "players": [
+        "Kurt Kitayama"
+      ],
+      "category": "longshot"
+    }
+  ]
+}

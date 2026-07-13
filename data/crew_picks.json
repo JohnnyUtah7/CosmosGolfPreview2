@@ -1,0 +1,133 @@
+{
+  "description": "Crew picks for weekly tournament previews. Display order: Miller, Kevin, Andrew, Kcon, Parbeh, JB. Each member: Win / Top 5 / Top 10 (in that order). Odds auto-resolve from {slug}_{year}_players_data.json at render time.",
+  "placeholder": true,
+  "placeholder_text": "Crew picks drop Wednesday night",
+  "crew": [
+    {
+      "name": "Miller",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/miller.jpg",
+      "picks": [
+        {
+          "label": "Win",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 5",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 10",
+          "player": "TBD",
+          "odds": "-"
+        }
+      ]
+    },
+    {
+      "name": "Kevin",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/kham.jpg",
+      "picks": [
+        {
+          "label": "Win",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 5",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 10",
+          "player": "TBD",
+          "odds": "-"
+        }
+      ]
+    },
+    {
+      "name": "Andrew",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/andrew_hammond.jpg",
+      "picks": [
+        {
+          "label": "Win",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 5",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 10",
+          "player": "TBD",
+          "odds": "-"
+        }
+      ]
+    },
+    {
+      "name": "Kcon",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/kcon.jpg",
+      "picks": [
+        {
+          "label": "Win",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 5",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 10",
+          "player": "TBD",
+          "odds": "-"
+        }
+      ]
+    },
+    {
+      "name": "Parbeh",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/Parbeh.png?v=1770089512",
+      "picks": [
+        {
+          "label": "Win",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 5",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 10",
+          "player": "TBD",
+          "odds": "-"
+        }
+      ]
+    },
+    {
+      "name": "JB",
+      "photo_url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/jb.png?v=1775705102",
+      "picks": [
+        {
+          "label": "Win",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 5",
+          "player": "TBD",
+          "odds": "-"
+        },
+        {
+          "label": "Top 10",
+          "player": "TBD",
+          "odds": "-"
+        }
+      ]
+    }
+  ]
+}

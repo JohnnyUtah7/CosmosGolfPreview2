@@ -1,0 +1,88 @@
+{
+  "tournament": "Truist Championship",
+  "generated_at": "2026-05-06T04:51:13Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Rory McIlroy dominates the Truist Championship model projections with an 11.2% win probability at +796, backed by the field's best Strokes Gained Total (+2.25) and a stellar course history that includes a win in 2024 and a T7 in 2025. Cameron Young (+1153) and Xander Schauffele (+1246) form a potent second tier, both posting +2.17 SG Total with Schauffele's elite ball-striking (#1 in SG Approach at +1.00) making him a perennial contender at this venue where he's finished 2nd twice. Further down the board, Viktor Hovland at +5168 with a near-20% top-10 probability and Si Woo Kim at +2912 ranking #2 in SG Approach offer compelling value in a 72-player field.",
+  "insights": [
+    {
+      "title": "McIlroy Is the Clear Model Alpha",
+      "insight": "Rory McIlroy's 11.2% model win probability dwarfs the field and his +2.25 SG Total ranks #1 among all 72 competitors. His course history adjustment of +0.170 strokes is the second-best in the field, reflecting a 2024 victory and consistent results at this venue.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Cameron Young Offers Elite Value",
+      "insight": "At +1153, Cameron Young's 8.0% model win probability represents a massive 7.9% edge over implied odds. His +2.17 SG Total ties Schauffele for second in the field, and his T7 finish here in 2025 suggests growing comfort with the course.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Schauffele's Ball-Striking Unlocks This Course",
+      "insight": "Xander Schauffele leads the entire field in SG Approach at +1.00 and has finished 2nd here in both 2023 and 2024. His 7.4% model win probability at +1246 represents significant edge, and his +0.126 course fit score confirms the skillset alignment.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Si Woo Kim's Approach Game Screams Value",
+      "insight": "Kim ranks #2 in the field in SG Approach at +0.83 and carries a 3.3% model win probability at +2912, offering serious mid-tier value. His consistent course history (T17 in 2025, T16 in 2024) shows reliable performance without the fireworks that attract market attention.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Fitzpatrick Is the Stealth Contender",
+      "insight": "Matt Fitzpatrick's +2.02 SG Total ranks #4 in the field, yet his +2016 odds imply far less respect than his 4.7% model win probability warrants. He ranks #5 in SG Approach (+0.77), a critical skill at this venue, making him a prime each-way candidate.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Hovland Is the Best Longshot Bet",
+      "insight": "Viktor Hovland at +5168 posts a 19.8% top-10 probability — the highest among all longshots — paired with a +1.25 SG Total that ranks well inside the top 15. At roughly 50-1, his profile suggests significant top-10 and top-5 equity for bettors seeking place market value.",
+      "players": [
+        "Viktor Hovland"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Fleetwood's Course History Is Bulletproof",
+      "insight": "Tommy Fleetwood has finished T4, T13, and T5 in his last three Truist appearances, and his +1.55 SG Total supports a 3.0% model win probability at +3250. His consistency here makes him an ideal top-10 and top-20 play rather than an outright gamble.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Adam Scott's Iron Play Defies His Odds",
+      "insight": "At +3761 and age 44, the market is sleeping on Adam Scott, who ranks #3 in the field in SG Approach (+0.81) and has two T5-or-better finishes in his last three Truist starts. His 2.6% model win probability and +0.088 course fit adjustment make him a compelling veteran play.",
+      "players": [
+        "Adam Scott"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Rickie Fowler's Course Love Affair Continues",
+      "insight": "Fowler's +0.123 course history adjustment ranks third in the entire field despite modest overall form (+1.03 SG Total). At +5243 with a 19.6% top-10 probability, he's a classic course horse play worth targeting in derivative markets.",
+      "players": [
+        "Rickie Fowler"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Aberg Has Upside but Course Questions Linger",
+      "insight": "Ludvig Aberg's 4.3% model win probability at +2243 is driven by raw talent (+1.81 SG Total, #5 in field), but his only Truist start produced a T60 finish in 2025. His +0.129 course fit score is encouraging, suggesting the poor result was noise rather than signal, but buyers should temper expectations slightly.",
+      "players": [
+        "Ludvig Aberg"
+      ],
+      "category": "form"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "tournament": "The Genesis Invitational",
+  "generated_at": "2026-02-17T04:15:12Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "Scottie Scheffler presents exceptional value at +431 odds with an 18.8% model win probability and the #1 strokes gained approach ranking (+1.18) that perfectly matches Riviera's precision demands. The model identifies significant value across the board, with Rory McIlroy (+1628) offering 5.8% win probability despite poor course history, while longshots like Ben Griffin (+5320) provide compelling top-10 value at 20.3% with elite +1.44 total strokes gained. Course fit data reveals concerning negative adjustments for several favorites, creating opportunities in undervalued ball-strikers.",
+  "insights": [
+    {
+      "title": "Scheffler Massive Value Despite Favoritism",
+      "insight": "Model shows 18.8% win probability against +431 odds for an enormous +18.6% edge. Leads field in approach play (+1.18 SG) which is critical at Riviera's elevated greens.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "McIlroy Course History Red Flag",
+      "insight": "Despite 5.8% model win probability, his recent Riviera results show decline: T29 (2023), T24 (2024), T17 (2025) with poor kikuyu grass experience.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Si Woo Kim Ball-Striking Edge",
+      "insight": "Ranks #2 in field for approach play (+0.95 SG) at +3897 odds with 2.5% model win probability. Recent MC and T44 finishes create value opportunity.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Matsuyama Defending Champion Discount",
+      "insight": "2024 winner now +3342 odds with 2.9% model win probability despite concerning -0.018 course fit. T13 finish in 2025 shows current form questions.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Griffin Longshot With Elite Profile",
+      "insight": "+5320 odds hide impressive +1.44 total strokes gained with 20.3% top-10 probability. Model sees legitimate contender at massive price.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Negative Course Fit Favorites",
+      "insight": "Russell Henley (-0.163), Collin Morikawa (-0.166), and Tommy Fleetwood (-0.115) all show poor Riviera adjustments despite top-10 odds.",
+      "players": [
+        "Russell Henley",
+        "Collin Morikawa",
+        "Tommy Fleetwood"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "MacIntyre Putting Edge Longshot",
+      "insight": "Ranks #4 in putting (+0.54 SG) at +5513 odds with 19.8% top-10 probability. Strong total game (+1.35 SG) creates value.",
+      "players": [
+        "Robert MacIntyre"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Adam Scott Course History King",
+      "insight": "Leads field with +0.227 positive course adjustment at +7573 odds. Historical Riviera excellence could overcome recent form concerns.",
+      "players": [
+        "Adam Scott"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Ball-Striking Premium Play",
+      "insight": "Collin Morikawa ranks #3 in approach (+0.90 SG) with positive +0.086 course history despite -0.166 current fit adjustment at +4061 odds.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

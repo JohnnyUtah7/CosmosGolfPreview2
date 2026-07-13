@@ -1,0 +1,6 @@
+{
+  "description": "Config for scripts/update_shopify_menu.py — which nav menu item gets repointed at the new weekly tournament page. Verify menu_handle with `python3 scripts/update_shopify_menu.py --list` once the Shopify token has navigation scopes.",
+  "menu_handle": "main-menu",
+  "item_title": "Research",
+  "url_pattern": "^/pages/\\d{4}-"
+}

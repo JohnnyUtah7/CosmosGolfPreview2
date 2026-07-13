@@ -1,0 +1,65 @@
+{
+  "tournament": "Texas Children's Houston Open",
+  "generated_at": "2026-03-23T22:48:50Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "Min Woo Lee offers compelling upside at +1732 coming off his 2025 victory here with excellent +0.122 course fit and 5.5% model win probability. The longshot tier is loaded with value, particularly Ben Griffin at +5571 who carries +1.01 SG Total with 17.3% top-10 probability, making him an outstanding tournament play.",
+  "insights": [
+    {
+      "title": "Lee's Defending Champion Value",
+      "insight": "Min Woo Lee won this event in 2025 and shows strong +0.122 course fit with +1.62 SG Total ranking #2 in the field. At +1732 odds, the model sees 5.4% edge over implied probability.",
+      "players": [
+        "Min Woo Lee"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Gerard's Ball-Striking Surge",
+      "insight": "Ryan Gerard ranks #2 in the field in approach play (+0.80 SG) and #3 overall in SG Total (+1.27), yet sits at +4522 odds. His T9 finish here in 2025 adds course confidence.",
+      "players": [
+        "Ryan Gerard"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Double-Threat Putting Advantage",
+      "insight": "Jake Knapp (+3368), Sam Burns (+4573) both rank top-4 in SG Putting with +0.60 each. Putting typically separates winners at Memorial Park.",
+      "players": [
+        "Jake Knapp",
+        "Sam Burns"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Griffin's Longshot Profile Shines",
+      "insight": "Ben Griffin at +5571 carries solid +1.01 SG Total with an impressive 17.3% top-10 probability. His complete game profile makes him the week's best longshot tournament play.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Kitayama's Consistent Course Record",
+      "insight": "Kurt Kitayama ranks #4 in approach play (+0.69 SG) with solid course history (T39 in 2025, T36 in 2024). At +3819 odds, he offers 2.5% model edge with proven Memorial Park form.",
+      "players": [
+        "Kurt Kitayama"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "English Offers Elite Longshot Value",
+      "insight": "Harris English at +6022 provides +1.08 SG Total ranking #9 in the field with 16.3% top-10 probability. His ball-striking ability makes him severely underpriced in this range.",
+      "players": [
+        "Harris English"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Hughes Maximum Course Advantage",
+      "insight": "Mackenzie Hughes shows the field's best course history adjustment at +0.102 strokes, indicating strong Memorial Park fit. At +13757 odds, his course knowledge creates longshot appeal.",
+      "players": [
+        "Mackenzie Hughes"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

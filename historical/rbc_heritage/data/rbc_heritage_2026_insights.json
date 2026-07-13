@@ -1,0 +1,88 @@
+{
+  "tournament": "RBC Heritage",
+  "generated_at": "2026-04-16T05:09:27Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the overwhelming model pick at RBC Heritage, with a 13.7% win probability that dwarfs the field — his +2.73 SG Total leads all 82 players and he won this event in 2024. The real value story, however, lives in the +1700 to +3100 range: Russell Henley (+1911) boasts the field's best course fit adjustment at +0.233 strokes with a 5.0% model win probability and three consecutive top-20 finishes here, while Si Woo Kim (+3080) pairs elite course fit (+0.135) with three consecutive top-10s in 2025. Matt Fitzpatrick (+1759) is the 2023 champion, ranks 4th in SG Approach at +0.80, and carries a +0.056 course history adjustment — a potent combination at a venue that rewards precision iron play on small Bermuda greens.",
+  "insights": [
+    {
+      "title": "Scheffler Is the Clear Model Alpha",
+      "insight": "Scottie Scheffler's 13.7% model win probability is more than double the next closest player (5.4%). He leads the field in SG Total (+2.73) and SG Approach (+1.02), and his Harbour Town history reads 1st-T11-T8 over his last three starts. Even at +628, the model sees significant edge.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Henley's Course Fit Is Unmatched",
+      "insight": "Russell Henley posts the field's highest positive course fit adjustment at +0.233 strokes, reflecting his game's natural alignment with Harbour Town's tight fairways and small greens. His results back it up: T8-T12-T19 in his last three trips. At +1911 with a 5.0% model win probability, he's a core play.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Fitzpatrick: Defending Champion With Edge",
+      "insight": "The 2023 RBC Heritage winner ranks 4th in the field in SG Approach (+0.80) and carries a +0.056 course history adjustment, third-best in the field. His 5.4% model win probability at +1759 odds represents one of the week's largest model edges at +5.3%.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Si Woo Kim Thrives at Harbour Town",
+      "insight": "Si Woo Kim's +0.135 course fit and T8 finish here in 2025 signal a player whose precise, creative game matches this Pete Dye design. At +3080 with a 3.1% model win probability and strong recent form (three top-10s already this season), he offers compelling mid-range value.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Cameron Young: Talent Without Course Proof",
+      "insight": "Despite ranking T-2nd in SG Total (+2.11) and carrying a 5.2% model win probability, Cameron Young's -0.223 course fit and dismal Harbour Town history (T54-T62-T51) flash a significant red flag. His raw ball-striking hasn't translated here — proceed with caution at +1816.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Aberg's Negative Course Fit Concerns",
+      "insight": "Ludvig Aberg ranks 5th in SG Total (+1.74) but owns the field's worst course fit among contenders at -0.227, and his lone completed RBC Heritage ended T54. Harbour Town demands shot-shaping finesse that may not suit his power game. At +3180, there's better value elsewhere.",
+      "players": [
+        "Ludvig Aberg"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Hovland Is the Best Longshot Striker",
+      "insight": "Viktor Hovland ranks 5th in SG Approach (+0.78) and posts an 18.9% top-10 probability — the highest among all longshots — yet sits at +5731. His iron game is tailor-made for Harbour Town's demanding approach shots into tiny greens. A strong top-10 or top-20 play.",
+      "players": [
+        "Viktor Hovland"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Sam Burns: Hot Putter, Strong History",
+      "insight": "Burns leads the entire field in SG Putting (+0.66) and carries a +0.051 course history adjustment, 5th-best in the field. At +5823 with an 18.3% top-10 probability and 1.32 SG Total, he's a classic Harbour Town contender flying under the radar after inconsistent recent results.",
+      "players": [
+        "Sam Burns"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Morikawa's Iron Game Fits Perfectly",
+      "insight": "Collin Morikawa ranks 3rd in the field in SG Approach (+0.92) with a positive course fit (+0.067) and finished 9th here in 2024. His 3.5% model win probability at +2714 offers solid value in a tournament where precision iron play is the most predictive skill.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Cantlay's Harbour Town Pedigree Stands Out",
+      "insight": "Patrick Cantlay owns the field's highest course history adjustment at +0.092 strokes, backed by finishes of 3rd (2023) and T3 (2024). His methodical, mistake-free style is ideal for Harbour Town. At +3710 with a 2.6% model win probability, he's a proven contender at this venue.",
+      "players": [
+        "Patrick Cantlay"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

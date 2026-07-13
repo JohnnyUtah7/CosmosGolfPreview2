@@ -1,0 +1,1160 @@
+{
+  "event_name": "WM Phoenix Open",
+  "course_name": "TPC Scottsdale (Stadium Course)",
+  "course_info": {
+    "name": "TPC Scottsdale (Stadium Course)",
+    "tournament": "WM Phoenix Open",
+    "event_id": "wm_phoenix_open",
+    "location": {
+      "city": "Scottsdale",
+      "state": "Arizona",
+      "country": "USA",
+      "elevation_ft": 1500,
+      "climate": "desert"
+    },
+    "characteristics": {
+      "par": 71,
+      "yardage": 7261,
+      "grass_type": "overseeded_bermuda",
+      "green_type": "bentgrass",
+      "green_speed": "fast",
+      "fairway_width": "medium",
+      "rough_severity": "light"
+    },
+    "scoring_profile": {
+      "typical_winning_score": -19,
+      "cut_line_typical": -2,
+      "birdie_fest": true,
+      "bombers_advantage": "moderate"
+    },
+    "key_skills": {
+      "primary": [
+        "sg_approach",
+        "putting_bermuda",
+        "wedge_play"
+      ],
+      "secondary": [
+        "driving_distance",
+        "scrambling"
+      ],
+      "notes": "Premium on iron play and wedge proximity. 16th hole atmosphere is unique."
+    },
+    "weather_sensitivity": {
+      "wind_factor": "moderate",
+      "typical_conditions": "calm_warm",
+      "morning_vs_afternoon": "slight_afternoon_advantage"
+    },
+    "historical_trends": {
+      "course_history_matters": true,
+      "repeat_winners_common": true,
+      "favorites_win_rate": "average"
+    }
+  },
+  "player_count": 31,
+  "storylines": [
+    {
+      "player_name": "Berger, Daniel",
+      "dg_id": 17606,
+      "storyline": "Gains +0.109 strokes from course history (#2 in field) Strong course history: gains +0.11 strokes vs baseline",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.109 strokes from course history (#2 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "historical",
+          "text": "Strong course history: gains +0.11 strokes vs baseline",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.722,
+        "sg_ott": 0.433,
+        "sg_app": 0.464,
+        "sg_arg": -0.113,
+        "sg_putt": -0.062,
+        "driving_dist": 0.448,
+        "driving_acc": 0.061,
+        "course_fit_adj": 0.016140225481736103,
+        "course_history_adj": 0.108548039795126,
+        "final_pred": 0.930567567457111,
+        "baseline_pred": 0.596435725775243,
+        "win_prob": 0.0095333333333333,
+        "top_5_prob": 0.0578874470899471,
+        "top_10_prob": 0.120887375124875,
+        "make_cut_prob": 0.6921
+      }
+    },
+    {
+      "player_name": "Bezuidenhout, Christiaan",
+      "dg_id": 18103,
+      "storyline": "Elite with the putter (#9) aligns with course's premium on putting bermuda",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #4 in SG: Around The Green among the field (+0.30)",
+          "confidence": "medium"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#9) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.785,
+        "sg_ott": -0.225,
+        "sg_app": 0.331,
+        "sg_arg": 0.301,
+        "sg_putt": 0.378,
+        "driving_dist": -11.908,
+        "driving_acc": 0.05,
+        "course_fit_adj": 0.036815643030969,
+        "course_history_adj": 0.0205157537443141,
+        "final_pred": 0.902276094361488,
+        "baseline_pred": 0.897219113424679,
+        "win_prob": 0.007,
+        "top_5_prob": 0.0493385990860991,
+        "top_10_prob": 0.107282804417804,
+        "make_cut_prob": 0.694083333333333
+      }
+    },
+    {
+      "player_name": "Burns, Sam",
+      "dg_id": 19483,
+      "storyline": "Ranks #2 in SG: With The Putter among the field (+0.58) Data Golf model: #10 win probability (2.0%)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #2 in SG: With The Putter among the field (+0.58)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#2) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #10 win probability (2.0%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.252,
+        "sg_ott": 0.319,
+        "sg_app": 0.303,
+        "sg_arg": 0.046,
+        "sg_putt": 0.584,
+        "driving_dist": 7.167,
+        "driving_acc": 0.008,
+        "course_fit_adj": 0.0496306700324207,
+        "course_history_adj": 0.0305134276689698,
+        "final_pred": 1.34599826800418,
+        "baseline_pred": 1.35244588692954,
+        "win_prob": 0.01955,
+        "top_5_prob": 0.101935304232804,
+        "top_10_prob": 0.192429524410774,
+        "make_cut_prob": 0.756883333333333
+      }
+    },
+    {
+      "player_name": "Conners, Corey",
+      "dg_id": 17576,
+      "storyline": "Elite on approach (#8) aligns with course's premium on sg approach",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#8) aligns with course's premium on sg approach",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.962,
+        "sg_ott": 0.435,
+        "sg_app": 0.624,
+        "sg_arg": -0.04,
+        "sg_putt": -0.057,
+        "driving_dist": -0.129,
+        "driving_acc": 0.065,
+        "course_fit_adj": 0.0202285809497767,
+        "course_history_adj": -0.0500162770928336,
+        "final_pred": 0.883782892877948,
+        "baseline_pred": 0.974038823047815,
+        "win_prob": 0.0094,
+        "top_5_prob": 0.0554891871091871,
+        "top_10_prob": 0.118582687173937,
+        "make_cut_prob": 0.690766666666667
+      }
+    },
+    {
+      "player_name": "English, Harris",
+      "dg_id": 14577,
+      "storyline": "Gains +0.050 strokes from overall course fit (#2 in field) Data Golf model: #9 win probability (2.1%)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.050 strokes from overall course fit (#2 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #9 win probability (2.1%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.198,
+        "sg_ott": 0.389,
+        "sg_app": 0.276,
+        "sg_arg": 0.165,
+        "sg_putt": 0.367,
+        "driving_dist": 1.65,
+        "driving_acc": 0.044,
+        "course_fit_adj": 0.0502512031440545,
+        "course_history_adj": 0.0300665011534625,
+        "final_pred": 1.48156328830287,
+        "baseline_pred": 1.20082136253771,
+        "win_prob": 0.0208333333333333,
+        "top_5_prob": 0.113157691798942,
+        "top_10_prob": 0.213910922919673,
+        "make_cut_prob": 0.7864
+      }
+    },
+    {
+      "player_name": "Fitzpatrick, Matt",
+      "dg_id": 17646,
+      "storyline": "Elite with the putter (#8) aligns with course's premium on putting bermuda",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#8) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.107,
+        "sg_ott": 0.032,
+        "sg_app": 0.4,
+        "sg_arg": 0.29,
+        "sg_putt": 0.385,
+        "driving_dist": 1.468,
+        "driving_acc": 0.012,
+        "course_fit_adj": 0.04423666352554011,
+        "course_history_adj": 0.0187621811248785,
+        "final_pred": 1.13769460768104,
+        "baseline_pred": 1.3109433964375,
+        "win_prob": 0.01365,
+        "top_5_prob": 0.0769130032467533,
+        "top_10_prob": 0.151461231546232,
+        "make_cut_prob": 0.723666666666667
+      }
+    },
+    {
+      "player_name": "Gotterup, Chris",
+      "dg_id": 27774,
+      "storyline": "Ranks #3 in SG: Off The Tee among the field (+0.69)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #3 in SG: Off The Tee among the field (+0.69)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.214,
+        "sg_ott": 0.694,
+        "sg_app": 0.273,
+        "sg_arg": 0.045,
+        "sg_putt": 0.202,
+        "driving_dist": 16.444,
+        "driving_acc": -0.026,
+        "course_fit_adj": 0.035592027013852404,
+        "course_history_adj": -0.0160061862656387,
+        "final_pred": 1.25873780914106,
+        "baseline_pred": 0.996454634488386,
+        "win_prob": 0.0186666666666667,
+        "top_5_prob": 0.0973457010582011,
+        "top_10_prob": 0.179795707070707,
+        "make_cut_prob": 0.738433333333333
+      }
+    },
+    {
+      "player_name": "Griffin, Ben",
+      "dg_id": 24968,
+      "storyline": "Elite on approach (#10) aligns with course's premium on sg approach Data Golf model: #6 win probability (2.4%)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #4 in SG: Overall among the field (+1.54)",
+          "confidence": "medium"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#10) aligns with course's premium on sg approach",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#7) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #6 win probability (2.4%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.542,
+        "sg_ott": 0.285,
+        "sg_app": 0.59,
+        "sg_arg": 0.248,
+        "sg_putt": 0.419,
+        "driving_dist": 2.552,
+        "driving_acc": 0.012,
+        "course_fit_adj": 0.0476534924329583,
+        "course_history_adj": 0.0126524670822249,
+        "final_pred": 1.53597095234464,
+        "baseline_pred": 1.60937548877514,
+        "win_prob": 0.0238,
+        "top_5_prob": 0.121439882154882,
+        "top_10_prob": 0.223211586700337,
+        "make_cut_prob": 0.789933333333333
+      }
+    },
+    {
+      "player_name": "Hall, Harry",
+      "dg_id": 27194,
+      "storyline": "Ranks #3 in SG: Around The Green among the field (+0.31)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #3 in SG: Around The Green among the field (+0.31)",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #1 in SG: With The Putter among the field (+0.72)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#1) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.104,
+        "sg_ott": -0.06,
+        "sg_app": 0.138,
+        "sg_arg": 0.308,
+        "sg_putt": 0.718,
+        "driving_dist": 0.6,
+        "driving_acc": -0.017,
+        "course_fit_adj": 0.0482973013404137,
+        "course_history_adj": 0.0068429503461927,
+        "final_pred": 1.08065642364465,
+        "baseline_pred": 1.21712680126586,
+        "win_prob": 0.0106166666666667,
+        "top_5_prob": 0.0679114892977393,
+        "top_10_prob": 0.141768374403374,
+        "make_cut_prob": 0.732633333333333
+      }
+    },
+    {
+      "player_name": "Hoey, Rico",
+      "dg_id": 23504,
+      "storyline": "Elite on approach (#9) aligns with course's premium on sg approach",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#9) aligns with course's premium on sg approach",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.535,
+        "sg_ott": 0.548,
+        "sg_app": 0.613,
+        "sg_arg": -0.14,
+        "sg_putt": -0.485,
+        "driving_dist": 5.879,
+        "driving_acc": 0.029,
+        "course_fit_adj": -0.006204902171489897,
+        "course_history_adj": -0.0142721143995184,
+        "final_pred": 0.528375276577434,
+        "baseline_pred": 0.362245426097648,
+        "win_prob": 0.0051166666666666,
+        "top_5_prob": 0.0355721699134199,
+        "top_10_prob": 0.0790828517316017,
+        "make_cut_prob": 0.62105
+      }
+    },
+    {
+      "player_name": "Hojgaard, Rasmus",
+      "dg_id": 23838,
+      "storyline": "Elite with the putter (#5) aligns with course's premium on putting bermuda",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #5 in SG: With The Putter among the field (+0.43)",
+          "confidence": "medium"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#5) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.939,
+        "sg_ott": 0.416,
+        "sg_app": 0.118,
+        "sg_arg": -0.027,
+        "sg_putt": 0.432,
+        "driving_dist": 13.869,
+        "driving_acc": -0.027,
+        "course_fit_adj": 0.037423035651535305,
+        "course_history_adj": 0.018625365280759,
+        "final_pred": 1.02089586325274,
+        "baseline_pred": 0.936851231185277,
+        "win_prob": 0.0127166666666667,
+        "top_5_prob": 0.0728702982202982,
+        "top_10_prob": 0.143190508056758,
+        "make_cut_prob": 0.70055
+      }
+    },
+    {
+      "player_name": "Horschel, Billy",
+      "dg_id": 11276,
+      "storyline": "Gains +0.087 strokes from course history (#8 in field)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.087 strokes from course history (#8 in field)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": -0.202,
+        "sg_ott": -0.353,
+        "sg_app": -0.02,
+        "sg_arg": 0.053,
+        "sg_putt": 0.118,
+        "driving_dist": -3.13,
+        "driving_acc": -0.021,
+        "course_fit_adj": -0.0044267193245841,
+        "course_history_adj": 0.0873430107676664,
+        "final_pred": 0.0517355307796471,
+        "baseline_pred": 0.133655683933678,
+        "win_prob": 0.00175,
+        "top_5_prob": 0.0165685714285714,
+        "top_10_prob": 0.0409052236652237,
+        "make_cut_prob": 0.538516666666667
+      }
+    },
+    {
+      "player_name": "Hovland, Viktor",
+      "dg_id": 18841,
+      "storyline": "Ranks #3 in SG: On Approach among the field (+0.81)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #3 in SG: On Approach among the field (+0.81)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#3) aligns with course's premium on sg approach",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.228,
+        "sg_ott": 0.278,
+        "sg_app": 0.806,
+        "sg_arg": 0.018,
+        "sg_putt": 0.125,
+        "driving_dist": 2.689,
+        "driving_acc": 0.031,
+        "course_fit_adj": 0.0295009375754699,
+        "course_history_adj": -0.0499216793209708,
+        "final_pred": 1.16116802146974,
+        "baseline_pred": 1.26466658316689,
+        "win_prob": 0.0162666666666667,
+        "top_5_prob": 0.0854419318181818,
+        "top_10_prob": 0.165360943963444,
+        "make_cut_prob": 0.7369
+      }
+    },
+    {
+      "player_name": "Kim, Michael",
+      "dg_id": 17543,
+      "storyline": "Gains +0.089 strokes from course history (#7 in field)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.089 strokes from course history (#7 in field)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.365,
+        "sg_ott": -0.319,
+        "sg_app": 0.327,
+        "sg_arg": 0.038,
+        "sg_putt": 0.318,
+        "driving_dist": -2.71,
+        "driving_acc": -0.025,
+        "course_fit_adj": 0.0054036373480010995,
+        "course_history_adj": 0.0891796057924172,
+        "final_pred": 0.456624118681207,
+        "baseline_pred": 0.577415789028311,
+        "win_prob": 0.00335,
+        "top_5_prob": 0.0263665812890813,
+        "top_10_prob": 0.0632081583694084,
+        "make_cut_prob": 0.6065
+      }
+    },
+    {
+      "player_name": "Kim, Si Woo",
+      "dg_id": 14609,
+      "storyline": "Ranks #3 in SG: Overall among the field (+1.55) Data Golf model: #5 win probability (3.2%)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #3 in SG: Overall among the field (+1.55)",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #4 in SG: Off The Tee among the field (+0.66)",
+          "confidence": "medium"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #2 in SG: On Approach among the field (+0.90)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#2) aligns with course's premium on sg approach",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #5 win probability (3.2%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.555,
+        "sg_ott": 0.661,
+        "sg_app": 0.901,
+        "sg_arg": 0.208,
+        "sg_putt": -0.215,
+        "driving_dist": -2.537,
+        "driving_acc": 0.101,
+        "course_fit_adj": 0.04108207662083971,
+        "course_history_adj": -0.0871741763778962,
+        "final_pred": 1.70732538156249,
+        "baseline_pred": 1.41285401036722,
+        "win_prob": 0.03185,
+        "top_5_prob": 0.152538135521886,
+        "top_10_prob": 0.270046782106782,
+        "make_cut_prob": 0.825
+      }
+    },
+    {
+      "player_name": "Knapp, Jake",
+      "dg_id": 19396,
+      "storyline": "Elite with the putter (#6) aligns with course's premium on putting bermuda",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#6) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.031,
+        "sg_ott": 0.586,
+        "sg_app": 0.032,
+        "sg_arg": -0.01,
+        "sg_putt": 0.424,
+        "driving_dist": 11.868,
+        "driving_acc": -0.018,
+        "course_fit_adj": 0.0375051905656545,
+        "course_history_adj": 0.0282600260488206,
+        "final_pred": 1.16489990854839,
+        "baseline_pred": 0.796655630992395,
+        "win_prob": 0.01765,
+        "top_5_prob": 0.0892464748677249,
+        "top_10_prob": 0.167981815175565,
+        "make_cut_prob": 0.723983333333333
+      }
+    },
+    {
+      "player_name": "Koepka, Brooks",
+      "dg_id": 16243,
+      "storyline": "Gains +0.106 strokes from course history (#3 in field) Strong course history: gains +0.11 strokes vs baseline",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.106 strokes from course history (#3 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "historical",
+          "text": "Strong course history: gains +0.11 strokes vs baseline",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.002,
+        "sg_ott": 0.163,
+        "sg_app": 0.1,
+        "sg_arg": -0.018,
+        "sg_putt": -0.244,
+        "driving_dist": 5.247,
+        "driving_acc": -0.023,
+        "course_fit_adj": -0.0104049309970924,
+        "course_history_adj": 0.106268770862883,
+        "final_pred": 0.264197596845814,
+        "baseline_pred": -0.0130961733520692,
+        "win_prob": 0.0036166666666666,
+        "top_5_prob": 0.0276810930735931,
+        "top_10_prob": 0.0628440638528139,
+        "make_cut_prob": 0.578583333333333
+      }
+    },
+    {
+      "player_name": "Lee, Min Woo",
+      "dg_id": 16841,
+      "storyline": "Ranks #5 in SG: Around The Green among the field (+0.29)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #5 in SG: Around The Green among the field (+0.29)",
+          "confidence": "medium"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.961,
+        "sg_ott": 0.409,
+        "sg_app": 0.021,
+        "sg_arg": 0.293,
+        "sg_putt": 0.238,
+        "driving_dist": 12.267,
+        "driving_acc": -0.021,
+        "course_fit_adj": 0.040206921619260996,
+        "course_history_adj": -0.0118630969477293,
+        "final_pred": 0.922846740832408,
+        "baseline_pred": 0.585442320881789,
+        "win_prob": 0.0108666666666667,
+        "top_5_prob": 0.0634950931938432,
+        "top_10_prob": 0.129562128427128,
+        "make_cut_prob": 0.699483333333333
+      }
+    },
+    {
+      "player_name": "Matsuyama, Hideki",
+      "dg_id": 13562,
+      "storyline": "Elite on approach (#6) aligns with course's premium on sg approach Strong course history: gains +0.16 strokes vs baseline Data Golf model: #4 win probability (3.3%)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#6) aligns with course's premium on sg approach",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #1 in SG: Around The Green among the field (+0.43)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Gains +0.162 strokes from course history (#1 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "historical",
+          "text": "Strong course history: gains +0.16 strokes vs baseline",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #4 win probability (3.3%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.256,
+        "sg_ott": 0.045,
+        "sg_app": 0.711,
+        "sg_arg": 0.426,
+        "sg_putt": 0.074,
+        "driving_dist": -0.289,
+        "driving_acc": 0.004,
+        "course_fit_adj": 0.0343808743885608,
+        "course_history_adj": 0.162199743394026,
+        "final_pred": 1.65600641862538,
+        "baseline_pred": 1.3212802680014,
+        "win_prob": 0.0326833333333333,
+        "top_5_prob": 0.149122433862434,
+        "top_10_prob": 0.261285295815296,
+        "make_cut_prob": 0.809983333333333
+      }
+    },
+    {
+      "player_name": "McNealy, Maverick",
+      "dg_id": 18634,
+      "storyline": "Elite with the putter (#10) aligns with course's premium on putting bermuda Data Golf model: #7 win probability (2.3%)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#10) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #7 win probability (2.3%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.246,
+        "sg_ott": 0.298,
+        "sg_app": 0.417,
+        "sg_arg": 0.156,
+        "sg_putt": 0.376,
+        "driving_dist": 6.184,
+        "driving_acc": 0.004,
+        "course_fit_adj": 0.044973225895017996,
+        "course_history_adj": 0.049028434116126,
+        "final_pred": 1.39435016964863,
+        "baseline_pred": 1.16303993430799,
+        "win_prob": 0.0232833333333333,
+        "top_5_prob": 0.115890205026455,
+        "top_10_prob": 0.209537424843675,
+        "make_cut_prob": 0.773583333333333
+      }
+    },
+    {
+      "player_name": "Morikawa, Collin",
+      "dg_id": 22085,
+      "storyline": "Elite on approach (#5) aligns with course's premium on sg approach",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #5 in SG: On Approach among the field (+0.76)",
+          "confidence": "medium"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#5) aligns with course's premium on sg approach",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.198,
+        "sg_ott": 0.641,
+        "sg_app": 0.755,
+        "sg_arg": -0.004,
+        "sg_putt": -0.194,
+        "driving_dist": 0.637,
+        "driving_acc": 0.095,
+        "course_fit_adj": 0.027986942007892902,
+        "course_history_adj": -0.0121704170753291,
+        "final_pred": 1.0462796304143,
+        "baseline_pred": 0.916799968504098,
+        "win_prob": 0.0117666666666667,
+        "top_5_prob": 0.0722542063492063,
+        "top_10_prob": 0.145030550745551,
+        "make_cut_prob": 0.718733333333333
+      }
+    },
+    {
+      "player_name": "Penge, Marco",
+      "dg_id": 22465,
+      "storyline": "Ranks #2 in SG: Off The Tee among the field (+0.82)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #2 in SG: Off The Tee among the field (+0.82)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.605,
+        "sg_ott": 0.825,
+        "sg_app": 0.147,
+        "sg_arg": -0.212,
+        "sg_putt": -0.154,
+        "driving_dist": 19.664,
+        "driving_acc": -0.033,
+        "course_fit_adj": 0.0042937041043483,
+        "course_history_adj": 0.0,
+        "final_pred": 0.472711007684777,
+        "baseline_pred": 0.382353140223539,
+        "win_prob": 0.0049,
+        "top_5_prob": 0.0334324404761905,
+        "top_10_prob": 0.0744655369167869,
+        "make_cut_prob": 0.60075
+      }
+    },
+    {
+      "player_name": "Schauffele, Xander",
+      "dg_id": 19895,
+      "storyline": "Ranks #2 in SG: Overall among the field (+1.66) Data Golf model: #2 win probability (5.0%)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #2 in SG: Overall among the field (+1.66)",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #4 in SG: On Approach among the field (+0.78)",
+          "confidence": "medium"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#4) aligns with course's premium on sg approach",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Gains +0.086 strokes from course history (#9 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #2 win probability (5.0%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.655,
+        "sg_ott": 0.542,
+        "sg_app": 0.777,
+        "sg_arg": 0.153,
+        "sg_putt": 0.184,
+        "driving_dist": 12.365,
+        "driving_acc": -0.019,
+        "course_fit_adj": 0.0388808459479565,
+        "course_history_adj": 0.0860708778964992,
+        "final_pred": 1.86742249650156,
+        "baseline_pred": 1.52855925149995,
+        "win_prob": 0.0496833333333333,
+        "top_5_prob": 0.194702296777297,
+        "top_10_prob": 0.317153854016354,
+        "make_cut_prob": 0.831683333333333
+      }
+    },
+    {
+      "player_name": "Scheffler, Scottie",
+      "dg_id": 18417,
+      "storyline": "Ranks #1 in SG: Overall among the field (+3.10) Data Golf model: #1 win probability (26.0%)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #1 in SG: Overall among the field (+3.10)",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #1 in SG: Off The Tee among the field (+0.93)",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #1 in SG: On Approach among the field (+1.30)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#1) aligns with course's premium on sg approach",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #2 in SG: Around The Green among the field (+0.32)",
+          "confidence": "high"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #3 in SG: With The Putter among the field (+0.56)",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#3) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        },
+        {
+          "category": "course_fit",
+          "text": "Gains +0.096 strokes from overall course fit (#1 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #1 win probability (26.0%)",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "High-floor play: 95% make cut, 69% top-10",
+          "confidence": "medium"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 3.103,
+        "sg_ott": 0.928,
+        "sg_app": 1.298,
+        "sg_arg": 0.318,
+        "sg_putt": 0.56,
+        "driving_dist": 9.499,
+        "driving_acc": 0.059,
+        "course_fit_adj": 0.0955527175908589,
+        "course_history_adj": 0.0718796658569612,
+        "final_pred": 3.33427351550132,
+        "baseline_pred": 3.14420150393758,
+        "win_prob": 0.25975,
+        "top_5_prob": 0.548659167869168,
+        "top_10_prob": 0.689883205266955,
+        "make_cut_prob": 0.949083333333333
+      }
+    },
+    {
+      "player_name": "Simpson, Webb",
+      "dg_id": 11049,
+      "storyline": "Gains +0.102 strokes from course history (#4 in field) Strong course history: gains +0.10 strokes vs baseline",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.102 strokes from course history (#4 in field)",
+          "confidence": "high"
+        },
+        {
+          "category": "historical",
+          "text": "Strong course history: gains +0.10 strokes vs baseline",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.011,
+        "sg_ott": -0.132,
+        "sg_app": -0.016,
+        "sg_arg": 0.236,
+        "sg_putt": -0.076,
+        "driving_dist": -0.731,
+        "driving_acc": 0.002,
+        "course_fit_adj": 0.00403832913359997,
+        "course_history_adj": 0.102303342559287,
+        "final_pred": 0.135602354701179,
+        "baseline_pred": -0.0353833407812865,
+        "win_prob": 0.0021,
+        "top_5_prob": 0.0177684656084656,
+        "top_10_prob": 0.0452010064935065,
+        "make_cut_prob": 0.54375
+      }
+    },
+    {
+      "player_name": "Spaun, J.J.",
+      "dg_id": 17536,
+      "storyline": "Elite on approach (#7) aligns with course's premium on sg approach Data Golf model: #8 win probability (2.1%)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Elite on approach (#7) aligns with course's premium on sg approach",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #8 win probability (2.1%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.304,
+        "sg_ott": 0.467,
+        "sg_app": 0.657,
+        "sg_arg": 0.161,
+        "sg_putt": 0.019,
+        "driving_dist": 2.199,
+        "driving_acc": 0.038,
+        "course_fit_adj": 0.033050957763757,
+        "course_history_adj": 0.0196946917803993,
+        "final_pred": 1.42412529012461,
+        "baseline_pred": 1.37306612679594,
+        "win_prob": 0.02105,
+        "top_5_prob": 0.108895271164021,
+        "top_10_prob": 0.20501559001184,
+        "make_cut_prob": 0.775366666666667
+      }
+    },
+    {
+      "player_name": "Spieth, Jordan",
+      "dg_id": 14636,
+      "storyline": "Gains +0.096 strokes from course history (#5 in field)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.096 strokes from course history (#5 in field)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.731,
+        "sg_ott": 0.261,
+        "sg_app": 0.216,
+        "sg_arg": 0.152,
+        "sg_putt": 0.102,
+        "driving_dist": 6.709,
+        "driving_acc": -0.009,
+        "course_fit_adj": 0.020312689032322702,
+        "course_history_adj": 0.0958741979963796,
+        "final_pred": 0.846076765914182,
+        "baseline_pred": 0.72359233095123,
+        "win_prob": 0.0081666666666666,
+        "top_5_prob": 0.0507732371332371,
+        "top_10_prob": 0.110179849086099,
+        "make_cut_prob": 0.676516666666667
+      }
+    },
+    {
+      "player_name": "Taylor, Nick",
+      "dg_id": 13126,
+      "storyline": "Gains +0.082 strokes from course history (#10 in field)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.082 strokes from course history (#10 in field)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 0.672,
+        "sg_ott": 0.132,
+        "sg_app": 0.229,
+        "sg_arg": 0.169,
+        "sg_putt": 0.141,
+        "driving_dist": -5.572,
+        "driving_acc": 0.055,
+        "course_fit_adj": 0.0269126805631481,
+        "course_history_adj": 0.0820336003715161,
+        "final_pred": 0.869625785486639,
+        "baseline_pred": 0.785301174175469,
+        "win_prob": 0.0068333333333333,
+        "top_5_prob": 0.0493069660894661,
+        "top_10_prob": 0.107530336700337,
+        "make_cut_prob": 0.6845
+      }
+    },
+    {
+      "player_name": "Thorbjornsen, Michael",
+      "dg_id": 26649,
+      "storyline": "Ranks #5 in SG: Off The Tee among the field (+0.66)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #5 in SG: Off The Tee among the field (+0.66)",
+          "confidence": "medium"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.008,
+        "sg_ott": 0.656,
+        "sg_app": 0.325,
+        "sg_arg": -0.029,
+        "sg_putt": 0.056,
+        "driving_dist": 11.828,
+        "driving_acc": 0.007,
+        "course_fit_adj": 0.0283901545487551,
+        "course_history_adj": -0.0253532309442205,
+        "final_pred": 1.03667597540438,
+        "baseline_pred": 0.714073807237815,
+        "win_prob": 0.0126166666666667,
+        "top_5_prob": 0.0741265945165945,
+        "top_10_prob": 0.145574788961039,
+        "make_cut_prob": 0.707033333333333
+      }
+    },
+    {
+      "player_name": "Woodland, Gary",
+      "dg_id": 12577,
+      "storyline": "Gains +0.090 strokes from course history (#6 in field)",
+      "insights": [
+        {
+          "category": "course_fit",
+          "text": "Gains +0.090 strokes from course history (#6 in field)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": -0.113,
+        "sg_ott": 0.282,
+        "sg_app": -0.029,
+        "sg_arg": -0.329,
+        "sg_putt": -0.038,
+        "driving_dist": 9.457,
+        "driving_acc": -0.002,
+        "course_fit_adj": -0.0039295658774357,
+        "course_history_adj": 0.089702474125396,
+        "final_pred": 0.143184474619795,
+        "baseline_pred": 0.0355399568755786,
+        "win_prob": 0.0022833333333333,
+        "top_5_prob": 0.0197509060846561,
+        "top_10_prob": 0.0473514003126503,
+        "make_cut_prob": 0.545466666666667
+      }
+    },
+    {
+      "player_name": "Young, Cameron",
+      "dg_id": 26651,
+      "storyline": "Elite with the putter (#4) aligns with course's premium on putting bermuda Data Golf model: #3 win probability (3.5%)",
+      "insights": [
+        {
+          "category": "skill",
+          "text": "Ranks #5 in SG: Overall among the field (+1.49)",
+          "confidence": "medium"
+        },
+        {
+          "category": "skill",
+          "text": "Ranks #4 in SG: With The Putter among the field (+0.45)",
+          "confidence": "medium"
+        },
+        {
+          "category": "course_fit",
+          "text": "Elite with the putter (#4) aligns with course's premium on putting bermuda",
+          "confidence": "high"
+        },
+        {
+          "category": "prediction",
+          "text": "Data Golf model: #3 win probability (3.5%)",
+          "confidence": "high"
+        }
+      ],
+      "key_stats": {
+        "sg_total": 1.486,
+        "sg_ott": 0.502,
+        "sg_app": 0.396,
+        "sg_arg": 0.138,
+        "sg_putt": 0.451,
+        "driving_dist": 11.951,
+        "driving_acc": -0.021,
+        "course_fit_adj": 0.0486463778848293,
+        "course_history_adj": 0.0260195702153358,
+        "final_pred": 1.65543859717713,
+        "baseline_pred": 1.38660331240515,
+        "win_prob": 0.0348333333333333,
+        "top_5_prob": 0.153421911375661,
+        "top_10_prob": 0.264671455026455,
+        "make_cut_prob": 0.803366666666667
+      }
+    }
+  ]
+}

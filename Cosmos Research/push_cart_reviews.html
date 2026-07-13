@@ -1,0 +1,329 @@
+<div class="cosmos-pushcart-preview">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+    .cosmos-pushcart-preview{--primary-blue:#0B3D91;--accent-green:#0a7a3f;--accent-red:#b00020;--accent-gold:#b07d00;--accent-cyan:#005bbb;--bg-white:#fff;--bg-light:#f8f9fa;--text-dark:#1a1a1a;--text-muted:#6c757d;--border-light:#dee2e6;box-sizing:border-box;font-family:'Rajdhani',sans-serif;background:var(--bg-white)!important;color:var(--text-dark)!important;min-height:100vh;overflow-x:hidden;margin:0;padding:0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;}
+    @media(max-width:768px){.cosmos-pushcart-preview{width:100%;position:static;left:auto;right:auto;margin-left:0;margin-right:0;}}
+    .cosmos-pushcart-preview *{box-sizing:border-box;}
+    .cosmos-pushcart-preview .container{max-width:100%;width:100%;margin:0 auto;padding:15px;}
+    .cosmos-pushcart-preview header{display:flex;justify-content:space-between;align-items:flex-start;padding:20px 15px;border-bottom:1px solid var(--border-light);background:var(--bg-white);flex-wrap:wrap;gap:15px;}
+    .cosmos-pushcart-preview .header-left{flex:1;min-width:240px;}
+    .cosmos-pushcart-preview .mission-tag{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--primary-blue);letter-spacing:3px;margin-bottom:8px;opacity:.8;}
+    .cosmos-pushcart-preview h1{font-family:'Orbitron',sans-serif;font-size:28px;font-weight:800;color:var(--text-dark);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+    .cosmos-pushcart-preview .subtitle{font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);font-weight:500;}
+    .cosmos-pushcart-preview .logo-container{display:flex;align-items:center;justify-content:flex-end;}
+    .cosmos-pushcart-preview .logo-container img{height:60px;width:auto;}
+    .cosmos-pushcart-preview .executive-summary{margin:20px 15px;padding:16px;background:linear-gradient(135deg,#f0f7ff 0%,#e8f4f8 100%);border:1px solid var(--primary-blue);border-radius:12px;font-size:14px;line-height:1.5;}
+    .cosmos-pushcart-preview .section-header{margin:24px 15px 12px;}
+    .cosmos-pushcart-preview .section-header h2{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:800;letter-spacing:1px;margin:0 0 8px 0;text-transform:uppercase;}
+    .cosmos-pushcart-preview .section-line{height:2px;background:var(--text-dark);width:60px;}
+    .cosmos-pushcart-preview .review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px;margin:0 15px 24px;}
+    .cosmos-pushcart-preview .review-card{border:1px solid var(--border-light);border-radius:12px;background:var(--bg-white);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 6px rgba(0,0,0,0.04);}
+    .cosmos-pushcart-preview .review-card.editors-pick{border-left:4px solid var(--accent-green);}
+    .cosmos-pushcart-preview .review-card.value-pick{border-left:4px solid var(--accent-cyan);}
+    .cosmos-pushcart-preview .review-image{width:100%;aspect-ratio:1/1;background:var(--bg-light);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);overflow:hidden;padding:24px;}
+    .cosmos-pushcart-preview .review-image img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;}
+    .cosmos-pushcart-preview .review-image .image-placeholder{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text-muted);letter-spacing:2px;text-align:center;padding:20px;}
+    .cosmos-pushcart-preview .review-body{padding:20px;display:flex;flex-direction:column;gap:14px;flex:1;}
+    .cosmos-pushcart-preview .award-badge{display:inline-block;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;padding:4px 8px;border-radius:4px;text-transform:uppercase;align-self:flex-start;}
+    .cosmos-pushcart-preview .award-badge.editors{background:var(--accent-green);color:#fff;}
+    .cosmos-pushcart-preview .award-badge.value{background:var(--accent-cyan);color:#fff;}
+    .cosmos-pushcart-preview .review-title{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:800;letter-spacing:1px;margin:0;}
+    .cosmos-pushcart-preview .review-tagline{font-size:13px;color:var(--text-muted);margin:-8px 0 0;}
+    .cosmos-pushcart-preview .score-row{display:flex;align-items:center;gap:14px;padding:12px;background:var(--bg-light);border-radius:8px;border:1px solid var(--border-light);}
+    .cosmos-pushcart-preview .score-block{display:flex;flex-direction:column;align-items:center;min-width:64px;}
+    .cosmos-pushcart-preview .score-value{font-family:'Orbitron',sans-serif;font-size:26px;font-weight:800;color:var(--primary-blue);line-height:1;}
+    .cosmos-pushcart-preview .score-label{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase;margin-top:4px;}
+    .cosmos-pushcart-preview .stars{color:var(--accent-gold);font-size:16px;letter-spacing:2px;}
+    .cosmos-pushcart-preview .review-summary{font-size:14px;line-height:1.55;color:var(--text-dark);}
+    .cosmos-pushcart-preview .specs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 14px;font-size:12px;}
+    .cosmos-pushcart-preview .spec-row{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dashed var(--border-light);}
+    .cosmos-pushcart-preview .spec-label{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;}
+    .cosmos-pushcart-preview .spec-value{font-weight:600;text-align:right;}
+    .cosmos-pushcart-preview .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+    .cosmos-pushcart-preview .pros,.cosmos-pushcart-preview .cons{padding:12px;border-radius:8px;font-size:13px;}
+    .cosmos-pushcart-preview .pros{background:rgba(10,122,63,0.06);border:1px solid rgba(10,122,63,0.2);}
+    .cosmos-pushcart-preview .cons{background:rgba(176,0,32,0.05);border:1px solid rgba(176,0,32,0.18);}
+    .cosmos-pushcart-preview .pros-title,.cosmos-pushcart-preview .cons-title{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+    .cosmos-pushcart-preview .pros-title{color:var(--accent-green);}
+    .cosmos-pushcart-preview .cons-title{color:var(--accent-red);}
+    .cosmos-pushcart-preview .pros ul,.cosmos-pushcart-preview .cons ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;}
+    .cosmos-pushcart-preview .pros li::before{content:"+ ";color:var(--accent-green);font-weight:700;font-family:'Share Tech Mono',monospace;}
+    .cosmos-pushcart-preview .cons li::before{content:"- ";color:var(--accent-red);font-weight:700;font-family:'Share Tech Mono',monospace;}
+    .cosmos-pushcart-preview .verdict-block{background:linear-gradient(135deg,#f0f4f8 0%,#e8ecf1 100%);border-left:3px solid var(--primary-blue);padding:12px 14px;border-radius:6px;font-size:13px;line-height:1.5;}
+    .cosmos-pushcart-preview .verdict-label{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--primary-blue);text-transform:uppercase;margin-bottom:4px;}
+    .cosmos-pushcart-preview .tldr-block{background:linear-gradient(135deg,#f0f4f8 0%,#e8ecf1 100%);border-left:3px solid var(--primary-blue);padding:12px 14px;border-radius:6px;font-size:14px;line-height:1.55;}
+    .cosmos-pushcart-preview .tldr-label{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--primary-blue);text-transform:uppercase;margin-bottom:6px;}
+    .cosmos-pushcart-preview .tldr-block p{margin:0;}
+    .cosmos-pushcart-preview .top-features{display:flex;flex-direction:column;gap:8px;}
+    .cosmos-pushcart-preview .features-title{font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--primary-blue);}
+    .cosmos-pushcart-preview .features-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:13.5px;line-height:1.45;}
+    .cosmos-pushcart-preview .features-list li{display:flex;gap:10px;align-items:flex-start;padding:8px 12px;background:var(--bg-light);border:1px solid var(--border-light);border-radius:6px;}
+    .cosmos-pushcart-preview .features-list li::before{content:"▸";color:var(--accent-green);font-family:'Share Tech Mono',monospace;font-weight:700;font-size:14px;flex-shrink:0;line-height:1.4;}
+    .cosmos-pushcart-preview .price-block{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;background:var(--text-dark);color:var(--bg-white);border-radius:8px;}
+    .cosmos-pushcart-preview .price-left{display:flex;flex-direction:column;}
+    .cosmos-pushcart-preview .price-label{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--bg-white);text-transform:uppercase;opacity:0.7;}
+    .cosmos-pushcart-preview .price-value{font-family:'Orbitron',sans-serif;font-size:24px;font-weight:800;letter-spacing:1px;line-height:1.1;margin-top:2px;}
+    .cosmos-pushcart-preview .price-note{font-family:'Rajdhani',sans-serif;font-size:11px;opacity:0.7;text-align:right;}
+    .cosmos-pushcart-preview .video-link{display:inline-flex;align-items:center;gap:8px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:10px 14px;border-radius:8px;border:1px solid var(--primary-blue);background:var(--bg-white);color:var(--primary-blue);text-decoration:none;align-self:flex-start;transition:all 0.15s ease;}
+    .cosmos-pushcart-preview .video-link:hover{background:var(--primary-blue);color:var(--bg-white);}
+    .cosmos-pushcart-preview .video-link .play-icon{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--primary-blue);color:var(--bg-white);font-size:9px;line-height:1;}
+    .cosmos-pushcart-preview .video-link:hover .play-icon{background:var(--bg-white);color:var(--primary-blue);}
+    .cosmos-pushcart-preview .video-link .video-source{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:1px;opacity:0.7;font-weight:400;}
+    .cosmos-pushcart-preview .cta-button{display:flex;align-items:center;justify-content:center;gap:8px;font-family:'Orbitron',sans-serif;font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:16px 18px;border-radius:8px;border:1px solid var(--primary-blue);background:var(--primary-blue);color:var(--bg-white);cursor:pointer;text-decoration:none;transition:all 0.15s ease;margin-top:auto;box-shadow:0 4px 12px rgba(11,61,145,0.25);}
+    .cosmos-pushcart-preview .cta-button:hover{background:var(--bg-white);color:var(--primary-blue);box-shadow:0 6px 16px rgba(11,61,145,0.35);transform:translateY(-1px);}
+    .cosmos-pushcart-preview .cta-button.disabled{background:var(--bg-light);color:var(--text-muted);border-color:var(--border-light);cursor:not-allowed;pointer-events:none;box-shadow:none;}
+    .cosmos-pushcart-preview .cta-sub{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--text-muted);text-align:center;margin-top:6px;}
+    .cosmos-pushcart-preview .compare-table-wrap{margin:0 15px 24px;border:1px solid var(--border-light);border-radius:8px;overflow-x:auto;}
+    .cosmos-pushcart-preview .compare-table{width:100%;border-collapse:collapse;font-size:13px;}
+    .cosmos-pushcart-preview .compare-table th{background:var(--bg-light);font-family:'Share Tech Mono',monospace;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;padding:12px 10px;text-align:left;border-bottom:2px solid var(--border-light);}
+    .cosmos-pushcart-preview .compare-table td{padding:12px 10px;border-bottom:1px solid var(--border-light);vertical-align:middle;}
+    .cosmos-pushcart-preview .compare-table tr:last-child td{border-bottom:none;}
+    .cosmos-pushcart-preview .compare-table .product-name{font-family:'Orbitron',sans-serif;font-weight:700;font-size:13px;}
+    .cosmos-pushcart-preview .buyers-guide{margin:0 15px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+    .cosmos-pushcart-preview .guide-card{border:1px solid var(--border-light);border-radius:8px;padding:14px 16px;background:var(--bg-white);}
+    .cosmos-pushcart-preview .guide-card.tip{border-left:4px solid var(--accent-cyan);}
+    .cosmos-pushcart-preview .guide-card.warn{border-left:4px solid var(--accent-gold);}
+    .cosmos-pushcart-preview .guide-title{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;color:var(--primary-blue);}
+    .cosmos-pushcart-preview .guide-text{font-size:13px;line-height:1.5;color:var(--text-dark);}
+    .cosmos-pushcart-preview .faq-block{margin:0 15px 24px;display:flex;flex-direction:column;gap:8px;}
+    .cosmos-pushcart-preview .faq-item{border:1px solid var(--border-light);border-radius:8px;padding:14px 16px;background:var(--bg-white);}
+    .cosmos-pushcart-preview .faq-q{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.5px;margin-bottom:6px;}
+    .cosmos-pushcart-preview .faq-a{font-size:13px;line-height:1.5;color:var(--text-muted);}
+    .cosmos-pushcart-preview .disclosure{margin:0 15px 16px;padding:12px 14px;background:var(--bg-light);border:1px dashed var(--border-light);border-radius:6px;font-size:12px;line-height:1.5;color:var(--text-muted);}
+    .cosmos-pushcart-preview .disclosure strong{font-family:'Share Tech Mono',monospace;letter-spacing:1px;color:var(--primary-blue);}
+    .cosmos-pushcart-preview footer{margin-top:24px;padding:16px;border-top:1px solid var(--border-light);font-size:12px;color:var(--text-muted);text-align:center;}
+    @media(max-width:520px){
+        .cosmos-pushcart-preview .pros-cons{grid-template-columns:1fr;}
+        .cosmos-pushcart-preview .specs-grid{grid-template-columns:1fr;}
+    }
+    </style>
+
+    <header>
+        <div class="header-left">
+            <div class="mission-tag">// GEAR LAB - PUSH CARTS 2026</div>
+            <h1>Best Push Carts</h1>
+            <div class="subtitle">Tested, ranked & reviewed by the COSMOS Golf crew</div>
+        </div>
+        <div class="logo-container">
+            <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/COSMOS_Golf-Dec-Logo_001.png" alt="COSMOS Golf">
+        </div>
+    </header>
+
+    <div class="executive-summary">
+        A great push cart should disappear under your bag — smooth roll, fast fold, no rattles. We logged dozens of rounds across both three-wheel and four-wheel designs to find the carts that actually hold up. Two stood above the rest: the <strong>Bag Boy Nitron</strong> for sheer reliability and value, and the <strong>Big Max Blade Trio</strong> for the most compact footprint we've ever folded into a trunk. Below are the full reviews, head-to-head specs, and a quick buyer's guide so you can pick the right one on the first try.
+    </div>
+
+    <div class="section-header">
+        <h2>Top Picks</h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="review-grid">
+
+        <div class="review-card editors-pick">
+            <div class="review-image">
+                <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/bagboynitron.webp?v=1777487509" alt="Bag Boy Nitron Push Cart">
+            </div>
+            <div class="review-body">
+                <span class="award-badge editors">Editor's Pick</span>
+                <h3 class="review-title">Bag Boy Nitron</h3>
+                <div class="review-tagline">The dependable workhorse — proven, smooth, and built to last.</div>
+
+                <div class="score-row">
+                    <div class="score-block">
+                        <div class="score-value">9.4</div>
+                        <div class="score-label">Cosmos Score</div>
+                    </div>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">Tested over 40+ rounds in 2025-26</div>
+                    </div>
+                </div>
+
+                <a class="video-link" href="https://www.instagram.com/reel/DXj8KpZD9Uo/" target="_blank" rel="noopener">
+                    <span class="play-icon">▶</span>
+                    <span>Watch Video</span>
+                    <span class="video-source">// Instagram</span>
+                </a>
+
+                <div class="tldr-block">
+                    <div class="tldr-label">// TL;DR</div>
+                    <p>The Nitron is Bag Boy's modern flagship — and it's the cart most of the COSMOS crew actually walks with. The auto-open mechanism takes you from trunk to first tee in two seconds flat, the deck handles any stand or cart bag without complaint, and the build feels like it could survive a full season on a cart path. It's not the flashiest cart on the rack, but it's the one you'll still be pushing in 2031.</p>
+                </div>
+
+                <div class="top-features">
+                    <div class="features-title">Top 5 Features</div>
+                    <ul class="features-list">
+                        <li><span><strong>Nitro-Piston auto-open.</strong> The cart's namesake — a gas-charged piston pops it open in one motion, no kneeling on the ground required.</span></li>
+                        <li><span><strong>TopLok bag security.</strong> Bag Boy's patented strap system locks any stand or cart bag in place — zero slip, zero rattle on rough paths.</span></li>
+                        <li><span><strong>XL low-friction wheels.</strong> Larger-diameter wheels roll smoother through wet grass, rough, and uneven terrain than standard cart wheels.</span></li>
+                        <li><span><strong>Foot-activated parking brake.</strong> Engages cleanly on slopes and never drifts mid-shot.</span></li>
+                        <li><span><strong>Deluxe storage console.</strong> Top deck has a beverage holder, ball/tee tray, accessory mount, and a mesh net for your scorecard and phone.</span></li>
+                    </ul>
+                </div>
+
+                <div class="price-block">
+                    <div class="price-left">
+                        <div class="price-label">// Price</div>
+                        <div class="price-value">$319.95</div>
+                    </div>
+                    <div class="price-note">Live price<br>on Amazon</div>
+                </div>
+
+                <a class="cta-button" href="https://amzn.to/3ONI2mY" target="_blank" rel="sponsored noopener">
+                    Shop Now on Amazon
+                </a>
+                <div class="cta-sub">// Affiliate Link · Supports COSMOS Golf</div>
+            </div>
+        </div>
+
+        <div class="review-card value-pick">
+            <div class="review-image">
+                <img src="https://cdn.shopify.com/s/files/1/0775/8928/3061/files/blade_Trio.webp?v=1777487509" alt="Big Max Blade Trio Push Cart">
+            </div>
+            <div class="review-body">
+                <span class="award-badge value">Best Compact Fold</span>
+                <h3 class="review-title">Big Max Blade Trio</h3>
+                <div class="review-tagline">Folds flatter than your laptop bag — engineering wizardry on three wheels.</div>
+
+                <div class="score-row">
+                    <div class="score-block">
+                        <div class="score-value">9.2</div>
+                        <div class="score-label">Cosmos Score</div>
+                    </div>
+                    <div>
+                        <div class="stars">★★★★½</div>
+                        <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">Tested over 25+ rounds in 2025-26</div>
+                    </div>
+                </div>
+
+                <a class="video-link" href="https://www.instagram.com/reel/DX-FZcbSBPk/" target="_blank" rel="noopener">
+                    <span class="play-icon">▶</span>
+                    <span>Watch Video</span>
+                    <span class="video-source">// Instagram</span>
+                </a>
+
+                <div class="tldr-block">
+                    <div class="tldr-label">// TL;DR</div>
+                    <p>The Blade Trio is the cart you buy if trunk space is precious. Big Max's flat-fold engineering collapses it to roughly the thickness of a laptop bag — it slides under back seats and beside spare tires where most carts simply won't go, then snaps back to full size in seconds. Beyond the party trick, it pushes light, tracks straight, and has the premium fit-and-finish you'd expect at this price point.</p>
+                </div>
+
+                <div class="top-features">
+                    <div class="features-title">Top 5 Features</div>
+                    <ul class="features-list">
+                        <li><span><strong>Patented blade-fold design.</strong> Collapses to ~5 inches thick — fits in sedans, EVs, and tight closets where standard carts can't.</span></li>
+                        <li><span><strong>Ultralight chassis at ~17 lbs.</strong> Easy to lift in and out of the trunk every round, no back strain.</span></li>
+                        <li><span><strong>360° swivel front wheel.</strong> Lock it straight for fairway tracking, or let it pivot freely for tight turns around the green.</span></li>
+                        <li><span><strong>Rear foot brake.</strong> The red lever on the back axle engages cleanly and holds firm on slopes — no drift mid-shot.</span></li>
+                        <li><span><strong>Integrated cockpit.</strong> Handle has a 3-click height adjustment, scorecard panel, and ball/tee holders built right in.</span></li>
+                    </ul>
+                </div>
+
+                <div class="price-block">
+                    <div class="price-left">
+                        <div class="price-label">// Price</div>
+                        <div class="price-value">$349.99</div>
+                    </div>
+                    <div class="price-note">Live price<br>on Amazon</div>
+                </div>
+
+                <a class="cta-button" href="https://amzn.to/3QT7pEm" target="_blank" rel="sponsored noopener">
+                    Shop Now on Amazon
+                </a>
+                <div class="cta-sub">// Affiliate Link · Supports COSMOS Golf</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-header">
+        <h2>Head-to-Head</h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="compare-table-wrap">
+        <table class="compare-table">
+            <thead>
+                <tr>
+                    <th>Spec</th>
+                    <th>Bag Boy Nitron</th>
+                    <th>Big Max Blade Trio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><span class="spec-label">Wheels</span></td><td class="product-name">3-Wheel</td><td class="product-name">3-Wheel</td></tr>
+                <tr><td><span class="spec-label">Fold Style</span></td><td>One-Pull Auto-Open</td><td>Flat / Blade Fold</td></tr>
+                <tr><td><span class="spec-label">Folded Footprint</span></td><td>Standard</td><td>Ultra-Slim (~5 in)</td></tr>
+                <tr><td><span class="spec-label">Push Feel</span></td><td>Stable & Predictable</td><td>Light & Smooth</td></tr>
+                <tr><td><span class="spec-label">Storage</span></td><td>Console + Pocket</td><td>Console + Net</td></tr>
+                <tr><td><span class="spec-label">Best For</span></td><td>Daily Walking Rounds</td><td>Travel / Small Cars</td></tr>
+                <tr><td><span class="spec-label">Price</span></td><td><strong>$319.95</strong></td><td><strong>$349.99</strong></td></tr>
+                <tr><td><span class="spec-label">Cosmos Score</span></td><td><strong style="color:var(--accent-green);">9.4</strong></td><td><strong style="color:var(--accent-cyan);">9.2</strong></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-header">
+        <h2>Buyer's Guide</h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="buyers-guide">
+        <div class="guide-card tip">
+            <div class="guide-title">3-Wheel vs 4-Wheel</div>
+            <div class="guide-text">Three-wheel carts pivot easier and feel more athletic; four-wheel carts are more stable on slopes. For most walking golfers, three wheels is the sweet spot.</div>
+        </div>
+        <div class="guide-card tip">
+            <div class="guide-title">Fold Matters Most</div>
+            <div class="guide-text">You'll fold and unfold this thing 100+ times a year. Two-step or flat-fold designs save your back and your trunk.</div>
+        </div>
+        <div class="guide-card tip">
+            <div class="guide-title">Brake Quality</div>
+            <div class="guide-text">A foot brake should engage cleanly and never drift. Test it on any slope before committing to a cart you'll keep.</div>
+        </div>
+        <div class="guide-card warn">
+            <div class="guide-title">Skip the Gimmicks</div>
+            <div class="guide-text">Bluetooth speakers, GPS mounts, USB ports — nice to have, but a wobbly frame ruins them all. Buy the chassis first, accessorize second.</div>
+        </div>
+        <div class="guide-card tip">
+            <div class="guide-title">Bag Compatibility</div>
+            <div class="guide-text">Confirm your stand or cart bag fits the upper and lower brackets. Most major brands play nice, but oversized tour bags can be a squeeze.</div>
+        </div>
+        <div class="guide-card warn">
+            <div class="guide-title">Wheel Size</div>
+            <div class="guide-text">Larger wheels handle wet, sandy, or hilly courses far better. If you walk Florida or links-style turf, prioritize bigger wheels.</div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <h2>FAQ</h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="faq-block">
+        <div class="faq-item">
+            <div class="faq-q">Is a push cart actually better than carrying?</div>
+            <div class="faq-a">For most golfers, yes. Studies and our own testing show pushing burns nearly the same calories as carrying without the back fatigue, and your scores typically improve over the back nine because you're fresher.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Three wheels or four?</div>
+            <div class="faq-a">Three is more maneuverable and lighter. Four is more stable when stopped on a slope. Both of our top picks are three-wheel for a reason — most courses don't need the extra stability.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">How long should a quality push cart last?</div>
+            <div class="faq-a">A well-built cart from a trusted brand should last 5-10+ years of regular play. The Bag Boy in particular has a reputation for outlasting the bags people put on it.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Are these carts allowed on all courses?</div>
+            <div class="faq-a">Yes, push carts are permitted at virtually every public and private course. A few high-end private clubs restrict them on certain days — always check ahead if you're a guest.</div>
+        </div>
+    </div>
+
+    <div class="disclosure">
+        <strong>// AFFILIATE DISCLOSURE</strong> — COSMOS Golf may earn a small commission when you purchase through links on this page, at no extra cost to you. We only recommend gear we've personally tested and would buy ourselves. Reviews and rankings are independent of any affiliate relationship.
+    </div>
+
+    <footer>
+        © COSMOS Golf · Gear tested by the crew · Updated April 2026
+    </footer>
+</div>

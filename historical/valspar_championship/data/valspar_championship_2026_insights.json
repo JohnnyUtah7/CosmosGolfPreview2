@@ -1,0 +1,72 @@
+{
+  "tournament": "Valspar Championship",
+  "generated_at": "2026-03-16T22:09:52Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "The Valspar Championship presents exceptional value at the top with Xander Schauffele (+1230) and Matt Fitzpatrick (+1450) showing massive model edges of 7.4% and 6.4% respectively, both ranking #1 and #2 in total strokes gained. Schauffele leads the field in approach play (+0.83 SG) and comes off a T5 finish here last year, while Viktor Hovland (+2532) offers compelling value with his #2 approach game (+0.76 SG) and fresh off his win two weeks ago. The course rewards ball-striking precision, making these iron play specialists prime targets in a field lacking true elite talent.",
+  "insights": [
+    {
+      "title": "Schauffele Shows Massive Model Edge",
+      "insight": "Despite +1230 odds, Schauffele carries a 7.5% model win probability and leads the field in both total strokes gained (+1.84) and approach play (+0.83). His T5 finish here in 2024 and T12 start to 2025 suggest he's primed for contention.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Fitzpatrick Undervalued Despite Elite Profile",
+      "insight": "At +1450 odds with a 6.5% model win rate, Fitzpatrick ranks #2 in strokes gained (+1.69) and #4 in approach play (+0.67). His positive course fit (+0.025) adds confidence in this ball-striking focused event.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Hovland Offers Winner Value Post-Victory",
+      "insight": "Fresh off his win two weeks ago, Hovland's +2532 odds seem generous given his #2 approach ranking (+0.76 SG) and positive course fit (+0.036). His 3.8% model win probability suggests strong upside.",
+      "players": [
+        "Viktor Hovland"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Bridgeman's Putter Provides Edge",
+      "insight": "Leading the field in putting (+0.69 SG) with a T3 finish two weeks ago, Bridgeman's +2539 odds offer value despite slightly negative course fit. His 3.8% model win rate supports the number.",
+      "players": [
+        "Jacob Bridgeman"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Spaun Underpriced With Elite Irons",
+      "insight": "Ranking #5 in approach play (+0.64 SG) with positive course fit (+0.027), Spaun's +3858 odds appear inflated. His 2.5% model win probability suggests value despite the 2024 missed cut here.",
+      "players": [
+        "J.J. Spaun"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Thomas Facing Course Fit Challenge",
+      "insight": "Despite strong recent form (T2 finish) and +3930 odds, Thomas shows poor course fit (-0.119) and managed only T64 here in 2024. His approach game ranks outside the top ball-strikers.",
+      "players": [
+        "Justin Thomas"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Theegala Headlines Longshot Value",
+      "insight": "At +5064 odds, Theegala offers solid strokes gained (+0.91) with 16.8% top-10 probability. His well-rounded game profiles better than the odds suggest for this demanding test.",
+      "players": [
+        "Sahith Theegala"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Conners Shows Strong Course Match",
+      "insight": "With the best course fit adjustment (+0.116) among favorites and a T8 two weeks ago, Conners' +4439 odds may undervalue his suitability for this venue despite modest overall strokes gained.",
+      "players": [
+        "Corey Conners"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

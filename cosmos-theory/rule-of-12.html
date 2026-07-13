@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rule of 12 — Chipping Made Simple | Cosmos Golf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-500: #6b7280;
+      --gray-700: #374151;
+      --gray-900: #111827;
+      --green-400: #4ade80;
+      --green-500: #22c55e;
+      --green-600: #16a34a;
+      --green-700: #15803d;
+      --green-900: #14532d;
+      --accent: #22c55e;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      color: rgba(0, 0, 0, 0.85);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 80px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(34,197,94,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green-400);
+      border: 1px solid rgba(34,197,94,0.3);
+      padding: 6px 18px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: var(--green-400); }
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Section ── */
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--gray-200); }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green-600);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: var(--gray-900);
+    }
+    p { margin-bottom: 16px; color: var(--gray-700); }
+
+    /* ── Formula Card ── */
+    .formula-card {
+      background: var(--black);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 48px 32px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .formula-card .formula-label {
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green-400);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .formula {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .formula .num { color: var(--green-400); font-size: 1.3em; }
+    .formula .op { color: rgba(255,255,255,0.4); font-weight: 300; }
+    .formula .label-text {
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      display: block;
+      margin-top: 4px;
+      font-weight: 400;
+    }
+    .formula-part { text-align: center; }
+    .formula-note {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+      font-weight: 300;
+    }
+
+    /* ── Club Chart ── */
+    .club-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 32px 0;
+    }
+    .club-row {
+      display: grid;
+      grid-template-columns: 80px 60px 1fr 28px 80px;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--gray-50);
+      border-radius: 12px;
+      border: 1px solid var(--gray-100);
+      transition: all 0.2s;
+    }
+    .club-row:hover {
+      background: var(--white);
+      border-color: var(--green-500);
+      box-shadow: 0 2px 12px rgba(34,197,94,0.1);
+    }
+    .club-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--gray-900);
+    }
+    .club-ratio {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      font-weight: 500;
+    }
+    .ratio-bar-container {
+      position: relative;
+      height: 28px;
+      background: var(--gray-200);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+    }
+    .ratio-air {
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      height: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: white;
+      letter-spacing: 0.5px;
+      border-right: 2px solid rgba(255,255,255,0.5);
+    }
+    .ratio-roll-seg {
+      background: linear-gradient(135deg, var(--green-400), var(--green-600));
+      height: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: white;
+      letter-spacing: 0.5px;
+      border-right: 2px solid rgba(255,255,255,0.3);
+    }
+    .ratio-roll-seg:last-child {
+      border-right: none;
+    }
+    .pin-flag {
+      flex-shrink: 0;
+      align-self: center;
+    }
+    .club-result {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--green-700);
+      text-align: right;
+    }
+
+    .chart-legend {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 0.8rem;
+      color: var(--gray-500);
+    }
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+    .legend-dot {
+      width: 12px; height: 12px; border-radius: 3px;
+    }
+    .legend-dot.air { background: linear-gradient(135deg, #60a5fa, #3b82f6); }
+    .legend-dot.roll { background: linear-gradient(135deg, var(--green-400), var(--green-600)); }
+
+    /* ── Visual Diagram ── */
+    .diagram-wrapper {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 32px 24px;
+      margin: 32px 0;
+      overflow-x: auto;
+    }
+    .diagram-title {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      text-align: center;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    /* ── Steps ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 32px 0;
+    }
+    .step {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 14px;
+      padding: 28px 24px;
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; height: 36px;
+      background: var(--black);
+      color: var(--green-400);
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+    .step h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--gray-900);
+    }
+    .step p {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* ── Callout Box ── */
+    .callout {
+      background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border: 1px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin: 32px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .callout-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 2px;
+    }
+    .callout p { margin-bottom: 0; color: var(--green-900); font-size: 0.95rem; }
+    .callout strong { color: var(--green-700); }
+
+    /* ── Video ── */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      margin: 32px 0;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
+    /* ── Quick Ref Table ── */
+    .quick-ref {
+      background: var(--black);
+      border-radius: 16px;
+      padding: 40px 32px;
+      margin: 32px 0;
+      color: var(--white);
+    }
+    .quick-ref h3 {
+      font-size: 0.7rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green-400);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    }
+    .ref-item {
+      text-align: center;
+      padding: 20px 12px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .ref-club {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--green-400);
+      display: block;
+    }
+    .ref-parts {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 4px;
+      display: block;
+    }
+    .ref-desc {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 8px;
+      display: block;
+    }
+
+    /* ── Interactive Calculator ── */
+    .calc-card {
+      background: var(--gray-50);
+      border: 2px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 40px 32px;
+      margin: 32px 0;
+      text-align: center;
+    }
+    .calc-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--gray-900);
+    }
+    .calc-card > p {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      margin-bottom: 28px;
+    }
+    .calc-inputs {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: end;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .calc-group { text-align: left; }
+    .calc-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      margin-bottom: 6px;
+    }
+    .calc-group select, .calc-group input {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      padding: 10px 16px;
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      background: var(--white);
+      color: var(--gray-900);
+      font-weight: 500;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 160px;
+    }
+    .calc-group select:focus, .calc-group input:focus {
+      border-color: var(--green-500);
+    }
+    .calc-result {
+      padding: 20px;
+      background: var(--white);
+      border-radius: 12px;
+      border: 2px solid var(--gray-200);
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    .calc-result.active {
+      border-color: var(--green-500);
+      background: #f0fdf4;
+    }
+    .calc-result-label {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      margin-bottom: 4px;
+    }
+    .calc-result-value {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+    .calc-result-detail {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      margin-top: 4px;
+    }
+
+    /* ── Footer CTA ── */
+    .footer-cta {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 64px 24px;
+    }
+    .footer-cta h2 {
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .footer-cta p {
+      color: rgba(255,255,255,0.5);
+      max-width: 480px;
+      margin: 0 auto 28px;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--green-500);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 100px;
+      transition: all 0.2s;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .cta-btn:hover { background: var(--green-600); transform: translateY(-1px); }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .hero { padding: 60px 20px 48px; }
+      section { padding: 48px 0; }
+      .club-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .ratio-bar-container { grid-column: 1 / -1; }
+      .pin-flag { display: none; }
+      .club-result { text-align: left; }
+      .formula { font-size: 1.3rem; gap: 10px; }
+      .formula-card { padding: 32px 20px; }
+      .quick-ref { padding: 28px 20px; }
+      .ref-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .calc-inputs { flex-direction: column; align-items: center; }
+      .calc-group select, .calc-group input { width: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════ HERO ════════ -->
+<div class="hero">
+  <div class="hero-badge">Short Game Fundamentals</div>
+  <h1>The Rule of <span>12</span></h1>
+  <p>The simplest way to pick the right club for every chip shot. No guessing, no feel — just math that works.</p>
+</div>
+
+<div class="container">
+
+  <!-- ════════ VIDEO (TOP) ════════ -->
+  <section style="border: none;">
+    <div class="section-label">Watch It First</div>
+    <h2>See the Rule of 12 in Action</h2>
+    <p>Before we break it down, watch this quick video to see the Rule of 12 applied on a real green. Then scroll down for the full explanation, visuals, and a calculator you can use on the course.</p>
+
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/TogWMZpUEDw"
+        title="Rule of 12 - Chipping Made Simple"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ════════ WHAT IS IT ════════ -->
+  <section>
+    <div class="section-label">The Concept</div>
+    <h2>What is the Rule of 12?</h2>
+    <p>
+      Here's the deal: most amateur golfers grab their sand wedge for every chip and try to hit some magical flop shot they saw on TV. That works about as well as you'd expect. The Rule of 12 takes the guesswork out of chipping by giving you a dead-simple formula to pick the right club every time.
+    </p>
+    <p>
+      The idea is straightforward — every chip shot is a combination of <strong>air time</strong> (carry) and <strong>ground time</strong> (roll). Different clubs produce different carry multipliers. Take 12, subtract your club number, and you get a multiplier. Multiply that by your carry distance and you get the <strong>total distance</strong> the ball travels — carry and roll combined.
+    </p>
+
+    <!-- Formula Card -->
+    <div class="formula-card">
+      <div class="formula-label">The Formula</div>
+      <div class="formula">
+        <div class="formula-part">
+          <span>(</span><span class="num">12</span>
+          <span class="label-text">constant</span>
+        </div>
+        <span class="op">−</span>
+        <div class="formula-part">
+          <span>Club #)</span>
+          <span class="label-text">loft number</span>
+        </div>
+        <span class="op">×</span>
+        <div class="formula-part">
+          <span>Carry</span>
+          <span class="label-text">carry distance</span>
+        </div>
+        <span class="op">=</span>
+        <div class="formula-part">
+          <span class="num">Total Distance</span>
+          <span class="label-text">carry + roll combined</span>
+        </div>
+      </div>
+      <div class="formula-note">(12 − Club #) is your carry multiplier. The result is your total distance — carry is already included.</div>
+    </div>
+
+    <p>
+      Here's how you actually use it on the course. You start with two numbers: <strong>how far is the pin</strong>, and <strong>how far do you need to carry the ball</strong> to land on a good spot on the green. Then you work backwards to find the right club.
+    </p>
+    <p>
+      Say the pin is <strong>8 feet away</strong> and you need <strong>2 feet of carry</strong> to clear the fringe. Divide 8 by 2 = <strong>4</strong>. That's the carry multiplier you need. Now: 12 minus 4 = <strong>8</strong> — grab your <strong>8-iron</strong>. The ball carries 2ft, rolls 6ft, and you're at the hole in 8ft total.
+    </p>
+    <p>
+      What if the pin is <strong>10 feet out</strong> with the same 2ft carry? 10 ÷ 2 = <strong>5</strong>. 12 minus 5 = <strong>7</strong> — that's a <strong>7-iron</strong>. Need only <strong>4 feet total</strong> with 2ft carry? 4 ÷ 2 = <strong>2</strong>. 12 minus 2 = <strong>10</strong> — that's your <strong>pitching wedge</strong>. Always start from the pin and work backwards.
+    </p>
+  </section>
+
+  <!-- ════════ VISUAL BREAKDOWN ════════ -->
+  <section>
+    <div class="section-label">Visual Breakdown</div>
+    <h2>Air vs. Roll by Club</h2>
+    <p>
+      This is where it clicks. Look at how the air-to-roll ratio shifts as you go from a low iron to a wedge. The bars below show how each club splits a chip into carry (blue) and roll (green).
+    </p>
+
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-dot air"></div> 1× Carry (air)</div>
+      <div class="legend-item"><div class="legend-dot roll"></div> Roll segments (each = 1× carry)</div>
+    </div>
+
+    <div class="club-grid">
+      <!-- 6 Iron: ×6 total = 1 air + 5 roll segments -->
+      <div class="club-row">
+        <span class="club-name">6 Iron</span>
+        <span class="club-ratio">×6</span>
+        <div class="ratio-bar-container">
+          <div class="ratio-air">1×</div>
+          <div class="ratio-roll-seg">2×</div>
+          <div class="ratio-roll-seg">3×</div>
+          <div class="ratio-roll-seg">4×</div>
+          <div class="ratio-roll-seg">5×</div>
+          <div class="ratio-roll-seg">6×</div>
+        </div>
+        <svg class="pin-flag" viewBox="0 0 24 36" width="24" height="36"><line x1="12" y1="4" x2="12" y2="36" stroke="#333" stroke-width="2"/><polygon points="12,4 24,9 12,14" fill="#ef4444"/><ellipse cx="12" cy="34" rx="5" ry="2" fill="#333" opacity="0.2"/></svg>
+        <span class="club-result">Most roll</span>
+      </div>
+      <!-- 7 Iron: ×5 total = 1 air + 4 roll segments -->
+      <div class="club-row">
+        <span class="club-name">7 Iron</span>
+        <span class="club-ratio">×5</span>
+        <div class="ratio-bar-container">
+          <div class="ratio-air">1×</div>
+          <div class="ratio-roll-seg">2×</div>
+          <div class="ratio-roll-seg">3×</div>
+          <div class="ratio-roll-seg">4×</div>
+          <div class="ratio-roll-seg">5×</div>
+        </div>
+        <svg class="pin-flag" viewBox="0 0 24 36" width="24" height="36"><line x1="12" y1="4" x2="12" y2="36" stroke="#333" stroke-width="2"/><polygon points="12,4 24,9 12,14" fill="#ef4444"/><ellipse cx="12" cy="34" rx="5" ry="2" fill="#333" opacity="0.2"/></svg>
+        <span class="club-result"></span>
+      </div>
+      <!-- 8 Iron: ×4 total = 1 air + 3 roll segments -->
+      <div class="club-row">
+        <span class="club-name">8 Iron</span>
+        <span class="club-ratio">×4</span>
+        <div class="ratio-bar-container">
+          <div class="ratio-air">1×</div>
+          <div class="ratio-roll-seg">2×</div>
+          <div class="ratio-roll-seg">3×</div>
+          <div class="ratio-roll-seg">4×</div>
+        </div>
+        <svg class="pin-flag" viewBox="0 0 24 36" width="24" height="36"><line x1="12" y1="4" x2="12" y2="36" stroke="#333" stroke-width="2"/><polygon points="12,4 24,9 12,14" fill="#ef4444"/><ellipse cx="12" cy="34" rx="5" ry="2" fill="#333" opacity="0.2"/></svg>
+        <span class="club-result"></span>
+      </div>
+      <!-- 9 Iron: ×3 total = 1 air + 2 roll segments -->
+      <div class="club-row">
+        <span class="club-name">9 Iron</span>
+        <span class="club-ratio">×3</span>
+        <div class="ratio-bar-container">
+          <div class="ratio-air">1×</div>
+          <div class="ratio-roll-seg">2×</div>
+          <div class="ratio-roll-seg">3×</div>
+        </div>
+        <svg class="pin-flag" viewBox="0 0 24 36" width="24" height="36"><line x1="12" y1="4" x2="12" y2="36" stroke="#333" stroke-width="2"/><polygon points="12,4 24,9 12,14" fill="#ef4444"/><ellipse cx="12" cy="34" rx="5" ry="2" fill="#333" opacity="0.2"/></svg>
+        <span class="club-result"></span>
+      </div>
+      <!-- PW: ×2 total = 1 air + 1 roll segment -->
+      <div class="club-row">
+        <span class="club-name">PW</span>
+        <span class="club-ratio">×2</span>
+        <div class="ratio-bar-container">
+          <div class="ratio-air">1×</div>
+          <div class="ratio-roll-seg">2×</div>
+        </div>
+        <svg class="pin-flag" viewBox="0 0 24 36" width="24" height="36"><line x1="12" y1="4" x2="12" y2="36" stroke="#333" stroke-width="2"/><polygon points="12,4 24,9 12,14" fill="#ef4444"/><ellipse cx="12" cy="34" rx="5" ry="2" fill="#333" opacity="0.2"/></svg>
+        <span class="club-result"></span>
+      </div>
+      <!-- SW: ×1 total = 1 air + 0 roll segments -->
+      <div class="club-row">
+        <span class="club-name">SW</span>
+        <span class="club-ratio">×1</span>
+        <div class="ratio-bar-container">
+          <div class="ratio-air" style="border-right:none;">1×</div>
+        </div>
+        <svg class="pin-flag" viewBox="0 0 24 36" width="24" height="36"><line x1="12" y1="4" x2="12" y2="36" stroke="#333" stroke-width="2"/><polygon points="12,4 24,9 12,14" fill="#ef4444"/><ellipse cx="12" cy="34" rx="5" ry="2" fill="#333" opacity="0.2"/></svg>
+        <span class="club-result">All carry</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-icon">&#9971;</div>
+      <div>
+        <p><strong>The key insight:</strong> you're using a putting stroke for all of these. Same motion, same tempo — the only thing that changes is the club in your hand. The loft does the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ DIAGRAM ════════ -->
+  <section>
+    <div class="section-label">Example</div>
+    <h2>How It Looks on the Course</h2>
+    <p>
+      Say you're sitting just off the green with 2 feet of carry to your landing spot. You grab an 8-iron — that's a ×4 carry multiplier. So 4 × 2ft = 8 feet total distance (carry included). The ball flies 2 feet, lands, and rolls the remaining 6 feet to the hole.
+    </p>
+
+    <div class="diagram-wrapper">
+      <div class="diagram-title">8-Iron Chip — 2ft carry × 4 = 8 feet total</div>
+      <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+        <!-- Ground -->
+        <rect x="0" y="140" width="160" height="50" fill="#d4a76a" rx="0"/>
+        <rect x="160" y="140" width="640" height="50" fill="#22c55e" rx="0"/>
+        <line x1="160" y1="140" x2="160" y2="190" stroke="#15803d" stroke-width="2"/>
+
+        <!-- Fringe label -->
+        <text x="80" y="170" text-anchor="middle" fill="#8B6914" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">FRINGE</text>
+        <text x="480" y="170" text-anchor="middle" fill="#15803d" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">GREEN</text>
+
+        <!-- Ball -->
+        <circle cx="100" cy="132" r="8" fill="white" stroke="#333" stroke-width="1.5"/>
+
+        <!-- Arc path (air) — 2ft carry -->
+        <path d="M 100 132 Q 155 65 240 132" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="6 4"/>
+        <text x="155" y="78" text-anchor="middle" fill="#3b82f6" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">CARRY</text>
+        <text x="155" y="92" text-anchor="middle" fill="#3b82f6" font-family="Space Grotesk,sans-serif" font-size="10">(2ft)</text>
+
+        <!-- Landing spot -->
+        <circle cx="240" cy="138" r="4" fill="#3b82f6" opacity="0.5"/>
+        <text x="240" y="125" text-anchor="middle" fill="#3b82f6" font-family="Space Grotesk,sans-serif" font-size="9" font-weight="600">LAND</text>
+
+        <!-- Roll line — 6ft roll -->
+        <line x1="248" y1="138" x2="590" y2="138" stroke="#22c55e" stroke-width="3"/>
+        <!-- Roll dots -->
+        <circle cx="310" cy="138" r="2.5" fill="#22c55e" opacity="0.3"/>
+        <circle cx="370" cy="138" r="2.5" fill="#22c55e" opacity="0.5"/>
+        <circle cx="430" cy="138" r="2.5" fill="#22c55e" opacity="0.6"/>
+        <circle cx="490" cy="138" r="2.5" fill="#22c55e" opacity="0.7"/>
+        <circle cx="550" cy="138" r="2.5" fill="#22c55e" opacity="0.8"/>
+
+        <text x="420" y="125" text-anchor="middle" fill="#16a34a" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">ROLL</text>
+        <text x="420" y="112" text-anchor="middle" fill="#16a34a" font-family="Space Grotesk,sans-serif" font-size="10">(6ft)</text>
+
+        <!-- Hole -->
+        <ellipse cx="598" cy="139" rx="10" ry="5" fill="#111"/>
+        <line x1="598" y1="139" x2="598" y2="100" stroke="#333" stroke-width="1.5"/>
+        <rect x="598" y="95" width="24" height="14" fill="#ef4444" rx="1"/>
+        <text x="610" y="105" text-anchor="middle" fill="white" font-family="Space Grotesk,sans-serif" font-size="8" font-weight="700">PIN</text>
+
+        <!-- Total distance bracket -->
+        <line x1="100" y1="198" x2="598" y2="198" stroke="#999" stroke-width="1"/>
+        <text x="350" y="215" text-anchor="middle" fill="#666" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">8ft total  =  (12 − 8) × 2ft carry  |  includes 2ft air + 6ft roll</text>
+      </svg>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Find Your Carry</h3>
+        <p>Figure out how far you need to carry the ball to land on the flattest spot on the green. Here that's 2 feet.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Pick Your Club</h3>
+        <p>Choose the club that gets you to the pin. 8-iron has a ×4 multiplier, so 4 × 2ft = 8ft total. If the hole is 8ft away, that's your club.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Do the Math</h3>
+        <p>8-iron: 12 − 8 = 4. That's your carry multiplier. 4 × 2ft carry = 8ft total (2ft air + 6ft roll).</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Use a Putting Stroke</h3>
+        <p>No wrist hinge. No big backswing. Just a smooth putting stroke and let the loft do the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CALCULATOR ════════ -->
+  <section>
+    <div class="section-label">Try It Yourself</div>
+    <h2>Chip Shot Calculator</h2>
+    <p>Plug in your numbers and see what club to grab. This mirrors exactly what you'd do on the course.</p>
+
+    <div class="calc-card">
+      <h3>Where Should I Land It?</h3>
+      <p>Start with the pin. Enter how far away it is, pick your club, and find out where to aim your landing spot.</p>
+      <div class="calc-inputs">
+        <div class="calc-group">
+          <label>Distance to Pin (ft)</label>
+          <input type="number" id="calcPin" min="1" max="100" placeholder="e.g. 15" oninput="calculate()">
+        </div>
+        <div class="calc-group">
+          <label>Club</label>
+          <select id="calcClubSelect" oninput="calculate()">
+            <option value="">Select...</option>
+            <option value="6">6 Iron (×6)</option>
+            <option value="7">7 Iron (×5)</option>
+            <option value="8">8 Iron (×4)</option>
+            <option value="9">9 Iron (×3)</option>
+            <option value="10">PW (×2)</option>
+            <option value="11">SW (×1)</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-result" id="calcResult">
+        <div class="calc-result-label">Landing Spot / Carry</div>
+        <div class="calc-result-value" id="calcClub">—</div>
+        <div class="calc-result-detail" id="calcDetail">Enter distance to pin and select a club</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ QUICK REF ════════ -->
+  <section style="border: none; padding-bottom: 32px;">
+    <div class="section-label">Cheat Sheet</div>
+    <h2>Quick Reference Card</h2>
+    <p>Screenshot this or save it to your phone. Pull it up next time you're on the course until the ratios become second nature.</p>
+
+    <div class="quick-ref">
+      <h3>Rule of 12 — Carry Multipliers</h3>
+      <div class="ref-grid">
+        <div class="ref-item">
+          <span class="ref-club">6i</span>
+          <span class="ref-parts">×6 total</span>
+          <span class="ref-desc">Bump & run</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-club">7i</span>
+          <span class="ref-parts">×5 total</span>
+          <span class="ref-desc">Low runner</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-club">8i</span>
+          <span class="ref-parts">×4 total</span>
+          <span class="ref-desc">Standard chip</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-club">9i</span>
+          <span class="ref-parts">×3 total</span>
+          <span class="ref-desc">Mid flight</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-club">PW</span>
+          <span class="ref-parts">×2 total</span>
+          <span class="ref-desc">Higher chip</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-club">SW</span>
+          <span class="ref-parts">×1 total</span>
+          <span class="ref-desc">Lob / stop</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-icon">&#128161;</div>
+      <div>
+        <p><strong>Pro tip:</strong> The Rule of 12 works best on flat greens with a standard putting stroke. Adjust for slopes — uphill means less roll, downhill means more. Wet greens also reduce roll, so consider going one club lower.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ════════ FOOTER CTA ════════ -->
+<div class="footer-cta">
+  <div class="container">
+    <h2>Step Into the Cosmos</h2>
+    <p>More tips, gear reviews, and podcast episodes from the Cosmos Golf crew.</p>
+    <a href="https://www.golfinthecosmos.com" class="cta-btn">Explore Cosmos Golf</a>
+  </div>
+</div>
+
+<script>
+  function calculate() {
+    const pinDist = parseFloat(document.getElementById('calcPin').value);
+    const clubVal = document.getElementById('calcClubSelect').value;
+    const resultEl = document.getElementById('calcResult');
+    const clubEl = document.getElementById('calcClub');
+    const detailEl = document.getElementById('calcDetail');
+
+    if (!pinDist || pinDist <= 0 || !clubVal) {
+      clubEl.textContent = '—';
+      detailEl.textContent = 'Enter distance to pin and select a club';
+      resultEl.classList.remove('active');
+      return;
+    }
+
+    const clubNum = parseInt(clubVal);
+    const multiplier = 12 - clubNum;
+    const carry = pinDist / multiplier;
+    const rollDist = pinDist - carry;
+    const clubNames = { 6: '6 Iron', 7: '7 Iron', 8: '8 Iron', 9: '9 Iron', 10: 'PW', 11: 'SW' };
+
+    const carryDisplay = Number.isInteger(carry) ? carry : carry.toFixed(1);
+    const rollDisplay = Number.isInteger(rollDist) ? rollDist : rollDist.toFixed(1);
+
+    clubEl.textContent = carryDisplay + ' ft carry';
+    detailEl.textContent = `${pinDist}ft to pin ÷ ${multiplier} (${clubNames[clubNum]}) = land it ${carryDisplay}ft out (${rollDisplay}ft roll)`;
+    resultEl.classList.add('active');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2625 @@
+{
+  "tournament": {
+    "name": "The American Express"
+  },
+  "odds": {
+    "Scottie Scheffler": {
+      "bookmaker": "DraftKings",
+      "odds": 250,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": -160,
+      "top10": -310
+    },
+    "Ludvig Aberg": {
+      "bookmaker": "DraftKings",
+      "odds": 2000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 400,
+      "top10": 210
+    },
+    "Patrick Cantlay": {
+      "bookmaker": "DraftKings",
+      "odds": 2500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 475,
+      "top10": 235
+    },
+    "Russell Henley": {
+      "bookmaker": "DraftKings",
+      "odds": 2500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 450,
+      "top10": 215
+    },
+    "Sam Burns": {
+      "bookmaker": "DraftKings",
+      "odds": 2000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 400,
+      "top10": 205
+    },
+    "Robert MacIntyre": {
+      "bookmaker": "DraftKings",
+      "odds": 2800,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 500,
+      "top10": 250
+    },
+    "Matt Fitzpatrick": {
+      "bookmaker": "DraftKings",
+      "odds": 3000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 550,
+      "top10": 270
+    },
+    "Ben Griffin": {
+      "bookmaker": "DraftKings",
+      "odds": 1800,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 350,
+      "top10": 175
+    },
+    "Harry Hall": {
+      "bookmaker": "DraftKings",
+      "odds": 3500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 650,
+      "top10": 310
+    },
+    "Si Woo Kim": {
+      "bookmaker": "DraftKings",
+      "odds": 5000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 800,
+      "top10": 370
+    },
+    "Sepp Straka": {
+      "bookmaker": "DraftKings",
+      "odds": 3500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 600,
+      "top10": 300
+    },
+    "Justin Thomas": {
+      "bookmaker": "DraftKings",
+      "odds": 3500
+    },
+    "Keegan Bradley": {
+      "bookmaker": "DraftKings",
+      "odds": 4000
+    },
+    "Nick Taylor": {
+      "bookmaker": "DraftKings",
+      "odds": 7000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1000,
+      "top10": 475
+    },
+    "Max Homa": {
+      "bookmaker": "DraftKings",
+      "odds": 10000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1400,
+      "top10": 650
+    },
+    "Sungjae Im": {
+      "bookmaker": "DraftKings",
+      "odds": 5000
+    },
+    "Tom Kim": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1300
+    },
+    "Denny McCarthy": {
+      "bookmaker": "DraftKings",
+      "odds": 7500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1100,
+      "top10": 500
+    },
+    "J.T. Poston": {
+      "bookmaker": "DraftKings",
+      "odds": 6500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1000,
+      "top10": 475
+    },
+    "Taylor Moore": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4000,
+      "top10": 1500
+    },
+    "Rickie Fowler": {
+      "bookmaker": "DraftKings",
+      "odds": 5000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 800,
+      "top10": 370
+    },
+    "Stephan Jaeger": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1100
+    },
+    "K.H. Lee": {
+      "bookmaker": "DraftKings",
+      "odds": 8000
+    },
+    "Andrew Putnam": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1800
+    },
+    "Chad Ramey": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5000,
+      "top10": 1900
+    },
+    "Harris English": {
+      "bookmaker": "DraftKings",
+      "odds": 4500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 750,
+      "top10": 350
+    },
+    "Erik van Rooyen": {
+      "bookmaker": "DraftKings",
+      "odds": 12000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1500
+    },
+    "Austin Eckroat": {
+      "bookmaker": "DraftKings",
+      "odds": 18000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 1000
+    },
+    "Cameron Young": {
+      "bookmaker": "DraftKings",
+      "odds": 13000
+    },
+    "Michael Kim": {
+      "bookmaker": "DraftKings",
+      "odds": 10000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1400,
+      "top10": 600
+    },
+    "Byeong Hun An": {
+      "bookmaker": "DraftKings",
+      "odds": 18000
+    },
+    "Carl Yuan": {
+      "bookmaker": "DraftKings",
+      "odds": 25000
+    },
+    "Taylor Pendrith": {
+      "bookmaker": "DraftKings",
+      "odds": 4000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 700,
+      "top10": 330
+    },
+    "Rasmus Hojgaard": {
+      "bookmaker": "DraftKings",
+      "odds": 4500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 800,
+      "top10": 380
+    },
+    "Alex Noren": {
+      "bookmaker": "DraftKings",
+      "odds": 4500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 750,
+      "top10": 350
+    },
+    "Kurt Kitayama": {
+      "bookmaker": "DraftKings",
+      "odds": 4500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 800,
+      "top10": 370
+    },
+    "Michael Thorbjornsen": {
+      "bookmaker": "DraftKings",
+      "odds": 5000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 800,
+      "top10": 390
+    },
+    "Davis Thompson": {
+      "bookmaker": "DraftKings",
+      "odds": 5500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 900,
+      "top10": 425
+    },
+    "Min Woo Lee": {
+      "bookmaker": "DraftKings",
+      "odds": 5500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 900,
+      "top10": 425
+    },
+    "Justin Rose": {
+      "bookmaker": "DraftKings",
+      "odds": 6000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1000,
+      "top10": 450
+    },
+    "Jason Day": {
+      "bookmaker": "DraftKings",
+      "odds": 6000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 950,
+      "top10": 450
+    },
+    "Akshay Bhatia": {
+      "bookmaker": "DraftKings",
+      "odds": 6000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 950,
+      "top10": 450
+    },
+    "Adam Scott": {
+      "bookmaker": "DraftKings",
+      "odds": 6000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 950,
+      "top10": 450
+    },
+    "Wyndham Clark": {
+      "bookmaker": "DraftKings",
+      "odds": 7000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1100,
+      "top10": 500
+    },
+    "Daniel Berger": {
+      "bookmaker": "DraftKings",
+      "odds": 7000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1000,
+      "top10": 475
+    },
+    "Rico Hoey": {
+      "bookmaker": "DraftKings",
+      "odds": 7000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1000,
+      "top10": 500
+    },
+    "Kevin Yu": {
+      "bookmaker": "DraftKings",
+      "odds": 7000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1000,
+      "top10": 500
+    },
+    "Keith Mitchell": {
+      "bookmaker": "DraftKings",
+      "odds": 7500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1100,
+      "top10": 500
+    },
+    "Christiaan Bezuidenhout": {
+      "bookmaker": "DraftKings",
+      "odds": 7500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1100,
+      "top10": 500
+    },
+    "Pierceson Coody": {
+      "bookmaker": "DraftKings",
+      "odds": 7500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1100,
+      "top10": 550
+    },
+    "Max Greyserman": {
+      "bookmaker": "DraftKings",
+      "odds": 7500,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1100,
+      "top10": 500
+    },
+    "Will Zalatoris": {
+      "bookmaker": "DraftKings",
+      "odds": 8000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1200,
+      "top10": 550
+    },
+    "Ryan Gerard": {
+      "bookmaker": "DraftKings",
+      "odds": 8000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1200,
+      "top10": 550
+    },
+    "Alex Smalley": {
+      "bookmaker": "DraftKings",
+      "odds": 9000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1300,
+      "top10": 600
+    },
+    "Jacob Bridgeman": {
+      "bookmaker": "DraftKings",
+      "odds": 10000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1500,
+      "top10": 650
+    },
+    "Sam Stevens": {
+      "bookmaker": "DraftKings",
+      "odds": 10000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1500,
+      "top10": 650
+    },
+    "Emiliano Grillo": {
+      "bookmaker": "DraftKings",
+      "odds": 11000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1500,
+      "top10": 700
+    },
+    "John Keefer": {
+      "bookmaker": "DraftKings",
+      "odds": 12000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1800,
+      "top10": 800
+    },
+    "Haotong Li": {
+      "bookmaker": "DraftKings",
+      "odds": 12000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1800,
+      "top10": 800
+    },
+    "Matthias Schmid": {
+      "bookmaker": "DraftKings",
+      "odds": 12000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1700,
+      "top10": 800
+    },
+    "Sami Valimaki": {
+      "bookmaker": "DraftKings",
+      "odds": 13000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1800,
+      "top10": 750
+    },
+    "Brian Harman": {
+      "bookmaker": "DraftKings",
+      "odds": 13000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1800,
+      "top10": 750
+    },
+    "Matt Wallace": {
+      "bookmaker": "DraftKings",
+      "odds": 13000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1800,
+      "top10": 750
+    },
+    "John Parry": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1900,
+      "top10": 800
+    },
+    "Jhonattan Vegas": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1900,
+      "top10": 850
+    },
+    "Jesper Svensson": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2000,
+      "top10": 900
+    },
+    "Vince Whaley": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1900,
+      "top10": 800
+    },
+    "Matt McCarty": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1800,
+      "top10": 800
+    },
+    "Sahith Theegala": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 1900,
+      "top10": 850
+    },
+    "Patrick Rodgers": {
+      "bookmaker": "DraftKings",
+      "odds": 14000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2000,
+      "top10": 850
+    },
+    "William Mouw": {
+      "bookmaker": "DraftKings",
+      "odds": 15000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2000,
+      "top10": 850
+    },
+    "Andrew Novak": {
+      "bookmaker": "DraftKings",
+      "odds": 15000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2000,
+      "top10": 850
+    },
+    "Gary Woodland": {
+      "bookmaker": "DraftKings",
+      "odds": 16000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2000,
+      "top10": 950
+    },
+    "Mackenzie Hughes": {
+      "bookmaker": "DraftKings",
+      "odds": 16000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2000,
+      "top10": 900
+    },
+    "Seamus Power": {
+      "bookmaker": "DraftKings",
+      "odds": 17000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 950
+    },
+    "Ricky Castillo": {
+      "bookmaker": "DraftKings",
+      "odds": 17000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 950
+    },
+    "Nick Dunlap": {
+      "bookmaker": "DraftKings",
+      "odds": 17000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1100
+    },
+    "Kevin Roy": {
+      "bookmaker": "DraftKings",
+      "odds": 17000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 950
+    },
+    "Jordan Smith": {
+      "bookmaker": "DraftKings",
+      "odds": 18000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 1000
+    },
+    "Bud Cauley": {
+      "bookmaker": "DraftKings",
+      "odds": 18000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 1000
+    },
+    "Billy Horschel": {
+      "bookmaker": "DraftKings",
+      "odds": 18000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2200,
+      "top10": 1000
+    },
+    "Steven Fisk": {
+      "bookmaker": "DraftKings",
+      "odds": 19000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1000
+    },
+    "Aldrich Potgieter": {
+      "bookmaker": "DraftKings",
+      "odds": 19000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1100
+    },
+    "Neal Shipley": {
+      "bookmaker": "DraftKings",
+      "odds": 19000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1000
+    },
+    "Mac Meissner": {
+      "bookmaker": "DraftKings",
+      "odds": 19000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1000
+    },
+    "Doug Ghim": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1000
+    },
+    "Davis Riley": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1100
+    },
+    "Chris Kirk": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1000
+    },
+    "Kris Ventura": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1100
+    },
+    "Patrick Fishburn": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1100
+    },
+    "Michael Brennan": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1200
+    },
+    "Matt Kuchar": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2500,
+      "top10": 1000
+    },
+    "Luke Clanton": {
+      "bookmaker": "DraftKings",
+      "odds": 20000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2800,
+      "top10": 1200
+    },
+    "Eric Cole": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1400
+    },
+    "Tony Finau": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1200
+    },
+    "Daniel Brown": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1300
+    },
+    "Takumi Kanaya": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 2800,
+      "top10": 1100
+    },
+    "Chandler Phillips": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1300
+    },
+    "Nicolas Echavarria": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1300
+    },
+    "Lee Hodges": {
+      "bookmaker": "DraftKings",
+      "odds": 25000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3000,
+      "top10": 1300
+    },
+    "David Ford": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4000,
+      "top10": 1500
+    },
+    "Max McGreevy": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1400
+    },
+    "Sam Ryder": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1500
+    },
+    "Zecheng Dou": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1400
+    },
+    "Adrien Dumont De Chassart": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1500
+    },
+    "Mark Hubbard": {
+      "bookmaker": "DraftKings",
+      "odds": 30000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 3500,
+      "top10": 1400
+    },
+    "Jackson Suber": {
+      "bookmaker": "DraftKings",
+      "odds": 35000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4000,
+      "top10": 1600
+    },
+    "Carson Young": {
+      "bookmaker": "DraftKings",
+      "odds": 35000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1700
+    },
+    "Alejandro Tosti": {
+      "bookmaker": "DraftKings",
+      "odds": 35000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4000,
+      "top10": 1600
+    },
+    "Keita Nakajima": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1700
+    },
+    "Justin Lower": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1800
+    },
+    "Tom Hoge": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5000,
+      "top10": 1900
+    },
+    "Chan Kim": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1800
+    },
+    "Cameron Davis": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1800
+    },
+    "Beau Hossler": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1800
+    },
+    "Adam Schenk": {
+      "bookmaker": "DraftKings",
+      "odds": 40000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4500,
+      "top10": 1800
+    },
+    "Karl Vilips": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5500,
+      "top10": 2200
+    },
+    "Charley Hoffman": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5500,
+      "top10": 2000
+    },
+    "Chandler Blanchet": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5000,
+      "top10": 1900
+    },
+    "Seung Taek Lee": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5000,
+      "top10": 2000
+    },
+    "Patton Kizzire": {
+      "bookmaker": "DraftKings",
+      "odds": 45000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5000,
+      "top10": 1900
+    },
+    "Isaiah Salinda": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5500,
+      "top10": 2200
+    },
+    "Sudarshan Yellamaraju": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6000,
+      "top10": 2200
+    },
+    "Ryo Hisatsune": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5500,
+      "top10": 2000
+    },
+    "Austin Smotherman": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5500,
+      "top10": 2200
+    },
+    "Adrien Saddier": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6000,
+      "top10": 2200
+    },
+    "Adam Svensson": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 5500,
+      "top10": 2000
+    },
+    "Matthieu Pavon": {
+      "bookmaker": "DraftKings",
+      "odds": 50000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6000,
+      "top10": 2200
+    },
+    "John Vanderlaan": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6500,
+      "top10": 2500
+    },
+    "Joel Dahmen": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6500,
+      "top10": 2500
+    },
+    "Joe Highsmith": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 7000,
+      "top10": 2500
+    },
+    "Dylan Wu": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6500,
+      "top10": 2200
+    },
+    "Christo Lamprecht": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6500,
+      "top10": 2500
+    },
+    "Brice Garnett": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6000,
+      "top10": 2200
+    },
+    "Brandt Snedeker": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6000,
+      "top10": 2200
+    },
+    "Blades Brown": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 7000,
+      "top10": 2500
+    },
+    "Pontus Nyholm": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 7000,
+      "top10": 2500
+    },
+    "Lanto Griffin": {
+      "bookmaker": "DraftKings",
+      "odds": 60000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 6500,
+      "top10": 2200
+    },
+    "Harry Higgs": {
+      "bookmaker": "DraftKings",
+      "odds": 70000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 7500,
+      "top10": 2800
+    },
+    "David Lipsky": {
+      "bookmaker": "DraftKings",
+      "odds": 70000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 7000,
+      "top10": 2500
+    },
+    "Zach Johnson": {
+      "bookmaker": "DraftKings",
+      "odds": 80000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 7500,
+      "top10": 2500
+    },
+    "Camilo Villegas": {
+      "bookmaker": "DraftKings",
+      "odds": 90000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 10000,
+      "top10": 3500
+    },
+    "Frankie Capan III": {
+      "bookmaker": "DraftKings",
+      "odds": 90000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 9000,
+      "top10": 3500
+    },
+    "Kensei Hirata": {
+      "bookmaker": "DraftKings",
+      "odds": 90000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 9000,
+      "top10": 3000
+    },
+    "Jimmy Stanger": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 12000,
+      "top10": 4500
+    },
+    "Hank Lebioda": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 10000,
+      "top10": 3500
+    },
+    "Gordon Sargent": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 11000,
+      "top10": 4000
+    },
+    "Emilio Gonzalez": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 9000,
+      "top10": 3500
+    },
+    "Zach Bauchou": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 10000,
+      "top10": 3500
+    },
+    "Davis Chatfield": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 10000,
+      "top10": 3500
+    },
+    "Danny Walker": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 11000,
+      "top10": 4000
+    },
+    "Brian Campbell": {
+      "bookmaker": "DraftKings",
+      "odds": 100000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 12000,
+      "top10": 4000
+    },
+    "Jeffrey Kang": {
+      "bookmaker": "DraftKings",
+      "odds": 200000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 17000,
+      "top10": 6000
+    },
+    "Peter Malnati": {
+      "bookmaker": "DraftKings",
+      "odds": 200000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 17000,
+      "top10": 5500
+    },
+    "Kevin Streelman": {
+      "bookmaker": "DraftKings",
+      "odds": 200000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 18000,
+      "top10": 6000
+    },
+    "Jason Dufner": {
+      "bookmaker": "DraftKings",
+      "odds": 400000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 35000,
+      "top10": 11000
+    },
+    "A.J. Ewart": {
+      "bookmaker": "DraftKings",
+      "odds": 400000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 40000,
+      "top10": 12000
+    },
+    "Marcelo Rozo": {
+      "bookmaker": "DraftKings",
+      "odds": 400000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 45000,
+      "top10": 14000
+    },
+    "Rafael Campos": {
+      "bookmaker": "DraftKings",
+      "odds": 500000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 45000,
+      "top10": 16000
+    },
+    "Andrew Landry": {
+      "bookmaker": "DraftKings",
+      "odds": 500000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 50000,
+      "top10": 20000
+    },
+    "Adam Long": {
+      "bookmaker": "DraftKings",
+      "odds": 500000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 50000,
+      "top10": 19000
+    },
+    "Michael Block": {
+      "bookmaker": "DraftKings",
+      "odds": 500000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 50000,
+      "top10": 40000
+    },
+    "S.H. Kim": {
+      "bookmaker": "DraftKings",
+      "odds": 35000,
+      "imported_at": "2026-01-19T19:51:25.569419+00:00",
+      "source_url": "https://sportsbook.draftkings.com/leagues/golf/the-american-express",
+      "top5": 4000
+    }
+  },
+  "players": {
+    "Scottie Scheffler": {
+      "country": "USA",
+      "owgr": "1",
+      "history_2024": "T17",
+      "history_2023": "T11",
+      "history_2025": "NA"
+    },
+    "Ludvig Aberg": {
+      "country": "SWE",
+      "owgr": "18",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Patrick Cantlay": {
+      "country": "USA",
+      "owgr": "27",
+      "history_2024": "T52",
+      "history_2023": "T26",
+      "history_2025": "T5"
+    },
+    "Russell Henley": {
+      "country": "USA",
+      "owgr": "5",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "NA"
+    },
+    "Sam Burns": {
+      "country": "USA",
+      "owgr": "25",
+      "history_2024": "T6",
+      "history_2023": "T11",
+      "history_2025": "T29"
+    },
+    "Robert MacIntyre": {
+      "country": "SCO",
+      "owgr": "6",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Matt Fitzpatrick": {
+      "country": "ENG",
+      "owgr": "22",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "NA"
+    },
+    "Ben Griffin": {
+      "country": "USA",
+      "owgr": "8",
+      "history_2024": "T9",
+      "history_2023": "T32",
+      "history_2025": "T7"
+    },
+    "Harry Hall": {
+      "country": "ENG",
+      "owgr": "54",
+      "history_2025": "T21",
+      "history_2024": "MC",
+      "history_2023": "T41"
+    },
+    "Si Woo Kim": {
+      "country": "KOR",
+      "owgr": "42",
+      "history_2024": "T25",
+      "history_2023": "T22",
+      "history_2025": "T51"
+    },
+    "Sepp Straka": {
+      "country": "AUT",
+      "owgr": "12",
+      "history_2024": "NA",
+      "history_2025": "1",
+      "history_2023": "NA"
+    },
+    "Justin Thomas": {
+      "country": "USA",
+      "owgr": "9",
+      "history_2023": "NA",
+      "history_2025": "2",
+      "history_2024": "T3"
+    },
+    "Keegan Bradley": {
+      "country": "USA",
+      "owgr": "16",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "NA"
+    },
+    "Nick Taylor": {
+      "country": "CAN",
+      "owgr": "51",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "T12"
+    },
+    "Max Homa": {
+      "country": "USA",
+      "owgr": "21",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "NA"
+    },
+    "Sungjae Im": {
+      "country": "KOR",
+      "owgr": "48",
+      "history_2025": "MC",
+      "history_2024": "T25",
+      "history_2023": "T18"
+    },
+    "Tom Kim": {
+      "country": "KOR",
+      "owgr": "29",
+      "history_2024": "MC",
+      "history_2023": "T6",
+      "history_2025": "MC"
+    },
+    "Denny McCarthy": {
+      "country": "USA",
+      "owgr": "73",
+      "history_2024": "NA",
+      "history_2023": "T50",
+      "history_2025": "NA"
+    },
+    "J.T. Poston": {
+      "country": "USA",
+      "owgr": "56",
+      "history_2024": "T11",
+      "history_2023": "T6",
+      "history_2025": "T12"
+    },
+    "Taylor Moore": {
+      "country": "USA",
+      "owgr": "52",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "T7"
+    },
+    "Rickie Fowler": {
+      "country": "USA",
+      "owgr": "83",
+      "history_2024": "MC",
+      "history_2023": "T54",
+      "history_2025": "T21"
+    },
+    "Stephan Jaeger": {
+      "country": "GER",
+      "owgr": "48",
+      "history_2024": "T52",
+      "history_2023": "T36",
+      "history_2025": "NA"
+    },
+    "K.H. Lee": {
+      "country": "KOR",
+      "owgr": "55",
+      "history_2025": "MC",
+      "history_2024": "T25",
+      "history_2023": "MC"
+    },
+    "Andrew Putnam": {
+      "country": "USA",
+      "owgr": "58",
+      "history_2024": "T47",
+      "history_2023": "T36",
+      "history_2025": "MC"
+    },
+    "Chad Ramey": {
+      "country": "USA",
+      "owgr": "62",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Harris English": {
+      "country": "USA",
+      "owgr": "11",
+      "history_2024": "NA",
+      "history_2023": "MC",
+      "history_2025": "T43"
+    },
+    "Erik van Rooyen": {
+      "country": "RSA",
+      "owgr": "68",
+      "history_2025": "MC",
+      "history_2024": "T25",
+      "history_2023": "T6"
+    },
+    "Austin Eckroat": {
+      "country": "USA",
+      "owgr": "44",
+      "history_2024": "T25",
+      "history_2023": "MC",
+      "history_2025": "NA"
+    },
+    "Cameron Young": {
+      "country": "USA",
+      "owgr": "20",
+      "history_2024": "T17",
+      "history_2023": "T26",
+      "history_2025": "MC"
+    },
+    "Michael Kim": {
+      "country": "USA",
+      "owgr": "38",
+      "history_2024": "T6",
+      "history_2023": "MC",
+      "history_2025": "T43"
+    },
+    "Byeong Hun An": {
+      "country": "KOR",
+      "owgr": "75",
+      "history_2024": "NA",
+      "history_2023": "T41",
+      "history_2025": "NA"
+    },
+    "Carl Yuan": {
+      "country": "CHN",
+      "owgr": "80",
+      "history_2023": "MC",
+      "history_2025": "NA",
+      "history_2024": "MC"
+    },
+    "Taylor Pendrith": {
+      "country": "CAN",
+      "owgr": "43",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "NA"
+    },
+    "Rasmus Hojgaard": {
+      "country": "DEN",
+      "owgr": "40",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Alex Noren": {
+      "country": "SWE",
+      "owgr": "13",
+      "history_2025": "NA",
+      "history_2024": "T25",
+      "history_2023": "NA"
+    },
+    "Kurt Kitayama": {
+      "country": "USA",
+      "owgr": "37",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "T58"
+    },
+    "Michael Thorbjornsen": {
+      "country": "USA",
+      "owgr": "72",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Davis Thompson": {
+      "country": "USA",
+      "owgr": "98",
+      "history_2024": "T21",
+      "history_2023": "2",
+      "history_2025": "T51"
+    },
+    "Min Woo Lee": {
+      "country": "AUS",
+      "owgr": "45",
+      "history_2025": "MC",
+      "history_2024": "T21",
+      "history_2023": "NA"
+    },
+    "Justin Rose": {
+      "country": "ENG",
+      "owgr": "10",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "T26"
+    },
+    "Jason Day": {
+      "country": "AUS",
+      "owgr": "62",
+      "history_2024": "T34",
+      "history_2023": "T18",
+      "history_2025": "T3"
+    },
+    "Akshay Bhatia": {
+      "country": "USA",
+      "owgr": "52",
+      "history_2024": "MC",
+      "history_2025": "NA",
+      "history_2023": "NA"
+    },
+    "Adam Scott": {
+      "country": "AUS",
+      "owgr": "68",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Wyndham Clark": {
+      "country": "USA",
+      "owgr": "49",
+      "history_2024": "T39",
+      "history_2023": "T50",
+      "history_2025": "MC"
+    },
+    "Daniel Berger": {
+      "country": "USA",
+      "owgr": "53",
+      "history_2025": "T21",
+      "history_2024": "T39",
+      "history_2023": "NA"
+    },
+    "Rico Hoey": {
+      "country": "USA",
+      "owgr": "71",
+      "history_2025": "T58",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Kevin Yu": {
+      "country": "TPE",
+      "owgr": "93",
+      "history_2024": "T3",
+      "history_2025": "MC",
+      "history_2023": "MC"
+    },
+    "Keith Mitchell": {
+      "country": "USA",
+      "history_2023": "T22",
+      "history_2025": "T21",
+      "history_2024": "T9"
+    },
+    "Christiaan Bezuidenhout": {
+      "country": "RSA",
+      "owgr": "82",
+      "history_2024": "2",
+      "history_2023": "T11",
+      "history_2025": "MC"
+    },
+    "Pierceson Coody": {
+      "country": "USA",
+      "owgr": "90",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Max Greyserman": {
+      "country": "USA",
+      "owgr": "33",
+      "history_2024": "T56",
+      "history_2025": "T7",
+      "history_2023": "NA"
+    },
+    "Will Zalatoris": {
+      "country": "USA",
+      "history_2024": "T34",
+      "history_2023": "T36",
+      "history_2025": "T12"
+    },
+    "Ryan Gerard": {
+      "country": "USA",
+      "owgr": "30",
+      "history_2025": "T51",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Alex Smalley": {
+      "country": "USA",
+      "history_2023": "T22",
+      "history_2025": "11",
+      "history_2024": "T21"
+    },
+    "Jacob Bridgeman": {
+      "country": "USA",
+      "owgr": "63",
+      "history_2025": "T21",
+      "history_2024": "T39",
+      "history_2023": "NA"
+    },
+    "Sam Stevens": {
+      "country": "USA",
+      "owgr": "50",
+      "history_2025": "T51",
+      "history_2024": "T65",
+      "history_2023": "67"
+    },
+    "Emiliano Grillo": {
+      "country": "ARG",
+      "history_2024": "NA",
+      "history_2023": "MC",
+      "history_2025": "MC"
+    },
+    "John Keefer": {
+      "country": "USA",
+      "owgr": "46",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Haotong Li": {
+      "country": "CHN",
+      "owgr": "86",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Matthias Schmid": {
+      "country": "GER",
+      "owgr": "92",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "T6"
+    },
+    "Sami Valimaki": {
+      "country": "FIN",
+      "owgr": "39",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Brian Harman": {
+      "country": "USA",
+      "owgr": "36",
+      "history_2024": "NA",
+      "history_2023": "MC",
+      "history_2025": "MC"
+    },
+    "Matt Wallace": {
+      "country": "ENG",
+      "owgr": "76",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "John Parry": {
+      "country": "ENG",
+      "owgr": "80",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Jhonattan Vegas": {
+      "country": "VEN",
+      "owgr": "85",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "MC"
+    },
+    "Jesper Svensson": {
+      "country": "SWE",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "MC"
+    },
+    "Vince Whaley": {
+      "country": "USA",
+      "history_2023": "NA",
+      "history_2025": "T64",
+      "history_2024": "T34"
+    },
+    "Matt McCarty": {
+      "country": "USA",
+      "owgr": "58",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Sahith Theegala": {
+      "country": "USA",
+      "history_2024": "NA",
+      "history_2023": "T54",
+      "history_2025": "NA"
+    },
+    "Patrick Rodgers": {
+      "country": "USA",
+      "owgr": "87",
+      "history_2024": "NA",
+      "history_2025": "70",
+      "history_2023": "MC"
+    },
+    "William Mouw": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Andrew Novak": {
+      "country": "USA",
+      "owgr": "32",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "MC"
+    },
+    "Gary Woodland": {
+      "country": "USA",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "NA"
+    },
+    "Mackenzie Hughes": {
+      "country": "CAN",
+      "owgr": "96",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "T58"
+    },
+    "Seamus Power": {
+      "country": "IRL",
+      "history_2023": "NA",
+      "history_2025": "NA",
+      "history_2024": "NA"
+    },
+    "Ricky Castillo": {
+      "country": "USA",
+      "history_2025": "T43",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Nick Dunlap": {
+      "country": "USA",
+      "history_2024": "1",
+      "history_2025": "T34",
+      "history_2023": "NA"
+    },
+    "Kevin Roy": {
+      "country": "USA",
+      "history_2025": "T18",
+      "history_2024": "NA",
+      "history_2023": "MC"
+    },
+    "Jordan Smith": {
+      "country": "ENG",
+      "owgr": "91",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Bud Cauley": {
+      "country": "USA",
+      "owgr": "69",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Billy Horschel": {
+      "country": "USA",
+      "owgr": "57",
+      "history_2024": "MC",
+      "history_2023": "NA",
+      "history_2025": "T21"
+    },
+    "Steven Fisk": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Aldrich Potgieter": {
+      "country": "RSA",
+      "owgr": "84",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Neal Shipley": {
+      "country": "USA",
+      "owgr": "100",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Mac Meissner": {
+      "country": "USA",
+      "history_2024": "MC",
+      "history_2025": "T68",
+      "history_2023": "NA"
+    },
+    "Doug Ghim": {
+      "country": "USA",
+      "history_2023": "MC",
+      "history_2025": "T21",
+      "history_2024": "MC"
+    },
+    "Davis Riley": {
+      "country": "USA",
+      "owgr": "88",
+      "history_2024": "MC",
+      "history_2023": "T65",
+      "history_2025": "MC"
+    },
+    "Chris Kirk": {
+      "country": "USA",
+      "owgr": "77",
+      "history_2024": "T47",
+      "history_2023": "T3",
+      "history_2025": "T34"
+    },
+    "Kris Ventura": {
+      "country": "NOR",
+      "history_2025": "T58",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Patrick Fishburn": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Michael Brennan": {
+      "country": "USA",
+      "owgr": "34",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Matt Kuchar": {
+      "country": "USA",
+      "history_2024": "MC",
+      "history_2023": "NA",
+      "history_2025": "T43"
+    },
+    "Luke Clanton": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Eric Cole": {
+      "country": "USA",
+      "history_2024": "T21",
+      "history_2025": "T68",
+      "history_2023": "T36"
+    },
+    "Tony Finau": {
+      "country": "USA",
+      "history_2024": "T25",
+      "history_2023": "T16",
+      "history_2025": "MC"
+    },
+    "Daniel Brown": {
+      "country": "ENG",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Takumi Kanaya": {
+      "country": "JPN",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Chandler Phillips": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "T25",
+      "history_2023": "NA"
+    },
+    "Nicolas Echavarria": {
+      "country": "COL",
+      "owgr": "55",
+      "history_2025": "MC",
+      "history_2024": "T65",
+      "history_2023": "MC"
+    },
+    "Lee Hodges": {
+      "country": "USA",
+      "history_2023": "MC",
+      "history_2025": "T34",
+      "history_2024": "MC"
+    },
+    "David Ford": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Max McGreevy": {
+      "country": "USA",
+      "owgr": "70",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "MC"
+    },
+    "Sam Ryder": {
+      "country": "USA",
+      "history_2025": "T43",
+      "history_2024": "T62",
+      "history_2023": "MC"
+    },
+    "Zecheng Dou": {
+      "country": "CHN",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "T62"
+    },
+    "Adrien Dumont De Chassart": {
+      "country": "BEL",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Mark Hubbard": {
+      "country": "USA",
+      "history_2024": "T47",
+      "history_2025": "T12",
+      "history_2023": "MC"
+    },
+    "Jackson Suber": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Carson Young": {
+      "country": "USA",
+      "history_2024": "T17",
+      "history_2023": "MC",
+      "history_2025": "T29"
+    },
+    "Alejandro Tosti": {
+      "country": "ARG",
+      "history_2025": "T58",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Keita Nakajima": {
+      "country": "JPN",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Justin Lower": {
+      "country": "USA",
+      "history_2024": "T39",
+      "history_2023": "T41",
+      "history_2025": "T3"
+    },
+    "Tom Hoge": {
+      "country": "USA",
+      "history_2023": "T32",
+      "history_2025": "T29",
+      "history_2024": "T17"
+    },
+    "Chan Kim": {
+      "country": "USA",
+      "history_2024": "T14",
+      "history_2023": "NA",
+      "history_2025": "MC"
+    },
+    "Cameron Davis": {
+      "country": "AUS",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "T18"
+    },
+    "Beau Hossler": {
+      "country": "USA",
+      "history_2024": "T47",
+      "history_2023": "T50",
+      "history_2025": "T12"
+    },
+    "Adam Schenk": {
+      "country": "USA",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "WD"
+    },
+    "Karl Vilips": {
+      "country": "AUS",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Charley Hoffman": {
+      "country": "USA",
+      "history_2025": "T5",
+      "history_2024": "MC",
+      "history_2023": "MC"
+    },
+    "Chandler Blanchet": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Seung Taek Lee": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Patton Kizzire": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "T11"
+    },
+    "Isaiah Salinda": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Sudarshan Yellamaraju": {
+      "country": "CAN",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Ryo Hisatsune": {
+      "country": "JPN",
+      "history_2025": "T43",
+      "history_2024": "T11",
+      "history_2023": "NA"
+    },
+    "Austin Smotherman": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Adrien Saddier": {
+      "country": "FRA",
+      "owgr": "78",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Adam Svensson": {
+      "country": "CAN",
+      "history_2024": "NA",
+      "history_2023": "NA",
+      "history_2025": "MC"
+    },
+    "Matthieu Pavon": {
+      "country": "FRA",
+      "history_2025": "NA",
+      "history_2024": "T39",
+      "history_2023": "NA"
+    },
+    "John Vanderlaan": {
+      "country": "ARG",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Joel Dahmen": {
+      "country": "USA",
+      "history_2023": "NA",
+      "history_2025": "MC",
+      "history_2024": "MC"
+    },
+    "Joe Highsmith": {
+      "country": "USA",
+      "history_2024": "T34",
+      "history_2025": "T66",
+      "history_2023": "NA"
+    },
+    "Dylan Wu": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "T32"
+    },
+    "Christo Lamprecht": {
+      "country": "RSA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Brice Garnett": {
+      "country": "USA",
+      "history_2025": "T34",
+      "history_2024": "NA",
+      "history_2023": "MC"
+    },
+    "Brandt Snedeker": {
+      "country": "USA",
+      "history_2025": "T51",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Blades Brown": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Pontus Nyholm": {
+      "country": "SWE",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Lanto Griffin": {
+      "country": "USA",
+      "history_2024": "T39",
+      "history_2023": "T32",
+      "history_2025": "T34"
+    },
+    "Harry Higgs": {
+      "country": "USA",
+      "history_2025": "T34",
+      "history_2024": "NA",
+      "history_2023": "T18"
+    },
+    "David Lipsky": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "MC"
+    },
+    "Zach Johnson": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "T25",
+      "history_2023": "T41"
+    },
+    "Camilo Villegas": {
+      "country": "COL",
+      "history_2025": "T7",
+      "history_2024": "T62",
+      "history_2023": "NA"
+    },
+    "Frankie Capan III": {
+      "country": "USA",
+      "history_2025": "T12",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Kensei Hirata": {
+      "country": "JPN",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Jimmy Stanger": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "T14",
+      "history_2023": "NA"
+    },
+    "Hank Lebioda": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "MC"
+    },
+    "Gordon Sargent": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Emilio Gonzalez": {
+      "country": "ARG",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Zach Bauchou": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Davis Chatfield": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Danny Walker": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "MC"
+    },
+    "Brian Campbell": {
+      "country": "USA",
+      "owgr": "74",
+      "history_2025": "T51",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Jeffrey Kang": {
+      "country": "TPE",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "MC"
+    },
+    "Peter Malnati": {
+      "country": "USA",
+      "history_2024": "MC",
+      "history_2025": "MC",
+      "history_2023": "MC"
+    },
+    "Kevin Streelman": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "NA"
+    },
+    "Jason Dufner": {
+      "country": "USA",
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "MC"
+    },
+    "A.J. Ewart": {
+      "country": "FRA",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Marcelo Rozo": {
+      "country": "COL",
+      "history_2025": "NA",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Rafael Campos": {
+      "country": "PRI",
+      "history_2025": "MC",
+      "history_2024": "NA",
+      "history_2023": "NA"
+    },
+    "Andrew Landry": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "68"
+    },
+    "Adam Long": {
+      "country": "USA",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "NA"
+    },
+    "Michael Block": {
+      "country": "USA",
+      "history_2025": "NA",
+      "history_2024": "MC",
+      "history_2023": "MC"
+    },
+    "S.H. Kim": {
+      "country": "KOR",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "history_2025": "T51"
+    }
+  },
+  "historical": {
+    "Scottie Scheffler": {},
+    "Ludvig Aberg": {
+      "2025": "T12",
+      "2024": "T2"
+    },
+    "Patrick Cantlay": {
+      "2025": "T18",
+      "2024": "T7",
+      "2023": "T15"
+    },
+    "Russell Henley": {
+      "2025": "T8",
+      "2024": "T14",
+      "2023": "T6"
+    },
+    "Sam Burns": {
+      "2025": "T22",
+      "2024": "MC",
+      "2023": "T3"
+    },
+    "Robert MacIntyre": {
+      "2025": "T15",
+      "2024": "T28"
+    },
+    "Matt Fitzpatrick": {
+      "2025": "T19",
+      "2024": "T11"
+    },
+    "Ben Griffin": {
+      "2025": "T5",
+      "2024": "MC",
+      "2023": "T42"
+    },
+    "Harry Hall": {
+      "2025": "T31",
+      "2024": "T3",
+      "2023": "T18"
+    },
+    "Si Woo Kim": {
+      "2025": "T9",
+      "2024": "T16",
+      "2023": "T11"
+    },
+    "Sepp Straka": {
+      "2025": "WIN",
+      "2024": "T24",
+      "2023": "T19"
+    },
+    "Justin Thomas": {
+      "2025": "T45",
+      "2024": "MC",
+      "2023": "T8"
+    },
+    "Keegan Bradley": {
+      "2025": "T16",
+      "2024": "T12",
+      "2023": "T21"
+    },
+    "Nick Taylor": {
+      "2025": "T20",
+      "2024": "T6",
+      "2023": "T35"
+    },
+    "Max Homa": {
+      "2025": "T27",
+      "2024": "MC",
+      "2023": "T13"
+    },
+    "Sungjae Im": {
+      "2025": "T13",
+      "2024": "T29",
+      "2023": "2nd"
+    },
+    "Tom Kim": {
+      "2025": "T24",
+      "2024": "T10"
+    },
+    "Denny McCarthy": {
+      "2025": "T11",
+      "2024": "T14",
+      "2023": "T9"
+    },
+    "J.T. Poston": {
+      "2025": "T30",
+      "2024": "T13",
+      "2023": "T44"
+    },
+    "Taylor Moore": {
+      "2025": "T23",
+      "2024": "T5",
+      "2023": "MC"
+    },
+    "Rickie Fowler": {
+      "2025": "MC",
+      "2024": "T23",
+      "2023": "T17"
+    },
+    "Stephan Jaeger": {
+      "2025": "T21",
+      "2024": "T9",
+      "2023": "T26"
+    },
+    "K.H. Lee": {
+      "2025": "T17",
+      "2024": "T18",
+      "2023": "T22"
+    },
+    "Andrew Putnam": {
+      "2025": "T28",
+      "2024": "T19",
+      "2023": "T30"
+    },
+    "Chad Ramey": {
+      "2025": "T41",
+      "2024": "MC",
+      "2023": "T12"
+    },
+    "Harris English": {
+      "2025": "T32",
+      "2024": "T20",
+      "2023": "T16"
+    },
+    "Erik van Rooyen": {
+      "2025": "T26",
+      "2024": "T8",
+      "2023": "MC"
+    },
+    "Austin Eckroat": {
+      "2025": "T29"
+    },
+    "Cameron Young": {
+      "2025": "T38",
+      "2024": "T25"
+    },
+    "Michael Kim": {
+      "2025": "T44",
+      "2024": "MC",
+      "2023": "T16"
+    },
+    "Byeong Hun An": {
+      "2025": "T36",
+      "2024": "T21",
+      "2023": "T40"
+    },
+    "Carl Yuan": {},
+    "Taylor Pendrith": {},
+    "Rasmus Hojgaard": {},
+    "Alex Noren": {},
+    "Kurt Kitayama": {},
+    "Michael Thorbjornsen": {},
+    "Davis Thompson": {},
+    "Min Woo Lee": {
+      "2025": "T29",
+      "2024": "T8"
+    },
+    "Justin Rose": {},
+    "Jason Day": {},
+    "Akshay Bhatia": {},
+    "Adam Scott": {},
+    "Wyndham Clark": {},
+    "Daniel Berger": {},
+    "Rico Hoey": {},
+    "Kevin Yu": {},
+    "Keith Mitchell": {},
+    "Christiaan Bezuidenhout": {},
+    "Pierceson Coody": {},
+    "Max Greyserman": {},
+    "Will Zalatoris": {},
+    "Ryan Gerard": {},
+    "Alex Smalley": {},
+    "Jacob Bridgeman": {},
+    "Sam Stevens": {},
+    "Emiliano Grillo": {},
+    "John Keefer": {},
+    "Haotong Li": {},
+    "Matthias Schmid": {},
+    "Sami Valimaki": {},
+    "Brian Harman": {},
+    "Matt Wallace": {},
+    "John Parry": {},
+    "Jhonattan Vegas": {},
+    "Jesper Svensson": {},
+    "Vince Whaley": {},
+    "Matt McCarty": {},
+    "Sahith Theegala": {},
+    "Patrick Rodgers": {},
+    "William Mouw": {},
+    "Andrew Novak": {},
+    "Gary Woodland": {},
+    "Mackenzie Hughes": {},
+    "Seamus Power": {},
+    "Ricky Castillo": {},
+    "Nick Dunlap": {},
+    "Kevin Roy": {},
+    "Jordan Smith": {},
+    "Bud Cauley": {},
+    "Billy Horschel": {},
+    "Steven Fisk": {},
+    "Aldrich Potgieter": {},
+    "Neal Shipley": {},
+    "Mac Meissner": {},
+    "Doug Ghim": {},
+    "Davis Riley": {},
+    "Chris Kirk": {},
+    "Kris Ventura": {},
+    "Patrick Fishburn": {},
+    "Michael Brennan": {},
+    "Matt Kuchar": {},
+    "Luke Clanton": {},
+    "Eric Cole": {},
+    "Tony Finau": {},
+    "Daniel Brown": {},
+    "Takumi Kanaya": {},
+    "Chandler Phillips": {},
+    "Nicolas Echavarria": {},
+    "Lee Hodges": {},
+    "David Ford": {},
+    "Max McGreevy": {},
+    "Sam Ryder": {},
+    "Zecheng Dou": {},
+    "Adrien Dumont De Chassart": {},
+    "Mark Hubbard": {},
+    "Jackson Suber": {},
+    "Carson Young": {},
+    "Alejandro Tosti": {},
+    "Keita Nakajima": {},
+    "Justin Lower": {},
+    "Tom Hoge": {},
+    "Chan Kim": {},
+    "Cameron Davis": {},
+    "Beau Hossler": {},
+    "Adam Schenk": {},
+    "Karl Vilips": {},
+    "Charley Hoffman": {},
+    "Chandler Blanchet": {},
+    "Seung Taek Lee": {},
+    "Patton Kizzire": {},
+    "Isaiah Salinda": {},
+    "Sudarshan Yellamaraju": {},
+    "Ryo Hisatsune": {},
+    "Austin Smotherman": {},
+    "Adrien Saddier": {},
+    "Adam Svensson": {},
+    "Matthieu Pavon": {},
+    "John Vanderlaan": {},
+    "Joel Dahmen": {},
+    "Joe Highsmith": {},
+    "Dylan Wu": {},
+    "Christo Lamprecht": {},
+    "Brice Garnett": {},
+    "Brandt Snedeker": {},
+    "Blades Brown": {},
+    "Pontus Nyholm": {},
+    "Lanto Griffin": {},
+    "Harry Higgs": {},
+    "David Lipsky": {},
+    "Zach Johnson": {},
+    "Camilo Villegas": {},
+    "Frankie Capan III": {},
+    "Kensei Hirata": {},
+    "Jimmy Stanger": {},
+    "Hank Lebioda": {},
+    "Gordon Sargent": {},
+    "Emilio Gonzalez": {},
+    "Zach Bauchou": {},
+    "Davis Chatfield": {},
+    "Danny Walker": {},
+    "Brian Campbell": {},
+    "Jeffrey Kang": {},
+    "Peter Malnati": {},
+    "Kevin Streelman": {},
+    "Jason Dufner": {},
+    "A.J. Ewart": {},
+    "Marcelo Rozo": {},
+    "Rafael Campos": {},
+    "Andrew Landry": {},
+    "Adam Long": {},
+    "Michael Block": {},
+    "S.H. Kim": {}
+  },
+  "metadata": {
+    "updated_at": "2026-01-19T19:51:25.569419+00:00",
+    "source": "DraftKings markets endpoint",
+    "player_count": 164
+  }
+}

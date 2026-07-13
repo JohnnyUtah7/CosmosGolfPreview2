@@ -1,0 +1,470 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-02-04",
+    "description": "Course characteristics for PGA Tour venues - used for intelligent storyline generation"
+  },
+  "courses": {
+    "tpc_scottsdale_stadium": {
+      "name": "TPC Scottsdale (Stadium Course)",
+      "tournament": "WM Phoenix Open",
+      "event_id": "wm_phoenix_open",
+      "location": {
+        "city": "Scottsdale",
+        "state": "Arizona",
+        "country": "USA",
+        "elevation_ft": 1500,
+        "climate": "desert"
+      },
+      "characteristics": {
+        "par": 71,
+        "yardage": 7261,
+        "grass_type": "overseeded_bermuda",
+        "green_type": "bentgrass",
+        "green_speed": "fast",
+        "fairway_width": "medium",
+        "rough_severity": "light"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -19,
+        "cut_line_typical": -2,
+        "birdie_fest": true,
+        "bombers_advantage": "moderate"
+      },
+      "key_skills": {
+        "primary": ["sg_approach", "putting_bermuda", "wedge_play"],
+        "secondary": ["driving_distance", "scrambling"],
+        "notes": "Premium on iron play and wedge proximity. 16th hole atmosphere is unique."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "moderate",
+        "typical_conditions": "calm_warm",
+        "morning_vs_afternoon": "slight_afternoon_advantage"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "average"
+      }
+    },
+    "torrey_pines_south": {
+      "name": "Torrey Pines (South Course)",
+      "tournament": "Farmers Insurance Open",
+      "event_id": "farmers_insurance_open",
+      "location": {
+        "city": "La Jolla",
+        "state": "California",
+        "country": "USA",
+        "elevation_ft": 340,
+        "climate": "coastal"
+      },
+      "characteristics": {
+        "par": 72,
+        "yardage": 7765,
+        "grass_type": "kikuyu",
+        "green_type": "poa_annua",
+        "green_speed": "medium_fast",
+        "fairway_width": "medium",
+        "rough_severity": "heavy"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -15,
+        "cut_line_typical": -1,
+        "birdie_fest": false,
+        "bombers_advantage": "high"
+      },
+      "key_skills": {
+        "primary": ["driving_distance", "sg_ott", "kikuyu_experience"],
+        "secondary": ["poa_putting", "mental_toughness"],
+        "notes": "Length is crucial. Kikuyu rough is punishing. Poa greens require adjustment."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "high",
+        "typical_conditions": "marine_layer_mornings",
+        "morning_vs_afternoon": "significant_morning_advantage"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "high"
+      }
+    },
+    "pga_west_stadium": {
+      "name": "PGA West (Stadium Course)",
+      "tournament": "The American Express",
+      "event_id": "american_express",
+      "location": {
+        "city": "La Quinta",
+        "state": "California",
+        "country": "USA",
+        "elevation_ft": 0,
+        "climate": "desert"
+      },
+      "characteristics": {
+        "par": 72,
+        "yardage": 7147,
+        "grass_type": "overseeded_bermuda",
+        "green_type": "bentgrass",
+        "green_speed": "fast",
+        "fairway_width": "wide",
+        "rough_severity": "light"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -23,
+        "cut_line_typical": -6,
+        "birdie_fest": true,
+        "bombers_advantage": "high"
+      },
+      "key_skills": {
+        "primary": ["driving_distance", "birdie_or_better_pct", "iron_play"],
+        "secondary": ["putting_speed_control"],
+        "notes": "Three-course rotation. Scoring conditions. Need to go low."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "moderate",
+        "typical_conditions": "calm_warm",
+        "morning_vs_afternoon": "minimal_difference"
+      },
+      "historical_trends": {
+        "course_history_matters": false,
+        "repeat_winners_common": false,
+        "favorites_win_rate": "high"
+      }
+    },
+    "waialae_cc": {
+      "name": "Waialae Country Club",
+      "tournament": "Sony Open in Hawaii",
+      "event_id": "sony_open",
+      "location": {
+        "city": "Honolulu",
+        "state": "Hawaii",
+        "country": "USA",
+        "elevation_ft": 50,
+        "climate": "tropical"
+      },
+      "characteristics": {
+        "par": 70,
+        "yardage": 7044,
+        "grass_type": "bermuda",
+        "green_type": "bermuda",
+        "green_speed": "medium_fast",
+        "fairway_width": "tight",
+        "rough_severity": "medium"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -22,
+        "cut_line_typical": -4,
+        "birdie_fest": true,
+        "bombers_advantage": "low"
+      },
+      "key_skills": {
+        "primary": ["sg_approach", "putting_bermuda", "accuracy"],
+        "secondary": ["wind_play", "course_management"],
+        "notes": "Accuracy over distance. Small greens require precise iron play. Trade winds factor."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "high",
+        "typical_conditions": "trade_winds",
+        "morning_vs_afternoon": "wind_increases_afternoon"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "low"
+      }
+    },
+    "kapalua_plantation": {
+      "name": "Kapalua Plantation Course",
+      "tournament": "The Sentry",
+      "event_id": "sentry_tournament_of_champions",
+      "location": {
+        "city": "Kapalua",
+        "state": "Hawaii",
+        "country": "USA",
+        "elevation_ft": 780,
+        "climate": "tropical"
+      },
+      "characteristics": {
+        "par": 73,
+        "yardage": 7596,
+        "grass_type": "seashore_paspalum",
+        "green_type": "tiffeagle_bermuda",
+        "green_speed": "fast",
+        "fairway_width": "very_wide",
+        "rough_severity": "light"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -25,
+        "cut_line_typical": null,
+        "birdie_fest": true,
+        "bombers_advantage": "very_high"
+      },
+      "key_skills": {
+        "primary": ["driving_distance", "sg_ott", "birdie_or_better_pct"],
+        "secondary": ["paspalum_experience", "wind_play"],
+        "notes": "Extreme elevation changes. Huge greens favor long hitters. Winners-only field."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "very_high",
+        "typical_conditions": "gusty_trade_winds",
+        "morning_vs_afternoon": "highly_variable"
+      },
+      "historical_trends": {
+        "course_history_matters": false,
+        "repeat_winners_common": false,
+        "favorites_win_rate": "high"
+      }
+    },
+    "pebble_beach_gl": {
+      "name": "Pebble Beach Golf Links",
+      "tournament": "AT&T Pebble Beach Pro-Am",
+      "event_id": "att_pebble_beach",
+      "location": {
+        "city": "Pebble Beach",
+        "state": "California",
+        "country": "USA",
+        "elevation_ft": 100,
+        "climate": "coastal"
+      },
+      "characteristics": {
+        "par": 72,
+        "yardage": 6972,
+        "grass_type": "poa_annua",
+        "green_type": "poa_annua",
+        "green_speed": "medium",
+        "fairway_width": "tight",
+        "rough_severity": "medium"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -17,
+        "cut_line_typical": -3,
+        "birdie_fest": false,
+        "bombers_advantage": "low"
+      },
+      "key_skills": {
+        "primary": ["sg_approach", "scrambling", "poa_putting"],
+        "secondary": ["wind_play", "course_management"],
+        "notes": "Three-course rotation. Iconic layout. Weather can be brutal. Poa greens bump."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "very_high",
+        "typical_conditions": "highly_variable",
+        "morning_vs_afternoon": "weather_dependent"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "average"
+      }
+    },
+    "riviera_cc": {
+      "name": "Riviera Country Club",
+      "tournament": "The Genesis Invitational",
+      "event_id": "genesis_invitational",
+      "location": {
+        "city": "Pacific Palisades",
+        "state": "California",
+        "country": "USA",
+        "elevation_ft": 200,
+        "climate": "coastal"
+      },
+      "characteristics": {
+        "par": 71,
+        "yardage": 7322,
+        "grass_type": "kikuyu",
+        "green_type": "poa_annua",
+        "green_speed": "medium_fast",
+        "fairway_width": "medium",
+        "rough_severity": "heavy"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -14,
+        "cut_line_typical": -1,
+        "birdie_fest": false,
+        "bombers_advantage": "moderate"
+      },
+      "key_skills": {
+        "primary": ["sg_approach", "ball_striking", "kikuyu_experience"],
+        "secondary": ["par_5_scoring", "course_management"],
+        "notes": "Historic Hogan's Alley. Kikuyu lies require precision. Elevated greens reject shots."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "moderate",
+        "typical_conditions": "mild",
+        "morning_vs_afternoon": "slight_morning_advantage"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "high"
+      }
+    },
+    "bay_hill": {
+      "name": "Bay Hill Club & Lodge",
+      "tournament": "Arnold Palmer Invitational",
+      "event_id": "arnold_palmer_invitational",
+      "location": {
+        "city": "Orlando",
+        "state": "Florida",
+        "country": "USA",
+        "elevation_ft": 100,
+        "climate": "subtropical"
+      },
+      "characteristics": {
+        "par": 72,
+        "yardage": 7466,
+        "grass_type": "bermuda",
+        "green_type": "tifeagle_bermuda",
+        "green_speed": "fast",
+        "fairway_width": "medium",
+        "rough_severity": "medium"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -11,
+        "cut_line_typical": 0,
+        "birdie_fest": false,
+        "bombers_advantage": "high"
+      },
+      "key_skills": {
+        "primary": ["driving_distance", "iron_play", "putting_bermuda"],
+        "secondary": ["mental_toughness", "closing_ability"],
+        "notes": "Arnie's place. Tough finishing stretch. Ball-strikers' course."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "moderate",
+        "typical_conditions": "humid_breezy",
+        "morning_vs_afternoon": "wind_builds_afternoon"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "high"
+      }
+    },
+    "tpc_sawgrass_stadium": {
+      "name": "TPC Sawgrass (Stadium Course)",
+      "tournament": "THE PLAYERS Championship",
+      "event_id": "players_championship",
+      "location": {
+        "city": "Ponte Vedra Beach",
+        "state": "Florida",
+        "country": "USA",
+        "elevation_ft": 10,
+        "climate": "subtropical"
+      },
+      "characteristics": {
+        "par": 72,
+        "yardage": 7256,
+        "grass_type": "bermuda",
+        "green_type": "tifeagle_bermuda",
+        "green_speed": "very_fast",
+        "fairway_width": "tight",
+        "rough_severity": "heavy"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -14,
+        "cut_line_typical": -1,
+        "birdie_fest": false,
+        "bombers_advantage": "low"
+      },
+      "key_skills": {
+        "primary": ["sg_approach", "iron_play", "mental_toughness"],
+        "secondary": ["wedge_play", "putting_fast_greens"],
+        "notes": "5th major. Island green 17th. Premium on precision. Pressure cooker."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "high",
+        "typical_conditions": "humid_breezy",
+        "morning_vs_afternoon": "wind_variable"
+      },
+      "historical_trends": {
+        "course_history_matters": false,
+        "repeat_winners_common": false,
+        "favorites_win_rate": "low"
+      }
+    },
+    "augusta_national": {
+      "name": "Augusta National Golf Club",
+      "tournament": "Masters Tournament",
+      "event_id": "masters",
+      "location": {
+        "city": "Augusta",
+        "state": "Georgia",
+        "country": "USA",
+        "elevation_ft": 300,
+        "climate": "humid_subtropical"
+      },
+      "characteristics": {
+        "par": 72,
+        "yardage": 7545,
+        "grass_type": "rye_overseeded",
+        "green_type": "bentgrass",
+        "green_speed": "extreme",
+        "fairway_width": "wide",
+        "rough_severity": "light"
+      },
+      "scoring_profile": {
+        "typical_winning_score": -12,
+        "cut_line_typical": 0,
+        "birdie_fest": false,
+        "bombers_advantage": "very_high"
+      },
+      "key_skills": {
+        "primary": ["driving_distance", "sg_approach", "putting_severe_slopes"],
+        "secondary": ["course_knowledge", "par_5_scoring"],
+        "notes": "Course knowledge crucial. Second shot angles matter. Green speeds extreme. Back nine drama."
+      },
+      "weather_sensitivity": {
+        "wind_factor": "moderate",
+        "typical_conditions": "variable_spring",
+        "morning_vs_afternoon": "conditions_change_daily"
+      },
+      "historical_trends": {
+        "course_history_matters": true,
+        "repeat_winners_common": true,
+        "favorites_win_rate": "high"
+      }
+    }
+  },
+  "grass_types": {
+    "bermuda": {
+      "description": "Warm-season grass, grain affects putting",
+      "typical_regions": ["south", "southwest", "hawaii"],
+      "key_considerations": ["grain_reading", "fluffier_lies", "faster_when_dry"]
+    },
+    "overseeded_bermuda": {
+      "description": "Bermuda overseeded with ryegrass for winter play",
+      "typical_regions": ["desert", "southwest"],
+      "key_considerations": ["transition_period", "softer_conditions"]
+    },
+    "bentgrass": {
+      "description": "Cool-season grass, true roll on greens",
+      "typical_regions": ["north", "midwest", "elevated"],
+      "key_considerations": ["true_roll", "tighter_lies", "firmer_conditions"]
+    },
+    "poa_annua": {
+      "description": "Annual bluegrass, bumpy afternoon putting",
+      "typical_regions": ["california_coast"],
+      "key_considerations": ["afternoon_bumpy", "seed_heads", "experience_matters"]
+    },
+    "kikuyu": {
+      "description": "Very grabby rough, affects approach shots",
+      "typical_regions": ["california"],
+      "key_considerations": ["flyer_lies", "thick_rough", "strength_required"]
+    },
+    "seashore_paspalum": {
+      "description": "Salt-tolerant grass used in coastal/tropical areas",
+      "typical_regions": ["hawaii", "caribbean", "coastal"],
+      "key_considerations": ["different_feel", "grain_matters", "adjustment_period"]
+    }
+  },
+  "skill_correlations": {
+    "bombers_advantage_high": ["driving_distance", "sg_ott", "birdie_or_better_pct"],
+    "bombers_advantage_low": ["sg_approach", "accuracy", "scrambling"],
+    "bermuda_greens": ["putting_bermuda", "grain_reading", "speed_control"],
+    "poa_greens": ["poa_experience", "patience", "touch_putting"],
+    "windy_conditions": ["low_ball_flight", "wind_play", "mental_toughness"],
+    "tight_courses": ["driving_accuracy", "course_management", "iron_play"],
+    "birdie_fest": ["birdie_or_better_pct", "aggressive_play", "going_low"]
+  }
+}

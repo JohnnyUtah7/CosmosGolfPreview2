@@ -1,0 +1,74 @@
+{
+  "tournament": "Arnold Palmer Invitational presented by Mastercard",
+  "generated_at": "2026-03-03T17:43:35Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "Scottie Scheffler presents exceptional value at +474 with a massive 17.3% model edge, leading the field in both SG Total (+2.89) and SG Approach (+1.08) while coming off a win in 2024. The ball-striking advantage continues with Si Woo Kim (+3471) and Collin Morikawa (+3309) offering strong mid-tier value, ranking #2 and #3 respectively in SG Approach with positive course fit adjustments. Among longshots, Harris English (+5090) stands out with a 21.5% top-10 probability despite 50/1 odds, while course history specialist Keegan Bradley (+8086) brings a +0.142 strokes course adjustment to the table.",
+  "insights": [
+    {
+      "title": "Scheffler Massive Model Edge",
+      "insight": "Scheffler shows a staggering 17.3% model edge with 17.4% win probability versus +474 odds, leading the field in SG Total (+2.89) and SG Approach (+1.08). His 2024 API win and T4 finish in 2023 demonstrate proven course performance.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Ball-Striking Trio Undervalued",
+      "insight": "Si Woo Kim (+3471) and Collin Morikawa (+3309) rank #2 and #3 in SG Approach at +0.95 and +0.93 respectively, both with strong +0.064 and +0.070 course fit adjustments. Morikawa's runner-up finish in 2025 adds recent course confidence.",
+      "players": [
+        "Si Woo Kim",
+        "Collin Morikawa"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "English Longshot Value Play",
+      "insight": "Harris English at +5090 offers exceptional longshot value with a 21.5% top-10 probability and solid +1.31 SG Total. At roughly 50/1 odds, he's significantly underpriced for his statistical profile.",
+      "players": [
+        "Harris English"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Course History Specialists",
+      "insight": "Keegan Bradley brings the field's best course history adjustment at +0.142 strokes with +8086 odds, while Matt Fitzpatrick's +0.117 adjustment supports his +2600 price. Both have proven API track records.",
+      "players": [
+        "Keegan Bradley",
+        "Matt Fitzpatrick"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Henley Hot Recent Form",
+      "insight": "Russell Henley won in 2025 and finished T4 in 2024 at API, carrying momentum with +1.32 SG Total and positive +0.024 course fit. His +4855 odds don't fully reflect his recent course dominance.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "McIlroy Decent Value Despite Struggles",
+      "insight": "Despite recent inconsistency (T21, T15 finishes), McIlroy's +1159 odds present 7.9% model edge with his #2 SG Total (+2.04) and strong T2 finish in 2023 showing course capability.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Matsuyama Longshot with Upside",
+      "insight": "Hideki Matsuyama at +5140 combines solid +1.37 SG Total with 21.1% top-10 probability, offering legitimate longshot appeal despite longer odds. His overall game remains sharp.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Lee Recent Form Concern",
+      "insight": "Min Woo Lee missed the cut in 2025 API and shows minimal course fit (+0.007), making his +4628 odds questionable despite ranking #8 in SG Total. Recent course struggles are concerning.",
+      "players": [
+        "Min Woo Lee"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

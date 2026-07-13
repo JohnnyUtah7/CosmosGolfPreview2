@@ -1,0 +1,88 @@
+{
+  "tournament": "THE CJ CUP Byron Nelson",
+  "generated_at": "2026-05-19T16:06:58Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the most dominant favorite we've modeled all season, with a 30.2% win probability at +231 — his +2.86 SG Total leads the field by a staggering 1.35 strokes, and he ranks top-3 in both ball-striking (+1.12 SG Approach) and putting (+0.47 SG Putting). Beyond the chalk, Si Woo Kim (+1570) offers the week's best risk-adjusted value with a 6.0% model win probability, elite approach play (+0.69, 2nd in field), and a T2 finish here in 2023. In the longshot tier, Davis Thompson (+5400) profiles as a premium play — his +0.84 SG Total ranks 4th in the entire field, his approach game ranks 4th, and his 18.4% top-10 probability makes him a must-add to cards at this price.",
+  "insights": [
+    {
+      "title": "Scheffler Is a Category of One",
+      "insight": "Scottie Scheffler's +2.86 SG Total is 1.35 strokes clear of the next-best player in the field (Si Woo Kim at +1.51). He leads SG Approach at +1.12, ranks 3rd in SG Putting at +0.47, and won this event in 2025 with a T5 in 2023. Our model gives him a 30.2% win probability — at +231, there's still meaningful edge despite the short price.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Si Woo Kim: Best Value on Board",
+      "insight": "At +1570, Si Woo Kim carries a 6.0% model win probability against an implied 5.9% — but the real story is his complete profile: 2nd in SG Total (+1.51), 2nd in SG Approach (+0.69), a strong course fit adjustment (+0.016), and three consecutive made cuts here including a T2 in 2023. This is an elite price for the field's clear second-best player.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Jordan Spieth's Sneaky Strong Profile",
+      "insight": "Spieth at +2483 carries a 3.9% model win probability with the 3rd-best SG Total in the field (+1.10) and a positive course fit (+0.018). His 4th-place finish here in 2025 signals he's figured out TPC Craig Ranch. At nearly 25-to-1, he's a core outright play with serious place equity.",
+      "players": [
+        "Jordan Spieth"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Davis Thompson: Elite Longshot Profile",
+      "insight": "Thompson's +0.84 SG Total ranks 4th in the entire 147-player field, his SG Approach (+0.43) ranks 4th, and the model gives him an 18.4% top-10 probability at +5400. Prior results here (MC, T70) are a concern, but his current form vastly outpaces those earlier trips. A top-5/top-10 play is the sharper angle.",
+      "players": [
+        "Davis Thompson"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Koepka's Approach Game Fits Perfectly",
+      "insight": "Brooks Koepka ranks 3rd in the field in SG Approach (+0.44) and carries a 2.0% model win probability at +4790. His ball-striking profile matches what TPC Craig Ranch demands — length off the tee and precision into greens. At nearly 48-to-1 with no negative course history markers, he's a live outright dart.",
+      "players": [
+        "Brooks Koepka"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Pierceson Coody: Course Fit Sleeper",
+      "insight": "Coody's +0.019 course fit adjustment is the 3rd-highest among players with real win equity, and his +0.72 SG Total ranks 6th in the field. At +5400, the model gives him an 18.5% top-10 probability — the highest among all longshots analyzed. His T25 in 2025 shows recent improvement at this venue after back-to-back MCs.",
+      "players": [
+        "Pierceson Coody"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Thorbjornsen's All-Around Game Translates",
+      "insight": "Michael Thorbjornsen at +5019 carries the highest course fit score (+0.020) among all value longshots and a solid +0.70 SG Total (8th in field). His 18.1% top-10 probability and well-rounded strokes gained profile make him an ideal each-way or top-20 play in a field this soft beneath Scheffler.",
+      "players": [
+        "Michael Thorbjornsen"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Wyndham Clark: Fading the Name",
+      "insight": "Clark at +6086 looks tempting by reputation, but his +0.61 SG Total ranks just 11th in the field, his course fit adjustment is a modest +0.010, and the model assigns only a 1.6% win probability. With five players ahead of him offering better profiles at similar or longer odds, Clark is a pass this week.",
+      "players": [
+        "Wyndham Clark"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Keith Mitchell: Bomber's Paradise Value",
+      "insight": "Mitchell at +5598 brings a 17.5% top-10 probability with solid course history (T20 in 2024) and a +0.63 SG Total. His power game fits TPC Craig Ranch's wide fairways and reachable par-5s. A top-20 or top-10 sprinkle at this price offers excellent return on investment.",
+      "players": [
+        "Keith Mitchell"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Ryo Hisatsune: Highest Floor Among Longshots",
+      "insight": "Hisatsune's +0.83 SG Total ranks 5th in the field — higher than several players priced significantly shorter. His 19.9% top-10 probability is the best among all longshots at +5015. The MC in 2025 is a yellow flag, but the T13 in 2024 and elite current form suggest that was an outlier. A top-10 bet at this price carries a nearly 1-in-5 hit rate per the model.",
+      "players": [
+        "Ryo Hisatsune"
+      ],
+      "category": "form"
+    }
+  ]
+}

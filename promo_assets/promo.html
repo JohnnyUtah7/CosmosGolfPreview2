@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1600px; height:1000px; }
+  body {
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(184,144,47,0.18), transparent 60%),
+      radial-gradient(900px 500px at 85% 110%, rgba(11,61,145,0.55), transparent 60%),
+      linear-gradient(160deg,#0e1320 0%, #0b1430 45%, #070b16 100%);
+    color:#fff;
+    overflow:hidden;
+    position:relative;
+  }
+  /* faint star/grid texture */
+  body::before{
+    content:""; position:absolute; inset:0;
+    background-image:radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size:34px 34px; opacity:.5;
+  }
+  .wrap{ position:relative; z-index:2; padding:46px 60px 40px; height:100%; display:flex; flex-direction:column; }
+
+  /* ---- Header ---- */
+  .head{ text-align:center; }
+  .brand{ display:flex; align-items:center; justify-content:center; gap:14px; }
+  .brand .mark{
+    font-size:13px; letter-spacing:6px; font-weight:700; color:#b8902f; text-transform:uppercase;
+  }
+  .brand .dot{ width:6px; height:6px; border-radius:50%; background:#b8902f; }
+  .h1{
+    margin-top:14px; font-size:52px; line-height:1.04; font-weight:800; letter-spacing:.5px;
+    text-transform:uppercase;
+    background:linear-gradient(180deg,#ffffff 0%, #cfd8ec 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    text-shadow:0 2px 30px rgba(0,0,0,.4);
+  }
+  .h1 .gold{ -webkit-text-fill-color:#e7b84b; color:#e7b84b; }
+  .sub{ margin-top:14px; font-size:18px; color:#aeb9cf; letter-spacing:.3px; }
+
+  /* ---- Tiles ---- */
+  .tiles{ flex:1; display:flex; align-items:center; justify-content:center; gap:42px; margin-top:30px; }
+  .col{ width:418px; display:flex; flex-direction:column; align-items:center; }
+  .col.mid{ transform:translateY(-26px); }
+
+  .cap{ text-align:center; margin-bottom:16px; }
+  .cap .num{ font-size:12px; letter-spacing:3px; color:#5f6c86; font-weight:700; }
+  .cap .ttl{
+    margin-top:7px; font-size:21px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase;
+    color:#fff;
+  }
+  .cap .ttl em{ font-style:normal; color:#e7b84b; }
+  .cap .desc{ margin-top:6px; font-size:13.5px; color:#9aa6be; }
+
+  .device{
+    width:100%; border-radius:20px; overflow:hidden;
+    background:#0b1020;
+    border:1px solid rgba(231,184,75,0.35);
+    box-shadow:0 30px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.04) inset,
+               0 0 40px rgba(11,61,145,.4);
+  }
+  .bar{
+    height:34px; background:linear-gradient(180deg,#161d2e,#10182a);
+    display:flex; align-items:center; padding:0 14px; gap:7px;
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .bar i{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+  .bar .r{ background:#ff5f57; } .bar .y{ background:#febc2e; } .bar .g{ background:#28c840; }
+  .bar span{ margin-left:10px; font-size:11px; color:#7e8aa3; letter-spacing:1px; }
+  .shot{ height:560px; overflow:hidden; background:#fff; }
+  .col.mid .shot{ height:586px; }
+  .shot img{ display:block; width:100%; height:auto; }
+
+  .glow{ position:absolute; width:100%; height:36px; bottom:0; left:0;
+    background:linear-gradient(180deg, transparent, rgba(7,11,22,.9)); }
+  .col .framewrap{ position:relative; width:100%; }
+
+  /* ---- Feature chips ---- */
+  .chips{ display:flex; align-items:center; justify-content:center; gap:14px; margin-top:30px; }
+  .chip{
+    display:flex; align-items:center; gap:9px;
+    padding:11px 20px; border-radius:30px;
+    background:rgba(255,255,255,0.045);
+    border:1px solid rgba(231,184,75,0.28);
+    font-size:14px; font-weight:700; letter-spacing:.6px; color:#e9eefb;
+  }
+  .chip b{ color:#e7b84b; }
+  .chip .ic{ font-size:15px; }
+  .foot{ text-align:center; margin-top:18px; font-size:13px; letter-spacing:3px; color:#7e8aa3; text-transform:uppercase; }
+  .foot b{ color:#b8902f; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="brand">
+        <span class="mark">COSMOS</span><span class="dot"></span><span class="mark">Research</span>
+      </div>
+      <div class="h1">Best-in-Class Research<br/>for <span class="gold">Golf Enthusiasts</span></div>
+      <div class="sub">Every week, one preview &mdash; prediction models, live odds, course history &amp; form, delivered to your inbox.</div>
+    </div>
+
+    <div class="tiles">
+      <!-- Tile 1 -->
+      <div class="col">
+        <div class="cap">
+          <div class="num">01</div>
+          <div class="ttl">Prediction <em>Models</em></div>
+          <div class="desc">Model win % vs. the betting board</div>
+        </div>
+        <div class="framewrap">
+          <div class="device">
+            <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>cosmos-golf.com</span></div>
+            <div class="shot"><img src="shot1.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 2 (raised) -->
+      <div class="col mid">
+        <div class="cap">
+          <div class="num">02</div>
+          <div class="ttl">GolfData <em>API</em></div>
+          <div class="desc">Live odds &amp; Strokes Gained edges</div>
+        </div>
+        <div class="framewrap">
+          <div class="device">
+            <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>Top Storylines</span></div>
+            <div class="shot"><img src="shot2.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tile 3 -->
+      <div class="col">
+        <div class="cap">
+          <div class="num">03</div>
+          <div class="ttl">Course History <em>&amp; Form</em></div>
+          <div class="desc">3-year finishes + recent trends</div>
+        </div>
+        <div class="framewrap">
+          <div class="device">
+            <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>Value &amp; Longshots</span></div>
+            <div class="shot"><img src="shot3.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="ic">&#129518;</span> <b>Prediction</b>&nbsp;Models</div>
+      <div class="chip"><span class="ic">&#128225;</span> <b>GolfData</b>&nbsp;API</div>
+      <div class="chip"><span class="ic">&#127942;</span> Historical&nbsp;<b>Course Performance</b></div>
+      <div class="chip"><span class="ic">&#128200;</span> Recent&nbsp;<b>Form &amp; Trends</b></div>
+    </div>
+
+    <div class="foot">cosmos-golf.com &nbsp;&bull;&nbsp; <b>The Edge, Every Week</b></div>
+  </div>
+</body>
+</html>

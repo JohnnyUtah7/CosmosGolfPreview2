@@ -1,0 +1,88 @@
+{
+  "tournament": "John Deere Classic",
+  "generated_at": "2026-06-29T20:24:13Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Ben Griffin leads the field in both SG Total (+1.47) and SG Putting (+0.51), making him the model's top pick at 5.3% win probability against +1776 odds — a massive edge. Chris Gotterup ranks second in SG Total (+1.33) and third in SG Approach (+0.47), offering a similarly compelling 5.0% model win probability at +1917. TPC Deere Run rewards precision iron play and putting on its bentgrass greens, and the combination of elite ball-striking and flatstick prowess makes Griffin and Gotterup the clear top-tier plays. Further down the board, Jackson Koivun profiles as an intriguing rising talent at +3038, carrying a 3.2% model win probability with near-neutral course fit and a T11 finish here earlier this year.",
+  "insights": [
+    {
+      "title": "Griffin Tops Every Key Metric",
+      "insight": "Ben Griffin ranks #1 in SG Total (+1.47) and #1 in SG Putting (+0.51) across the entire 140-player field. His T5 finish at TPC Deere Run in 2024 confirms course compatibility, and the model pegs him at 5.3% to win — roughly triple the implied probability of his +1776 odds.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Gotterup's Iron Play Demands Attention",
+      "insight": "Chris Gotterup ranks #2 in SG Total (+1.33) and #3 in SG Approach (+0.47), pairing elite ball-striking with strong overall form. At +1917 with a 5.0% model win probability, he offers nearly 5 points of edge over implied odds and improved on his 2024 missed cut with a T21 at this event in 2025.",
+      "players": [
+        "Chris Gotterup"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Bradley Brings Elite Approach Game",
+      "insight": "Keegan Bradley ranks #4 in SG Approach (+0.45) and #3 in SG Total (+1.10), giving him one of the most complete profiles in the field. At +2760 with a 3.5% model win probability, he's a strong value play in a week without many marquee names atop the field.",
+      "players": [
+        "Keegan Bradley"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Koivun's Neutral Fit, Big Upside",
+      "insight": "Jackson Koivun has the most neutral course fit in the top 10 favorites at -0.002 and posted a T11 here earlier this year. At +3038 with a 3.2% model win probability, the young talent offers legitimate win equity at mid-range odds.",
+      "players": [
+        "Jackson Koivun"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Poston's Course Fit Tops Contenders",
+      "insight": "J.T. Poston owns the best course fit adjustment (+0.040) among the top 10 favorites and finished T6 at TPC Deere Run in 2023. At +4001 with a 2.4% model win probability, his style — steady off the tee with solid putting — historically suits this venue well.",
+      "players": [
+        "J.T. Poston"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Spieth's Talent at a Discount",
+      "insight": "Jordan Spieth sits at +3617 with a 2.7% model win probability and ranks #6 in SG Total (+0.86). His pedigree far exceeds most of this field, and a T26 here in 2024 suggests baseline comfort at TPC Deere Run. If his putter gets warm, he's dangerous.",
+      "players": [
+        "Jordan Spieth"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Tom Kim Is the Longshot Sleeper",
+      "insight": "Tom Kim ranks #5 in SG Approach (+0.45) and carries a +0.75 SG Total at +5081 odds, with a model-projected 16.7% top-10 probability — the highest among all longshots. He's a premier talent in a weaker field who could easily contend.",
+      "players": [
+        "Tom Kim"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Eric Cole's Putter Could Ignite",
+      "insight": "Eric Cole ranks #3 in SG Putting (+0.49) and carries a strong +0.77 SG Total at +5345 odds. The model gives him a 16.2% top-10 probability, making him a high-floor play for top-10 and top-20 wagers at TPC Deere Run.",
+      "players": [
+        "Eric Cole"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Bridgeman's Trending Form Is Real",
+      "insight": "Jacob Bridgeman ranks #5 in SG Total (+0.91) and posted a T5 at this event in 2025, confirming strong course compatibility at TPC Deere Run. At +3801 with a 2.6% model win probability, he's a legitimate contender flying under the radar.",
+      "players": [
+        "Jacob Bridgeman"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Zach Johnson: History Without the Game",
+      "insight": "Zach Johnson owns the best course history adjustment in the field at +0.108 strokes, but at +24693 odds his current form simply doesn't support a win play. Nostalgia at TPC Deere Run aside, there's no model-backed edge here — avoid for outright wagers.",
+      "players": [
+        "Zach Johnson"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

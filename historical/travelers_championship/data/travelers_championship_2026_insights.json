@@ -1,0 +1,88 @@
+{
+  "tournament": "Travelers Championship",
+  "generated_at": "2026-06-22T22:26:43Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the most compelling play on the board this week at TPC River Highlands, with our model projecting a 14.5% win probability against implied odds of just 0.1% — a staggering edge backed by his #1 ranking in SG Total (+2.80) and SG Approach (+1.08). The 2024 champion of this event also carries strong course history with finishes of T6, 1st, and T4 in his last three trips. Below him, Tommy Fleetwood (+1874) and Si Woo Kim (+2586) emerge as the most intriguing mid-tier values: Fleetwood combines elite form (SG Total +1.85, #4 in field) with the best course fit among contenders (+0.120), while Kim boasts the highest course fit score in the top 10 (+0.199) and a 3.7% model win probability at 25/1. Russell Henley's course fit adjustment of +0.276 — the strongest among favorites — combined with his T2 finish here in 2025 makes him a must-watch at +3552.",
+  "insights": [
+    {
+      "title": "Scheffler's Edge Is Absurdly Large",
+      "insight": "Our model gives the 2024 Travelers Championship winner a 14.5% win probability, creating a +14.4% edge over implied odds. He leads the field in both SG Total (+2.80) and SG Approach (+1.08), and his course history reads T6-1st-T4 across his last three starts at TPC River Highlands.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Fleetwood's Course Fit Stands Out",
+      "insight": "Tommy Fleetwood pairs the fourth-best SG Total in the field (+1.85) with a positive course fit adjustment of +0.120, suggesting his game translates exceptionally well to TPC River Highlands. His T2 finish here in 2025 and a 5.1% model win probability at nearly 19/1 make him a premier value target.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Si Woo Kim: Course Fit King",
+      "insight": "Kim's +0.199 course fit adjustment is the highest among the top 10 favorites, and at +2586 he offers the best odds-to-model-probability ratio in the upper tier. His SG Total of +1.66 (#7 in field) and 3.7% model win probability suggest the market is undervaluing his chances this week.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Henley: Best Course Fit on Board",
+      "insight": "Russell Henley carries the strongest course fit adjustment among all favorites at +0.276 strokes, indicating his skill profile is tailor-made for TPC River Highlands. He backed that up with a T2 finish here in 2025, and at +3552 with a 2.7% model win probability, the value is clear.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Aaron Rai: Top Longshot for Top-10",
+      "insight": "Among longshots, Aaron Rai has the highest top-10 probability at 20.6% despite +5159 odds. His SG Total of +1.09 is respectable and his profile suggests he can consistently contend without needing everything to click — ideal for place and top-10 markets.",
+      "players": [
+        "Aaron Rai"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Wyndham Clark's Sneaky Course History",
+      "insight": "Clark's course history adjustment of +0.058 strokes is the fourth-best in the field, and his SG Total of +1.36 at +5364 odds gives him an 18.8% top-10 probability. He's a proven winner on Tour who gets a subtle boost from the venue.",
+      "players": [
+        "Wyndham Clark"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Burns Leads Elite Putting Rankings",
+      "insight": "Sam Burns tops the field in SG Putting at +0.67, a crucial edge on TPC River Highlands' bentgrass greens. Combined with a SG Total of +1.65 (#8 in field) and 2.8% model win probability at +3438, he's a high-upside contender whose putter can carry him to a title.",
+      "players": [
+        "Sam Burns"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Schauffele's Course Fit Concerns",
+      "insight": "Despite elite ball-striking (SG Approach +0.77, #4 in field) and the third-highest SG Total (+1.94), Xander Schauffele carries a negative course fit adjustment of -0.118. His T61 finish at TPC River Highlands in 2025 is a red flag, though the raw talent and 5.0% model win probability still make him formidable.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Defending Champion Bradley Has History Edge",
+      "insight": "Defending champion Keegan Bradley carries the second-best course history adjustment in the field at +0.078 strokes, and his wins here in 2023 and 2025 speak for themselves. At +6552, the model may not flag him as a top value play, but his proven ability to close at TPC River Highlands makes him a worthy longshot dart.",
+      "players": [
+        "Keegan Bradley"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Cantlay: Elite Value in the 33/1 Range",
+      "insight": "Patrick Cantlay's course history adjustment of +0.067 (third-best in field) pairs with a T12, T5, T4 run at TPC River Highlands over his last three starts. At +3321 with a 2.9% model win probability, his consistent contention here makes him a reliable each-way play.",
+      "players": [
+        "Patrick Cantlay"
+      ],
+      "category": "value"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "tournament": "Charles Schwab Challenge",
+  "generated_at": "2026-05-25T23:45:24Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Ludvig Aberg towers over this Charles Schwab Challenge field with a massive +2.04 SG Total and an 8.8% model win probability — more than double the next closest competitor — making him the clear alpha play at +1039. Below him, a cluster of value emerges in the +3000 to +4000 range: J.J. Spaun ranks #3 in overall strokes gained (+1.27) and #2 in SG Approach (+0.83) at +3547, while Ben Griffin — the defending champion — leads the field in putting (+0.56 SG Putting) and carries a 3.2% model win probability at +3068. With Colonial Country Club rewarding precision ball-striking and putting on small, undulating greens, this week's data points to a clear hierarchy of value plays beneath Aberg's dominance.",
+  "insights": [
+    {
+      "title": "Aberg Is the Unquestioned Top Dog",
+      "insight": "Ludvig Aberg's +2.04 SG Total leads the field by a staggering 0.68 strokes over the next-best player, and his 8.8% model win probability dwarfs the implied 0.1% from his +1039 odds. He also ranks #1 in SG Approach at +0.86 — a critical skill at Colonial's tight, demanding approach shots.",
+      "players": [
+        "Ludvig Aberg"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "J.J. Spaun: Elite Ball-Striker at Value Odds",
+      "insight": "Spaun ranks #3 in SG Total (+1.27) and #2 in SG Approach (+0.83), yet his +3547 odds imply far less than his 2.7% model win probability. After a T6 finish here in 2025, he has proven he can contend at Colonial when he avoids the cut — a boom-or-bust profile worth backing at this price.",
+      "players": [
+        "J.J. Spaun"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Defending Champ Griffin Leads in Putting",
+      "insight": "Ben Griffin won this event in 2025 and leads the entire field in SG Putting at +0.56. His model win probability of 3.2% and +1.17 SG Total make him a legitimate contender at +3068, and his course history adjustment confirms his comfort level at Colonial.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Russell Henley Offers Best Risk-Reward",
+      "insight": "Henley's +1.36 SG Total ranks #2 in the field and his 4.3% model win probability is the second-highest, yet he sits at +2247. He also ranks #5 in SG Approach (+0.53) and carries the best course fit adjustment among top contenders at +0.124, making him the most compelling outright value play on the board.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Harry Hall Is the Primo Longshot",
+      "insight": "At +5576, Harry Hall boasts a +0.90 SG Total (better than some players 50 spots shorter in odds), ranks #5 in SG Putting (+0.46), and carries a 16.1% top-10 probability. That top-10 number makes him a strong each-way or top-10 market play alongside his outright price.",
+      "players": [
+        "Harry Hall"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Keegan Bradley: Hidden SG Profile at +5456",
+      "insight": "Bradley's +0.86 SG Total matches players priced 20-30 spots shorter, and his 15.4% top-10 probability suggests he's being overlooked at +5456. Colonial's emphasis on accuracy and course management plays into his veteran skill set, making him a sneaky contender.",
+      "players": [
+        "Keegan Bradley"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "MacIntyre Pairs Putter with Recent Form",
+      "insight": "Robert MacIntyre ranks #3 in SG Putting (+0.49) and #5 in SG Total (+1.25), with a T6 here in 2025 showing he's figured out Colonial. His 2.8% model win probability offers clear edge against his +3491 price, and his well-rounded game suits a course that demands no weaknesses.",
+      "players": [
+        "Robert MacIntyre"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Justin Thomas: Big Name, Real Value",
+      "insight": "Thomas sits at #4 in SG Total (+1.25) with a 3.2% model win probability, yet +3017 odds significantly underrate his chances. While his -0.036 course fit is slightly negative, his elite ball-striking pedigree and comfort on tight, traditional courses make him a worthy play at this number.",
+      "players": [
+        "Justin Thomas"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Bud Cauley: Best Top-10 Probability Among Longshots",
+      "insight": "Cauley's 16.2% top-10 probability leads all longshots at +5345 or longer, backed by a solid +0.75 SG Total. He's a top-10/top-20 market specialist at this price point, and his accuracy-first game maps well to Colonial's narrow fairways.",
+      "players": [
+        "Bud Cauley"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Smalley's Course History Raises Red Flags",
+      "insight": "Despite ranking #7 in SG Total (+1.17), Alex Smalley has a missed cut and a withdrawal in his last two trips to Colonial and a slightly negative course fit (-0.016). At +3892, there are better options in this range like Spaun and MacIntyre who have proven they can perform here.",
+      "players": [
+        "Alex Smalley"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

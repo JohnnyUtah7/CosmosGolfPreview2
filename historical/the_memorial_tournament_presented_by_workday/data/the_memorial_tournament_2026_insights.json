@@ -1,0 +1,88 @@
+{
+  "tournament": "the Memorial Tournament presented by Workday",
+  "generated_at": "2026-06-02T05:13:15Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the most dominant favorite we've modeled all season at the Memorial, with an 18.2% win probability, elite +2.92 SG Total, and back-to-back wins at Muirfield Village — yet his +449 odds still represent massive value. Below the chalk, Russell Henley (+2156) profiles as the week's best mid-tier play with the field's strongest course fit adjustment (+0.371) and a T5 finish here in 2025, while Si Woo Kim (+2405) combines the 7th-best SG Total (+1.71) with the second-highest course fit score (+0.293) and a 4th-place finish in 2023. This is a week to trust the data: ball-striking and course history matter enormously at Jack's Place, and the model identifies clear edges across the board.",
+  "insights": [
+    {
+      "title": "Scheffler Is a Historic Lock",
+      "insight": "Scottie Scheffler's 18.2% model win probability represents the largest edge in the field — an 18-point gap over his implied odds probability. He ranks #1 in SG Total (+2.92), #1 in SG Approach (+1.14), #4 in SG Putting (+0.53), and has finishes of 1st, 1st, and 3rd in his last three Memorial starts. At +449, he's a must-play.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Henley's Course Fit Is Unmatched",
+      "insight": "Russell Henley carries the highest course fit adjustment in the field at +0.371 strokes, paired with a solid +1.58 SG Total and a T5 at the 2025 Memorial. Our model gives him a 4.4% win probability at +2156 odds — that's roughly 2x the value the books are offering, making him the best mid-range play of the week.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Si Woo Kim: Sneaky Elite Profile",
+      "insight": "Si Woo Kim's +0.293 course fit score is second only to Henley's, and his 4.0% model win probability at +2405 offers substantial edge. He finished 4th here in 2023 and T15 in 2024, and his +1.71 SG Total ranks 7th in the entire field. He's a premier each-way play.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Cameron Young's Ball-Striking Breakout",
+      "insight": "Cameron Young ranks 3rd in the field with a +2.09 SG Total and our model gives him a 4.3% win probability — the 5th-highest in the field. At +2201, the books are significantly undervaluing his elite tee-to-green game. The only concern is inconsistent course history (T25, T50, MC), but the raw talent is undeniable.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Fitzpatrick Thrives at Muirfield Village",
+      "insight": "Matt Fitzpatrick has finishes of T31, T5, and T9 in his last three Memorial appearances, and his +0.206 course fit score ranks among the top tier. With the 5th-best SG Approach in the field (+0.76) and a +1.82 SG Total, he's a premium ball-striker at a premium ball-striker's course. The +2722 offers genuine upside.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Ben Griffin: Best Longshot in Field",
+      "insight": "At +5330, Ben Griffin leads all longshots with a 21.2% top-10 probability — the highest among players priced +5000 or longer. He ranks 2nd in the entire field in SG Putting (+0.61) and carries a +1.41 SG Total. For top-10 and top-20 markets, he's the week's sharpest longshot play.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Matsuyama Offers Hidden Value at 65/1",
+      "insight": "Hideki Matsuyama at +6530 carries an 18.0% top-10 probability and has historically performed well on Jack Nicklaus designs that demand precision iron play. His +1.12 SG Total is suppressed by recent inconsistency, but the upside at this price makes him a worthy flier in top-10 and top-20 markets.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Schauffele Slightly Underpriced at 24/1",
+      "insight": "Xander Schauffele ranks 4th in SG Approach (+0.78) and 5th in SG Total (+1.95), yet his +2427 odds imply just a ~4% chance — right in line with our 4.0% model probability. He's fairly priced rather than a screaming value, but his T8 in 2024 and elite ball-striking keep him in the contender tier.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Min Woo Lee at 54/1 Is Intriguing",
+      "insight": "Min Woo Lee posts a +1.59 SG Total — 9th in the field — at +5466 odds, with an 18.8% top-10 probability. His overall game profile ranks above several players priced 20-30% shorter. He's a strong each-way candidate in a field where mid-tier talent is being overlooked.",
+      "players": [
+        "Min Woo Lee"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Fade Matt Kuchar Despite Course History",
+      "insight": "Matt Kuchar tops the course history adjustment leaderboard at +0.187 strokes, but at +76823 odds, the books rightfully view his current game as non-competitive. Past results at Muirfield Village cannot overcome what is clearly a significant decline in overall strokes gained performance. Avoid despite the nostalgia.",
+      "players": [
+        "Matt Kuchar"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "tournament": "RBC Canadian Open",
+  "generated_at": "2026-06-09T05:48:55Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Tommy Fleetwood enters the RBC Canadian Open as our model's top play, ranking #1 in SG Total (+1.84) with a 7.0% modeled win probability against implied odds of just 0.1% — the largest edge in the field. Matt Fitzpatrick is right behind him, combining elite ball-striking (+0.81 SG Approach, tied #1) with the second-best overall profile (+1.78 SG Total) at +1528 odds. At longer prices, Aaron Rai (+4248) profiles as a premier course fit play with the best Course Fit score in the field (+0.307) and top-3 approach numbers, while Sam Burns (+1909) leads all putters at +0.70 SG Putting and carries strong recent history including a runner-up finish in 2025. This is a field where the model sees significant edges across the board, particularly at the top of the board.",
+  "insights": [
+    {
+      "title": "Fleetwood Is the Clear Top Play",
+      "insight": "Tommy Fleetwood leads the field in SG Total (+1.84), carries a +0.227 Course Fit score, and has stellar Canadian Open history (2nd in 2023, T21 in 2024). Our model gives him a 7.0% win probability — the largest edge in the entire field against his +1324 price.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Fitzpatrick's Iron Game Dominates",
+      "insight": "Matt Fitzpatrick ranks tied #1 in SG Approach (+0.81) and #2 in SG Total (+1.78) with a 6.1% modeled win probability at +1528. TPC Toronto at Osprey Valley should reward precision iron play, and Fitzpatrick's +0.205 Course Fit score reinforces the fit.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Sam Burns: Hot Putter, Hot History",
+      "insight": "Burns leads the entire field in SG Putting (+0.70) while ranking #3 in overall SG Total (+1.46). His Canadian Open history tells a progression story — MC in 2023, T10 in 2024, and runner-up in 2025 — suggesting peak comfort at this event. Our model gives him a 5.0% win probability at +1909.",
+      "players": [
+        "Sam Burns"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Aaron Rai Is the Ultimate Course Fit",
+      "insight": "Rai owns the field's best Course Fit score (+0.307), ranks #3 in SG Approach (+0.65), and has back-to-back strong Canadian Open finishes (T3 in 2023, T14 in 2024). At +4248, the model sees a 2.3% win probability with significant top-10 upside for a player this price.",
+      "players": [
+        "Aaron Rai"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Morikawa's Price Looks Too Long",
+      "insight": "Collin Morikawa ranks #4 in SG Total (+1.43) and tied #1 in SG Approach (+0.81) — yet his +3259 odds imply far less probability than our model's 3.0%. He's the best ball-striker in the field sitting at nearly double the price of players with inferior profiles.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Reitan: The Dark Horse Favorite",
+      "insight": "Kristoffer Reitan may lack name recognition, but his SG Total of +1.23 ranks #5 in the field and our model assigns him a 3.5% win probability at +2765. No Canadian Open history means no course fit adjustment, but his raw skill profile puts him firmly in contention range.",
+      "players": [
+        "Kristoffer Reitan"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Eric Cole: Longshot With Putting Edge",
+      "insight": "Cole combines a strong SG Total (+0.91) with the #3 putting rank in the field (+0.50 SG Putting) and a 15.6% top-10 probability at +5737. He's an ideal top-10/top-20 target for bettors looking beyond outright markets.",
+      "players": [
+        "Eric Cole"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Hojgaard's History Is a Red Flag",
+      "insight": "Despite solid overall numbers (SG Total +1.19, #7 in field), Nicolai Hojgaard has a -0.091 Course Fit score and has missed the cut in two of his three Canadian Open starts. At +3478, the model still sees 2.8% edge, but the venue-specific struggles warrant caution.",
+      "players": [
+        "Nicolai Hojgaard"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Shane Lowry: Best Top-10 Longshot Bet",
+      "insight": "Lowry's 17.9% top-10 probability is the highest among all players priced +5000 or longer, backed by a +0.94 SG Total. At +5172 for an outright, Lowry offers significant each-way value for a proven major champion with consistent weekly production.",
+      "players": [
+        "Shane Lowry"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "MacIntyre Returns as a Past Champion",
+      "insight": "Robert MacIntyre won the 2024 Canadian Open and returns at +3783 with a +0.107 Course Fit and +1.12 SG Total. His putting ranks #6 in the field (+0.46), but a T36 finish in 2025 and a negative-trending form line temper some of the past-champion enthusiasm.",
+      "players": [
+        "Robert MacIntyre"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Toggle Example - COSMOS Golf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --nasa-blue: #0B3D91;
+            --cyber-cyan: #00d4ff;
+            --grid-green: #00ff88;
+            --space-black: #0a0a0f;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--space-black);
+            color: #fff;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-cyan);
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 32px;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        /* TAB NAVIGATION - THE MAIN FEATURE */
+        .tab-navigation {
+            display: flex;
+            gap: 0;
+            margin: 30px 0;
+            border-bottom: 2px solid var(--cyber-cyan);
+            background: rgba(11, 61, 145, 0.1);
+        }
+
+        .tab-button {
+            font-family: 'Orbitron', sans-serif;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 15px 30px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            position: relative;
+        }
+
+        .tab-button:hover {
+            color: var(--cyber-cyan);
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        .tab-button.active {
+            color: var(--cyber-cyan);
+            border-bottom-color: var(--cyber-cyan);
+            background: rgba(0, 212, 255, 0.15);
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+        }
+
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--cyber-cyan);
+            box-shadow: 0 0 15px var(--cyber-cyan);
+        }
+
+        /* TAB CONTENT */
+        .tab-content {
+            display: none;
+            padding: 30px 0;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* TABLE STYLES */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(10, 10, 15, 0.9);
+            border: 2px solid var(--cyber-cyan);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, var(--nasa-blue) 0%, rgba(0, 0, 0, 0.8) 100%);
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-cyan);
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background: rgba(0, 212, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .odds-win {
+            color: var(--grid-green);
+            font-weight: 700;
+        }
+
+        .matchup-vs {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-cyan);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .matchup-favorite {
+            color: var(--grid-green);
+            font-weight: 700;
+        }
+
+        .matchup-underdog {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .info-box {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid var(--cyber-cyan);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--cyber-cyan);
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .tab-button {
+                padding: 12px 20px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏌️ COSMOS Golf Betting Preview</h1>
+        <p class="subtitle">Tab Toggle Example - Click tabs to switch views</p>
+
+        <div class="info-box">
+            <h3>✨ NEW FEATURE: Tab Toggle System</h3>
+            <p>This example shows how the tab system works. Click between "Tournament Odds" and "Daily Matchups" to see different betting markets.</p>
+            <p style="margin-top: 10px; font-size: 14px; color: rgba(255,255,255,0.7);">
+                <strong>Tournament Odds:</strong> Traditional win/top5/top10 betting<br>
+                <strong>Daily Matchups:</strong> Head-to-head player battles (when available)
+            </p>
+        </div>
+
+        <!-- TAB NAVIGATION -->
+        <div class="tab-navigation">
+            <button class="tab-button active" onclick="switchTab('tournament-odds')">
+                Tournament Odds
+            </button>
+            <button class="tab-button" onclick="switchTab('daily-matchups')">
+                Daily Matchups
+            </button>
+        </div>
+
+        <!-- TAB 1: TOURNAMENT ODDS -->
+        <div id="tournament-odds" class="tab-content active">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">Rank</th>
+                        <th>Player</th>
+                        <th style="width: 100px;">Win Odds</th>
+                        <th style="width: 100px;">Top 5</th>
+                        <th style="width: 100px;">Top 10</th>
+                        <th style="width: 150px;">Bookmaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Scottie Scheffler</td>
+                        <td class="odds-win">+450</td>
+                        <td>+130</td>
+                        <td>-160</td>
+                        <td>DraftKings</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rory McIlroy</td>
+                        <td class="odds-win">+800</td>
+                        <td>+200</td>
+                        <td>-110</td>
+                        <td>FanDuel</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jon Rahm</td>
+                        <td class="odds-win">+900</td>
+                        <td>+225</td>
+                        <td>-105</td>
+                        <td>BetMGM</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Viktor Hovland</td>
+                        <td class="odds-win">+1200</td>
+                        <td>+300</td>
+                        <td>+120</td>
+                        <td>Caesars</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Collin Morikawa</td>
+                        <td class="odds-win">+1400</td>
+                        <td>+350</td>
+                        <td>+140</td>
+                        <td>DraftKings</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TAB 2: DAILY MATCHUPS -->
+        <div id="daily-matchups" class="tab-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">#</th>
+                        <th>Player 1</th>
+                        <th style="width: 60px; text-align: center;"></th>
+                        <th>Player 2</th>
+                        <th style="width: 100px;">P1 Odds</th>
+                        <th style="width: 100px;">P2 Odds</th>
+                        <th style="width: 150px;">Bookmaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="matchup-favorite">Scottie Scheffler</td>
+                        <td class="matchup-vs">VS</td>
+                        <td class="matchup-underdog">Rory McIlroy</td>
+                        <td class="matchup-favorite">-130</td>
+                        <td class="matchup-underdog">+110</td>
+                        <td>DraftKings</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="matchup-underdog">Jon Rahm</td>
+                        <td class="matchup-vs">VS</td>
+                        <td class="matchup-favorite">Viktor Hovland</td>
+                        <td class="matchup-underdog">+105</td>
+                        <td class="matchup-favorite">-125</td>
+                        <td>FanDuel</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="matchup-favorite">Collin Morikawa</td>
+                        <td class="matchup-vs">VS</td>
+                        <td class="matchup-underdog">Xander Schauffele</td>
+                        <td class="matchup-favorite">-115</td>
+                        <td class="matchup-underdog">-105</td>
+                        <td>BetMGM</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="matchup-underdog">Patrick Cantlay</td>
+                        <td class="matchup-vs">VS</td>
+                        <td class="matchup-favorite">Max Homa</td>
+                        <td class="matchup-underdog">+120</td>
+                        <td class="matchup-favorite">-140</td>
+                        <td>Caesars</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="matchup-favorite">Tony Finau</td>
+                        <td class="matchup-vs">VS</td>
+                        <td class="matchup-underdog">Jordan Spieth</td>
+                        <td class="matchup-favorite">-110</td>
+                        <td class="matchup-underdog">-110</td>
+                        <td>DraftKings</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="margin-top: 20px; padding: 15px; background: rgba(0, 212, 255, 0.05); border-radius: 8px;">
+                <p style="font-size: 14px; color: rgba(255,255,255,0.7);">
+                    💡 <strong>Matchup Note:</strong> Green = Favorite | White = Underdog<br>
+                    These are example matchups. Real matchups will be fetched from The Odds API when available.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active from all buttons
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+
+            // Activate clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

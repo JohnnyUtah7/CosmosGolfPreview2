@@ -1,0 +1,73 @@
+{
+  "tournament": "Cognizant Classic",
+  "generated_at": "2026-02-24T16:51:51Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "The Cognizant Classic field presents intriguing value opportunities with several players showing stronger profiles than their odds suggest. Ryan Gerard leads the favorites at +1709 with solid course history including a 4th place finish in 2023, while Shane Lowry at +2232 brings exceptional course form with back-to-back top-5 finishes in 2023-2024. Max McGreevy stands out as a potential value play at +4276, bouncing back from early struggles with a strong T4 finish in 2025 after missing the cut in 2023.",
+  "insights": [
+    {
+      "title": "Gerard's Course Mastery Continues",
+      "insight": "Ryan Gerard sits atop the betting board at +1709 with strong course history, posting a 4th place finish in 2023 and a respectable T25 in 2025. His consistent performance at this venue makes him a solid favorite play.",
+      "players": [
+        "Ryan Gerard"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Lowry's Remarkable Course Consistency",
+      "insight": "Shane Lowry has been money at this event with a T5 in 2023 and T4 in 2024, showing elite course fit. At +2232, he offers strong value given his proven track record here.",
+      "players": [
+        "Shane Lowry"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "McGreevy's Redemption Story Brewing",
+      "insight": "Max McGreevy bounced back dramatically from a 2023 MC to post a T4 finish in 2025, suggesting he's figured out this course. At +4276, he presents excellent value for his recent form.",
+      "players": [
+        "Max McGreevy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Hojgaard Brothers' Concerning Pattern",
+      "insight": "Both Nicolai (+2474) and Rasmus Hojgaard (+2862) missed the cut in 2024 before improving to T18 finishes in 2025. Their inconsistent course history makes them risky plays despite favorable odds.",
+      "players": [
+        "Nicolai Hojgaard",
+        "Rasmus Hojgaard"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Thompson's Troubling Course Record",
+      "insight": "Davis Thompson has struggled mightily at this venue with a MC in 2023, T47 in 2024, and another MC in 2025. His +4613 odds don't adequately reflect his poor course fit.",
+      "players": [
+        "Davis Thompson"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Berger's Mixed Course Signals",
+      "insight": "Daniel Berger missed the cut in 2024 but rebounded to a T25 finish in 2025, showing potential course improvement. At +4904, he could offer sneaky value if the upward trend continues.",
+      "players": [
+        "Daniel Berger"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Thorbjornsen's Debut Performance",
+      "insight": "Michael Thorbjornsen posted a solid T39 in his 2025 debut at this event. At +3292, his lack of extensive course history makes him a risky but potentially rewarding play.",
+      "players": [
+        "Michael Thorbjornsen"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Mitchell's Unknown Course Equation",
+      "insight": "Keith Mitchell enters at +3491 with no recent course history data available, making him a complete wildcard. His odds suggest bookmakers see potential, but lack of course knowledge is concerning.",
+      "players": [
+        "Keith Mitchell"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

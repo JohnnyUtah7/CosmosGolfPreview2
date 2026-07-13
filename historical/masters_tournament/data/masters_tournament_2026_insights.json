@@ -1,0 +1,72 @@
+{
+  "tournament": "Masters Tournament",
+  "generated_at": "2026-04-06T17:28:54Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "Scottie Scheffler presents exceptional value at +749 with an 11.8% model win probability and field-leading +2.56 SG Total, making him a clear favorite despite recent inconsistency. Rory McIlroy's best-in-field +0.112 course fit adjustment combined with his recent win and 6.5% model probability at +1431 odds creates compelling value for bettors. Among longshots, Si Woo Kim at +5041 stands out with elite ball-striking (+0.82 SG Approach, 5th in field) and a 21.4% top-10 probability on a course where precision matters.",
+  "insights": [
+    {
+      "title": "Scheffler Massive Value Despite Inconsistency",
+      "insight": "Model gives Scheffler 11.8% win probability at +749 odds, creating a massive 11.7% edge with field-leading +2.56 SG Total and strong +0.074 course fit.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "McIlroy's Course Fit Advantage",
+      "insight": "McIlroy shows best-in-field +0.112 course fit adjustment and recent win form, with model seeing 6.5% win probability at generous +1431 odds.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "DeChambeau Bomber's Paradise Setup",
+      "insight": "With Augusta favoring bombers at 'very_high' level, DeChambeau's +0.098 course fit and 4.8% model win probability offers value at +1984 odds.",
+      "players": [
+        "Bryson DeChambeau"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Si Woo Kim Elite Ball-Striking Value",
+      "insight": "Kim ranks 5th in field in SG Approach (+0.82) with 21.4% top-10 probability, offering tremendous longshot value at +5041 odds.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Morikawa Approach Play Discount",
+      "insight": "Field's best approach player (+0.95 SG) available at +4766 odds, perfect for Augusta's demanding second shot requirements.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Fleetwood Negative Course Fit Warning",
+      "insight": "Despite strong +1.80 SG Total, Fleetwood's -0.020 course fit adjustment suggests his +2428 odds may be appropriately priced.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Rahm Defending Champion Value",
+      "insight": "2023 winner shows +2.26 SG Total (2nd in field) with 7.3% model win probability creating 7.2% edge at +1270 odds.",
+      "players": [
+        "Jon Rahm"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Spieth Course History Premium",
+      "insight": "Three-time major winner gets +0.261 strokes course history boost with 20.3% top-10 probability at attractive +5410 longshot odds.",
+      "players": [
+        "Jordan Spieth"
+      ],
+      "category": "longshot"
+    }
+  ]
+}

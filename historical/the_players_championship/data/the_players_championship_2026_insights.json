@@ -1,0 +1,73 @@
+{
+  "tournament": "THE PLAYERS Championship",
+  "generated_at": "2026-03-11T04:24:08Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "Scottie Scheffler presents exceptional value at +845 with the model giving him a massive 10.6% win probability despite negative course fit, backed by elite +2.64 SG Total ranking #1 in the field. Collin Morikawa (+2209) stands out with the best iron play in the field (+0.96 SG Approach) and positive +0.182 course fit, while the longshot tier offers compelling options led by Hideki Matsuyama at +5248 with solid +1.32 SG Total and strong 17.6% top-10 probability. The model identifies significant betting edges across multiple price points, with several players offering 2-4% win probability advantages over their implied odds.",
+  "insights": [
+    {
+      "title": "Scheffler Massive Value Despite Course Concerns",
+      "insight": "Model sees 10.6% win probability for Scheffler at +845 odds, a massive +10.5% edge despite -0.078 course fit. His +2.64 SG Total leads the field by 0.5 strokes.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Morikawa's Iron Play Advantage",
+      "insight": "Leads the field in SG Approach at +0.96 with positive +0.182 course fit. Model gives him 4.3% win probability at +2209 odds for strong betting value.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Rory Bounces Back From Victory",
+      "insight": "Despite recent win and #2 SG Total (+2.13), negative -0.299 course fit creates concern. Still offers 4.4% model win probability at +2193.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Si Woo Kim Overvalued",
+      "insight": "Listed as second favorite at +2178 despite mediocre +0.09 SG Total (#90 in field) and only 0.2% model win probability. Clear betting avoid.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Matsuyama Longshot Leader",
+      "insight": "Best longshot profile at +5248 with +1.32 SG Total and field-leading 17.6% top-10 probability. Positive +0.056 course history adjustment adds appeal.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Henley Course Fit Edge",
+      "insight": "Strong +0.250 course fit leads favorites with +1.44 SG Total (#9 in field). Model shows 3.2% win probability at generous +3017 odds.",
+      "players": [
+        "Russell Henley"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Viktor Hovland Iron Play Special",
+      "insight": "Elite +0.79 SG Approach (#5 in field) at attractive +5777 longshot odds with solid 15.9% top-10 probability despite recent form questions.",
+      "players": [
+        "Viktor Hovland"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Young Schauffele Course Struggles",
+      "insight": "Both Cameron Young (-0.165) and Xander Schauffele (-0.188) show negative course fit despite strong overall games. Proceed with caution in top-10 bets.",
+      "players": [
+        "Cameron Young",
+        "Xander Schauffele"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

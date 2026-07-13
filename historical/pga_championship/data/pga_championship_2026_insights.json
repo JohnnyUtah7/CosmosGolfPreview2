@@ -1,0 +1,89 @@
+{
+  "tournament": "PGA Championship",
+  "generated_at": "2026-05-12T04:04:03Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler towers over the PGA Championship field with a +2.87 SG Total (best in the field by 0.64 strokes) and our model projects a 13.8% win probability — more than double the implied odds at +624. Bryson DeChambeau presents perhaps the most compelling narrative value play: his SG Total of +1.40 ranks only 14th in the field, yet his extraordinary course history (T2 in 2025, 2nd in 2024, T4 in 2023) and +0.109 course fit adjustment make him dangerously underpriced at +3241. Cameron Young quietly profiles as a top-tier contender at +1607 with the third-best SG Total in the field (+2.13) and a strong +0.118 course fit, yet he draws a fraction of the attention of players ranked below him in our model.",
+  "insights": [
+    {
+      "title": "Scheffler Is the Clear Alpha Play",
+      "insight": "Scottie Scheffler leads the field in SG Total (+2.87), SG Approach (#1 at +1.08), and SG Putting (#2 at +0.55) — a rare combination of elite ball-striking and putting. His model win probability of 13.8% at +624 makes him the strongest edge in the field, and his PGA Championship history (1st, T8, T2 over the last three years) is immaculate.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "DeChambeau's History Screams Live Longshot",
+      "insight": "At +3241, Bryson DeChambeau carries the best three-year PGA Championship history in the field (T2-2nd-T4) and a +0.109 course fit adjustment that ranks among the highest. His 3.0% model win probability against an implied 0.03% at the current price represents roughly 100x value on paper — the kind of asymmetric bet you build a card around.",
+      "players": [
+        "Bryson DeChambeau"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Cameron Young: Stealth Top-3 Profile",
+      "insight": "Cameron Young's +2.13 SG Total ranks third in the entire 156-player field, yet his +1607 price implies far less respect than Jon Rahm (+1576) who sits just one spot above him in the model. Young's +0.118 course fit is the second-highest among the top 10, and our model gives him a 5.9% win probability — nearly identical to Rahm's 6.0%.",
+      "players": [
+        "Cameron Young",
+        "Jon Rahm"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Rory's Course Fit Leads the Favorites",
+      "insight": "Rory McIlroy boasts the highest course fit adjustment among any player in the top 10 at +0.158, significantly above Scheffler (+0.098) and Schauffele (+0.096). At +1224 with a 7.5% model win probability and the fourth-best SG Total (+2.11), McIlroy is the top course-specific overlay among chalk plays despite a soft T47 finish in 2025.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Aberg's Missed Cuts Are a Red Flag",
+      "insight": "Ludvig Aberg carries an elite +1.90 SG Total (fifth in the field), but his PGA Championship history is alarming: missed cuts in both 2024 and 2025. At +2311 with a 4.2% model probability, the raw talent is undeniable, but bettors should tread carefully when a player hasn't proven he can survive the weekend at this major.",
+      "players": [
+        "Ludvig Aberg"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Fitzpatrick Surging Into Major Form",
+      "insight": "Matt Fitzpatrick posted a T8 at the 2025 PGA Championship and carries a +1.80 SG Total (seventh in the field) at +3135 odds. Our model assigns him a 3.1% win probability, and his methodical game — built on precision iron play — should thrive this week, though his +0.042 course fit is modest compared to other contenders.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Cantlay Headlines a Loaded Longshot Tier",
+      "insight": "Patrick Cantlay at +5425 leads our longshot group with an 18.2% top-10 probability and a +1.51 SG Total. His PGA Championship track record includes a T9 in 2023, and at this price, a top-5 or top-10 wager offers significant expected value for a player with clear top-tier skill metrics.",
+      "players": [
+        "Patrick Cantlay"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Morikawa's Irons Make Him Dangerous",
+      "insight": "Collin Morikawa ranks third in the field in SG Approach at +0.90 — trailing only Scheffler and Rahm — yet sits at +7563 odds. As a former PGA Championship winner who thrives when iron play is at a premium, Morikawa at this price is a high-upside tournament wager worth a small-unit sprinkle.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Schauffele's Defending Title at Fair Price",
+      "insight": "Xander Schauffele won the 2024 PGA Championship and carries a solid +1.86 SG Total with elite ball-striking (SG Approach +0.86, 4th in field). At +1845 with a 5.1% model win probability, the defending champion is fairly priced — not a screaming value, but a reliable anchor for any outright portfolio.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Min Woo Lee: Best Risk-Reward Longshot",
+      "insight": "Min Woo Lee at +5471 offers a 17.2% top-10 probability and a +1.50 SG Total that ranks just behind Patrick Cantlay among longshots. His well-rounded game and aggressive style make him a prime candidate for each-way or top-10 placement bets in a field where bombs-and-wedges players can separate from the pack.",
+      "players": [
+        "Min Woo Lee"
+      ],
+      "category": "longshot"
+    }
+  ]
+}

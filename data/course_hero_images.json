@@ -1,0 +1,28 @@
+{
+  "description": "Hero course images (Shopify CDN) keyed by tournament-name keywords. First entry whose keyword appears in the lowercased tournament name wins. 'default' is the cosmos-branded fallback when no entry matches. Add new events with scripts/upload_hero_to_shopify.py --add-mapping.",
+  "default": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/COSMOS_Research-Logo.001.png",
+  "entries": [
+    {"keywords": ["phoenix", "wm ", "waste management"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/WM_teeshot.avif?v=1770087703"},
+    {"keywords": ["pebble", "att"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/wd7ql9dyamayucnmalch.avif?v=1770748523"},
+    {"keywords": ["scottish", "renaissance club"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/13sp-scottish-course-inyt-01-wzlg-superJumbo.jpg?v=1783359141"},
+    {"keywords": ["genesis", "riviera"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/tfl-genesis.avif?v=1771297257"},
+    {"keywords": ["cognizant", "palm beaches"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/upscaled-2x-24-COG-0226-10060-JMp-min-666x375.jpg?v=1771952075"},
+    {"keywords": ["arnold palmer", "bay hill"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/ap.jpg?v=1772558838"},
+    {"keywords": ["players", "sawgrass"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/players.avif?v=1773037413"},
+    {"keywords": ["valspar", "innisbrook", "copperhead"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/GettyImages-1386567075-1-scaled.jpg?v=1773691407"},
+    {"keywords": ["houston", "texas children"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/TFL_Topper_TexasChildrens.avif?v=1774292203"},
+    {"keywords": ["valero", "tpc san antonio"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/valero-texas-open-background-ac69f.jpg?v=1774909364"},
+    {"keywords": ["masters", "augusta"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/05MASTERSTWELVE-INYT1-superJumbo.jpg?v=1775491828"},
+    {"keywords": ["canadian"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/rbc.jpg?v=1780981249"},
+    {"keywords": ["rbc", "heritage", "harbour"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/harbortown.jpg?v=1776095795"},
+    {"keywords": ["miami", "doral", "blue monster", "cadillac"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/trump-national-doral-blue-monster.jpg?v=1777407697"},
+    {"keywords": ["truist", "quail hollow", "wells fargo"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/truist2.jpg?v=1778041006"},
+    {"keywords": ["pga championship", "aronimink"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/golf-tournament-courtesy-pga-championship-2200x1237px.jpg?v=1778548862"},
+    {"keywords": ["cj cup", "byron nelson", "craig ranch"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/CJ_Cup_Byron_Nelson_2025-0609-1-1024x683.jpg?v=1779202395"},
+    {"keywords": ["schwab", "colonial"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/charles.avif?v=1779751996"},
+    {"keywords": ["memorial", "muirfield"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/memorial.avif?v=1780375864"},
+    {"keywords": ["u.s. open", "us open", "shinnecock"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/shinnecock.jpg?v=1781547937"},
+    {"keywords": ["travelers", "river highlands", "cromwell"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/GettyImages-1259063954.webp?v=1782168880"},
+    {"keywords": ["john deere", "deere run"], "url": "https://cdn.shopify.com/s/files/1/0775/8928/3061/files/JDC_FirstLook.avif?v=1782762759"}
+  ]
+}

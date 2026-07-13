@@ -1,0 +1,20 @@
+{
+  "tournament": {
+    "name": "The American Express"
+  },
+  "odds": {
+    "Scottie Scheffler": { "bookmaker": "DraftKings", "odds": 280 },
+    "Ludvig Aberg": { "bookmaker": "DraftKings", "odds": 2200 },
+    "Patrick Cantlay": { "bookmaker": "DraftKings", "odds": 2200 },
+    "Sepp Straka": { "bookmaker": "DraftKings", "odds": 3500 },
+    "Tom Kim": { "bookmaker": "DraftKings", "odds": 5000 }
+  },
+  "players": {
+    "Scottie Scheffler": { "country": "USA" },
+    "Ludvig Aberg": { "country": "SWE" },
+    "Patrick Cantlay": { "country": "USA" },
+    "Sepp Straka": { "country": "AUT" },
+    "Tom Kim": { "country": "KOR" }
+  }
+}
+

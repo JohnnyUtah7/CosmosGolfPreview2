@@ -1,0 +1,73 @@
+{
+  "tournament": "AT&T Pebble Beach Pro-Am",
+  "generated_at": "2026-02-10T18:56:25Z",
+  "model": "claude-sonnet-4",
+  "executive_summary": "The AT&T Pebble Beach Pro-Am sets up as a premium ball-striker's tournament where approach play and scrambling around poa annua greens will separate contenders from pretenders. With bombers holding minimal advantage on the 6,972-yard layout, precise iron play becomes paramount to reaching the typical -17 winning score. Scottie Scheffler's +375 odds appear justified given his elite approach play metrics, while the three-course rotation and potential weather disruptions create opportunities for savvy scramblers to outperform their betting lines.",
+  "insights": [
+    {
+      "title": "Scheffler Deserves Favorite Status",
+      "insight": "At +375, Scheffler's odds reflect his elite strokes gained approach numbers and proven ability on poa annua surfaces. His scrambling prowess gives him multiple ways to score.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Length Matters Less Here",
+      "insight": "With bombers advantage rated as low, the 6,972-yard Pebble Beach setup neutralizes big hitters. Focus on precision over power this week.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Poa Putting Specialists Shine",
+      "insight": "Poa annua greens with their characteristic bumps favor players experienced on this grass type. West Coast natives and frequent California players hold edges.",
+      "players": [
+        "Maverick McNealy"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Three-Course Chaos Creates Value",
+      "insight": "The rotation format through three different layouts rewards versatile players who adapt quickly. Look for consistent ball-strikers over streaky putters.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Weather Wild Card Factor",
+      "insight": "Brutal weather conditions historically separate field dramatically at Pebble Beach. Players with links experience and mental toughness gain significant advantages.",
+      "players": [
+        "Tommy Fleetwood",
+        "Rory McIlroy"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Approach Play Premium Pricing",
+      "insight": "Strokes gained approach leaders deserve extra attention given course demands. Iron precision into small greens becomes the primary scoring differentiator.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Scrambling Saves Rounds",
+      "insight": "With poa greens creating unpredictable bounces, scrambling ability becomes crucial for maintaining momentum through difficult stretches.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Local Knowledge Advantage",
+      "insight": "California-based players and those with extensive Pebble Beach experience understand nuances of coastal conditions and poa surfaces better than field average.",
+      "players": [
+        "Maverick McNealy"
+      ],
+      "category": "value"
+    }
+  ]
+}

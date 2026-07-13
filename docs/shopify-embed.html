@@ -18,62 +18,32 @@ SHOPIFY EMBED INSTRUCTIONS:
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
         .cosmos-betting-preview {
-            --nasa-blue: #0B3D91;
-            --nasa-red: #FC3D21;
-            --space-black: #0a0a0f;
-            --cyber-cyan: #00d4ff;
-            --grid-green: #00ff88;
-            --warning-gold: #ffd700;
-            --panel-bg: rgba(11, 61, 145, 0.15);
-            --border-glow: rgba(0, 212, 255, 0.3);
+            --bg: #ffffff;
+            --text: #000000;
+            --border: #d9d9d9;
+            --odds-green: #0a7a3f;
+            --finish-win: #0a7a3f;
+            --finish-top5: #b07d00;
+            --finish-top10: #005bbb;
+            --finish-top25: #0077b6;
+            --finish-made: #000000;
+            --finish-bad: #b00020;
         }
 
-        .cosmos-betting-preview * {
+        .cosmos-betting-preview, .cosmos-betting-preview * {
             box-sizing: border-box;
         }
 
         .cosmos-betting-preview {
             font-family: 'Rajdhani', sans-serif;
-            background: var(--space-black);
-            color: #e0e0e0;
+            background: var(--bg) !important;
+            color: var(--text) !important;
             min-height: 100vh;
             overflow-x: hidden;
             position: relative;
             padding: 0;
             margin: 0;
             width: 100%;
-        }
-
-        /* Animated star background */
-        .cosmos-betting-preview::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(ellipse at 20% 80%, rgba(11, 61, 145, 0.4) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 20%, rgba(0, 212, 255, 0.15) 0%, transparent 40%),
-                radial-gradient(ellipse at 50% 50%, rgba(252, 61, 33, 0.1) 0%, transparent 60%);
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        /* Grid overlay */
-        .cosmos-betting-preview::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
-            background-size: 50px 50px;
-            pointer-events: none;
-            z-index: 0;
         }
 
         .cosmos-betting-preview .container {
@@ -85,14 +55,13 @@ SHOPIFY EMBED INSTRUCTIONS:
             z-index: 1;
         }
 
-        /* Header */
         .cosmos-betting-preview header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             padding: 20px 15px;
-            border-bottom: 1px solid var(--border-glow);
-            background: linear-gradient(180deg, rgba(11, 61, 145, 0.2) 0%, transparent 100%);
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
             position: relative;
             z-index: 1;
             flex-wrap: wrap;
@@ -106,7 +75,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         .cosmos-betting-preview .mission-tag {
             font-family: 'Share Tech Mono', monospace;
             font-size: 12px;
-            color: var(--cyber-cyan);
+            color: var(--text);
             letter-spacing: 3px;
             margin-bottom: 8px;
             opacity: 0.8;
@@ -116,17 +85,16 @@ SHOPIFY EMBED INSTRUCTIONS:
             font-family: 'Orbitron', sans-serif;
             font-size: 28px;
             font-weight: 800;
-            color: #fff;
+            color: var(--text);
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
             margin-bottom: 10px;
         }
 
         .cosmos-betting-preview .subtitle {
             font-family: 'Rajdhani', sans-serif;
             font-size: 14px;
-            color: var(--cyber-cyan);
+            color: var(--text);
             font-weight: 500;
             letter-spacing: 1px;
         }
@@ -142,7 +110,7 @@ SHOPIFY EMBED INSTRUCTIONS:
             height: 50px;
             width: auto;
             opacity: 1;
-            filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+            filter: none;
         }
 
         /* Event Info Panel */
@@ -151,8 +119,8 @@ SHOPIFY EMBED INSTRUCTIONS:
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: 15px;
             padding: 20px 15px;
-            background: var(--panel-bg);
-            border: 1px solid var(--border-glow);
+            background: var(--bg);
+            border: 1px solid var(--border);
             margin: 20px 15px;
             border-radius: 4px;
             position: relative;
@@ -162,7 +130,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         .cosmos-betting-preview .info-block {
             text-align: center;
             padding: 15px;
-            border-right: 1px solid rgba(0, 212, 255, 0.2);
+            border-right: 1px solid var(--border);
         }
 
         .cosmos-betting-preview .info-block:last-child {
@@ -172,7 +140,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         .cosmos-betting-preview .info-label {
             font-family: 'Share Tech Mono', monospace;
             font-size: 11px;
-            color: var(--cyber-cyan);
+            color: var(--text);
             letter-spacing: 2px;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -181,7 +149,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         .cosmos-betting-preview .info-value {
             font-family: 'Orbitron', sans-serif;
             font-size: 18px;
-            color: #fff;
+            color: var(--text);
             font-weight: 600;
         }
 
@@ -190,10 +158,9 @@ SHOPIFY EMBED INSTRUCTIONS:
             width: calc(100% - 30px);
             max-width: 100%;
             margin: 20px 15px;
-            border: 1px solid var(--border-glow);
+            border: 1px solid var(--border);
             border-radius: 4px;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
             position: relative;
             z-index: 1;
         }
@@ -205,28 +172,14 @@ SHOPIFY EMBED INSTRUCTIONS:
             opacity: 0.9;
         }
 
-        /* Crew Picks - DANK STYLING */
         .cosmos-betting-preview .crew-picks {
             margin: 20px 15px;
             padding: 25px 20px;
-            background: linear-gradient(135deg, rgba(11, 61, 145, 0.3) 0%, rgba(0, 212, 255, 0.15) 100%);
-            border: 2px solid var(--cyber-cyan);
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: 8px;
             position: relative;
             z-index: 1;
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.4), inset 0 0 20px rgba(0, 212, 255, 0.1);
-        }
-
-        .cosmos-betting-preview .crew-picks::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent 30%, rgba(0, 212, 255, 0.05) 50%, transparent 70%);
-            border-radius: 8px;
-            pointer-events: none;
         }
 
         .cosmos-betting-preview .crew-grid {
@@ -241,8 +194,8 @@ SHOPIFY EMBED INSTRUCTIONS:
             display: flex;
             gap: 15px;
             align-items: flex-start;
-            background: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(0, 212, 255, 0.4);
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: 6px;
             padding: 18px;
             transition: all 0.3s ease;
@@ -250,27 +203,10 @@ SHOPIFY EMBED INSTRUCTIONS:
             overflow: hidden;
         }
 
-        .cosmos-betting-preview .crew-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
         .cosmos-betting-preview .crew-card:hover {
             transform: translateY(-2px);
-            border-color: var(--cyber-cyan);
-            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
-            background: rgba(0, 0, 0, 0.7);
-        }
-
-        .cosmos-betting-preview .crew-card:hover::before {
-            opacity: 1;
+            border-color: var(--text);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .cosmos-betting-preview .crew-photo {
@@ -279,23 +215,19 @@ SHOPIFY EMBED INSTRUCTIONS:
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0;
-            border: 2px solid var(--cyber-cyan);
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5), inset 0 0 10px rgba(0, 212, 255, 0.2);
+            border: 1px solid var(--border);
             transition: all 0.3s ease;
         }
 
         .cosmos-betting-preview .crew-card:hover .crew-photo {
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.8), inset 0 0 15px rgba(0, 212, 255, 0.3);
-            transform: scale(1.05);
         }
 
         .cosmos-betting-preview .crew-name {
             font-family: 'Orbitron', sans-serif;
             font-size: 16px;
             font-weight: 700;
-            color: #fff;
+            color: var(--text);
             margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
             letter-spacing: 1px;
         }
 
@@ -304,13 +236,13 @@ SHOPIFY EMBED INSTRUCTIONS:
             margin: 0;
             padding: 0;
             font-size: 13px;
-            color: #e0e0e0;
+            color: var(--text);
         }
 
         .cosmos-betting-preview .crew-picks-list li {
             margin-bottom: 8px;
             padding: 6px 0;
-            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+            border-bottom: 1px solid var(--border);
             transition: all 0.2s ease;
         }
 
@@ -320,14 +252,14 @@ SHOPIFY EMBED INSTRUCTIONS:
         }
 
         .cosmos-betting-preview .crew-picks-list li:hover {
-            color: #fff;
+            color: var(--text);
             padding-left: 5px;
         }
 
         .cosmos-betting-preview .pick-label {
             font-family: 'Share Tech Mono', monospace;
             font-size: 11px;
-            color: var(--cyber-cyan);
+            color: var(--text);
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-right: 8px;
@@ -335,7 +267,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         }
 
         .cosmos-betting-preview .pick-odds {
-            color: var(--grid-green);
+            color: var(--odds-green);
             font-weight: 700;
             font-family: 'Orbitron', sans-serif;
             text-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
@@ -356,7 +288,7 @@ SHOPIFY EMBED INSTRUCTIONS:
             font-family: 'Orbitron', sans-serif;
             font-size: 20px;
             font-weight: 700;
-            color: #fff;
+            color: var(--text);
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -364,14 +296,14 @@ SHOPIFY EMBED INSTRUCTIONS:
         .cosmos-betting-preview .section-line {
             flex: 1;
             height: 1px;
-            background: linear-gradient(90deg, var(--cyber-cyan), transparent);
+            background: linear-gradient(90deg, var(--text), transparent);
         }
 
         /* Table Container */
         .cosmos-betting-preview .table-container {
             margin: 15px;
             overflow-x: auto;
-            border: 1px solid var(--border-glow);
+            border: 1px solid var(--border);
             border-radius: 4px;
             background: rgba(0, 0, 0, 0.4);
             position: relative;
@@ -387,7 +319,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         }
 
         .cosmos-betting-preview thead {
-            background: linear-gradient(180deg, rgba(11, 61, 145, 0.6) 0%, rgba(11, 61, 145, 0.3) 100%);
+            background: rgba(0, 91, 187, 0.08);
             position: sticky;
             top: 0;
             z-index: 10;
@@ -397,12 +329,12 @@ SHOPIFY EMBED INSTRUCTIONS:
             font-family: 'Orbitron', sans-serif;
             font-size: 10px;
             font-weight: 600;
-            color: var(--cyber-cyan);
+            color: var(--text);
             text-transform: uppercase;
             letter-spacing: 1px;
             padding: 12px 8px;
             text-align: left;
-            border-bottom: 2px solid var(--cyber-cyan);
+            border-bottom: 2px solid var(--text);
             white-space: nowrap;
         }
 
@@ -412,12 +344,12 @@ SHOPIFY EMBED INSTRUCTIONS:
 
         .cosmos-betting-preview td {
             padding: 12px 8px;
-            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+            border-bottom: 1px solid var(--border);
             vertical-align: top;
         }
 
         .cosmos-betting-preview tr:hover {
-            background: rgba(0, 212, 255, 0.05);
+            background: rgba(0, 91, 187, 0.04);
         }
 
         /* Player Column */
@@ -429,26 +361,26 @@ SHOPIFY EMBED INSTRUCTIONS:
             font-family: 'Orbitron', sans-serif;
             font-size: 13px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text);
             margin-bottom: 4px;
         }
 
         .cosmos-betting-preview .player-name a {
-            color: #fff;
+            color: var(--text);
             text-decoration: none;
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .cosmos-betting-preview .player-name a:hover {
-            color: var(--cyber-cyan);
+            color: var(--text);
             text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
         }
 
         .cosmos-betting-preview .player-country {
             font-family: 'Share Tech Mono', monospace;
             font-size: 10px;
-            color: var(--cyber-cyan);
+            color: var(--text);
             letter-spacing: 1px;
         }
 
@@ -477,7 +409,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         }
 
         .cosmos-betting-preview .result-win {
-            color: var(--grid-green);
+            color: var(--odds-green);
             text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
         }
 
@@ -486,7 +418,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         }
 
         .cosmos-betting-preview .result-top10 {
-            color: var(--cyber-cyan);
+            color: var(--text);
         }
 
         .cosmos-betting-preview .result-top25 {
@@ -517,7 +449,7 @@ SHOPIFY EMBED INSTRUCTIONS:
             font-family: 'Orbitron', sans-serif;
             font-size: 14px;
             font-weight: 700;
-            color: var(--grid-green);
+            color: var(--odds-green);
         }
 
         .cosmos-betting-preview .odds-favorite {
@@ -526,7 +458,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         }
 
         .cosmos-betting-preview .odds-longshot {
-            color: var(--cyber-cyan);
+            color: var(--text);
         }
 
         /* Tier badges */
@@ -548,14 +480,14 @@ SHOPIFY EMBED INSTRUCTIONS:
 
         .cosmos-betting-preview .tier-contender {
             background: rgba(0, 255, 136, 0.15);
-            color: var(--grid-green);
-            border: 1px solid var(--grid-green);
+            color: var(--odds-green);
+            border: 1px solid var(--odds-green);
         }
 
         .cosmos-betting-preview .tier-value {
-            background: rgba(0, 212, 255, 0.15);
-            color: var(--cyber-cyan);
-            border: 1px solid var(--cyber-cyan);
+            background: rgba(0, 91, 187, 0.1);
+            color: var(--text);
+            border: 1px solid var(--text);
         }
 
         .cosmos-betting-preview .tier-longshot {
@@ -582,8 +514,8 @@ SHOPIFY EMBED INSTRUCTIONS:
             gap: 15px;
             padding: 15px;
             margin: 15px;
-            background: var(--panel-bg);
-            border: 1px solid var(--border-glow);
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: 4px;
             position: relative;
             z-index: 1;
@@ -609,7 +541,7 @@ SHOPIFY EMBED INSTRUCTIONS:
             text-align: center;
             padding: 30px 15px;
             margin-top: 30px;
-            border-top: 1px solid var(--border-glow);
+            border-top: 1px solid var(--border);
             position: relative;
             z-index: 1;
         }
@@ -624,7 +556,7 @@ SHOPIFY EMBED INSTRUCTIONS:
         .cosmos-betting-preview .data-source {
             font-family: 'Rajdhani', sans-serif;
             font-size: 12px;
-            color: var(--cyber-cyan);
+            color: var(--text);
             margin-top: 10px;
         }
 
@@ -958,7 +890,7 @@ SHOPIFY EMBED INSTRUCTIONS:
 
         <div class="legend">
             <div class="legend-item">
-                <div class="legend-color" style="background: var(--grid-green);"></div>
+                <div class="legend-color" style="background: var(--odds-green);"></div>
                 <span>WIN / 1st</span>
             </div>
             <div class="legend-item">
@@ -966,7 +898,7 @@ SHOPIFY EMBED INSTRUCTIONS:
                 <span>TOP 5 (2nd-5th)</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color" style="background: var(--cyber-cyan);"></div>
+                <div class="legend-color" style="background: var(--text);"></div>
                 <span>TOP 10 (6th-10th)</span>
             </div>
             <div class="legend-item">

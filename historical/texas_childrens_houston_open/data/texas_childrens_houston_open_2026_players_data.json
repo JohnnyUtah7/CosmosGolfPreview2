@@ -1,0 +1,4737 @@
+{
+  "odds": {
+    "Min Woo Lee": {
+      "bookmaker": "Data Golf",
+      "odds": 1732,
+      "top5": 408,
+      "top10": 214
+    },
+    "Jake Knapp": {
+      "bookmaker": "Data Golf",
+      "odds": 3368,
+      "top5": 717,
+      "top10": 364
+    },
+    "Chris Gotterup": {
+      "bookmaker": "Data Golf",
+      "odds": 3695,
+      "top5": 754,
+      "top10": 381
+    },
+    "Kurt Kitayama": {
+      "bookmaker": "Data Golf",
+      "odds": 3819,
+      "top5": 808,
+      "top10": 399
+    },
+    "Nicolai Hojgaard": {
+      "bookmaker": "Data Golf",
+      "odds": 3965,
+      "top5": 799,
+      "top10": 401
+    },
+    "Ryan Gerard": {
+      "bookmaker": "Data Golf",
+      "odds": 4522,
+      "top5": 846,
+      "top10": 416
+    },
+    "Sam Burns": {
+      "bookmaker": "Data Golf",
+      "odds": 4573,
+      "top5": 851,
+      "top10": 421
+    },
+    "Rickie Fowler": {
+      "bookmaker": "Data Golf",
+      "odds": 4867,
+      "top5": 923,
+      "top10": 453
+    },
+    "Marco Penge": {
+      "bookmaker": "Data Golf",
+      "odds": 4972,
+      "top5": 971,
+      "top10": 483
+    },
+    "Ben Griffin": {
+      "bookmaker": "Data Golf",
+      "odds": 5571,
+      "top5": 1010,
+      "top10": 478
+    },
+    "Michael Thorbjornsen": {
+      "bookmaker": "Data Golf",
+      "odds": 5571,
+      "top5": 1045,
+      "top10": 508
+    },
+    "Harris English": {
+      "bookmaker": "Data Golf",
+      "odds": 6022,
+      "top5": 1071,
+      "top10": 513
+    },
+    "Keith Mitchell": {
+      "bookmaker": "Data Golf",
+      "odds": 6189,
+      "top5": 1173,
+      "top10": 571
+    },
+    "Adam Scott": {
+      "bookmaker": "Data Golf",
+      "odds": 6604,
+      "top5": 1197,
+      "top10": 567
+    },
+    "Brooks Koepka": {
+      "bookmaker": "Data Golf",
+      "odds": 6672,
+      "top5": 1214,
+      "top10": 578
+    },
+    "Taylor Pendrith": {
+      "bookmaker": "Data Golf",
+      "odds": 6687,
+      "top5": 1188,
+      "top10": 558
+    },
+    "Sahith Theegala": {
+      "bookmaker": "Data Golf",
+      "odds": 6703,
+      "top5": 1198,
+      "top10": 583
+    },
+    "Wyndham Clark": {
+      "bookmaker": "Data Golf",
+      "odds": 6710,
+      "top5": 1266,
+      "top10": 602
+    },
+    "Pierceson Coody": {
+      "bookmaker": "Data Golf",
+      "odds": 6844,
+      "top5": 1213,
+      "top10": 574
+    },
+    "Rasmus Hojgaard": {
+      "bookmaker": "Data Golf",
+      "odds": 6926,
+      "top5": 1298,
+      "top10": 621
+    },
+    "Sam Stevens": {
+      "bookmaker": "Data Golf",
+      "odds": 7534,
+      "top5": 1257,
+      "top10": 591
+    },
+    "Harry Hall": {
+      "bookmaker": "Data Golf",
+      "odds": 7975,
+      "top5": 1272,
+      "top10": 585
+    },
+    "Alex Smalley": {
+      "bookmaker": "Data Golf",
+      "odds": 8292,
+      "top5": 1408,
+      "top10": 676
+    },
+    "Jordan Smith": {
+      "bookmaker": "Data Golf",
+      "odds": 8991,
+      "top5": 1545,
+      "top10": 704
+    },
+    "Davis Thompson": {
+      "bookmaker": "Data Golf",
+      "odds": 9117,
+      "top5": 1499,
+      "top10": 693
+    },
+    "Shane Lowry": {
+      "bookmaker": "Data Golf",
+      "odds": 9174,
+      "top5": 1516,
+      "top10": 691
+    },
+    "Ricky Castillo": {
+      "bookmaker": "Data Golf",
+      "odds": 9409,
+      "top5": 1571,
+      "top10": 729
+    },
+    "Kristoffer Reitan": {
+      "bookmaker": "Data Golf",
+      "odds": 9752,
+      "top5": 1671,
+      "top10": 788
+    },
+    "Stephan Jaeger": {
+      "bookmaker": "Data Golf",
+      "odds": 10209,
+      "top5": 1681,
+      "top10": 776
+    },
+    "Patrick Rodgers": {
+      "bookmaker": "Data Golf",
+      "odds": 11264,
+      "top5": 1799,
+      "top10": 823
+    },
+    "Jason Day": {
+      "bookmaker": "Data Golf",
+      "odds": 11805,
+      "top5": 1980,
+      "top10": 887
+    },
+    "Rico Hoey": {
+      "bookmaker": "Data Golf",
+      "odds": 12639,
+      "top5": 2092,
+      "top10": 946
+    },
+    "Mackenzie Hughes": {
+      "bookmaker": "Data Golf",
+      "odds": 13757,
+      "top5": 2127,
+      "top10": 975
+    },
+    "Mac Meissner": {
+      "bookmaker": "Data Golf",
+      "odds": 13757,
+      "top5": 2056,
+      "top10": 908
+    },
+    "Max Greyserman": {
+      "bookmaker": "Data Golf",
+      "odds": 13789,
+      "top5": 2236,
+      "top10": 1009
+    },
+    "Will Zalatoris": {
+      "bookmaker": "Data Golf",
+      "odds": 13789,
+      "top5": 2213,
+      "top10": 1022
+    },
+    "Michael Brennan": {
+      "bookmaker": "Data Golf",
+      "odds": 13952,
+      "top5": 2213,
+      "top10": 1006
+    },
+    "Tony Finau": {
+      "bookmaker": "Data Golf",
+      "odds": 14186,
+      "top5": 2210,
+      "top10": 987
+    },
+    "Sungjae Im": {
+      "bookmaker": "Data Golf",
+      "odds": 14288,
+      "top5": 2211,
+      "top10": 977
+    },
+    "Adrien Dumont De Chassart": {
+      "bookmaker": "Data Golf",
+      "odds": 15689,
+      "top5": 2510,
+      "top10": 1102
+    },
+    "Ryan Fox": {
+      "bookmaker": "Data Golf",
+      "odds": 16029,
+      "top5": 2379,
+      "top10": 1046
+    },
+    "Max McGreevy": {
+      "bookmaker": "Data Golf",
+      "odds": 16073,
+      "top5": 2370,
+      "top10": 1027
+    },
+    "Christiaan Bezuidenhout": {
+      "bookmaker": "Data Golf",
+      "odds": 17191,
+      "top5": 2373,
+      "top10": 1007
+    },
+    "Thorbjorn Olesen": {
+      "bookmaker": "Data Golf",
+      "odds": 17291,
+      "top5": 2627,
+      "top10": 1123
+    },
+    "Aaron Rai": {
+      "bookmaker": "Data Golf",
+      "odds": 17495,
+      "top5": 2642,
+      "top10": 1136
+    },
+    "Tom Kim": {
+      "bookmaker": "Data Golf",
+      "odds": 17651,
+      "top5": 2640,
+      "top10": 1141
+    },
+    "S.H. Kim": {
+      "bookmaker": "Data Golf",
+      "odds": 17757,
+      "top5": 2711,
+      "top10": 1196
+    },
+    "Matti Schmid": {
+      "bookmaker": "Data Golf",
+      "odds": 18249,
+      "top5": 2694,
+      "top10": 1201
+    },
+    "Gary Woodland": {
+      "bookmaker": "Data Golf",
+      "odds": 19069,
+      "top5": 2839,
+      "top10": 1262
+    },
+    "Jesper Svensson": {
+      "bookmaker": "Data Golf",
+      "odds": 19131,
+      "top5": 3004,
+      "top10": 1325
+    },
+    "Matt Wallace": {
+      "bookmaker": "Data Golf",
+      "odds": 19508,
+      "top5": 2835,
+      "top10": 1219
+    },
+    "Haotong Li": {
+      "bookmaker": "Data Golf",
+      "odds": 19967,
+      "top5": 2785,
+      "top10": 1231
+    },
+    "Rasmus Neergaard-Petersen": {
+      "bookmaker": "Data Golf",
+      "odds": 21483,
+      "top5": 2999,
+      "top10": 1295
+    },
+    "J.T. Poston": {
+      "bookmaker": "Data Golf",
+      "odds": 21878,
+      "top5": 3153,
+      "top10": 1312
+    },
+    "William Mouw": {
+      "bookmaker": "Data Golf",
+      "odds": 22372,
+      "top5": 3315,
+      "top10": 1457
+    },
+    "Sudarshan Yellamaraju": {
+      "bookmaker": "Data Golf",
+      "odds": 22542,
+      "top5": 3402,
+      "top10": 1442
+    },
+    "Nico Echavarria": {
+      "bookmaker": "Data Golf",
+      "odds": 23066,
+      "top5": 3285,
+      "top10": 1387
+    },
+    "Johnny Keefer": {
+      "bookmaker": "Data Golf",
+      "odds": 23804,
+      "top5": 3588,
+      "top10": 1547
+    },
+    "John Parry": {
+      "bookmaker": "Data Golf",
+      "odds": 23804,
+      "top5": 3223,
+      "top10": 1340
+    },
+    "Denny McCarthy": {
+      "bookmaker": "Data Golf",
+      "odds": 24191,
+      "top5": 3300,
+      "top10": 1358
+    },
+    "Doug Ghim": {
+      "bookmaker": "Data Golf",
+      "odds": 24796,
+      "top5": 3484,
+      "top10": 1437
+    },
+    "David Ford": {
+      "bookmaker": "Data Golf",
+      "odds": 25110,
+      "top5": 3702,
+      "top10": 1563
+    },
+    "Bud Cauley": {
+      "bookmaker": "Data Golf",
+      "odds": 25324,
+      "top5": 3317,
+      "top10": 1429
+    },
+    "Lee Hodges": {
+      "bookmaker": "Data Golf",
+      "odds": 25762,
+      "top5": 3171,
+      "top10": 1343
+    },
+    "Kris Ventura": {
+      "bookmaker": "Data Golf",
+      "odds": 26332,
+      "top5": 3561,
+      "top10": 1508
+    },
+    "Eric Cole": {
+      "bookmaker": "Data Golf",
+      "odds": 26567,
+      "top5": 3854,
+      "top10": 1604
+    },
+    "Kevin Roy": {
+      "bookmaker": "Data Golf",
+      "odds": 27807,
+      "top5": 3694,
+      "top10": 1555
+    },
+    "Aldrich Potgieter": {
+      "bookmaker": "Data Golf",
+      "odds": 29457,
+      "top5": 4893,
+      "top10": 2022
+    },
+    "Kevin Yu": {
+      "bookmaker": "Data Golf",
+      "odds": 31150,
+      "top5": 4286,
+      "top10": 1781
+    },
+    "Dan Brown": {
+      "bookmaker": "Data Golf",
+      "odds": 31479,
+      "top5": 4983,
+      "top10": 2036
+    },
+    "Steven Fisk": {
+      "bookmaker": "Data Golf",
+      "odds": 31986,
+      "top5": 4594,
+      "top10": 1876
+    },
+    "Chandler Blanchet": {
+      "bookmaker": "Data Golf",
+      "odds": 31986,
+      "top5": 4070,
+      "top10": 1656
+    },
+    "Chad Ramey": {
+      "bookmaker": "Data Golf",
+      "odds": 33233,
+      "top5": 4418,
+      "top10": 1795
+    },
+    "Garrick Higgo": {
+      "bookmaker": "Data Golf",
+      "odds": 35828,
+      "top5": 5170,
+      "top10": 2132
+    },
+    "Zecheng Dou": {
+      "bookmaker": "Data Golf",
+      "odds": 36485,
+      "top5": 4446,
+      "top10": 1812
+    },
+    "David Lipsky": {
+      "bookmaker": "Data Golf",
+      "odds": 39374,
+      "top5": 5434,
+      "top10": 2128
+    },
+    "John VanDerLaan": {
+      "bookmaker": "Data Golf",
+      "odds": 39374,
+      "top5": 5653,
+      "top10": 2184
+    },
+    "Chris Kirk": {
+      "bookmaker": "Data Golf",
+      "odds": 40996,
+      "top5": 4836,
+      "top10": 1997
+    },
+    "Adrien Saddier": {
+      "bookmaker": "Data Golf",
+      "odds": 41567,
+      "top5": 6096,
+      "top10": 2390
+    },
+    "Dylan Wu": {
+      "bookmaker": "Data Golf",
+      "odds": 43696,
+      "top5": 5974,
+      "top10": 2303
+    },
+    "A.J. Ewart": {
+      "bookmaker": "Data Golf",
+      "odds": 44676,
+      "top5": 5811,
+      "top10": 2368
+    },
+    "Isaiah Salinda": {
+      "bookmaker": "Data Golf",
+      "odds": 45702,
+      "top5": 6180,
+      "top10": 2478
+    },
+    "Austin Eckroat": {
+      "bookmaker": "Data Golf",
+      "odds": 48287,
+      "top5": 5779,
+      "top10": 2314
+    },
+    "Zach Bauchou": {
+      "bookmaker": "Data Golf",
+      "odds": 51182,
+      "top5": 6501,
+      "top10": 2507
+    },
+    "Bronson Burgoon": {
+      "bookmaker": "Data Golf",
+      "odds": 51182,
+      "top5": 7084,
+      "top10": 2888
+    },
+    "Vince Whaley": {
+      "bookmaker": "Data Golf",
+      "odds": 52074,
+      "top5": 5465,
+      "top10": 2072
+    },
+    "Luke Clanton": {
+      "bookmaker": "Data Golf",
+      "odds": 53471,
+      "top5": 7134,
+      "top10": 2880
+    },
+    "Billy Horschel": {
+      "bookmaker": "Data Golf",
+      "odds": 53954,
+      "top5": 6623,
+      "top10": 2564
+    },
+    "Beau Hossler": {
+      "bookmaker": "Data Golf",
+      "odds": 54445,
+      "top5": 6458,
+      "top10": 2639
+    },
+    "Matthieu Pavon": {
+      "bookmaker": "Data Golf",
+      "odds": 54946,
+      "top5": 7183,
+      "top10": 2873
+    },
+    "Takumi Kanaya": {
+      "bookmaker": "Data Golf",
+      "odds": 61756,
+      "top5": 7117,
+      "top10": 2773
+    },
+    "Emiliano Grillo": {
+      "bookmaker": "Data Golf",
+      "odds": 65834,
+      "top5": 6752,
+      "top10": 2605
+    },
+    "Christo Lamprecht": {
+      "bookmaker": "Data Golf",
+      "odds": 69667,
+      "top5": 9594,
+      "top10": 4106
+    },
+    "Pontus Nyholm": {
+      "bookmaker": "Data Golf",
+      "odds": 77822,
+      "top5": 9978,
+      "top10": 3943
+    },
+    "Andrew Putnam": {
+      "bookmaker": "Data Golf",
+      "odds": 77822,
+      "top5": 8561,
+      "top10": 3173
+    },
+    "Patrick Fishburn": {
+      "bookmaker": "Data Golf",
+      "odds": 80981,
+      "top5": 9187,
+      "top10": 3339
+    },
+    "Mark Hubbard": {
+      "bookmaker": "Data Golf",
+      "odds": 83233,
+      "top5": 10444,
+      "top10": 3794
+    },
+    "Gordon Sargent": {
+      "bookmaker": "Data Golf",
+      "odds": 85614,
+      "top5": 12145,
+      "top10": 4827
+    },
+    "Jhonattan Vegas": {
+      "bookmaker": "Data Golf",
+      "odds": 85614,
+      "top5": 10455,
+      "top10": 3919
+    },
+    "Lucas Glover": {
+      "bookmaker": "Data Golf",
+      "odds": 86857,
+      "top5": 10271,
+      "top10": 3669
+    },
+    "Chandler Phillips": {
+      "bookmaker": "Data Golf",
+      "odds": 86857,
+      "top5": 10559,
+      "top10": 3783
+    },
+    "Hank Lebioda": {
+      "bookmaker": "Data Golf",
+      "odds": 88135,
+      "top5": 9300,
+      "top10": 3458
+    },
+    "Jimmy Stanger": {
+      "bookmaker": "Data Golf",
+      "odds": 89452,
+      "top5": 12746,
+      "top10": 5125
+    },
+    "Karl Vilips": {
+      "bookmaker": "Data Golf",
+      "odds": 93650,
+      "top5": 10693,
+      "top10": 3974
+    },
+    "Adam Svensson": {
+      "bookmaker": "Data Golf",
+      "odds": 93650,
+      "top5": 9867,
+      "top10": 3542
+    },
+    "Alejandro Tosti": {
+      "bookmaker": "Data Golf",
+      "odds": 99900,
+      "top5": 10528,
+      "top10": 4360
+    },
+    "Trey Mullinax": {
+      "bookmaker": "Data Golf",
+      "odds": 101595,
+      "top5": 11840,
+      "top10": 4519
+    },
+    "Neal Shipley": {
+      "bookmaker": "Data Golf",
+      "odds": 108991,
+      "top5": 11438,
+      "top10": 4408
+    },
+    "Davis Riley": {
+      "bookmaker": "Data Golf",
+      "odds": 117547,
+      "top5": 14303,
+      "top10": 5583
+    },
+    "Danny Walker": {
+      "bookmaker": "Data Golf",
+      "odds": 127560,
+      "top5": 11809,
+      "top10": 4537
+    },
+    "Patton Kizzire": {
+      "bookmaker": "Data Golf",
+      "odds": 142757,
+      "top5": 16721,
+      "top10": 6140
+    },
+    "Cole Hammer": {
+      "bookmaker": "Data Golf",
+      "odds": 146241,
+      "top5": 16537,
+      "top10": 6077
+    },
+    "Joe Highsmith": {
+      "bookmaker": "Data Golf",
+      "odds": 181718,
+      "top5": 17094,
+      "top10": 6419
+    },
+    "Tom Hoge": {
+      "bookmaker": "Data Golf",
+      "odds": 181718,
+      "top5": 15414,
+      "top10": 5687
+    },
+    "Kensei Hirata": {
+      "bookmaker": "Data Golf",
+      "odds": 193448,
+      "top5": 20667,
+      "top10": 6812
+    },
+    "Erik Van Rooyen": {
+      "bookmaker": "Data Golf",
+      "odds": 206797,
+      "top5": 16251,
+      "top10": 5913
+    },
+    "Adam Schenk": {
+      "bookmaker": "Data Golf",
+      "odds": 230669,
+      "top5": 22330,
+      "top10": 7833
+    },
+    "Peter Malnati": {
+      "bookmaker": "Data Golf",
+      "odds": 260770,
+      "top5": 24471,
+      "top10": 8658
+    },
+    "Paul Waring": {
+      "bookmaker": "Data Golf",
+      "odds": 315689,
+      "top5": 29434,
+      "top10": 10466
+    },
+    "Davis Chatfield": {
+      "bookmaker": "Data Golf",
+      "odds": 352841,
+      "top5": 22207,
+      "top10": 7548
+    },
+    "Nick Dunlap": {
+      "bookmaker": "Data Golf",
+      "odds": 352841,
+      "top5": 23410,
+      "top10": 8241
+    },
+    "Charley Hoffman": {
+      "bookmaker": "Data Golf",
+      "odds": 399900,
+      "top5": 45302,
+      "top10": 17420
+    },
+    "Brice Garnett": {
+      "bookmaker": "Data Golf",
+      "odds": 399900,
+      "top5": 31402,
+      "top10": 10913
+    },
+    "Jeffrey Kang": {
+      "bookmaker": "Data Golf",
+      "odds": 461438,
+      "top5": 49930,
+      "top10": 17045
+    },
+    "K.H. Lee": {
+      "bookmaker": "Data Golf",
+      "odds": 499900,
+      "top5": 59575,
+      "top10": 19574
+    },
+    "Rafael Campos": {
+      "bookmaker": "Data Golf",
+      "odds": 499900,
+      "top5": 35840,
+      "top10": 13388
+    },
+    "Aaron Wise": {
+      "bookmaker": "Data Golf",
+      "odds": 545355,
+      "top5": 48526,
+      "top10": 17706
+    },
+    "Mason Howell": {
+      "bookmaker": "Data Golf",
+      "odds": 599900,
+      "top5": 49310,
+      "top10": 18404
+    },
+    "Marcelo Rozo": {
+      "bookmaker": "Data Golf",
+      "odds": 999900,
+      "top5": 73399,
+      "top10": 22069
+    },
+    "Danny Willett": {
+      "bookmaker": "Data Golf",
+      "odds": 999900,
+      "top5": 68062,
+      "top10": 22185
+    },
+    "Brian Campbell": {
+      "bookmaker": "Data Golf",
+      "odds": 1199900,
+      "top5": 81987,
+      "top10": 24866
+    },
+    "Casey Russell": {
+      "bookmaker": "Data Golf",
+      "odds": 749900,
+      "top5": 262866,
+      "top10": 63260
+    }
+  },
+  "data_sources": {
+    "odds": "Data Golf",
+    "odds_fetched_at": "2026-03-23T19:00:27.621530+00:00",
+    "owgr": "Data Golf API (preds/get-dg-rankings)",
+    "owgr_applied_at": "2026-03-25T03:46:45Z"
+  },
+  "tournament": {
+    "name": "Texas Children's Houston Open",
+    "year": 2026,
+    "location": "",
+    "course": "",
+    "dates": "",
+    "purse": "",
+    "defending_champion": ""
+  },
+  "historical_years": [
+    "2025",
+    "2024",
+    "2023"
+  ],
+  "historical": {
+    "Min Woo Lee": {
+      "2025": "1",
+      "2024": "T31"
+    },
+    "Jake Knapp": {
+      "2025": "T27",
+      "2024": "MC"
+    },
+    "Chris Gotterup": {
+      "2025": "T18",
+      "2024": "T57"
+    },
+    "Kurt Kitayama": {
+      "2025": "T39",
+      "2024": "T36"
+    },
+    "Nicolai Hojgaard": {
+      "2025": "MC"
+    },
+    "Ryan Gerard": {
+      "2025": "9"
+    },
+    "Sam Burns": {
+      "2023": "WD"
+    },
+    "Rickie Fowler": {
+      "2025": "T52"
+    },
+    "Marco Penge": {},
+    "Ben Griffin": {
+      "2025": "T18",
+      "2024": "T36",
+      "2023": "T16"
+    },
+    "Michael Thorbjornsen": {
+      "2025": "T39"
+    },
+    "Harris English": {
+      "2025": "T18",
+      "2023": "T39"
+    },
+    "Keith Mitchell": {
+      "2025": "T18",
+      "2024": "MC",
+      "2023": "T9"
+    },
+    "Adam Scott": {},
+    "Brooks Koepka": {},
+    "Taylor Pendrith": {
+      "2025": "T5",
+      "2024": "T36",
+      "2023": "66"
+    },
+    "Sahith Theegala": {
+      "2025": "T67",
+      "2024": "T28",
+      "2023": "T22"
+    },
+    "Wyndham Clark": {
+      "2025": "T5",
+      "2024": "T31",
+      "2023": "T16"
+    },
+    "Pierceson Coody": {
+      "2025": "T52",
+      "2024": "T57"
+    },
+    "Rasmus Hojgaard": {
+      "2025": "T32"
+    },
+    "Sam Stevens": {
+      "2025": "T18",
+      "2024": "T57",
+      "2023": "T57"
+    },
+    "Harry Hall": {
+      "2025": "T18",
+      "2024": "T28",
+      "2023": "T39"
+    },
+    "Alex Smalley": {
+      "2025": "MC",
+      "2024": "MC",
+      "2023": "T4"
+    },
+    "Jordan Smith": {},
+    "Davis Thompson": {
+      "2025": "T27",
+      "2024": "T21",
+      "2023": "T43"
+    },
+    "Shane Lowry": {},
+    "Ricky Castillo": {
+      "2025": "MC"
+    },
+    "Kristoffer Reitan": {},
+    "Stephan Jaeger": {
+      "2025": "T11",
+      "2024": "1",
+      "2023": "T9"
+    },
+    "Patrick Rodgers": {
+      "2025": "T52",
+      "2024": "T74",
+      "2023": "T16"
+    },
+    "Jason Day": {
+      "2025": "T27",
+      "2024": "MC",
+      "2023": "T16"
+    },
+    "Rico Hoey": {
+      "2025": "T11",
+      "2024": "MC"
+    },
+    "Mackenzie Hughes": {
+      "2025": "10",
+      "2024": "T14",
+      "2023": "T16"
+    },
+    "Mac Meissner": {
+      "2025": "T39",
+      "2024": "MC"
+    },
+    "Max Greyserman": {
+      "2025": "MC",
+      "2024": "T7"
+    },
+    "Will Zalatoris": {
+      "2024": "T74"
+    },
+    "Michael Brennan": {},
+    "Tony Finau": {
+      "2025": "T32",
+      "2024": "T2",
+      "2023": "1"
+    },
+    "Sungjae Im": {
+      "2025": "60"
+    },
+    "Adrien Dumont De Chassart": {
+      "2024": "81"
+    },
+    "Ryan Fox": {
+      "2025": "T15",
+      "2024": "T78"
+    },
+    "Max McGreevy": {
+      "2025": "MC",
+      "2023": "67"
+    },
+    "Christiaan Bezuidenhout": {},
+    "Thorbjorn Olesen": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Aaron Rai": {
+      "2025": "MC",
+      "2024": "T7",
+      "2023": "T7"
+    },
+    "Tom Kim": {},
+    "S.H. Kim": {
+      "2025": "MC",
+      "2024": "T45",
+      "2023": "T47"
+    },
+    "Matti Schmid": {
+      "2025": "MC",
+      "2024": "T21"
+    },
+    "Gary Woodland": {
+      "2025": "T2",
+      "2024": "T21",
+      "2023": "T9"
+    },
+    "Jesper Svensson": {
+      "2025": "T27",
+      "2024": "T57",
+      "2023": "T39"
+    },
+    "Matt Wallace": {
+      "2025": "MC",
+      "2024": "MC",
+      "2023": "MC"
+    },
+    "Haotong Li": {},
+    "Rasmus Neergaard-Petersen": {},
+    "J.T. Poston": {},
+    "William Mouw": {
+      "2025": "T47"
+    },
+    "Sudarshan Yellamaraju": {},
+    "Nico Echavarria": {
+      "2025": "T32",
+      "2023": "MC"
+    },
+    "Johnny Keefer": {},
+    "John Parry": {},
+    "Denny McCarthy": {
+      "2023": "T53"
+    },
+    "Doug Ghim": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "David Ford": {},
+    "Bud Cauley": {
+      "2024": "T45"
+    },
+    "Lee Hodges": {
+      "2025": "T11",
+      "2023": "MC"
+    },
+    "Kris Ventura": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Eric Cole": {
+      "2025": "T15",
+      "2023": "T35"
+    },
+    "Kevin Roy": {
+      "2025": "MC",
+      "2023": "MC"
+    },
+    "Aldrich Potgieter": {
+      "2025": "MC"
+    },
+    "Kevin Yu": {
+      "2025": "T18"
+    },
+    "Dan Brown": {},
+    "Steven Fisk": {
+      "2025": "MC"
+    },
+    "Chandler Blanchet": {},
+    "Chad Ramey": {
+      "2025": "T47",
+      "2024": "T17",
+      "2023": "MC"
+    },
+    "Garrick Higgo": {
+      "2024": "T69",
+      "2023": "MC"
+    },
+    "Zecheng Dou": {
+      "2023": "68"
+    },
+    "David Lipsky": {
+      "2025": "MC",
+      "2024": "MC",
+      "2023": "T22"
+    },
+    "John VanDerLaan": {},
+    "Chris Kirk": {},
+    "Adrien Saddier": {},
+    "Dylan Wu": {
+      "2024": "T78",
+      "2023": "T62"
+    },
+    "A.J. Ewart": {},
+    "Isaiah Salinda": {
+      "2025": "T11"
+    },
+    "Austin Eckroat": {
+      "2025": "MC",
+      "2023": "MC"
+    },
+    "Zach Bauchou": {},
+    "Bronson Burgoon": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Vince Whaley": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Luke Clanton": {},
+    "Billy Horschel": {
+      "2024": "T7"
+    },
+    "Beau Hossler": {
+      "2025": "MC",
+      "2024": "T57",
+      "2023": "MC"
+    },
+    "Matthieu Pavon": {},
+    "Takumi Kanaya": {
+      "2025": "MC"
+    },
+    "Emiliano Grillo": {
+      "2025": "T47"
+    },
+    "Christo Lamprecht": {},
+    "Pontus Nyholm": {},
+    "Andrew Putnam": {
+      "2023": "T35"
+    },
+    "Patrick Fishburn": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Mark Hubbard": {
+      "2025": "MC",
+      "2024": "T31",
+      "2023": "DQ"
+    },
+    "Gordon Sargent": {},
+    "Jhonattan Vegas": {
+      "2025": "MC",
+      "2024": "T36"
+    },
+    "Lucas Glover": {},
+    "Chandler Phillips": {
+      "2025": "T32",
+      "2024": "T45"
+    },
+    "Hank Lebioda": {},
+    "Jimmy Stanger": {},
+    "Karl Vilips": {
+      "2025": "MC"
+    },
+    "Adam Svensson": {
+      "2025": "T67",
+      "2024": "T57",
+      "2023": "T39"
+    },
+    "Alejandro Tosti": {
+      "2025": "T5",
+      "2024": "T2"
+    },
+    "Trey Mullinax": {
+      "2025": "T39",
+      "2023": "T4"
+    },
+    "Neal Shipley": {},
+    "Davis Riley": {
+      "2025": "T52",
+      "2024": "T14",
+      "2023": "T27"
+    },
+    "Danny Walker": {
+      "2025": "MC",
+      "2024": "MC",
+      "2023": "MC"
+    },
+    "Patton Kizzire": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Cole Hammer": {
+      "2024": "MC",
+      "2023": "T27"
+    },
+    "Joe Highsmith": {
+      "2025": "MC",
+      "2024": "T21"
+    },
+    "Tom Hoge": {
+      "2024": "T14"
+    },
+    "Kensei Hirata": {},
+    "Erik Van Rooyen": {
+      "2023": "WD"
+    },
+    "Adam Schenk": {
+      "2025": "MC",
+      "2023": "MC"
+    },
+    "Peter Malnati": {
+      "2025": "MC",
+      "2024": "T36",
+      "2023": "MC"
+    },
+    "Paul Waring": {
+      "2025": "MC"
+    },
+    "Davis Chatfield": {},
+    "Nick Dunlap": {
+      "2025": "MC",
+      "2024": "T11"
+    },
+    "Charley Hoffman": {
+      "2025": "T64",
+      "2023": "MC"
+    },
+    "Brice Garnett": {},
+    "Jeffrey Kang": {
+      "2024": "MC"
+    },
+    "K.H. Lee": {
+      "2025": "WD",
+      "2024": "T31"
+    },
+    "Rafael Campos": {
+      "2025": "MC",
+      "2024": "MC"
+    },
+    "Aaron Wise": {
+      "2023": "T22"
+    },
+    "Mason Howell": {},
+    "Marcelo Rozo": {},
+    "Danny Willett": {
+      "2025": "MC",
+      "2023": "WD"
+    },
+    "Brian Campbell": {},
+    "Casey Russell": {}
+  },
+  "countries": {},
+  "owgr": {
+    "Min Woo Lee": 31,
+    "Jake Knapp": 42,
+    "Chris Gotterup": 10,
+    "Kurt Kitayama": 35,
+    "Nicolai Hojgaard": 47,
+    "Ryan Gerard": 27,
+    "Sam Burns": 33,
+    "Rickie Fowler": 61,
+    "Marco Penge": 36,
+    "Ben Griffin": 16,
+    "Michael Thorbjornsen": 56,
+    "Harris English": 20,
+    "Keith Mitchell": 109,
+    "Adam Scott": 52,
+    "Brooks Koepka": 162,
+    "Taylor Pendrith": 70,
+    "Sahith Theegala": 80,
+    "Wyndham Clark": 72,
+    "Pierceson Coody": 51,
+    "Rasmus Hojgaard": 53,
+    "Sam Stevens": 50,
+    "Harry Hall": 62,
+    "Alex Smalley": 113,
+    "Jordan Smith": 65,
+    "Davis Thompson": 115,
+    "Shane Lowry": 32,
+    "Ricky Castillo": 91,
+    "Kristoffer Reitan": 48,
+    "Stephan Jaeger": 100,
+    "Patrick Rodgers": 68,
+    "Jason Day": 41,
+    "Rico Hoey": 76,
+    "Mackenzie Hughes": 116,
+    "Mac Meissner": 118,
+    "Max Greyserman": 58,
+    "Will Zalatoris": 291,
+    "Michael Brennan": 43,
+    "Tony Finau": 104,
+    "Sungjae Im": 67,
+    "Adrien Dumont De Chassart": 160,
+    "Ryan Fox": 45,
+    "Max McGreevy": 73,
+    "Christiaan Bezuidenhout": 92,
+    "Thorbjorn Olesen": 108,
+    "Aaron Rai": 39,
+    "Tom Kim": 123,
+    "S.H. Kim": 138,
+    "Matti Schmid": 85,
+    "Gary Woodland": 139,
+    "Jesper Svensson": 178,
+    "Matt Wallace": 95,
+    "Haotong Li": 78,
+    "Rasmus Neergaard-Petersen": 66,
+    "J.T. Poston": 71,
+    "William Mouw": 120,
+    "Sudarshan Yellamaraju": 145,
+    "Nico Echavarria": 38,
+    "Johnny Keefer": 74,
+    "John Parry": 86,
+    "Denny McCarthy": 96,
+    "Doug Ghim": 179,
+    "David Ford": 262,
+    "Bud Cauley": 81,
+    "Lee Hodges": 128,
+    "Kris Ventura": 233,
+    "Eric Cole": 119,
+    "Kevin Roy": 137,
+    "Aldrich Potgieter": 77,
+    "Kevin Yu": 117,
+    "Dan Brown": 82,
+    "Steven Fisk": 134,
+    "Chandler Blanchet": 105,
+    "Chad Ramey": 147,
+    "Garrick Higgo": 83,
+    "Zecheng Dou": 190,
+    "David Lipsky": 88,
+    "John VanDerLaan": 251,
+    "Chris Kirk": 94,
+    "Adrien Saddier": 93,
+    "Dylan Wu": 324,
+    "A.J. Ewart": 227,
+    "Isaiah Salinda": 241,
+    "Austin Eckroat": 172,
+    "Zach Bauchou": 169,
+    "Bronson Burgoon": 480,
+    "Vince Whaley": 127,
+    "Luke Clanton": 202,
+    "Billy Horschel": 87,
+    "Beau Hossler": 164,
+    "Matthieu Pavon": 226,
+    "Takumi Kanaya": 124,
+    "Emiliano Grillo": 103,
+    "Christo Lamprecht": 193,
+    "Pontus Nyholm": 256,
+    "Andrew Putnam": 112,
+    "Patrick Fishburn": 161,
+    "Mark Hubbard": 143,
+    "Jhonattan Vegas": 107,
+    "Lucas Glover": 84,
+    "Chandler Phillips": 177,
+    "Hank Lebioda": 198,
+    "Jimmy Stanger": 501,
+    "Karl Vilips": 151,
+    "Adam Svensson": 363,
+    "Alejandro Tosti": 298,
+    "Trey Mullinax": 387,
+    "Neal Shipley": 142,
+    "Davis Riley": 114,
+    "Danny Walker": 213,
+    "Patton Kizzire": 247,
+    "Cole Hammer": 501,
+    "Joe Highsmith": 132,
+    "Tom Hoge": 101,
+    "Kensei Hirata": 192,
+    "Erik Van Rooyen": 156,
+    "Adam Schenk": 146,
+    "Peter Malnati": 501,
+    "Paul Waring": 301,
+    "Davis Chatfield": 244,
+    "Nick Dunlap": 237,
+    "Charley Hoffman": 362,
+    "Brice Garnett": 386,
+    "Jeffrey Kang": 246,
+    "K.H. Lee": 501,
+    "Marcelo Rozo": 482,
+    "Brian Campbell": 102
+  },
+  "players": {
+    "Min Woo Lee": {
+      "history_2025": "1",
+      "history_2024": "T31",
+      "owgr": "31"
+    },
+    "Jake Knapp": {
+      "history_2025": "T27",
+      "history_2024": "MC",
+      "owgr": "42"
+    },
+    "Chris Gotterup": {
+      "history_2025": "T18",
+      "history_2024": "T57",
+      "owgr": "10"
+    },
+    "Kurt Kitayama": {
+      "history_2025": "T39",
+      "history_2024": "T36",
+      "owgr": "35"
+    },
+    "Nicolai Hojgaard": {
+      "history_2025": "MC",
+      "owgr": "47"
+    },
+    "Ryan Gerard": {
+      "history_2025": "9",
+      "owgr": "27"
+    },
+    "Sam Burns": {
+      "owgr": "33",
+      "history_2023": "WD"
+    },
+    "Rickie Fowler": {
+      "history_2025": "T52",
+      "owgr": "61"
+    },
+    "Marco Penge": {
+      "owgr": "36"
+    },
+    "Ben Griffin": {
+      "history_2025": "T18",
+      "history_2024": "T36",
+      "owgr": "16",
+      "history_2023": "T16"
+    },
+    "Michael Thorbjornsen": {
+      "history_2025": "T39",
+      "owgr": "56"
+    },
+    "Harris English": {
+      "history_2025": "T18",
+      "owgr": "20",
+      "history_2023": "T39"
+    },
+    "Keith Mitchell": {
+      "history_2025": "T18",
+      "history_2024": "MC",
+      "history_2023": "T9",
+      "owgr": "109"
+    },
+    "Adam Scott": {
+      "owgr": "52"
+    },
+    "Brooks Koepka": {
+      "owgr": "162"
+    },
+    "Taylor Pendrith": {
+      "history_2025": "T5",
+      "history_2024": "T36",
+      "owgr": "70",
+      "history_2023": "66"
+    },
+    "Sahith Theegala": {
+      "history_2025": "T67",
+      "history_2024": "T28",
+      "history_2023": "T22",
+      "owgr": "80"
+    },
+    "Wyndham Clark": {
+      "history_2025": "T5",
+      "history_2024": "T31",
+      "owgr": "72",
+      "history_2023": "T16"
+    },
+    "Pierceson Coody": {
+      "history_2025": "T52",
+      "history_2024": "T57",
+      "owgr": "51"
+    },
+    "Rasmus Hojgaard": {
+      "history_2025": "T32",
+      "owgr": "53"
+    },
+    "Sam Stevens": {
+      "history_2025": "T18",
+      "history_2024": "T57",
+      "owgr": "50",
+      "history_2023": "T57"
+    },
+    "Harry Hall": {
+      "history_2025": "T18",
+      "history_2024": "T28",
+      "owgr": "62",
+      "history_2023": "T39"
+    },
+    "Alex Smalley": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "T4",
+      "owgr": "113"
+    },
+    "Jordan Smith": {
+      "owgr": "65"
+    },
+    "Davis Thompson": {
+      "history_2025": "T27",
+      "history_2024": "T21",
+      "owgr": "115",
+      "history_2023": "T43"
+    },
+    "Shane Lowry": {
+      "owgr": "32"
+    },
+    "Ricky Castillo": {
+      "history_2025": "MC",
+      "owgr": "91"
+    },
+    "Kristoffer Reitan": {
+      "owgr": "48"
+    },
+    "Stephan Jaeger": {
+      "history_2025": "T11",
+      "history_2024": "1",
+      "history_2023": "T9",
+      "owgr": "100"
+    },
+    "Patrick Rodgers": {
+      "history_2025": "T52",
+      "history_2024": "T74",
+      "owgr": "68",
+      "history_2023": "T16"
+    },
+    "Jason Day": {
+      "history_2025": "T27",
+      "history_2024": "MC",
+      "owgr": "41",
+      "history_2023": "T16"
+    },
+    "Rico Hoey": {
+      "history_2025": "T11",
+      "history_2024": "MC",
+      "owgr": "76"
+    },
+    "Mackenzie Hughes": {
+      "history_2025": "10",
+      "history_2024": "T14",
+      "owgr": "116",
+      "history_2023": "T16"
+    },
+    "Mac Meissner": {
+      "history_2025": "T39",
+      "history_2024": "MC",
+      "owgr": "118"
+    },
+    "Max Greyserman": {
+      "history_2025": "MC",
+      "history_2024": "T7",
+      "owgr": "58"
+    },
+    "Will Zalatoris": {
+      "history_2024": "T74",
+      "owgr": "291"
+    },
+    "Michael Brennan": {
+      "owgr": "43"
+    },
+    "Tony Finau": {
+      "history_2025": "T32",
+      "history_2024": "T2",
+      "history_2023": "1",
+      "owgr": "104"
+    },
+    "Sungjae Im": {
+      "history_2025": "60",
+      "owgr": "67"
+    },
+    "Adrien Dumont De Chassart": {
+      "history_2024": "81",
+      "owgr": "160"
+    },
+    "Ryan Fox": {
+      "history_2025": "T15",
+      "history_2024": "T78",
+      "owgr": "45"
+    },
+    "Max McGreevy": {
+      "history_2025": "MC",
+      "owgr": "73",
+      "history_2023": "67"
+    },
+    "Christiaan Bezuidenhout": {
+      "owgr": "92"
+    },
+    "Thorbjorn Olesen": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "108"
+    },
+    "Aaron Rai": {
+      "history_2025": "MC",
+      "history_2024": "T7",
+      "owgr": "39",
+      "history_2023": "T7"
+    },
+    "Tom Kim": {
+      "owgr": "123"
+    },
+    "S.H. Kim": {
+      "history_2025": "MC",
+      "history_2024": "T45",
+      "history_2023": "T47",
+      "owgr": "138"
+    },
+    "Matti Schmid": {
+      "history_2025": "MC",
+      "history_2024": "T21",
+      "owgr": "85"
+    },
+    "Gary Woodland": {
+      "history_2025": "T2",
+      "history_2024": "T21",
+      "history_2023": "T9",
+      "owgr": "139"
+    },
+    "Jesper Svensson": {
+      "history_2025": "T27",
+      "history_2024": "T57",
+      "history_2023": "T39",
+      "owgr": "178"
+    },
+    "Matt Wallace": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "95",
+      "history_2023": "MC"
+    },
+    "Haotong Li": {
+      "owgr": "78"
+    },
+    "Rasmus Neergaard-Petersen": {
+      "owgr": "66"
+    },
+    "J.T. Poston": {
+      "owgr": "71"
+    },
+    "William Mouw": {
+      "history_2025": "T47",
+      "owgr": "120"
+    },
+    "Sudarshan Yellamaraju": {
+      "owgr": "145"
+    },
+    "Nico Echavarria": {
+      "history_2025": "T32",
+      "history_2023": "MC",
+      "owgr": "38"
+    },
+    "Johnny Keefer": {
+      "owgr": "74"
+    },
+    "John Parry": {
+      "owgr": "86"
+    },
+    "Denny McCarthy": {
+      "owgr": "96",
+      "history_2023": "T53"
+    },
+    "Doug Ghim": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "179"
+    },
+    "David Ford": {
+      "owgr": "262"
+    },
+    "Bud Cauley": {
+      "history_2024": "T45",
+      "owgr": "81"
+    },
+    "Lee Hodges": {
+      "history_2025": "T11",
+      "history_2023": "MC",
+      "owgr": "128"
+    },
+    "Kris Ventura": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "233"
+    },
+    "Eric Cole": {
+      "history_2025": "T15",
+      "history_2023": "T35",
+      "owgr": "119"
+    },
+    "Kevin Roy": {
+      "history_2025": "MC",
+      "history_2023": "MC",
+      "owgr": "137"
+    },
+    "Aldrich Potgieter": {
+      "history_2025": "MC",
+      "owgr": "77"
+    },
+    "Kevin Yu": {
+      "history_2025": "T18",
+      "owgr": "117"
+    },
+    "Dan Brown": {
+      "owgr": "82"
+    },
+    "Steven Fisk": {
+      "history_2025": "MC",
+      "owgr": "134"
+    },
+    "Chandler Blanchet": {
+      "owgr": "105"
+    },
+    "Chad Ramey": {
+      "history_2025": "T47",
+      "history_2024": "T17",
+      "history_2023": "MC",
+      "owgr": "147"
+    },
+    "Garrick Higgo": {
+      "history_2024": "T69",
+      "owgr": "83",
+      "history_2023": "MC"
+    },
+    "Zecheng Dou": {
+      "history_2023": "68",
+      "owgr": "190"
+    },
+    "David Lipsky": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "T22",
+      "owgr": "88"
+    },
+    "John VanDerLaan": {
+      "owgr": "251"
+    },
+    "Chris Kirk": {
+      "owgr": "94"
+    },
+    "Adrien Saddier": {
+      "owgr": "93"
+    },
+    "Dylan Wu": {
+      "history_2024": "T78",
+      "history_2023": "T62",
+      "owgr": "324"
+    },
+    "A.J. Ewart": {
+      "owgr": "227"
+    },
+    "Isaiah Salinda": {
+      "history_2025": "T11",
+      "owgr": "241"
+    },
+    "Austin Eckroat": {
+      "history_2025": "MC",
+      "history_2023": "MC",
+      "owgr": "172"
+    },
+    "Zach Bauchou": {
+      "owgr": "169"
+    },
+    "Bronson Burgoon": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "480"
+    },
+    "Vince Whaley": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "127"
+    },
+    "Luke Clanton": {
+      "owgr": "202"
+    },
+    "Billy Horschel": {
+      "history_2024": "T7",
+      "owgr": "87"
+    },
+    "Beau Hossler": {
+      "history_2025": "MC",
+      "history_2024": "T57",
+      "history_2023": "MC",
+      "owgr": "164"
+    },
+    "Matthieu Pavon": {
+      "owgr": "226"
+    },
+    "Takumi Kanaya": {
+      "history_2025": "MC",
+      "owgr": "124"
+    },
+    "Emiliano Grillo": {
+      "history_2025": "T47",
+      "owgr": "103"
+    },
+    "Christo Lamprecht": {
+      "owgr": "193"
+    },
+    "Pontus Nyholm": {
+      "owgr": "256"
+    },
+    "Andrew Putnam": {
+      "history_2023": "T35",
+      "owgr": "112"
+    },
+    "Patrick Fishburn": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "161"
+    },
+    "Mark Hubbard": {
+      "history_2025": "MC",
+      "history_2024": "T31",
+      "history_2023": "DQ",
+      "owgr": "143"
+    },
+    "Gordon Sargent": {},
+    "Jhonattan Vegas": {
+      "history_2025": "MC",
+      "history_2024": "T36",
+      "owgr": "107"
+    },
+    "Lucas Glover": {
+      "owgr": "84"
+    },
+    "Chandler Phillips": {
+      "history_2025": "T32",
+      "history_2024": "T45",
+      "owgr": "177"
+    },
+    "Hank Lebioda": {
+      "owgr": "198"
+    },
+    "Jimmy Stanger": {
+      "owgr": "501"
+    },
+    "Karl Vilips": {
+      "history_2025": "MC",
+      "owgr": "151"
+    },
+    "Adam Svensson": {
+      "history_2025": "T67",
+      "history_2024": "T57",
+      "history_2023": "T39",
+      "owgr": "363"
+    },
+    "Alejandro Tosti": {
+      "history_2025": "T5",
+      "history_2024": "T2",
+      "owgr": "298"
+    },
+    "Trey Mullinax": {
+      "history_2025": "T39",
+      "history_2023": "T4",
+      "owgr": "387"
+    },
+    "Neal Shipley": {
+      "owgr": "142"
+    },
+    "Davis Riley": {
+      "history_2025": "T52",
+      "history_2024": "T14",
+      "owgr": "114",
+      "history_2023": "T27"
+    },
+    "Danny Walker": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "history_2023": "MC",
+      "owgr": "213"
+    },
+    "Patton Kizzire": {
+      "history_2025": "MC",
+      "history_2024": "MC",
+      "owgr": "247"
+    },
+    "Cole Hammer": {
+      "history_2024": "MC",
+      "history_2023": "T27",
+      "owgr": "501"
+    },
+    "Joe Highsmith": {
+      "history_2025": "MC",
+      "history_2024": "T21",
+      "owgr": "132"
+    },
+    "Tom Hoge": {
+      "history_2024": "T14",
+      "owgr": "101"
+    },
+    "Kensei Hirata": {
+      "owgr": "192"
+    },
+    "Erik Van Rooyen": {
+      "history_2023": "WD",
+      "owgr": "156"
+    },
+    "Adam Schenk": {
+      "history_2025": "MC",
+      "history_2023": "MC",
+      "owgr": "146"
+    },
+    "Peter Malnati": {
+      "history_2025": "MC",
+      "history_2024": "T36",
+      "history_2023": "MC",
+      "owgr": "501"
+    },
+    "Paul Waring": {
+      "history_2025": "MC",
+      "owgr": "301"
+    },
+    "Davis Chatfield": {
+      "owgr": "244"
+    },
+    "Nick Dunlap": {
+      "history_2025": "MC",
+      "history_2024": "T11",
+      "owgr": "237"
+    },
+    "Charley Hoffman": {
+      "history_2025": "T64",
+      "history_2023": "MC",
+      "owgr": "362"
+    },
+    "Brice Garnett": {
+      "owgr": "386"
+    },
+    "Jeffrey Kang": {
+      "history_2024": "MC",
+      "owgr": "246"
+    },
+    "K.H. Lee": {
+      "history_2025": "WD",
+      "history_2024": "T31",
+      "owgr": "501"
+    },
+    "Rafael Campos": {
+      "history_2025": "MC",
+      "history_2024": "MC"
+    },
+    "Aaron Wise": {
+      "history_2023": "T22"
+    },
+    "Mason Howell": {},
+    "Marcelo Rozo": {
+      "owgr": "482"
+    },
+    "Danny Willett": {
+      "history_2025": "MC",
+      "history_2023": "WD"
+    },
+    "Brian Campbell": {
+      "owgr": "102"
+    },
+    "Casey Russell": {}
+  },
+  "datagolf": {
+    "Min Woo Lee": {
+      "dg_id": 16841,
+      "dg_name": "Lee, Min Woo",
+      "sg_total": 1.62,
+      "sg_ott": 0.63,
+      "sg_app": 0.29,
+      "sg_arg": 0.33,
+      "sg_putt": 0.38,
+      "driving_dist": 12.9,
+      "driving_acc": -0.003,
+      "sg_total_rank": 2,
+      "sg_ott_rank": 3,
+      "sg_app_rank": 30,
+      "sg_arg_rank": 5,
+      "sg_putt_rank": 10,
+      "course_fit": 0.122,
+      "course_history": 0.04,
+      "win_prob": 5.46,
+      "top_5_prob": 19.7,
+      "top_10_prob": 31.8,
+      "top_20_prob": 48.3,
+      "make_cut_prob": 81.1
+    },
+    "Jake Knapp": {
+      "dg_id": 19396,
+      "dg_name": "Knapp, Jake",
+      "sg_total": 1.2,
+      "sg_ott": 0.44,
+      "sg_app": 0.11,
+      "sg_arg": 0.05,
+      "sg_putt": 0.6,
+      "driving_dist": 13.0,
+      "driving_acc": -0.019,
+      "sg_total_rank": 4,
+      "sg_ott_rank": 21,
+      "sg_app_rank": 53,
+      "sg_arg_rank": 48,
+      "sg_putt_rank": 3,
+      "course_fit": 0.132,
+      "course_history": -0.007,
+      "win_prob": 2.88,
+      "top_5_prob": 12.2,
+      "top_10_prob": 21.5,
+      "top_20_prob": 35.8,
+      "make_cut_prob": 74.0
+    },
+    "Chris Gotterup": {
+      "dg_id": 27774,
+      "dg_name": "Gotterup, Chris",
+      "sg_total": 1.09,
+      "sg_ott": 0.49,
+      "sg_app": 0.4,
+      "sg_arg": 0.08,
+      "sg_putt": 0.12,
+      "driving_dist": 16.2,
+      "driving_acc": -0.05,
+      "sg_total_rank": 8,
+      "sg_ott_rank": 17,
+      "sg_app_rank": 12,
+      "sg_arg_rank": 37,
+      "sg_putt_rank": 42,
+      "course_fit": 0.166,
+      "course_history": 0.011,
+      "win_prob": 2.63,
+      "top_5_prob": 11.7,
+      "top_10_prob": 20.8,
+      "top_20_prob": 35.1,
+      "make_cut_prob": 73.8
+    },
+    "Kurt Kitayama": {
+      "dg_id": 21891,
+      "dg_name": "Kitayama, Kurt",
+      "sg_total": 1.17,
+      "sg_ott": 0.57,
+      "sg_app": 0.69,
+      "sg_arg": -0.01,
+      "sg_putt": -0.09,
+      "driving_dist": 10.2,
+      "driving_acc": -0.007,
+      "sg_total_rank": 6,
+      "sg_ott_rank": 7,
+      "sg_app_rank": 4,
+      "sg_arg_rank": 60,
+      "sg_putt_rank": 76,
+      "course_fit": 0.084,
+      "course_history": -0.003,
+      "win_prob": 2.55,
+      "top_5_prob": 11.0,
+      "top_10_prob": 20.0,
+      "top_20_prob": 34.2,
+      "make_cut_prob": 73.3
+    },
+    "Nicolai Hojgaard": {
+      "dg_id": 23602,
+      "dg_name": "Hojgaard, Nicolai",
+      "sg_total": 1.01,
+      "sg_ott": 0.31,
+      "sg_app": 0.49,
+      "sg_arg": -0.01,
+      "sg_putt": 0.23,
+      "driving_dist": 14.1,
+      "driving_acc": -0.037,
+      "sg_total_rank": 11,
+      "sg_ott_rank": 28,
+      "sg_app_rank": 7,
+      "sg_arg_rank": 63,
+      "sg_putt_rank": 23,
+      "course_fit": 0.141,
+      "course_history": -0.015,
+      "win_prob": 2.46,
+      "top_5_prob": 11.1,
+      "top_10_prob": 19.9,
+      "top_20_prob": 34.1,
+      "make_cut_prob": 73.3
+    },
+    "Ryan Gerard": {
+      "dg_id": 29767,
+      "dg_name": "Gerard, Ryan",
+      "sg_total": 1.27,
+      "sg_ott": 0.51,
+      "sg_app": 0.8,
+      "sg_arg": 0.01,
+      "sg_putt": -0.05,
+      "driving_dist": 1.6,
+      "driving_acc": 0.043,
+      "sg_total_rank": 3,
+      "sg_ott_rank": 12,
+      "sg_app_rank": 2,
+      "sg_arg_rank": 56,
+      "sg_putt_rank": 72,
+      "course_fit": -0.017,
+      "course_history": 0.028,
+      "win_prob": 2.16,
+      "top_5_prob": 10.6,
+      "top_10_prob": 19.4,
+      "top_20_prob": 34.0,
+      "make_cut_prob": 73.9
+    },
+    "Sam Burns": {
+      "dg_id": 19483,
+      "dg_name": "Burns, Sam",
+      "sg_total": 1.1,
+      "sg_ott": 0.3,
+      "sg_app": 0.19,
+      "sg_arg": null,
+      "sg_putt": 0.6,
+      "driving_dist": 8.4,
+      "driving_acc": -0.005,
+      "sg_total_rank": 7,
+      "sg_ott_rank": 31,
+      "sg_app_rank": 42,
+      "sg_arg_rank": 113,
+      "sg_putt_rank": 2,
+      "course_fit": 0.084,
+      "course_history": 0.012,
+      "win_prob": 2.14,
+      "top_5_prob": 10.5,
+      "top_10_prob": 19.2,
+      "top_20_prob": 33.4,
+      "make_cut_prob": 73.0
+    },
+    "Rickie Fowler": {
+      "dg_id": 12965,
+      "dg_name": "Fowler, Rickie",
+      "sg_total": 1.17,
+      "sg_ott": 0.46,
+      "sg_app": 0.34,
+      "sg_arg": null,
+      "sg_putt": 0.37,
+      "driving_dist": 2.2,
+      "driving_acc": 0.046,
+      "sg_total_rank": 5,
+      "sg_ott_rank": 20,
+      "sg_app_rank": 17,
+      "sg_arg_rank": 112,
+      "sg_putt_rank": 11,
+      "course_fit": -0.002,
+      "course_history": -0.004,
+      "win_prob": 2.01,
+      "top_5_prob": 9.8,
+      "top_10_prob": 18.1,
+      "top_20_prob": 31.7,
+      "make_cut_prob": 72.0
+    },
+    "Marco Penge": {
+      "dg_id": 22465,
+      "dg_name": "Penge, Marco",
+      "sg_total": 0.8,
+      "sg_ott": 0.9,
+      "sg_app": 0.14,
+      "sg_arg": -0.19,
+      "sg_putt": -0.05,
+      "driving_dist": 20.2,
+      "driving_acc": -0.034,
+      "sg_total_rank": 19,
+      "sg_ott_rank": 1,
+      "sg_app_rank": 48,
+      "sg_arg_rank": 102,
+      "sg_putt_rank": 73,
+      "course_fit": 0.187,
+      "course_history": null,
+      "win_prob": 1.97,
+      "top_5_prob": 9.3,
+      "top_10_prob": 17.1,
+      "top_20_prob": 30.1,
+      "make_cut_prob": 70.2
+    },
+    "Ben Griffin": {
+      "dg_id": 24968,
+      "dg_name": "Griffin, Ben",
+      "sg_total": 1.01,
+      "sg_ott": -0.03,
+      "sg_app": 0.35,
+      "sg_arg": 0.27,
+      "sg_putt": 0.42,
+      "driving_dist": 0.3,
+      "driving_acc": 0.007,
+      "sg_total_rank": 10,
+      "sg_ott_rank": 75,
+      "sg_app_rank": 14,
+      "sg_arg_rank": 10,
+      "sg_putt_rank": 8,
+      "course_fit": 0.007,
+      "course_history": 0.043,
+      "win_prob": 1.76,
+      "top_5_prob": 9.0,
+      "top_10_prob": 17.3,
+      "top_20_prob": 31.7,
+      "make_cut_prob": 73.4
+    },
+    "Michael Thorbjornsen": {
+      "dg_id": 26649,
+      "dg_name": "Thorbjornsen, Michael",
+      "sg_total": 0.98,
+      "sg_ott": 0.59,
+      "sg_app": 0.31,
+      "sg_arg": 0.04,
+      "sg_putt": 0.03,
+      "driving_dist": 10.5,
+      "driving_acc": 0.024,
+      "sg_total_rank": 12,
+      "sg_ott_rank": 4,
+      "sg_app_rank": 22,
+      "sg_arg_rank": 50,
+      "sg_putt_rank": 56,
+      "course_fit": 0.077,
+      "course_history": 0.008,
+      "win_prob": 1.76,
+      "top_5_prob": 8.7,
+      "top_10_prob": 16.5,
+      "top_20_prob": 29.7,
+      "make_cut_prob": 70.3
+    },
+    "Harris English": {
+      "dg_id": 14577,
+      "dg_name": "English, Harris",
+      "sg_total": 1.08,
+      "sg_ott": 0.4,
+      "sg_app": 0.11,
+      "sg_arg": 0.12,
+      "sg_putt": 0.46,
+      "driving_dist": 2.2,
+      "driving_acc": 0.036,
+      "sg_total_rank": 9,
+      "sg_ott_rank": 22,
+      "sg_app_rank": 55,
+      "sg_arg_rank": 25,
+      "sg_putt_rank": 6,
+      "course_fit": 0.009,
+      "course_history": 0.016,
+      "win_prob": 1.63,
+      "top_5_prob": 8.5,
+      "top_10_prob": 16.3,
+      "top_20_prob": 30.0,
+      "make_cut_prob": 71.7
+    },
+    "Keith Mitchell": {
+      "dg_id": 17365,
+      "dg_name": "Mitchell, Keith",
+      "sg_total": 0.86,
+      "sg_ott": 0.56,
+      "sg_app": 0.45,
+      "sg_arg": -0.03,
+      "sg_putt": -0.12,
+      "driving_dist": 9.5,
+      "driving_acc": -0.013,
+      "sg_total_rank": 17,
+      "sg_ott_rank": 9,
+      "sg_app_rank": 10,
+      "sg_arg_rank": 67,
+      "sg_putt_rank": 81,
+      "course_fit": 0.081,
+      "course_history": -0.021,
+      "win_prob": 1.59,
+      "top_5_prob": 7.9,
+      "top_10_prob": 14.9,
+      "top_20_prob": 27.7,
+      "make_cut_prob": 69.1
+    },
+    "Adam Scott": {
+      "dg_id": 6430,
+      "dg_name": "Scott, Adam",
+      "sg_total": 0.91,
+      "sg_ott": 0.3,
+      "sg_app": 0.6,
+      "sg_arg": 0.05,
+      "sg_putt": -0.03,
+      "driving_dist": 8.2,
+      "driving_acc": -0.021,
+      "sg_total_rank": 15,
+      "sg_ott_rank": 32,
+      "sg_app_rank": 5,
+      "sg_arg_rank": 49,
+      "sg_putt_rank": 68,
+      "course_fit": 0.076,
+      "course_history": -0.015,
+      "win_prob": 1.49,
+      "top_5_prob": 7.7,
+      "top_10_prob": 15.0,
+      "top_20_prob": 27.9,
+      "make_cut_prob": 69.6
+    },
+    "Brooks Koepka": {
+      "dg_id": 16243,
+      "dg_name": "Koepka, Brooks",
+      "sg_total": 0.59,
+      "sg_ott": 0.26,
+      "sg_app": 0.48,
+      "sg_arg": -0.01,
+      "sg_putt": -0.14,
+      "driving_dist": 6.2,
+      "driving_acc": -0.022,
+      "sg_total_rank": 30,
+      "sg_ott_rank": 36,
+      "sg_app_rank": 8,
+      "sg_arg_rank": 61,
+      "sg_putt_rank": 88,
+      "course_fit": 0.059,
+      "course_history": 0.01,
+      "win_prob": 1.48,
+      "top_5_prob": 7.6,
+      "top_10_prob": 14.8,
+      "top_20_prob": 27.0,
+      "make_cut_prob": 67.8
+    },
+    "Taylor Pendrith": {
+      "dg_id": 17780,
+      "dg_name": "Pendrith, Taylor",
+      "sg_total": 0.82,
+      "sg_ott": 0.51,
+      "sg_app": 0.29,
+      "sg_arg": 0.09,
+      "sg_putt": -0.07,
+      "driving_dist": 11.0,
+      "driving_acc": -0.009,
+      "sg_total_rank": 18,
+      "sg_ott_rank": 13,
+      "sg_app_rank": 28,
+      "sg_arg_rank": 35,
+      "sg_putt_rank": 75,
+      "course_fit": 0.097,
+      "course_history": -0.034,
+      "win_prob": 1.47,
+      "top_5_prob": 7.8,
+      "top_10_prob": 15.2,
+      "top_20_prob": 28.2,
+      "make_cut_prob": 69.5
+    },
+    "Sahith Theegala": {
+      "dg_id": 23014,
+      "dg_name": "Theegala, Sahith",
+      "sg_total": 0.79,
+      "sg_ott": 0.07,
+      "sg_app": 0.38,
+      "sg_arg": 0.16,
+      "sg_putt": 0.19,
+      "driving_dist": 4.0,
+      "driving_acc": -0.02,
+      "sg_total_rank": 20,
+      "sg_ott_rank": 62,
+      "sg_app_rank": 13,
+      "sg_arg_rank": 18,
+      "sg_putt_rank": 31,
+      "course_fit": 0.047,
+      "course_history": -0.02,
+      "win_prob": 1.47,
+      "top_5_prob": 7.7,
+      "top_10_prob": 14.6,
+      "top_20_prob": 27.0,
+      "make_cut_prob": 68.4
+    },
+    "Wyndham Clark": {
+      "dg_id": 23604,
+      "dg_name": "Clark, Wyndham",
+      "sg_total": 0.63,
+      "sg_ott": 0.05,
+      "sg_app": 0.34,
+      "sg_arg": 0.25,
+      "sg_putt": -0.01,
+      "driving_dist": 8.3,
+      "driving_acc": -0.036,
+      "sg_total_rank": 28,
+      "sg_ott_rank": 64,
+      "sg_app_rank": 16,
+      "sg_arg_rank": 13,
+      "sg_putt_rank": 62,
+      "course_fit": 0.091,
+      "course_history": 0.036,
+      "win_prob": 1.47,
+      "top_5_prob": 7.3,
+      "top_10_prob": 14.2,
+      "top_20_prob": 26.6,
+      "make_cut_prob": 68.1
+    },
+    "Pierceson Coody": {
+      "dg_id": 28309,
+      "dg_name": "Coody, Pierceson",
+      "sg_total": 0.7,
+      "sg_ott": 0.56,
+      "sg_app": 0.29,
+      "sg_arg": -0.18,
+      "sg_putt": 0.02,
+      "driving_dist": 13.8,
+      "driving_acc": -0.019,
+      "sg_total_rank": 22,
+      "sg_ott_rank": 8,
+      "sg_app_rank": 26,
+      "sg_arg_rank": 101,
+      "sg_putt_rank": 57,
+      "course_fit": 0.124,
+      "course_history": 0.009,
+      "win_prob": 1.44,
+      "top_5_prob": 7.6,
+      "top_10_prob": 14.8,
+      "top_20_prob": 27.2,
+      "make_cut_prob": 68.7
+    },
+    "Rasmus Hojgaard": {
+      "dg_id": 23838,
+      "dg_name": "Hojgaard, Rasmus",
+      "sg_total": 0.63,
+      "sg_ott": 0.16,
+      "sg_app": 0.11,
+      "sg_arg": -0.07,
+      "sg_putt": 0.43,
+      "driving_dist": 14.1,
+      "driving_acc": -0.055,
+      "sg_total_rank": 29,
+      "sg_ott_rank": 47,
+      "sg_app_rank": 54,
+      "sg_arg_rank": 80,
+      "sg_putt_rank": 7,
+      "course_fit": 0.155,
+      "course_history": 0.003,
+      "win_prob": 1.42,
+      "top_5_prob": 7.2,
+      "top_10_prob": 13.9,
+      "top_20_prob": 25.9,
+      "make_cut_prob": 67.4
+    },
+    "Sam Stevens": {
+      "dg_id": 25569,
+      "dg_name": "Stevens, Sam",
+      "sg_total": 0.92,
+      "sg_ott": 0.55,
+      "sg_app": 0.28,
+      "sg_arg": 0.11,
+      "sg_putt": -0.02,
+      "driving_dist": 5.7,
+      "driving_acc": 0.026,
+      "sg_total_rank": 14,
+      "sg_ott_rank": 10,
+      "sg_app_rank": 31,
+      "sg_arg_rank": 28,
+      "sg_putt_rank": 65,
+      "course_fit": 0.035,
+      "course_history": -0.003,
+      "win_prob": 1.31,
+      "top_5_prob": 7.4,
+      "top_10_prob": 14.5,
+      "top_20_prob": 27.5,
+      "make_cut_prob": 69.6
+    },
+    "Harry Hall": {
+      "dg_id": 27194,
+      "dg_name": "Hall, Harry",
+      "sg_total": 0.96,
+      "sg_ott": -0.17,
+      "sg_app": 0.12,
+      "sg_arg": 0.35,
+      "sg_putt": 0.66,
+      "driving_dist": 0.4,
+      "driving_acc": -0.024,
+      "sg_total_rank": 13,
+      "sg_ott_rank": 84,
+      "sg_app_rank": 52,
+      "sg_arg_rank": 3,
+      "sg_putt_rank": 1,
+      "course_fit": 0.031,
+      "course_history": 0.044,
+      "win_prob": 1.24,
+      "top_5_prob": 7.3,
+      "top_10_prob": 14.6,
+      "top_20_prob": 27.9,
+      "make_cut_prob": 70.6
+    },
+    "Alex Smalley": {
+      "dg_id": 18474,
+      "dg_name": "Smalley, Alex",
+      "sg_total": 0.64,
+      "sg_ott": 0.3,
+      "sg_app": 0.28,
+      "sg_arg": 0.08,
+      "sg_putt": -0.03,
+      "driving_dist": 4.9,
+      "driving_acc": 0.009,
+      "sg_total_rank": 27,
+      "sg_ott_rank": 30,
+      "sg_app_rank": 32,
+      "sg_arg_rank": 38,
+      "sg_putt_rank": 67,
+      "course_fit": 0.036,
+      "course_history": 0.033,
+      "win_prob": 1.19,
+      "top_5_prob": 6.6,
+      "top_10_prob": 12.9,
+      "top_20_prob": 24.9,
+      "make_cut_prob": 66.8
+    },
+    "Jordan Smith": {
+      "dg_id": 18586,
+      "dg_name": "Smith, Jordan",
+      "sg_total": 0.76,
+      "sg_ott": 0.49,
+      "sg_app": 0.34,
+      "sg_arg": -0.04,
+      "sg_putt": -0.03,
+      "driving_dist": 5.2,
+      "driving_acc": 0.031,
+      "sg_total_rank": 21,
+      "sg_ott_rank": 16,
+      "sg_app_rank": 20,
+      "sg_arg_rank": 69,
+      "sg_putt_rank": 66,
+      "course_fit": 0.025,
+      "course_history": null,
+      "win_prob": 1.1,
+      "top_5_prob": 6.1,
+      "top_10_prob": 12.4,
+      "top_20_prob": 24.3,
+      "make_cut_prob": 66.7
+    },
+    "Davis Thompson": {
+      "dg_id": 27364,
+      "dg_name": "Thompson, Davis",
+      "sg_total": 0.67,
+      "sg_ott": 0.4,
+      "sg_app": 0.35,
+      "sg_arg": 0.04,
+      "sg_putt": -0.12,
+      "driving_dist": 3.4,
+      "driving_acc": 0.032,
+      "sg_total_rank": 24,
+      "sg_ott_rank": 23,
+      "sg_app_rank": 15,
+      "sg_arg_rank": 51,
+      "sg_putt_rank": 82,
+      "course_fit": 0.008,
+      "course_history": 0.018,
+      "win_prob": 1.08,
+      "top_5_prob": 6.3,
+      "top_10_prob": 12.6,
+      "top_20_prob": 24.4,
+      "make_cut_prob": 66.8
+    },
+    "Shane Lowry": {
+      "dg_id": 13900,
+      "dg_name": "Lowry, Shane",
+      "sg_total": 0.9,
+      "sg_ott": 0.14,
+      "sg_app": 0.7,
+      "sg_arg": -0.05,
+      "sg_putt": 0.11,
+      "driving_dist": -0.5,
+      "driving_acc": 0.024,
+      "sg_total_rank": 16,
+      "sg_ott_rank": 50,
+      "sg_app_rank": 3,
+      "sg_arg_rank": 74,
+      "sg_putt_rank": 44,
+      "course_fit": -0.023,
+      "course_history": 0.013,
+      "win_prob": 1.08,
+      "top_5_prob": 6.2,
+      "top_10_prob": 12.6,
+      "top_20_prob": 24.6,
+      "make_cut_prob": 67.5
+    },
+    "Ricky Castillo": {
+      "dg_id": 27819,
+      "dg_name": "Castillo, Ricky",
+      "sg_total": 0.64,
+      "sg_ott": 0.31,
+      "sg_app": 0.12,
+      "sg_arg": 0.07,
+      "sg_putt": 0.14,
+      "driving_dist": 7.1,
+      "driving_acc": -0.008,
+      "sg_total_rank": 26,
+      "sg_ott_rank": 29,
+      "sg_app_rank": 51,
+      "sg_arg_rank": 41,
+      "sg_putt_rank": 40,
+      "course_fit": 0.068,
+      "course_history": -0.001,
+      "win_prob": 1.05,
+      "top_5_prob": 6.0,
+      "top_10_prob": 12.1,
+      "top_20_prob": 23.6,
+      "make_cut_prob": 65.7
+    },
+    "Kristoffer Reitan": {
+      "dg_id": 21407,
+      "dg_name": "Reitan, Kristoffer",
+      "sg_total": 0.56,
+      "sg_ott": 0.58,
+      "sg_app": -0.12,
+      "sg_arg": -0.15,
+      "sg_putt": 0.26,
+      "driving_dist": 9.5,
+      "driving_acc": 0.005,
+      "sg_total_rank": 33,
+      "sg_ott_rank": 6,
+      "sg_app_rank": 83,
+      "sg_arg_rank": 94,
+      "sg_putt_rank": 20,
+      "course_fit": 0.082,
+      "course_history": null,
+      "win_prob": 1.01,
+      "top_5_prob": 5.6,
+      "top_10_prob": 11.3,
+      "top_20_prob": 21.7,
+      "make_cut_prob": 63.7
+    },
+    "Stephan Jaeger": {
+      "dg_id": 16394,
+      "dg_name": "Jaeger, Stephan",
+      "sg_total": 0.4,
+      "sg_ott": -0.22,
+      "sg_app": 0.1,
+      "sg_arg": 0.27,
+      "sg_putt": 0.26,
+      "driving_dist": 5.7,
+      "driving_acc": -0.066,
+      "sg_total_rank": 47,
+      "sg_ott_rank": 87,
+      "sg_app_rank": 56,
+      "sg_arg_rank": 11,
+      "sg_putt_rank": 18,
+      "course_fit": 0.092,
+      "course_history": 0.083,
+      "win_prob": 0.97,
+      "top_5_prob": 5.6,
+      "top_10_prob": 11.4,
+      "top_20_prob": 22.5,
+      "make_cut_prob": 65.1
+    },
+    "Patrick Rodgers": {
+      "dg_id": 16283,
+      "dg_name": "Rodgers, Patrick",
+      "sg_total": 0.54,
+      "sg_ott": 0.04,
+      "sg_app": 0.21,
+      "sg_arg": 0.13,
+      "sg_putt": 0.16,
+      "driving_dist": 5.8,
+      "driving_acc": -0.031,
+      "sg_total_rank": 35,
+      "sg_ott_rank": 65,
+      "sg_app_rank": 40,
+      "sg_arg_rank": 23,
+      "sg_putt_rank": 35,
+      "course_fit": 0.07,
+      "course_history": -0.039,
+      "win_prob": 0.88,
+      "top_5_prob": 5.3,
+      "top_10_prob": 10.8,
+      "top_20_prob": 21.9,
+      "make_cut_prob": 64.9
+    },
+    "Jason Day": {
+      "dg_id": 9771,
+      "dg_name": "Day, Jason",
+      "sg_total": 0.58,
+      "sg_ott": 0.01,
+      "sg_app": -0.06,
+      "sg_arg": 0.33,
+      "sg_putt": 0.28,
+      "driving_dist": -1.4,
+      "driving_acc": 0.003,
+      "sg_total_rank": 31,
+      "sg_ott_rank": 72,
+      "sg_app_rank": 75,
+      "sg_arg_rank": 4,
+      "sg_putt_rank": 16,
+      "course_fit": -0.003,
+      "course_history": 0.017,
+      "win_prob": 0.84,
+      "top_5_prob": 4.8,
+      "top_10_prob": 10.1,
+      "top_20_prob": 20.5,
+      "make_cut_prob": 63.4
+    },
+    "Rico Hoey": {
+      "dg_id": 23504,
+      "dg_name": "Hoey, Rico",
+      "sg_total": 0.44,
+      "sg_ott": 0.59,
+      "sg_app": 0.41,
+      "sg_arg": -0.17,
+      "sg_putt": -0.39,
+      "driving_dist": 5.6,
+      "driving_acc": 0.031,
+      "sg_total_rank": 45,
+      "sg_ott_rank": 5,
+      "sg_app_rank": 11,
+      "sg_arg_rank": 98,
+      "sg_putt_rank": 109,
+      "course_fit": 0.018,
+      "course_history": 0.01,
+      "win_prob": 0.78,
+      "top_5_prob": 4.6,
+      "top_10_prob": 9.6,
+      "top_20_prob": 19.5,
+      "make_cut_prob": 61.8
+    },
+    "Mackenzie Hughes": {
+      "dg_id": 15556,
+      "dg_name": "Hughes, Mackenzie",
+      "sg_total": 0.28,
+      "sg_ott": -0.16,
+      "sg_app": 0.03,
+      "sg_arg": 0.2,
+      "sg_putt": 0.21,
+      "driving_dist": 0.5,
+      "driving_acc": -0.032,
+      "sg_total_rank": 55,
+      "sg_ott_rank": 83,
+      "sg_app_rank": 63,
+      "sg_arg_rank": 15,
+      "sg_putt_rank": 28,
+      "course_fit": 0.027,
+      "course_history": 0.102,
+      "win_prob": 0.72,
+      "top_5_prob": 4.5,
+      "top_10_prob": 9.3,
+      "top_20_prob": 19.2,
+      "make_cut_prob": 62.1
+    },
+    "Mac Meissner": {
+      "dg_id": 28159,
+      "dg_name": "Meissner, Mac",
+      "sg_total": 0.57,
+      "sg_ott": 0.12,
+      "sg_app": 0.34,
+      "sg_arg": 0.11,
+      "sg_putt": 0.01,
+      "driving_dist": 2.5,
+      "driving_acc": -0.008,
+      "sg_total_rank": 32,
+      "sg_ott_rank": 55,
+      "sg_app_rank": 19,
+      "sg_arg_rank": 29,
+      "sg_putt_rank": 59,
+      "course_fit": 0.024,
+      "course_history": -0.002,
+      "win_prob": 0.72,
+      "top_5_prob": 4.6,
+      "top_10_prob": 9.9,
+      "top_20_prob": 20.7,
+      "make_cut_prob": 63.9
+    },
+    "Max Greyserman": {
+      "dg_id": 23465,
+      "dg_name": "Greyserman, Max",
+      "sg_total": 0.43,
+      "sg_ott": -0.23,
+      "sg_app": 0.09,
+      "sg_arg": 0.17,
+      "sg_putt": 0.4,
+      "driving_dist": 6.5,
+      "driving_acc": -0.066,
+      "sg_total_rank": 46,
+      "sg_ott_rank": 91,
+      "sg_app_rank": 59,
+      "sg_arg_rank": 17,
+      "sg_putt_rank": 9,
+      "course_fit": 0.099,
+      "course_history": 0.014,
+      "win_prob": 0.72,
+      "top_5_prob": 4.3,
+      "top_10_prob": 9.0,
+      "top_20_prob": 18.5,
+      "make_cut_prob": 60.3
+    },
+    "Will Zalatoris": {
+      "dg_id": 19428,
+      "dg_name": "Zalatoris, Will",
+      "sg_total": 0.66,
+      "sg_ott": 0.3,
+      "sg_app": 0.54,
+      "sg_arg": 0.05,
+      "sg_putt": -0.23,
+      "driving_dist": 4.0,
+      "driving_acc": 0.006,
+      "sg_total_rank": 25,
+      "sg_ott_rank": 33,
+      "sg_app_rank": 6,
+      "sg_arg_rank": 46,
+      "sg_putt_rank": 98,
+      "course_fit": 0.022,
+      "course_history": -0.03,
+      "win_prob": 0.72,
+      "top_5_prob": 4.3,
+      "top_10_prob": 8.9,
+      "top_20_prob": 18.1,
+      "make_cut_prob": 59.9
+    },
+    "Michael Brennan": {
+      "dg_id": 29197,
+      "dg_name": "Brennan, Michael",
+      "course_fit": 0.127,
+      "course_history": null,
+      "win_prob": 0.71,
+      "top_5_prob": 4.3,
+      "top_10_prob": 9.0,
+      "top_20_prob": 18.4,
+      "make_cut_prob": 60.4
+    },
+    "Tony Finau": {
+      "dg_id": 11676,
+      "dg_name": "Finau, Tony",
+      "sg_total": 0.24,
+      "sg_ott": -0.3,
+      "sg_app": 0.17,
+      "sg_arg": 0.29,
+      "sg_putt": 0.08,
+      "driving_dist": 3.6,
+      "driving_acc": -0.059,
+      "sg_total_rank": 58,
+      "sg_ott_rank": 98,
+      "sg_app_rank": 45,
+      "sg_arg_rank": 9,
+      "sg_putt_rank": 50,
+      "course_fit": 0.065,
+      "course_history": 0.048,
+      "win_prob": 0.7,
+      "top_5_prob": 4.3,
+      "top_10_prob": 9.2,
+      "top_20_prob": 18.8,
+      "make_cut_prob": 60.9
+    },
+    "Sungjae Im": {
+      "dg_id": 17488,
+      "dg_name": "Im, Sungjae",
+      "sg_total": 0.52,
+      "sg_ott": 0.09,
+      "sg_app": -0.2,
+      "sg_arg": 0.41,
+      "sg_putt": 0.22,
+      "driving_dist": -2.3,
+      "driving_acc": 0.037,
+      "sg_total_rank": 38,
+      "sg_ott_rank": 57,
+      "sg_app_rank": 89,
+      "sg_arg_rank": 1,
+      "sg_putt_rank": 26,
+      "course_fit": -0.027,
+      "course_history": -0.036,
+      "win_prob": 0.69,
+      "top_5_prob": 4.3,
+      "top_10_prob": 9.3,
+      "top_20_prob": 19.4,
+      "make_cut_prob": 62.5
+    },
+    "Adrien Dumont De Chassart": {
+      "dg_id": 22002,
+      "dg_name": "Dumont De Chassart, Adrien",
+      "sg_total": 0.32,
+      "sg_ott": 0.13,
+      "sg_app": 0.0,
+      "sg_arg": 0.1,
+      "sg_putt": 0.08,
+      "driving_dist": 7.0,
+      "driving_acc": -0.037,
+      "sg_total_rank": 50,
+      "sg_ott_rank": 51,
+      "sg_app_rank": 69,
+      "sg_arg_rank": 30,
+      "sg_putt_rank": 49,
+      "course_fit": 0.083,
+      "course_history": -0.015,
+      "win_prob": 0.63,
+      "top_5_prob": 3.8,
+      "top_10_prob": 8.3,
+      "top_20_prob": 17.6,
+      "make_cut_prob": 60.3
+    },
+    "Ryan Fox": {
+      "dg_id": 11889,
+      "dg_name": "Fox, Ryan",
+      "sg_total": 0.53,
+      "sg_ott": 0.12,
+      "sg_app": 0.18,
+      "sg_arg": 0.1,
+      "sg_putt": 0.14,
+      "driving_dist": 9.1,
+      "driving_acc": -0.067,
+      "sg_total_rank": 37,
+      "sg_ott_rank": 56,
+      "sg_app_rank": 44,
+      "sg_arg_rank": 31,
+      "sg_putt_rank": 38,
+      "course_fit": 0.115,
+      "course_history": -0.008,
+      "win_prob": 0.62,
+      "top_5_prob": 4.0,
+      "top_10_prob": 8.7,
+      "top_20_prob": 18.5,
+      "make_cut_prob": 61.9
+    },
+    "Max McGreevy": {
+      "dg_id": 23505,
+      "dg_name": "McGreevy, Max",
+      "sg_total": 0.55,
+      "sg_ott": 0.47,
+      "sg_app": 0.29,
+      "sg_arg": -0.04,
+      "sg_putt": -0.18,
+      "driving_dist": -2.8,
+      "driving_acc": 0.069,
+      "sg_total_rank": 34,
+      "sg_ott_rank": 19,
+      "sg_app_rank": 27,
+      "sg_arg_rank": 68,
+      "sg_putt_rank": 91,
+      "course_fit": -0.067,
+      "course_history": 0.002,
+      "win_prob": 0.62,
+      "top_5_prob": 4.0,
+      "top_10_prob": 8.9,
+      "top_20_prob": 18.8,
+      "make_cut_prob": 62.0
+    },
+    "Christiaan Bezuidenhout": {
+      "dg_id": 18103,
+      "dg_name": "Bezuidenhout, Christiaan",
+      "sg_total": 0.67,
+      "sg_ott": -0.24,
+      "sg_app": 0.29,
+      "sg_arg": 0.3,
+      "sg_putt": 0.33,
+      "driving_dist": -11.8,
+      "driving_acc": 0.045,
+      "sg_total_rank": 23,
+      "sg_ott_rank": 93,
+      "sg_app_rank": 25,
+      "sg_arg_rank": 8,
+      "sg_putt_rank": 14,
+      "course_fit": -0.119,
+      "course_history": -0.015,
+      "win_prob": 0.58,
+      "top_5_prob": 4.0,
+      "top_10_prob": 9.0,
+      "top_20_prob": 19.4,
+      "make_cut_prob": 63.8
+    },
+    "Thorbjorn Olesen": {
+      "dg_id": 13412,
+      "dg_name": "Olesen, Thorbjorn",
+      "sg_total": 0.51,
+      "sg_ott": 0.23,
+      "sg_app": 0.27,
+      "sg_arg": 0.02,
+      "sg_putt": -0.01,
+      "driving_dist": 1.3,
+      "driving_acc": 0.011,
+      "sg_total_rank": 39,
+      "sg_ott_rank": 39,
+      "sg_app_rank": 35,
+      "sg_arg_rank": 55,
+      "sg_putt_rank": 64,
+      "course_fit": 0.003,
+      "course_history": -0.035,
+      "win_prob": 0.57,
+      "top_5_prob": 3.7,
+      "top_10_prob": 8.2,
+      "top_20_prob": 17.8,
+      "make_cut_prob": 61.8
+    },
+    "Aaron Rai": {
+      "dg_id": 18554,
+      "dg_name": "Rai, Aaron",
+      "sg_total": 0.53,
+      "sg_ott": 0.16,
+      "sg_app": 0.46,
+      "sg_arg": 0.11,
+      "sg_putt": -0.19,
+      "driving_dist": -11.3,
+      "driving_acc": 0.103,
+      "sg_total_rank": 36,
+      "sg_ott_rank": 48,
+      "sg_app_rank": 9,
+      "sg_arg_rank": 26,
+      "sg_putt_rank": 94,
+      "course_fit": -0.158,
+      "course_history": 0.058,
+      "win_prob": 0.57,
+      "top_5_prob": 3.6,
+      "top_10_prob": 8.1,
+      "top_20_prob": 17.7,
+      "make_cut_prob": 61.8
+    },
+    "Tom Kim": {
+      "dg_id": 24766,
+      "dg_name": "Kim, Tom",
+      "sg_total": 0.48,
+      "sg_ott": -0.09,
+      "sg_app": 0.27,
+      "sg_arg": 0.2,
+      "sg_putt": 0.1,
+      "driving_dist": -4.1,
+      "driving_acc": 0.032,
+      "sg_total_rank": 42,
+      "sg_ott_rank": 79,
+      "sg_app_rank": 33,
+      "sg_arg_rank": 16,
+      "sg_putt_rank": 46,
+      "course_fit": -0.05,
+      "course_history": null,
+      "win_prob": 0.56,
+      "top_5_prob": 3.7,
+      "top_10_prob": 8.1,
+      "top_20_prob": 17.3,
+      "make_cut_prob": 60.3
+    },
+    "S.H. Kim": {
+      "dg_id": 21688,
+      "dg_name": "Kim, S.H.",
+      "sg_total": 0.29,
+      "sg_ott": 0.16,
+      "sg_app": -0.33,
+      "sg_arg": 0.09,
+      "sg_putt": 0.37,
+      "driving_dist": 0.9,
+      "driving_acc": 0.017,
+      "sg_total_rank": 53,
+      "sg_ott_rank": 46,
+      "sg_app_rank": 96,
+      "sg_arg_rank": 34,
+      "sg_putt_rank": 13,
+      "course_fit": 0.01,
+      "course_history": 0.007,
+      "win_prob": 0.56,
+      "top_5_prob": 3.6,
+      "top_10_prob": 7.7,
+      "top_20_prob": 16.6,
+      "make_cut_prob": 59.5
+    },
+    "Matti Schmid": {
+      "dg_id": 20722,
+      "dg_name": "Schmid, Matti",
+      "sg_total": 0.18,
+      "sg_ott": 0.12,
+      "sg_app": -0.12,
+      "sg_arg": -0.04,
+      "sg_putt": 0.22,
+      "driving_dist": 8.1,
+      "driving_acc": -0.04,
+      "sg_total_rank": 61,
+      "sg_ott_rank": 54,
+      "sg_app_rank": 80,
+      "sg_arg_rank": 70,
+      "sg_putt_rank": 27,
+      "course_fit": 0.095,
+      "course_history": 0.013,
+      "win_prob": 0.55,
+      "top_5_prob": 3.6,
+      "top_10_prob": 7.7,
+      "top_20_prob": 16.2,
+      "make_cut_prob": 58.3
+    },
+    "Gary Woodland": {
+      "dg_id": 12577,
+      "dg_name": "Woodland, Gary",
+      "sg_total": 0.03,
+      "sg_ott": 0.4,
+      "sg_app": 0.0,
+      "sg_arg": -0.33,
+      "sg_putt": -0.04,
+      "driving_dist": 11.8,
+      "driving_acc": -0.012,
+      "sg_total_rank": 73,
+      "sg_ott_rank": 24,
+      "sg_app_rank": 68,
+      "sg_arg_rank": 111,
+      "sg_putt_rank": 69,
+      "course_fit": 0.102,
+      "course_history": 0.077,
+      "win_prob": 0.52,
+      "top_5_prob": 3.4,
+      "top_10_prob": 7.3,
+      "top_20_prob": 15.8,
+      "make_cut_prob": 57.7
+    },
+    "Jesper Svensson": {
+      "dg_id": 26850,
+      "dg_name": "Svensson, Jesper",
+      "sg_total": 0.08,
+      "sg_ott": 0.5,
+      "sg_app": 0.03,
+      "sg_arg": -0.07,
+      "sg_putt": -0.38,
+      "driving_dist": 15.7,
+      "driving_acc": -0.028,
+      "sg_total_rank": 68,
+      "sg_ott_rank": 15,
+      "sg_app_rank": 65,
+      "sg_arg_rank": 81,
+      "sg_putt_rank": 107,
+      "course_fit": 0.142,
+      "course_history": 0.008,
+      "win_prob": 0.52,
+      "top_5_prob": 3.2,
+      "top_10_prob": 7.0,
+      "top_20_prob": 14.9,
+      "make_cut_prob": 56.4
+    },
+    "Matt Wallace": {
+      "dg_id": 20706,
+      "dg_name": "Wallace, Matt",
+      "sg_total": 0.39,
+      "sg_ott": -0.01,
+      "sg_app": 0.23,
+      "sg_arg": 0.14,
+      "sg_putt": 0.03,
+      "driving_dist": -0.7,
+      "driving_acc": 0.003,
+      "sg_total_rank": 48,
+      "sg_ott_rank": 74,
+      "sg_app_rank": 37,
+      "sg_arg_rank": 21,
+      "sg_putt_rank": 55,
+      "course_fit": -0.007,
+      "course_history": -0.038,
+      "win_prob": 0.51,
+      "top_5_prob": 3.4,
+      "top_10_prob": 7.6,
+      "top_20_prob": 16.4,
+      "make_cut_prob": 59.7
+    },
+    "Haotong Li": {
+      "dg_id": 15310,
+      "dg_name": "Li, Haotong",
+      "sg_total": 0.48,
+      "sg_ott": 0.37,
+      "sg_app": 0.29,
+      "sg_arg": -0.18,
+      "sg_putt": -0.0,
+      "driving_dist": 5.4,
+      "driving_acc": 0.01,
+      "sg_total_rank": 41,
+      "sg_ott_rank": 25,
+      "sg_app_rank": 29,
+      "sg_arg_rank": 100,
+      "sg_putt_rank": 61,
+      "course_fit": 0.035,
+      "course_history": null,
+      "win_prob": 0.5,
+      "top_5_prob": 3.5,
+      "top_10_prob": 7.5,
+      "top_20_prob": 16.4,
+      "make_cut_prob": 59.0
+    },
+    "Rasmus Neergaard-Petersen": {
+      "dg_id": 23841,
+      "dg_name": "Neergaard-Petersen, Rasmus",
+      "sg_total": 0.36,
+      "sg_ott": 0.29,
+      "sg_app": 0.3,
+      "sg_arg": -0.11,
+      "sg_putt": -0.13,
+      "driving_dist": 3.1,
+      "driving_acc": 0.022,
+      "sg_total_rank": 49,
+      "sg_ott_rank": 34,
+      "sg_app_rank": 23,
+      "sg_arg_rank": 87,
+      "sg_putt_rank": 85,
+      "course_fit": 0.008,
+      "course_history": null,
+      "win_prob": 0.46,
+      "top_5_prob": 3.2,
+      "top_10_prob": 7.2,
+      "top_20_prob": 15.7,
+      "make_cut_prob": 58.5
+    },
+    "J.T. Poston": {
+      "dg_id": 21554,
+      "dg_name": "Poston, J.T.",
+      "sg_total": 0.51,
+      "sg_ott": 0.24,
+      "sg_app": 0.03,
+      "sg_arg": 0.03,
+      "sg_putt": 0.2,
+      "driving_dist": -5.1,
+      "driving_acc": 0.058,
+      "sg_total_rank": 40,
+      "sg_ott_rank": 38,
+      "sg_app_rank": 64,
+      "sg_arg_rank": 53,
+      "sg_putt_rank": 29,
+      "course_fit": -0.071,
+      "course_history": 0.008,
+      "win_prob": 0.46,
+      "top_5_prob": 3.1,
+      "top_10_prob": 7.1,
+      "top_20_prob": 16.0,
+      "make_cut_prob": 59.5
+    },
+    "William Mouw": {
+      "dg_id": 29770,
+      "dg_name": "Mouw, William",
+      "sg_total": 0.24,
+      "sg_ott": 0.32,
+      "sg_app": -0.01,
+      "sg_arg": -0.13,
+      "sg_putt": 0.07,
+      "driving_dist": 6.1,
+      "driving_acc": 0.01,
+      "sg_total_rank": 57,
+      "sg_ott_rank": 27,
+      "sg_app_rank": 70,
+      "sg_arg_rank": 90,
+      "sg_putt_rank": 51,
+      "course_fit": 0.046,
+      "course_history": 0.009,
+      "win_prob": 0.45,
+      "top_5_prob": 2.9,
+      "top_10_prob": 6.4,
+      "top_20_prob": 14.4,
+      "make_cut_prob": 55.8
+    },
+    "Sudarshan Yellamaraju": {
+      "dg_id": 29925,
+      "dg_name": "Yellamaraju, Sudarshan",
+      "course_fit": 0.054,
+      "course_history": null,
+      "win_prob": 0.44,
+      "top_5_prob": 2.9,
+      "top_10_prob": 6.5,
+      "top_20_prob": 14.4,
+      "make_cut_prob": 56.3
+    },
+    "Nico Echavarria": {
+      "dg_id": 22833,
+      "dg_name": "Echavarria, Nico",
+      "sg_total": 0.45,
+      "sg_ott": 0.12,
+      "sg_app": 0.21,
+      "sg_arg": -0.11,
+      "sg_putt": 0.23,
+      "driving_dist": -5.3,
+      "driving_acc": 0.043,
+      "sg_total_rank": 44,
+      "sg_ott_rank": 53,
+      "sg_app_rank": 39,
+      "sg_arg_rank": 86,
+      "sg_putt_rank": 25,
+      "course_fit": -0.069,
+      "course_history": 0.002,
+      "win_prob": 0.43,
+      "top_5_prob": 3.0,
+      "top_10_prob": 6.7,
+      "top_20_prob": 15.4,
+      "make_cut_prob": 58.0
+    },
+    "Johnny Keefer": {
+      "dg_id": 32457,
+      "dg_name": "Keefer, Johnny",
+      "sg_total": 0.1,
+      "sg_ott": 0.51,
+      "sg_app": 0.09,
+      "sg_arg": -0.32,
+      "sg_putt": -0.18,
+      "driving_dist": 10.5,
+      "driving_acc": -0.011,
+      "sg_total_rank": 67,
+      "sg_ott_rank": 14,
+      "sg_app_rank": 58,
+      "sg_arg_rank": 110,
+      "sg_putt_rank": 92,
+      "course_fit": 0.087,
+      "course_history": null,
+      "win_prob": 0.42,
+      "top_5_prob": 2.7,
+      "top_10_prob": 6.1,
+      "top_20_prob": 13.3,
+      "make_cut_prob": 54.7
+    },
+    "John Parry": {
+      "dg_id": 13764,
+      "dg_name": "Parry, John",
+      "sg_total": 0.47,
+      "sg_ott": 0.28,
+      "sg_app": 0.34,
+      "sg_arg": -0.02,
+      "sg_putt": -0.13,
+      "driving_dist": -3.7,
+      "driving_acc": 0.042,
+      "sg_total_rank": 43,
+      "sg_ott_rank": 35,
+      "sg_app_rank": 18,
+      "sg_arg_rank": 66,
+      "sg_putt_rank": 84,
+      "course_fit": -0.06,
+      "course_history": null,
+      "win_prob": 0.42,
+      "top_5_prob": 3.0,
+      "top_10_prob": 6.9,
+      "top_20_prob": 15.8,
+      "make_cut_prob": 59.7
+    },
+    "Denny McCarthy": {
+      "dg_id": 19870,
+      "dg_name": "McCarthy, Denny",
+      "sg_total": 0.32,
+      "sg_ott": -0.26,
+      "sg_app": 0.13,
+      "sg_arg": 0.07,
+      "sg_putt": 0.37,
+      "driving_dist": -6.0,
+      "driving_acc": 0.013,
+      "sg_total_rank": 51,
+      "sg_ott_rank": 95,
+      "sg_app_rank": 50,
+      "sg_arg_rank": 40,
+      "sg_putt_rank": 12,
+      "course_fit": -0.052,
+      "course_history": 0.011,
+      "win_prob": 0.41,
+      "top_5_prob": 2.9,
+      "top_10_prob": 6.9,
+      "top_20_prob": 15.6,
+      "make_cut_prob": 59.5
+    },
+    "Doug Ghim": {
+      "dg_id": 24550,
+      "dg_name": "Ghim, Doug",
+      "sg_total": 0.3,
+      "sg_ott": 0.25,
+      "sg_app": 0.21,
+      "sg_arg": 0.09,
+      "sg_putt": -0.26,
+      "driving_dist": 0.7,
+      "driving_acc": 0.024,
+      "sg_total_rank": 52,
+      "sg_ott_rank": 37,
+      "sg_app_rank": 38,
+      "sg_arg_rank": 32,
+      "sg_putt_rank": 101,
+      "course_fit": -0.012,
+      "course_history": -0.022,
+      "win_prob": 0.4,
+      "top_5_prob": 2.8,
+      "top_10_prob": 6.5,
+      "top_20_prob": 14.9,
+      "make_cut_prob": 58.2
+    },
+    "David Ford": {
+      "dg_id": 31343,
+      "dg_name": "Ford, David",
+      "sg_total": 0.18,
+      "sg_ott": 0.47,
+      "sg_app": 0.01,
+      "sg_arg": -0.15,
+      "sg_putt": -0.15,
+      "driving_dist": 2.9,
+      "driving_acc": 0.051,
+      "sg_total_rank": 62,
+      "sg_ott_rank": 18,
+      "sg_app_rank": 66,
+      "sg_arg_rank": 95,
+      "sg_putt_rank": 89,
+      "course_fit": -0.007,
+      "course_history": null,
+      "win_prob": 0.4,
+      "top_5_prob": 2.6,
+      "top_10_prob": 6.0,
+      "top_20_prob": 13.5,
+      "make_cut_prob": 55.4
+    },
+    "Bud Cauley": {
+      "dg_id": 14502,
+      "dg_name": "Cauley, Bud",
+      "sg_total": 0.27,
+      "sg_ott": 0.0,
+      "sg_app": 0.27,
+      "sg_arg": 0.09,
+      "sg_putt": -0.1,
+      "driving_dist": -3.5,
+      "driving_acc": 0.022,
+      "sg_total_rank": 56,
+      "sg_ott_rank": 73,
+      "sg_app_rank": 34,
+      "sg_arg_rank": 33,
+      "sg_putt_rank": 78,
+      "course_fit": -0.045,
+      "course_history": 0.006,
+      "win_prob": 0.39,
+      "top_5_prob": 2.9,
+      "top_10_prob": 6.5,
+      "top_20_prob": 14.6,
+      "make_cut_prob": 57.0
+    },
+    "Lee Hodges": {
+      "dg_id": 25157,
+      "dg_name": "Hodges, Lee",
+      "sg_total": 0.28,
+      "sg_ott": 0.15,
+      "sg_app": 0.15,
+      "sg_arg": -0.07,
+      "sg_putt": 0.04,
+      "driving_dist": -2.6,
+      "driving_acc": 0.044,
+      "sg_total_rank": 54,
+      "sg_ott_rank": 49,
+      "sg_app_rank": 47,
+      "sg_arg_rank": 78,
+      "sg_putt_rank": 53,
+      "course_fit": -0.048,
+      "course_history": 0.016,
+      "win_prob": 0.39,
+      "top_5_prob": 3.1,
+      "top_10_prob": 6.9,
+      "top_20_prob": 15.3,
+      "make_cut_prob": 58.2
+    },
+    "Kris Ventura": {
+      "dg_id": 15651,
+      "dg_name": "Ventura, Kris",
+      "sg_total": 0.18,
+      "sg_ott": 0.21,
+      "sg_app": -0.2,
+      "sg_arg": -0.07,
+      "sg_putt": 0.25,
+      "driving_dist": 4.3,
+      "driving_acc": 0.001,
+      "sg_total_rank": 60,
+      "sg_ott_rank": 42,
+      "sg_app_rank": 87,
+      "sg_arg_rank": 82,
+      "sg_putt_rank": 21,
+      "course_fit": 0.041,
+      "course_history": -0.047,
+      "win_prob": 0.38,
+      "top_5_prob": 2.7,
+      "top_10_prob": 6.2,
+      "top_20_prob": 13.8,
+      "make_cut_prob": 55.9
+    },
+    "Eric Cole": {
+      "dg_id": 21756,
+      "dg_name": "Cole, Eric",
+      "sg_total": 0.14,
+      "sg_ott": -0.55,
+      "sg_app": 0.15,
+      "sg_arg": 0.23,
+      "sg_putt": 0.29,
+      "driving_dist": -3.5,
+      "driving_acc": -0.049,
+      "sg_total_rank": 65,
+      "sg_ott_rank": 107,
+      "sg_app_rank": 46,
+      "sg_arg_rank": 14,
+      "sg_putt_rank": 15,
+      "course_fit": 0.002,
+      "course_history": 0.042,
+      "win_prob": 0.38,
+      "top_5_prob": 2.5,
+      "top_10_prob": 5.9,
+      "top_20_prob": 13.5,
+      "make_cut_prob": 55.5
+    },
+    "Kevin Roy": {
+      "dg_id": 18424,
+      "dg_name": "Roy, Kevin",
+      "sg_total": 0.19,
+      "sg_ott": 0.13,
+      "sg_app": -0.12,
+      "sg_arg": 0.06,
+      "sg_putt": 0.12,
+      "driving_dist": 1.6,
+      "driving_acc": 0.02,
+      "sg_total_rank": 59,
+      "sg_ott_rank": 52,
+      "sg_app_rank": 81,
+      "sg_arg_rank": 43,
+      "sg_putt_rank": 43,
+      "course_fit": 0.007,
+      "course_history": -0.013,
+      "win_prob": 0.36,
+      "top_5_prob": 2.6,
+      "top_10_prob": 6.0,
+      "top_20_prob": 13.8,
+      "make_cut_prob": 56.3
+    },
+    "Aldrich Potgieter": {
+      "dg_id": 27900,
+      "dg_name": "Potgieter, Aldrich",
+      "sg_total": -0.2,
+      "sg_ott": 0.54,
+      "sg_app": -0.23,
+      "sg_arg": -0.31,
+      "sg_putt": -0.21,
+      "driving_dist": 22.0,
+      "driving_acc": -0.049,
+      "sg_total_rank": 84,
+      "sg_ott_rank": 11,
+      "sg_app_rank": 94,
+      "sg_arg_rank": 109,
+      "sg_putt_rank": 95,
+      "course_fit": 0.208,
+      "course_history": -0.008,
+      "win_prob": 0.34,
+      "top_5_prob": 2.0,
+      "top_10_prob": 4.7,
+      "top_20_prob": 10.6,
+      "make_cut_prob": 49.3
+    },
+    "Kevin Yu": {
+      "dg_id": 17881,
+      "dg_name": "Yu, Kevin",
+      "sg_total": 0.01,
+      "sg_ott": 0.22,
+      "sg_app": -0.03,
+      "sg_arg": -0.05,
+      "sg_putt": -0.13,
+      "driving_dist": 7.3,
+      "driving_acc": -0.011,
+      "sg_total_rank": 76,
+      "sg_ott_rank": 41,
+      "sg_app_rank": 72,
+      "sg_arg_rank": 72,
+      "sg_putt_rank": 87,
+      "course_fit": 0.066,
+      "course_history": 0.008,
+      "win_prob": 0.32,
+      "top_5_prob": 2.3,
+      "top_10_prob": 5.3,
+      "top_20_prob": 12.5,
+      "make_cut_prob": 54.5
+    },
+    "Dan Brown": {
+      "dg_id": 20766,
+      "dg_name": "Brown, Dan",
+      "sg_total": 0.11,
+      "sg_ott": 0.08,
+      "sg_app": 0.19,
+      "sg_arg": -0.17,
+      "sg_putt": 0.01,
+      "driving_dist": -4.8,
+      "driving_acc": 0.045,
+      "sg_total_rank": 66,
+      "sg_ott_rank": 59,
+      "sg_app_rank": 43,
+      "sg_arg_rank": 97,
+      "sg_putt_rank": 58,
+      "course_fit": -0.07,
+      "course_history": null,
+      "win_prob": 0.32,
+      "top_5_prob": 2.0,
+      "top_10_prob": 4.7,
+      "top_20_prob": 11.1,
+      "make_cut_prob": 51.5
+    },
+    "Steven Fisk": {
+      "dg_id": 26657,
+      "dg_name": "Fisk, Steven",
+      "sg_total": 0.06,
+      "sg_ott": 0.09,
+      "sg_app": 0.01,
+      "sg_arg": 0.08,
+      "sg_putt": -0.12,
+      "driving_dist": 5.9,
+      "driving_acc": -0.015,
+      "sg_total_rank": 69,
+      "sg_ott_rank": 58,
+      "sg_app_rank": 67,
+      "sg_arg_rank": 36,
+      "sg_putt_rank": 80,
+      "course_fit": 0.058,
+      "course_history": -0.002,
+      "win_prob": 0.31,
+      "top_5_prob": 2.1,
+      "top_10_prob": 5.1,
+      "top_20_prob": 12.2,
+      "make_cut_prob": 54.0
+    },
+    "Chandler Blanchet": {
+      "dg_id": 24956,
+      "dg_name": "Blanchet, Chandler",
+      "course_fit": -0.112,
+      "course_history": null,
+      "win_prob": 0.31,
+      "top_5_prob": 2.4,
+      "top_10_prob": 5.7,
+      "top_20_prob": 13.2,
+      "make_cut_prob": 55.6
+    },
+    "Chad Ramey": {
+      "dg_id": 19840,
+      "dg_name": "Ramey, Chad",
+      "sg_total": 0.05,
+      "sg_ott": -0.04,
+      "sg_app": -0.16,
+      "sg_arg": -0.01,
+      "sg_putt": 0.26,
+      "driving_dist": -2.8,
+      "driving_acc": 0.009,
+      "sg_total_rank": 71,
+      "sg_ott_rank": 77,
+      "sg_app_rank": 85,
+      "sg_arg_rank": 62,
+      "sg_putt_rank": 19,
+      "course_fit": -0.024,
+      "course_history": 0.033,
+      "win_prob": 0.3,
+      "top_5_prob": 2.2,
+      "top_10_prob": 5.3,
+      "top_20_prob": 12.5,
+      "make_cut_prob": 54.7
+    },
+    "Garrick Higgo": {
+      "dg_id": 24342,
+      "dg_name": "Higgo, Garrick",
+      "sg_total": -0.11,
+      "sg_ott": 0.06,
+      "sg_app": -0.2,
+      "sg_arg": -0.08,
+      "sg_putt": 0.11,
+      "driving_dist": 5.8,
+      "driving_acc": -0.038,
+      "sg_total_rank": 82,
+      "sg_ott_rank": 63,
+      "sg_app_rank": 88,
+      "sg_arg_rank": 85,
+      "sg_putt_rank": 45,
+      "course_fit": 0.072,
+      "course_history": -0.048,
+      "win_prob": 0.28,
+      "top_5_prob": 1.9,
+      "top_10_prob": 4.5,
+      "top_20_prob": 10.6,
+      "make_cut_prob": 49.8
+    },
+    "Zecheng Dou": {
+      "dg_id": 16757,
+      "dg_name": "Dou, Zecheng",
+      "course_fit": 0.085,
+      "course_history": -0.04,
+      "win_prob": 0.27,
+      "top_5_prob": 2.2,
+      "top_10_prob": 5.2,
+      "top_20_prob": 12.1,
+      "make_cut_prob": 53.2
+    },
+    "David Lipsky": {
+      "dg_id": 15980,
+      "dg_name": "Lipsky, David",
+      "sg_total": 0.14,
+      "sg_ott": -0.23,
+      "sg_app": 0.14,
+      "sg_arg": 0.14,
+      "sg_putt": 0.09,
+      "driving_dist": -10.6,
+      "driving_acc": 0.04,
+      "sg_total_rank": 64,
+      "sg_ott_rank": 90,
+      "sg_app_rank": 49,
+      "sg_arg_rank": 22,
+      "sg_putt_rank": 47,
+      "course_fit": -0.111,
+      "course_history": -0.025,
+      "win_prob": 0.25,
+      "top_5_prob": 1.8,
+      "top_10_prob": 4.5,
+      "top_20_prob": 11.2,
+      "make_cut_prob": 53.3
+    },
+    "John VanDerLaan": {
+      "dg_id": 25319,
+      "dg_name": "VanDerLaan, John",
+      "course_fit": 0.024,
+      "course_history": null,
+      "win_prob": 0.25,
+      "top_5_prob": 1.7,
+      "top_10_prob": 4.4,
+      "top_20_prob": 10.4,
+      "make_cut_prob": 50.5
+    },
+    "Chris Kirk": {
+      "dg_id": 12423,
+      "dg_name": "Kirk, Chris",
+      "sg_total": 0.14,
+      "sg_ott": 0.02,
+      "sg_app": 0.32,
+      "sg_arg": 0.01,
+      "sg_putt": -0.21,
+      "driving_dist": -2.1,
+      "driving_acc": 0.013,
+      "sg_total_rank": 63,
+      "sg_ott_rank": 68,
+      "sg_app_rank": 21,
+      "sg_arg_rank": 58,
+      "sg_putt_rank": 96,
+      "course_fit": -0.032,
+      "course_history": 0.014,
+      "win_prob": 0.24,
+      "top_5_prob": 2.0,
+      "top_10_prob": 4.8,
+      "top_20_prob": 11.4,
+      "make_cut_prob": 52.9
+    },
+    "Adrien Saddier": {
+      "dg_id": 14792,
+      "dg_name": "Saddier, Adrien",
+      "sg_total": 0.03,
+      "sg_ott": 0.23,
+      "sg_app": -0.03,
+      "sg_arg": -0.06,
+      "sg_putt": -0.12,
+      "driving_dist": -2.3,
+      "driving_acc": 0.05,
+      "sg_total_rank": 74,
+      "sg_ott_rank": 40,
+      "sg_app_rank": 74,
+      "sg_arg_rank": 75,
+      "sg_putt_rank": 79,
+      "course_fit": -0.049,
+      "course_history": null,
+      "win_prob": 0.24,
+      "top_5_prob": 1.6,
+      "top_10_prob": 4.0,
+      "top_20_prob": 9.8,
+      "make_cut_prob": 49.9
+    },
+    "Dylan Wu": {
+      "dg_id": 25002,
+      "dg_name": "Wu, Dylan",
+      "sg_total": 0.05,
+      "sg_ott": 0.04,
+      "sg_app": 0.03,
+      "sg_arg": 0.05,
+      "sg_putt": -0.07,
+      "driving_dist": -2.3,
+      "driving_acc": 0.016,
+      "sg_total_rank": 70,
+      "sg_ott_rank": 67,
+      "sg_app_rank": 62,
+      "sg_arg_rank": 47,
+      "sg_putt_rank": 74,
+      "course_fit": -0.029,
+      "course_history": -0.02,
+      "win_prob": 0.23,
+      "top_5_prob": 1.6,
+      "top_10_prob": 4.2,
+      "top_20_prob": 10.4,
+      "make_cut_prob": 52.3
+    },
+    "A.J. Ewart": {
+      "dg_id": 21883,
+      "dg_name": "Ewart, A.J.",
+      "course_fit": -0.011,
+      "course_history": null,
+      "win_prob": 0.22,
+      "top_5_prob": 1.7,
+      "top_10_prob": 4.1,
+      "top_20_prob": 9.7,
+      "make_cut_prob": 49.7
+    },
+    "Isaiah Salinda": {
+      "dg_id": 27183,
+      "dg_name": "Salinda, Isaiah",
+      "sg_total": -0.34,
+      "sg_ott": 0.37,
+      "sg_app": -0.1,
+      "sg_arg": -0.21,
+      "sg_putt": -0.4,
+      "driving_dist": 9.8,
+      "driving_acc": -0.005,
+      "sg_total_rank": 89,
+      "sg_ott_rank": 26,
+      "sg_app_rank": 79,
+      "sg_arg_rank": 104,
+      "sg_putt_rank": 110,
+      "course_fit": 0.077,
+      "course_history": 0.04,
+      "win_prob": 0.22,
+      "top_5_prob": 1.6,
+      "top_10_prob": 3.9,
+      "top_20_prob": 9.3,
+      "make_cut_prob": 48.1
+    },
+    "Austin Eckroat": {
+      "dg_id": 26653,
+      "dg_name": "Eckroat, Austin",
+      "sg_total": 0.04,
+      "sg_ott": 0.16,
+      "sg_app": 0.3,
+      "sg_arg": -0.29,
+      "sg_putt": -0.13,
+      "driving_dist": -0.8,
+      "driving_acc": 0.035,
+      "sg_total_rank": 72,
+      "sg_ott_rank": 45,
+      "sg_app_rank": 24,
+      "sg_arg_rank": 108,
+      "sg_putt_rank": 86,
+      "course_fit": -0.036,
+      "course_history": -0.008,
+      "win_prob": 0.21,
+      "top_5_prob": 1.7,
+      "top_10_prob": 4.1,
+      "top_20_prob": 10.3,
+      "make_cut_prob": 51.7
+    },
+    "Zach Bauchou": {
+      "dg_id": 19846,
+      "dg_name": "Bauchou, Zach",
+      "course_fit": -0.016,
+      "course_history": null,
+      "win_prob": 0.19,
+      "top_5_prob": 1.5,
+      "top_10_prob": 3.8,
+      "top_20_prob": 9.5,
+      "make_cut_prob": 49.8
+    },
+    "Bronson Burgoon": {
+      "dg_id": 11082,
+      "dg_name": "Burgoon, Bronson",
+      "course_fit": 0.048,
+      "course_history": -0.003,
+      "win_prob": 0.19,
+      "top_5_prob": 1.4,
+      "top_10_prob": 3.3,
+      "top_20_prob": 8.2,
+      "make_cut_prob": 45.8
+    },
+    "Vince Whaley": {
+      "dg_id": 25908,
+      "dg_name": "Whaley, Vince",
+      "sg_total": -0.04,
+      "sg_ott": -0.4,
+      "sg_app": -0.27,
+      "sg_arg": 0.14,
+      "sg_putt": 0.49,
+      "driving_dist": 1.0,
+      "driving_acc": -0.06,
+      "sg_total_rank": 79,
+      "sg_ott_rank": 103,
+      "sg_app_rank": 95,
+      "sg_arg_rank": 20,
+      "sg_putt_rank": 5,
+      "course_fit": 0.053,
+      "course_history": 0.0,
+      "win_prob": 0.19,
+      "top_5_prob": 1.8,
+      "top_10_prob": 4.6,
+      "top_20_prob": 11.2,
+      "make_cut_prob": 53.3
+    },
+    "Luke Clanton": {
+      "dg_id": 32330,
+      "dg_name": "Clanton, Luke",
+      "sg_total": -0.37,
+      "sg_ott": 0.21,
+      "sg_app": -0.03,
+      "sg_arg": -0.24,
+      "sg_putt": -0.3,
+      "driving_dist": 5.5,
+      "driving_acc": -0.008,
+      "sg_total_rank": 91,
+      "sg_ott_rank": 43,
+      "sg_app_rank": 71,
+      "sg_arg_rank": 106,
+      "sg_putt_rank": 104,
+      "course_fit": 0.042,
+      "course_history": null,
+      "win_prob": 0.19,
+      "top_5_prob": 1.4,
+      "top_10_prob": 3.4,
+      "top_20_prob": 8.2,
+      "make_cut_prob": 45.9
+    },
+    "Billy Horschel": {
+      "dg_id": 11276,
+      "dg_name": "Horschel, Billy",
+      "sg_total": -0.18,
+      "sg_ott": -0.37,
+      "sg_app": -0.03,
+      "sg_arg": 0.04,
+      "sg_putt": 0.18,
+      "driving_dist": -3.4,
+      "driving_acc": -0.025,
+      "sg_total_rank": 83,
+      "sg_ott_rank": 102,
+      "sg_app_rank": 73,
+      "sg_arg_rank": 52,
+      "sg_putt_rank": 33,
+      "course_fit": -0.013,
+      "course_history": 0.027,
+      "win_prob": 0.18,
+      "top_5_prob": 1.5,
+      "top_10_prob": 3.8,
+      "top_20_prob": 9.2,
+      "make_cut_prob": 49.1
+    },
+    "Beau Hossler": {
+      "dg_id": 15470,
+      "dg_name": "Hossler, Beau",
+      "sg_total": -0.09,
+      "sg_ott": -0.27,
+      "sg_app": -0.39,
+      "sg_arg": 0.31,
+      "sg_putt": 0.27,
+      "driving_dist": -2.0,
+      "driving_acc": -0.029,
+      "sg_total_rank": 81,
+      "sg_ott_rank": 96,
+      "sg_app_rank": 101,
+      "sg_arg_rank": 6,
+      "sg_putt_rank": 17,
+      "course_fit": 0.01,
+      "course_history": -0.096,
+      "win_prob": 0.18,
+      "top_5_prob": 1.5,
+      "top_10_prob": 3.7,
+      "top_20_prob": 9.1,
+      "make_cut_prob": 48.5
+    },
+    "Matthieu Pavon": {
+      "dg_id": 19960,
+      "dg_name": "Pavon, Matthieu",
+      "sg_total": -0.21,
+      "sg_ott": 0.07,
+      "sg_app": -0.37,
+      "sg_arg": -0.14,
+      "sg_putt": 0.23,
+      "driving_dist": 0.3,
+      "driving_acc": 0.01,
+      "sg_total_rank": 85,
+      "sg_ott_rank": 61,
+      "sg_app_rank": 99,
+      "sg_arg_rank": 93,
+      "sg_putt_rank": 22,
+      "course_fit": 0.002,
+      "course_history": null,
+      "win_prob": 0.18,
+      "top_5_prob": 1.4,
+      "top_10_prob": 3.4,
+      "top_20_prob": 8.6,
+      "make_cut_prob": 47.5
+    },
+    "Takumi Kanaya": {
+      "dg_id": 19729,
+      "dg_name": "Kanaya, Takumi",
+      "sg_total": -0.01,
+      "sg_ott": 0.07,
+      "sg_app": -0.43,
+      "sg_arg": 0.15,
+      "sg_putt": 0.2,
+      "driving_dist": -8.6,
+      "driving_acc": 0.08,
+      "sg_total_rank": 77,
+      "sg_ott_rank": 60,
+      "sg_app_rank": 105,
+      "sg_arg_rank": 19,
+      "sg_putt_rank": 30,
+      "course_fit": -0.107,
+      "course_history": -0.008,
+      "win_prob": 0.16,
+      "top_5_prob": 1.4,
+      "top_10_prob": 3.5,
+      "top_20_prob": 8.8,
+      "make_cut_prob": 49.6
+    },
+    "Emiliano Grillo": {
+      "dg_id": 12808,
+      "dg_name": "Grillo, Emiliano",
+      "sg_total": -0.01,
+      "sg_ott": 0.01,
+      "sg_app": 0.09,
+      "sg_arg": -0.11,
+      "sg_putt": -0.01,
+      "driving_dist": -6.4,
+      "driving_acc": 0.054,
+      "sg_total_rank": 78,
+      "sg_ott_rank": 71,
+      "sg_app_rank": 60,
+      "sg_arg_rank": 88,
+      "sg_putt_rank": 63,
+      "course_fit": -0.086,
+      "course_history": -0.004,
+      "win_prob": 0.15,
+      "top_5_prob": 1.5,
+      "top_10_prob": 3.7,
+      "top_20_prob": 9.5,
+      "make_cut_prob": 50.2
+    },
+    "Christo Lamprecht": {
+      "dg_id": 24343,
+      "dg_name": "Lamprecht, Christo",
+      "course_fit": 0.202,
+      "course_history": null,
+      "win_prob": 0.14,
+      "top_5_prob": 1.0,
+      "top_10_prob": 2.4,
+      "top_20_prob": 6.0,
+      "make_cut_prob": 40.3
+    },
+    "Pontus Nyholm": {
+      "dg_id": 25475,
+      "dg_name": "Nyholm, Pontus",
+      "course_fit": 0.158,
+      "course_history": null,
+      "win_prob": 0.13,
+      "top_5_prob": 1.0,
+      "top_10_prob": 2.5,
+      "top_20_prob": 6.4,
+      "make_cut_prob": 42.4
+    },
+    "Andrew Putnam": {
+      "dg_id": 14704,
+      "dg_name": "Putnam, Andrew",
+      "sg_total": 0.02,
+      "sg_ott": -0.47,
+      "sg_app": 0.06,
+      "sg_arg": 0.3,
+      "sg_putt": 0.13,
+      "driving_dist": -21.5,
+      "driving_acc": 0.099,
+      "sg_total_rank": 75,
+      "sg_ott_rank": 106,
+      "sg_app_rank": 61,
+      "sg_arg_rank": 7,
+      "sg_putt_rank": 41,
+      "course_fit": -0.231,
+      "course_history": 0.011,
+      "win_prob": 0.13,
+      "top_5_prob": 1.2,
+      "top_10_prob": 3.1,
+      "top_20_prob": 8.2,
+      "make_cut_prob": 48.8
+    },
+    "Patrick Fishburn": {
+      "dg_id": 25094,
+      "dg_name": "Fishburn, Patrick",
+      "sg_total": -0.36,
+      "sg_ott": -0.11,
+      "sg_app": -0.23,
+      "sg_arg": -0.07,
+      "sg_putt": 0.04,
+      "driving_dist": 3.4,
+      "driving_acc": -0.024,
+      "sg_total_rank": 90,
+      "sg_ott_rank": 80,
+      "sg_app_rank": 93,
+      "sg_arg_rank": 77,
+      "sg_putt_rank": 54,
+      "course_fit": 0.043,
+      "course_history": -0.016,
+      "win_prob": 0.12,
+      "top_5_prob": 1.1,
+      "top_10_prob": 2.9,
+      "top_20_prob": 7.4,
+      "make_cut_prob": 45.2
+    },
+    "Mark Hubbard": {
+      "dg_id": 16333,
+      "dg_name": "Hubbard, Mark",
+      "sg_total": -0.31,
+      "sg_ott": -0.19,
+      "sg_app": -0.07,
+      "sg_arg": -0.01,
+      "sg_putt": -0.04,
+      "driving_dist": -5.4,
+      "driving_acc": 0.01,
+      "sg_total_rank": 87,
+      "sg_ott_rank": 86,
+      "sg_app_rank": 76,
+      "sg_arg_rank": 64,
+      "sg_putt_rank": 70,
+      "course_fit": -0.053,
+      "course_history": -0.028,
+      "win_prob": 0.12,
+      "top_5_prob": 0.9,
+      "top_10_prob": 2.6,
+      "top_20_prob": 6.8,
+      "make_cut_prob": 44.3
+    },
+    "Gordon Sargent": {
+      "dg_id": 30814,
+      "dg_name": "Sargent, Gordon",
+      "sg_total": -0.97,
+      "sg_ott": 0.02,
+      "sg_app": -0.72,
+      "sg_arg": -0.13,
+      "sg_putt": -0.13,
+      "driving_dist": 17.9,
+      "driving_acc": -0.094,
+      "sg_total_rank": 107,
+      "sg_ott_rank": 70,
+      "sg_app_rank": 112,
+      "sg_arg_rank": 91,
+      "sg_putt_rank": 83,
+      "course_fit": 0.206,
+      "course_history": null,
+      "win_prob": 0.12,
+      "top_5_prob": 0.8,
+      "top_10_prob": 2.0,
+      "top_20_prob": 5.1,
+      "make_cut_prob": 37.0
+    },
+    "Jhonattan Vegas": {
+      "dg_id": 13508,
+      "dg_name": "Vegas, Jhonattan",
+      "sg_total": -0.43,
+      "sg_ott": 0.02,
+      "sg_app": -0.12,
+      "sg_arg": -0.07,
+      "sg_putt": -0.26,
+      "driving_dist": 4.5,
+      "driving_acc": -0.028,
+      "sg_total_rank": 92,
+      "sg_ott_rank": 69,
+      "sg_app_rank": 82,
+      "sg_arg_rank": 79,
+      "sg_putt_rank": 102,
+      "course_fit": 0.048,
+      "course_history": 0.0,
+      "win_prob": 0.12,
+      "top_5_prob": 0.9,
+      "top_10_prob": 2.5,
+      "top_20_prob": 6.5,
+      "make_cut_prob": 42.4
+    },
+    "Lucas Glover": {
+      "dg_id": 7399,
+      "dg_name": "Glover, Lucas",
+      "sg_total": -0.06,
+      "sg_ott": -0.04,
+      "sg_app": 0.27,
+      "sg_arg": 0.06,
+      "sg_putt": -0.35,
+      "driving_dist": -12.8,
+      "driving_acc": 0.088,
+      "sg_total_rank": 80,
+      "sg_ott_rank": 78,
+      "sg_app_rank": 36,
+      "sg_arg_rank": 44,
+      "sg_putt_rank": 106,
+      "course_fit": -0.165,
+      "course_history": -0.003,
+      "win_prob": 0.11,
+      "top_5_prob": 1.0,
+      "top_10_prob": 2.7,
+      "top_20_prob": 7.4,
+      "make_cut_prob": 46.5
+    },
+    "Chandler Phillips": {
+      "dg_id": 27164,
+      "dg_name": "Phillips, Chandler",
+      "sg_total": -0.34,
+      "sg_ott": -0.25,
+      "sg_app": -0.4,
+      "sg_arg": 0.08,
+      "sg_putt": 0.23,
+      "driving_dist": -5.3,
+      "driving_acc": 0.006,
+      "sg_total_rank": 88,
+      "sg_ott_rank": 94,
+      "sg_app_rank": 103,
+      "sg_arg_rank": 39,
+      "sg_putt_rank": 24,
+      "course_fit": -0.04,
+      "course_history": 0.019,
+      "win_prob": 0.11,
+      "top_5_prob": 0.9,
+      "top_10_prob": 2.6,
+      "top_20_prob": 6.9,
+      "make_cut_prob": 44.8
+    },
+    "Hank Lebioda": {
+      "dg_id": 21943,
+      "dg_name": "Lebioda, Hank",
+      "course_fit": -0.046,
+      "course_history": 0.025,
+      "win_prob": 0.11,
+      "top_5_prob": 1.1,
+      "top_10_prob": 2.8,
+      "top_20_prob": 7.6,
+      "make_cut_prob": 46.1
+    },
+    "Jimmy Stanger": {
+      "dg_id": 23048,
+      "dg_name": "Stanger, Jimmy",
+      "course_fit": 0.063,
+      "course_history": null,
+      "win_prob": 0.11,
+      "top_5_prob": 0.8,
+      "top_10_prob": 1.9,
+      "top_20_prob": 5.0,
+      "make_cut_prob": 37.3
+    },
+    "Karl Vilips": {
+      "dg_id": 24304,
+      "dg_name": "Vilips, Karl",
+      "sg_total": -0.55,
+      "sg_ott": -0.35,
+      "sg_app": -0.22,
+      "sg_arg": -0.07,
+      "sg_putt": 0.09,
+      "driving_dist": 4.3,
+      "driving_acc": -0.069,
+      "sg_total_rank": 95,
+      "sg_ott_rank": 100,
+      "sg_app_rank": 91,
+      "sg_arg_rank": 76,
+      "sg_putt_rank": 48,
+      "course_fit": 0.075,
+      "course_history": -0.01,
+      "win_prob": 0.11,
+      "top_5_prob": 0.9,
+      "top_10_prob": 2.5,
+      "top_20_prob": 6.3,
+      "make_cut_prob": 42.3
+    },
+    "Adam Svensson": {
+      "dg_id": 13997,
+      "dg_name": "Svensson, Adam",
+      "sg_total": -0.22,
+      "sg_ott": -0.14,
+      "sg_app": 0.2,
+      "sg_arg": 0.11,
+      "sg_putt": -0.39,
+      "driving_dist": -8.5,
+      "driving_acc": 0.034,
+      "sg_total_rank": 86,
+      "sg_ott_rank": 81,
+      "sg_app_rank": 41,
+      "sg_arg_rank": 27,
+      "sg_putt_rank": 108,
+      "course_fit": -0.099,
+      "course_history": -0.022,
+      "win_prob": 0.11,
+      "top_5_prob": 1.0,
+      "top_10_prob": 2.7,
+      "top_20_prob": 7.2,
+      "make_cut_prob": 45.7
+    },
+    "Alejandro Tosti": {
+      "dg_id": 17032,
+      "dg_name": "Tosti, Alejandro",
+      "sg_total": -0.91,
+      "sg_ott": 0.04,
+      "sg_app": -0.43,
+      "sg_arg": -0.11,
+      "sg_putt": -0.41,
+      "driving_dist": 10.1,
+      "driving_acc": -0.06,
+      "sg_total_rank": 102,
+      "sg_ott_rank": 66,
+      "sg_app_rank": 104,
+      "sg_arg_rank": 89,
+      "sg_putt_rank": 111,
+      "course_fit": 0.113,
+      "course_history": 0.084,
+      "win_prob": 0.1,
+      "top_5_prob": 0.9,
+      "top_10_prob": 2.2,
+      "top_20_prob": 5.8,
+      "make_cut_prob": 39.3
+    },
+    "Trey Mullinax": {
+      "dg_id": 18761,
+      "dg_name": "Mullinax, Trey",
+      "sg_total": -0.64,
+      "sg_ott": -0.15,
+      "sg_app": -0.14,
+      "sg_arg": -0.17,
+      "sg_putt": -0.17,
+      "driving_dist": 9.2,
+      "driving_acc": -0.082,
+      "sg_total_rank": 97,
+      "sg_ott_rank": 82,
+      "sg_app_rank": 84,
+      "sg_arg_rank": 99,
+      "sg_putt_rank": 90,
+      "course_fit": 0.116,
+      "course_history": 0.044,
+      "win_prob": 0.1,
+      "top_5_prob": 0.8,
+      "top_10_prob": 2.2,
+      "top_20_prob": 5.6,
+      "make_cut_prob": 38.9
+    },
+    "Neal Shipley": {
+      "dg_id": 32055,
+      "dg_name": "Shipley, Neal",
+      "sg_total": -0.51,
+      "sg_ott": 0.19,
+      "sg_app": -0.22,
+      "sg_arg": -0.19,
+      "sg_putt": -0.29,
+      "driving_dist": 4.2,
+      "driving_acc": 0.008,
+      "sg_total_rank": 94,
+      "sg_ott_rank": 44,
+      "sg_app_rank": 92,
+      "sg_arg_rank": 103,
+      "sg_putt_rank": 103,
+      "course_fit": 0.025,
+      "course_history": null,
+      "win_prob": 0.09,
+      "top_5_prob": 0.9,
+      "top_10_prob": 2.2,
+      "top_20_prob": 5.9,
+      "make_cut_prob": 41.5
+    },
+    "Davis Riley": {
+      "dg_id": 19872,
+      "dg_name": "Riley, Davis",
+      "sg_total": -0.95,
+      "sg_ott": -0.72,
+      "sg_app": -0.47,
+      "sg_arg": 0.07,
+      "sg_putt": 0.16,
+      "driving_dist": 0.5,
+      "driving_acc": -0.071,
+      "sg_total_rank": 106,
+      "sg_ott_rank": 110,
+      "sg_app_rank": 107,
+      "sg_arg_rank": 42,
+      "sg_putt_rank": 36,
+      "course_fit": 0.048,
+      "course_history": 0.062,
+      "win_prob": 0.08,
+      "top_5_prob": 0.7,
+      "top_10_prob": 1.8,
+      "top_20_prob": 4.8,
+      "make_cut_prob": 36.9
+    },
+    "Danny Walker": {
+      "dg_id": 25003,
+      "dg_name": "Walker, Danny",
+      "sg_total": -0.67,
+      "sg_ott": -0.42,
+      "sg_app": -0.37,
+      "sg_arg": -0.02,
+      "sg_putt": 0.14,
+      "driving_dist": 4.6,
+      "driving_acc": -0.072,
+      "sg_total_rank": 98,
+      "sg_ott_rank": 105,
+      "sg_app_rank": 100,
+      "sg_arg_rank": 65,
+      "sg_putt_rank": 39,
+      "course_fit": 0.082,
+      "course_history": -0.005,
+      "win_prob": 0.08,
+      "top_5_prob": 0.8,
+      "top_10_prob": 2.2,
+      "top_20_prob": 5.6,
+      "make_cut_prob": 40.2
+    },
+    "Patton Kizzire": {
+      "dg_id": 13470,
+      "dg_name": "Kizzire, Patton",
+      "sg_total": -0.63,
+      "sg_ott": -0.78,
+      "sg_app": -0.07,
+      "sg_arg": 0.25,
+      "sg_putt": -0.04,
+      "driving_dist": -7.0,
+      "driving_acc": -0.04,
+      "sg_total_rank": 96,
+      "sg_ott_rank": 112,
+      "sg_app_rank": 77,
+      "sg_arg_rank": 12,
+      "sg_putt_rank": 71,
+      "course_fit": -0.037,
+      "course_history": 0.027,
+      "win_prob": 0.07,
+      "top_5_prob": 0.6,
+      "top_10_prob": 1.6,
+      "top_20_prob": 4.5,
+      "make_cut_prob": 39.0
+    },
+    "Cole Hammer": {
+      "dg_id": 19864,
+      "dg_name": "Hammer, Cole",
+      "course_fit": -0.013,
+      "course_history": 0.042,
+      "win_prob": 0.07,
+      "top_5_prob": 0.6,
+      "top_10_prob": 1.6,
+      "top_20_prob": 4.6,
+      "make_cut_prob": 37.6
+    },
+    "Joe Highsmith": {
+      "dg_id": 28469,
+      "dg_name": "Highsmith, Joe",
+      "sg_total": -0.78,
+      "sg_ott": -0.23,
+      "sg_app": -0.17,
+      "sg_arg": -0.14,
+      "sg_putt": -0.24,
+      "driving_dist": 1.7,
+      "driving_acc": -0.033,
+      "sg_total_rank": 101,
+      "sg_ott_rank": 88,
+      "sg_app_rank": 86,
+      "sg_arg_rank": 92,
+      "sg_putt_rank": 99,
+      "course_fit": 0.026,
+      "course_history": 0.016,
+      "win_prob": 0.06,
+      "top_5_prob": 0.6,
+      "top_10_prob": 1.5,
+      "top_20_prob": 4.3,
+      "make_cut_prob": 36.9
+    },
+    "Tom Hoge": {
+      "dg_id": 15575,
+      "dg_name": "Hoge, Tom",
+      "sg_total": -0.49,
+      "sg_ott": -0.4,
+      "sg_app": 0.09,
+      "sg_arg": -0.08,
+      "sg_putt": -0.09,
+      "driving_dist": -5.0,
+      "driving_acc": -0.019,
+      "sg_total_rank": 93,
+      "sg_ott_rank": 104,
+      "sg_app_rank": 57,
+      "sg_arg_rank": 84,
+      "sg_putt_rank": 77,
+      "course_fit": -0.038,
+      "course_history": 0.012,
+      "win_prob": 0.06,
+      "top_5_prob": 0.6,
+      "top_10_prob": 1.7,
+      "top_20_prob": 4.9,
+      "make_cut_prob": 39.6
+    },
+    "Kensei Hirata": {
+      "dg_id": 20954,
+      "dg_name": "Hirata, Kensei",
+      "course_fit": -0.122,
+      "course_history": null,
+      "win_prob": 0.05,
+      "top_5_prob": 0.5,
+      "top_10_prob": 1.4,
+      "top_20_prob": 4.3,
+      "make_cut_prob": 38.1
+    },
+    "Erik Van Rooyen": {
+      "dg_id": 17550,
+      "dg_name": "Van Rooyen, Erik",
+      "sg_total": -0.77,
+      "sg_ott": -0.04,
+      "sg_app": -0.45,
+      "sg_arg": -0.08,
+      "sg_putt": -0.21,
+      "driving_dist": 3.9,
+      "driving_acc": -0.033,
+      "sg_total_rank": 100,
+      "sg_ott_rank": 76,
+      "sg_app_rank": 106,
+      "sg_arg_rank": 83,
+      "sg_putt_rank": 97,
+      "course_fit": 0.049,
+      "course_history": -0.013,
+      "win_prob": 0.05,
+      "top_5_prob": 0.6,
+      "top_10_prob": 1.7,
+      "top_20_prob": 4.7,
+      "make_cut_prob": 37.8
+    },
+    "Adam Schenk": {
+      "dg_id": 19477,
+      "dg_name": "Schenk, Adam",
+      "sg_total": -0.93,
+      "sg_ott": -0.23,
+      "sg_app": -0.34,
+      "sg_arg": -0.05,
+      "sg_putt": -0.31,
+      "driving_dist": 0.5,
+      "driving_acc": -0.043,
+      "sg_total_rank": 103,
+      "sg_ott_rank": 92,
+      "sg_app_rank": 97,
+      "sg_arg_rank": 73,
+      "sg_putt_rank": 105,
+      "course_fit": 0.023,
+      "course_history": -0.048,
+      "win_prob": 0.04,
+      "top_5_prob": 0.4,
+      "top_10_prob": 1.3,
+      "top_20_prob": 3.5,
+      "make_cut_prob": 33.6
+    },
+    "Peter Malnati": {
+      "dg_id": 14926,
+      "dg_name": "Malnati, Peter",
+      "sg_total": -0.94,
+      "sg_ott": -0.72,
+      "sg_app": -0.53,
+      "sg_arg": 0.13,
+      "sg_putt": 0.18,
+      "driving_dist": -4.9,
+      "driving_acc": -0.077,
+      "sg_total_rank": 104,
+      "sg_ott_rank": 109,
+      "sg_app_rank": 110,
+      "sg_arg_rank": 24,
+      "sg_putt_rank": 34,
+      "course_fit": 0.006,
+      "course_history": -0.022,
+      "win_prob": 0.04,
+      "top_5_prob": 0.4,
+      "top_10_prob": 1.1,
+      "top_20_prob": 3.4,
+      "make_cut_prob": 33.4
+    },
+    "Paul Waring": {
+      "dg_id": 12426,
+      "dg_name": "Waring, Paul",
+      "sg_total": -1.06,
+      "sg_ott": -0.18,
+      "sg_app": -0.2,
+      "sg_arg": -0.24,
+      "sg_putt": -0.44,
+      "driving_dist": 0.3,
+      "driving_acc": -0.024,
+      "sg_total_rank": 108,
+      "sg_ott_rank": 85,
+      "sg_app_rank": 90,
+      "sg_arg_rank": 105,
+      "sg_putt_rank": 112,
+      "course_fit": 0.004,
+      "course_history": -0.031,
+      "win_prob": 0.03,
+      "top_5_prob": 0.3,
+      "top_10_prob": 0.9,
+      "top_20_prob": 2.7,
+      "make_cut_prob": 30.8
+    },
+    "Davis Chatfield": {
+      "dg_id": 30620,
+      "dg_name": "Chatfield, Davis",
+      "course_fit": -0.195,
+      "course_history": null,
+      "win_prob": 0.03,
+      "top_5_prob": 0.4,
+      "top_10_prob": 1.3,
+      "top_20_prob": 4.0,
+      "make_cut_prob": 38.0
+    },
+    "Nick Dunlap": {
+      "dg_id": 28270,
+      "dg_name": "Dunlap, Nick",
+      "sg_total": -0.95,
+      "sg_ott": -1.06,
+      "sg_app": -0.08,
+      "sg_arg": 0.01,
+      "sg_putt": 0.19,
+      "driving_dist": -3.5,
+      "driving_acc": -0.107,
+      "sg_total_rank": 105,
+      "sg_ott_rank": 113,
+      "sg_app_rank": 78,
+      "sg_arg_rank": 57,
+      "sg_putt_rank": 32,
+      "course_fit": 0.028,
+      "course_history": 0.037,
+      "win_prob": 0.03,
+      "top_5_prob": 0.4,
+      "top_10_prob": 1.2,
+      "top_20_prob": 3.6,
+      "make_cut_prob": 34.4
+    },
+    "Charley Hoffman": {
+      "dg_id": 5768,
+      "dg_name": "Hoffman, Charley",
+      "sg_total": -1.36,
+      "sg_ott": -0.29,
+      "sg_app": -0.34,
+      "sg_arg": -0.16,
+      "sg_putt": -0.57,
+      "driving_dist": -0.6,
+      "driving_acc": -0.028,
+      "sg_total_rank": 113,
+      "sg_ott_rank": 97,
+      "sg_app_rank": 98,
+      "sg_arg_rank": 96,
+      "sg_putt_rank": 113,
+      "course_fit": -0.001,
+      "course_history": -0.006,
+      "win_prob": 0.03,
+      "top_5_prob": 0.2,
+      "top_10_prob": 0.6,
+      "top_20_prob": 1.9,
+      "make_cut_prob": 26.4
+    },
+    "Brice Garnett": {
+      "dg_id": 11451,
+      "dg_name": "Garnett, Brice",
+      "sg_total": -0.73,
+      "sg_ott": -0.36,
+      "sg_app": -0.4,
+      "sg_arg": 0.03,
+      "sg_putt": 0.0,
+      "driving_dist": -13.5,
+      "driving_acc": 0.062,
+      "sg_total_rank": 99,
+      "sg_ott_rank": 101,
+      "sg_app_rank": 102,
+      "sg_arg_rank": 54,
+      "sg_putt_rank": 60,
+      "course_fit": -0.146,
+      "course_history": 0.002,
+      "win_prob": 0.03,
+      "top_5_prob": 0.3,
+      "top_10_prob": 0.9,
+      "top_20_prob": 2.9,
+      "make_cut_prob": 33.8
+    },
+    "Jeffrey Kang": {
+      "dg_id": 21889,
+      "dg_name": "Kang, Jeffrey",
+      "course_fit": 0.011,
+      "course_history": null,
+      "win_prob": 0.02,
+      "top_5_prob": 0.2,
+      "top_10_prob": 0.6,
+      "top_20_prob": 1.8,
+      "make_cut_prob": 26.8
+    },
+    "K.H. Lee": {
+      "dg_id": 13497,
+      "dg_name": "Lee, K.H.",
+      "sg_total": -1.19,
+      "sg_ott": -0.32,
+      "sg_app": -0.58,
+      "sg_arg": -0.04,
+      "sg_putt": -0.24,
+      "driving_dist": -3.1,
+      "driving_acc": -0.008,
+      "sg_total_rank": 110,
+      "sg_ott_rank": 99,
+      "sg_app_rank": 111,
+      "sg_arg_rank": 71,
+      "sg_putt_rank": 100,
+      "course_fit": -0.024,
+      "course_history": -0.015,
+      "win_prob": 0.02,
+      "top_5_prob": 0.2,
+      "top_10_prob": 0.5,
+      "top_20_prob": 1.6,
+      "make_cut_prob": 25.2
+    },
+    "Rafael Campos": {
+      "dg_id": 12909,
+      "dg_name": "Campos, Rafael",
+      "sg_total": -1.2,
+      "sg_ott": -0.23,
+      "sg_app": -0.51,
+      "sg_arg": -0.28,
+      "sg_putt": -0.18,
+      "driving_dist": 2.2,
+      "driving_acc": -0.041,
+      "sg_total_rank": 111,
+      "sg_ott_rank": 89,
+      "sg_app_rank": 109,
+      "sg_arg_rank": 107,
+      "sg_putt_rank": 93,
+      "course_fit": 0.036,
+      "course_history": -0.032,
+      "win_prob": 0.02,
+      "top_5_prob": 0.3,
+      "top_10_prob": 0.7,
+      "top_20_prob": 2.3,
+      "make_cut_prob": 28.7
+    },
+    "Aaron Wise": {
+      "dg_id": 22051,
+      "dg_name": "Wise, Aaron",
+      "course_fit": 0.044,
+      "course_history": 0.031,
+      "win_prob": 0.02,
+      "top_5_prob": 0.2,
+      "top_10_prob": 0.6,
+      "top_20_prob": 1.8,
+      "make_cut_prob": 25.0
+    },
+    "Mason Howell": {
+      "dg_id": 33759,
+      "dg_name": "Howell, Mason",
+      "course_fit": 0.107,
+      "course_history": null,
+      "win_prob": 0.02,
+      "top_5_prob": 0.2,
+      "top_10_prob": 0.5,
+      "top_20_prob": 1.6,
+      "make_cut_prob": 23.6
+    },
+    "Marcelo Rozo": {
+      "dg_id": 16591,
+      "dg_name": "Rozo, Marcelo",
+      "course_fit": -0.113,
+      "course_history": null,
+      "win_prob": 0.01,
+      "top_5_prob": 0.1,
+      "top_10_prob": 0.5,
+      "top_20_prob": 1.5,
+      "make_cut_prob": 25.9
+    },
+    "Danny Willett": {
+      "dg_id": 12920,
+      "dg_name": "Willett, Danny",
+      "sg_total": -1.29,
+      "sg_ott": -0.55,
+      "sg_app": -0.84,
+      "sg_arg": 0.06,
+      "sg_putt": 0.05,
+      "driving_dist": -9.1,
+      "driving_acc": -0.024,
+      "sg_total_rank": 112,
+      "sg_ott_rank": 108,
+      "sg_app_rank": 113,
+      "sg_arg_rank": 45,
+      "sg_putt_rank": 52,
+      "course_fit": -0.058,
+      "course_history": -0.057,
+      "win_prob": 0.01,
+      "top_5_prob": 0.1,
+      "top_10_prob": 0.4,
+      "top_20_prob": 1.5,
+      "make_cut_prob": 24.7
+    },
+    "Brian Campbell": {
+      "dg_id": 18628,
+      "dg_name": "Campbell, Brian",
+      "sg_total": -1.1,
+      "sg_ott": -0.77,
+      "sg_app": -0.47,
+      "sg_arg": -0.0,
+      "sg_putt": 0.15,
+      "driving_dist": -22.1,
+      "driving_acc": 0.047,
+      "sg_total_rank": 109,
+      "sg_ott_rank": 111,
+      "sg_app_rank": 108,
+      "sg_arg_rank": 59,
+      "sg_putt_rank": 37,
+      "course_fit": -0.211,
+      "course_history": null,
+      "win_prob": 0.01,
+      "top_5_prob": 0.1,
+      "top_10_prob": 0.4,
+      "top_20_prob": 1.3,
+      "make_cut_prob": 24.5
+    },
+    "Casey Russell": {
+      "dg_id": 23133,
+      "dg_name": "Russell, Casey",
+      "course_fit": -0.009,
+      "course_history": null,
+      "win_prob": null,
+      "top_5_prob": 0.0,
+      "top_10_prob": 0.2,
+      "top_20_prob": 0.6,
+      "make_cut_prob": 14.8
+    }
+  },
+  "datagolf_metadata": {
+    "event_name": "Texas Children's Houston Open",
+    "course_name": "Memorial Park Golf Course",
+    "last_updated": "2026-03-23T19:05:24Z",
+    "matched_players": 133,
+    "unmatched_players": 0,
+    "field_size": 133
+  }
+}

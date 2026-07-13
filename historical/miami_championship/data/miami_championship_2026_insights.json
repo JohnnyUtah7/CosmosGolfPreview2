@@ -1,0 +1,90 @@
+{
+  "tournament": "Cadillac Championship",
+  "generated_at": "2026-04-28T20:27:32Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the most dominant favorite we've modeled this season, with an 18.7% win probability against +435 odds that imply just 18.7% — but the real edge is his +2.92 SG Total that dwarfs the field by nearly a full stroke. The mid-tier offers exceptional value: Cameron Young (+1389) ranks second in total strokes gained at +2.00 with a 6.7% model win probability, while Chris Gotterup (+3248) boasts the best course fit in the top 10 at +0.224 and a 3.0% win probability against odds implying virtually nothing. Longshot hunters should zero in on Jacob Bridgeman (+5330), who ranks fifth in putting, carries a +1.31 SG Total, and projects for a nearly 20% top-10 probability.",
+  "insights": [
+    {
+      "title": "Scheffler Is a Class Apart",
+      "insight": "Scottie Scheffler's +2.92 SG Total leads the field by 0.92 strokes over Cameron Young, and he ranks #1 in SG Approach (+1.04) and #2 in SG Putting (+0.61). His 18.7% model win probability represents a massive edge at +435 — he's the rare favorite who deserves to be backed confidently.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Cameron Young's Price Is Absurd",
+      "insight": "At +1389, Cameron Young's 6.7% model win probability suggests he should be priced closer to +1400 on implied probability alone — but the real story is his +2.00 SG Total ranking second in a 72-player field with a solid +0.178 course fit. He's the clear second-best player at a mid-range price.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Gotterup's Course Fit Is Elite",
+      "insight": "Chris Gotterup owns the highest course fit adjustment among contenders at +0.224, paired with a +1.34 SG Total and 3.0% model win probability at +3248. His skill set aligns perfectly with what this track demands, making him an ideal each-way play.",
+      "players": [
+        "Chris Gotterup"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Jake Knapp Fits the Blueprint",
+      "insight": "Knapp's +0.201 course fit ranks second-best among the top 10 favorites, and his +1.30 SG Total supports a 3.0% model win probability at +3209. His power game translates well here, and the odds dramatically undervalue his chances.",
+      "players": [
+        "Jake Knapp"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Morikawa's Iron Play Demands Respect",
+      "insight": "Collin Morikawa ranks #2 in the field in SG Approach at +0.99 and carries a +1.79 SG Total — third-best overall. At +2754 with a 3.5% model win probability, this is an elite ball-striker at a price that doesn't reflect his ceiling.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Si Woo Kim: Great Form, Poor Fit",
+      "insight": "Si Woo Kim's +1.67 SG Total ranks fourth in the field and his +0.74 SG Approach ranks fourth as well, but his course fit adjustment is a near-zero +0.002. At +3446 he still offers model edge (2.8% win prob), but his profile doesn't match the course as well as similarly-priced alternatives like Gotterup or Knapp.",
+      "players": [
+        "Si Woo Kim",
+        "Chris Gotterup",
+        "Jake Knapp"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Bridgeman Is the Top Longshot",
+      "insight": "Jacob Bridgeman at +5330 carries a +1.31 SG Total, ranks fifth in SG Putting (+0.57), and projects for a 19.7% top-10 probability — the highest among all longshots analyzed. He's the best lottery ticket in the field.",
+      "players": [
+        "Jacob Bridgeman"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Viktor Hovland Offers Sneaky Value",
+      "insight": "Hovland's +1.20 SG Total and 18.1% top-10 probability at +6229 represent significant each-way value. His overall game has been trending in the right direction, and at this price the risk-reward is highly favorable for top-5 or top-10 wagers.",
+      "players": [
+        "Viktor Hovland"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Sam Burns: Putter-Led Upside at Range",
+      "insight": "Sam Burns leads the entire field in SG Putting at +0.69 and sits at +4850. If the flatstick stays hot, his top-10 probability makes him a strong each-way candidate — hot putting can neutralize any other weaknesses over 72 holes.",
+      "players": [
+        "Sam Burns"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Min Woo Lee's All-Around Profile Shines",
+      "insight": "Min Woo Lee combines a +1.48 SG Total with the third-best course fit among favorites at +0.185, yielding a 3.2% model win probability at +3015. His blend of power and course suitability makes him one of the most well-rounded value plays in the 25/1-35/1 range.",
+      "players": [
+        "Min Woo Lee"
+      ],
+      "category": "value"
+    }
+  ]
+}
