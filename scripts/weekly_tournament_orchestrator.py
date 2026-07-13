@@ -154,6 +154,56 @@ def get_previous_tournament(schedule: dict, current: dict) -> Optional[dict]:
     return None
 
 
+def recent_events_before(schedule: dict, current: dict, count: int = 2) -> list[str]:
+    """Names of the most recent events before the current one (covers the
+    main event + a same-week opposite-field event)."""
+    all_tournaments = schedule.get("tournaments", []) + schedule.get("fall_schedule", [])
+    dated = []
+    for t in all_tournaments:
+        start_str = (t.get("dates") or {}).get("start", "")
+        if start_str:
+            try:
+                dated.append((t, datetime.strptime(start_str, "%Y-%m-%d").date()))
+            except ValueError:
+                pass
+    dated.sort(key=lambda x: x[1])
+    current_slug = current.get("slug", "")
+    for i, (t, _) in enumerate(dated):
+        if t.get("slug") == current_slug:
+            return [p.get("name", "") for p, _ in dated[max(0, i - count):i]]
+    return []
+
+
+def verify_recent_form_freshness(
+    schedule: dict, tournament: dict, slug: str, year: int, min_players: int = 5
+) -> tuple[bool, str]:
+    """Check that last week's tournament placings made it into recent form.
+
+    The recent-form strings look like 'Genesis Scottish Open (Jul 12): T5 • ...';
+    require at least `min_players` players to mention one of the immediately
+    preceding events. DataGolf can lag posting Sunday results, so a failure here
+    is retryable stale data.
+    """
+    rf_path = PROJECT_ROOT / "data" / f"{slug}_{year}_recent_form.json"
+    if not rf_path.exists():
+        return False, f"recent form file missing: {rf_path.name}"
+    recent_form = json.loads(rf_path.read_text(encoding="utf-8"))
+    prev_names = [n for n in recent_events_before(schedule, tournament) if n]
+    if not prev_names:
+        return True, "no prior events in schedule to verify against"
+    counts = {
+        name: sum(1 for v in recent_form.values() if name in (v or ""))
+        for name in prev_names
+    }
+    best = max(counts, key=counts.get)
+    if counts[best] >= min_players:
+        return True, f"'{best}' placings present for {counts[best]} players"
+    return False, (
+        f"last week's results missing from recent form (checked {prev_names}, "
+        f"best match '{best}' found for only {counts[best]} players, need {min_players})"
+    )
+
+
 def run_script(script_name: str, args: list[str] = None, description: str = "") -> int:
     """Run a Python script and return exit code."""
     script_path = PROJECT_ROOT / "scripts" / script_name
@@ -345,6 +395,11 @@ def main() -> int:
         help="Deploy even if the content audit failed (escape hatch — normally audit failures block deploy)"
     )
     parser.add_argument(
+        "--skip-event-check",
+        action="store_true",
+        help="Bypass the Data Golf expected-event guard (use when DG names the event differently, e.g. 'The Open' vs 'The Open Championship')"
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Show what would be done without executing"
@@ -488,10 +543,13 @@ def main() -> int:
     # Step 2: Fetch odds from Data Golf (replaces manual DraftKings paste / fetch_draftkings_odds)
     if not args.skip_odds:
         players_data_path = PROJECT_ROOT / "data" / f"{slug}_{year}_players_data.json"
+        odds_args = ["--players-data", str(players_data_path), "--year", str(year),
+                     "--expected-event", tournament_name]
+        if args.skip_event_check:
+            odds_args.append("--skip-event-check")
         exit_code = run_script(
             "refresh_odds_from_datagolf.py",
-            ["--players-data", str(players_data_path), "--year", str(year),
-             "--expected-event", tournament_name],
+            odds_args,
             "Fetching Tournament Odds (Data Golf)"
         )
         if exit_code == 0:
@@ -577,6 +635,35 @@ def main() -> int:
             steps_completed += 1
         else:
             steps_failed += 1
+
+        # Freshness gate: last week's placings MUST be in recent form before we
+        # spend money on storylines or publish anything. One retry with a fresh
+        # cache fetch, then treat as retryable stale data (exit 2).
+        fresh, detail = verify_recent_form_freshness(schedule, tournament, slug, year)
+        if not fresh:
+            print(f"[WARN] Recent form freshness check failed: {detail}")
+            print("[RETRY] Re-fetching result caches from Data Golf...")
+            run_script(
+                "fetch_recent_form_caches_from_datagolf.py",
+                ["--tournament", tournament_name, "--year", str(year), "--max-events", "3"],
+                "Re-fetching recent result caches (freshness retry)"
+            )
+            run_script(
+                "build_recent_form_from_cache.py",
+                ["--tournament", tournament_name, "--year", str(year), "--max-events", "13", "--slug", slug],
+                "Rebuilding recent form from cache (freshness retry)"
+            )
+            fresh, detail = verify_recent_form_freshness(schedule, tournament, slug, year)
+        if fresh:
+            print(f"[OK] Recent form freshness: {detail}")
+        else:
+            print("\n" + "!" * 70)
+            print("[ABORT] Recent form is missing LAST WEEK'S results:")
+            print(f"        {detail}")
+            print("        DataGolf may not have posted Sunday's finishes yet.")
+            print("        Aborting before storylines/publish. Retry later (exit 2).")
+            print("!" * 70 + "\n")
+            return 2
     else:
         print("[SKIP] Recent form step skipped (--skip-recent-form)")
 
