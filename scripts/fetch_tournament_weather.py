@@ -101,6 +101,8 @@ VENUE_COORDINATES: dict[str, tuple[float, float]] = {
     "hamilton, ontario, canada":    (43.2557, -79.8711),
     # Scotland (The Renaissance Club, North Berwick — Genesis Scottish Open)
     "north berwick, scotland":      (56.0546, -2.6612),
+    # England (Royal Birkdale, Southport — The Open Championship)
+    "southport, england":           (53.6417, -3.0195),
 }
 
 
@@ -339,6 +341,105 @@ def format_openmeteo_summary(data: dict) -> tuple[str, list[dict]]:
     return summary, raw
 
 
+# ── AM/PM wind breakdown (links-golf wave read) ─────────────────────────
+# Local hours sampled per tournament day. Tunable — the user asked for an
+# 8am morning read and a 12pm afternoon read.
+WIND_SAMPLE_HOURS = [("am", 8, "8 AM"), ("pm", 12, "12 PM")]
+
+_CARDINALS = [
+    "N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
+    "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW",
+]
+
+
+def _deg_to_cardinal(deg) -> str:
+    """Convert a wind bearing in degrees to a 16-point compass label."""
+    if deg is None:
+        return ""
+    idx = int((float(deg) % 360) / 22.5 + 0.5) % 16
+    return _CARDINALS[idx]
+
+
+def get_openmeteo_hourly_wind(lat: float, lon: float, start_date: str, end_date: str) -> dict:
+    """Hourly wind (speed/direction/gusts) from Open-Meteo for the tournament window.
+
+    Global + free, so it powers the AM/PM wind breakdown for every venue (US or
+    international) regardless of which source produced the daily summary. Returns
+    the raw 'hourly' dict, or {} if out of range / on error.
+    """
+    url = "https://api.open-meteo.com/v1/forecast"
+    params = {
+        "latitude": lat,
+        "longitude": lon,
+        "hourly": "wind_speed_10m,wind_direction_10m,wind_gusts_10m",
+        "wind_speed_unit": "mph",
+        "timezone": "auto",
+    }
+    if start_date and end_date:
+        params["start_date"] = start_date
+        params["end_date"] = end_date
+    else:
+        params["forecast_days"] = 7
+    try:
+        r = requests.get(url, params=params, timeout=10)
+        r.raise_for_status()
+        return r.json().get("hourly") or {}
+    except Exception as e:
+        print(f"  Warning: Error fetching Open-Meteo hourly wind: {e}")
+        return {}
+
+
+def build_wind_by_day(hourly: dict, start_date: str, end_date: str) -> list[dict]:
+    """Extract AM (8am) and PM (12pm) wind for each tournament day.
+
+    Returns a list of {date, weekday, am:{...}, pm:{...}} where each am/pm block is
+    {hour, speed_mph, gust_mph, dir, deg} (or None if that hour is unavailable).
+    Purely additive — older consumers ignore it, new renderers guard on presence.
+    """
+    from datetime import timedelta
+
+    times = hourly.get("time") or []
+    if not times:
+        return []
+    speeds = hourly.get("wind_speed_10m") or []
+    dirs = hourly.get("wind_direction_10m") or []
+    gusts = hourly.get("wind_gusts_10m") or []
+    index = {t: i for i, t in enumerate(times)}
+
+    try:
+        sd = datetime.strptime(start_date, "%Y-%m-%d").date()
+        ed = datetime.strptime(end_date, "%Y-%m-%d").date()
+    except (ValueError, TypeError):
+        return []
+
+    out: list[dict] = []
+    day = sd
+    while day <= ed:
+        iso = day.strftime("%Y-%m-%d")
+        entry: dict = {"date": iso, "weekday": day.strftime("%a")}
+        has_any = False
+        for key, hour, label in WIND_SAMPLE_HOURS:
+            i = index.get(f"{iso}T{hour:02d}:00")
+            if i is None:
+                entry[key] = None
+                continue
+            spd = speeds[i] if i < len(speeds) else None
+            gst = gusts[i] if i < len(gusts) else None
+            dg = dirs[i] if i < len(dirs) else None
+            entry[key] = {
+                "hour": label,
+                "speed_mph": int(round(spd)) if spd is not None else None,
+                "gust_mph": int(round(gst)) if gst is not None else None,
+                "dir": _deg_to_cardinal(dg),
+                "deg": int(round(dg)) if dg is not None else None,
+            }
+            has_any = True
+        if has_any:
+            out.append(entry)
+        day += timedelta(days=1)
+    return out
+
+
 def format_dates(tournament: dict) -> str:
     """Format tournament dates like 'April 9-12, 2026'."""
     dates = tournament.get("dates", {})
@@ -511,6 +612,16 @@ def main() -> int:
 
     print(f"\n  Forecast: {weather_summary}")
 
+    # AM/PM wind breakdown for each tournament day (Open-Meteo hourly, global).
+    # Additive: powers the links-golf wave read without disturbing existing fields.
+    dts = tournament.get("dates", {})
+    hourly = get_openmeteo_hourly_wind(lat, lon, dts.get("start", ""), dts.get("end", ""))
+    wind_by_day = build_wind_by_day(hourly, dts.get("start", ""), dts.get("end", ""))
+    if wind_by_day:
+        print(f"  AM/PM wind: captured 8am + 12pm for {len(wind_by_day)} day(s)")
+    else:
+        print("  [INFO] AM/PM wind unavailable (dates out of hourly range?) — skipping wind table")
+
     # Save to JSON for use in HTML generation
     weather_data = {
         "tournament": tournament_name,
@@ -523,6 +634,8 @@ def main() -> int:
     }
     if raw_periods:
         weather_data["raw_periods"] = raw_periods
+    if wind_by_day:
+        weather_data["wind_by_day"] = wind_by_day
 
     output_file = ROOT / "data" / "tournament_weather.json"
     output_file.write_text(json.dumps(weather_data, indent=2), encoding="utf-8")

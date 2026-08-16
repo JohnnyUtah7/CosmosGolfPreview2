@@ -44,8 +44,28 @@ def page_handle(slug_or_name: str, year: int) -> str:
     Pass the SCHEDULE slug when available — sponsor/location-named events
     (Memorial, Pebble, etc.) use short schedule slugs that differ from
     _slugify(name). _slugify is idempotent on slugs, so either form works
-    for events whose slug matches their name."""
-    return f"{year}-{_slugify(slug_or_name).replace('_', '-')}"
+    for events whose slug matches their name.
+
+    An optional `page_handle` field in the schedule entry overrides the
+    derived value, for pages published under a shortened handle (FedEx
+    St. Jude lives at 2026-fedex-st-jude, not -championship). The year
+    prefix is still added here, so the override is the bare stem."""
+    override = _schedule_page_handle(slug_or_name)
+    stem = override or _slugify(slug_or_name).replace("_", "-")
+    return f"{year}-{stem}"
+
+
+def _schedule_page_handle(slug_or_name: str) -> Optional[str]:
+    """`page_handle` override from the schedule entry, if one is set."""
+    try:
+        schedule = load_schedule()
+    except (OSError, ValueError):
+        return None
+    slug = _slugify(slug_or_name)
+    for t in schedule.get("tournaments", []) + schedule.get("fall_schedule", []):
+        if t.get("slug") == slug or _slugify(t.get("name", "")) == slug:
+            return t.get("page_handle") or None
+    return None
 
 
 def page_title(tournament: dict, year: int) -> str:
@@ -182,6 +202,85 @@ def load_weather_forecast() -> str:
     return "Weather forecast will be updated for tournament week."
 
 
+def load_weather_periods() -> list:
+    """Load the per-day AM/PM wind breakdown (`wind_by_day`) written by
+    fetch_tournament_weather.py. Returns [] when absent (older data), so the wind
+    renderer cleanly omits the table rather than erroring."""
+    weather_path = PROJECT_ROOT / "data" / "tournament_weather.json"
+    if weather_path.exists():
+        try:
+            data = json.loads(weather_path.read_text(encoding="utf-8"))
+            return data.get("wind_by_day") or []
+        except Exception:
+            pass
+    return []
+
+
+def _render_wind_by_day_html(wind_by_day: list) -> str:
+    """Compact AM/PM wind panel (8am + 12pm per day) with a links-golf wave read.
+
+    Inline-styled so it renders identically in the full and v2/Shopify HTML, and a
+    horizontal-scroll wrapper keeps it phone-safe. Returns '' when there's no data.
+    """
+    if not wind_by_day:
+        return ""
+
+    def _cell(block: Optional[dict]) -> str:
+        if not block or block.get("speed_mph") is None:
+            return '<span style="color:#999;">—</span>'
+        deg = block.get("deg")
+        arrow = ""
+        if deg is not None:
+            # Up-arrow rotated to point the way the wind travels (from-dir + 180°).
+            arrow = (f'<span style="display:inline-block;transform:rotate({(int(deg) + 180) % 360}deg);'
+                     f'color:#b8860b;font-weight:700;" title="Wind from {block.get("dir","")} ({deg}°)">↑</span> ')
+        gust = block.get("gust_mph")
+        gust_txt = f' <span style="color:#777;font-size:11px;">G{gust}</span>' if gust else ""
+        return (f'{arrow}<strong>{block.get("speed_mph")}</strong>'
+                f'<span style="font-size:11px;color:#555;"> mph {_escape_html(block.get("dir",""))}</span>{gust_txt}')
+
+    rows = ""
+    am_speeds: list[int] = []
+    pm_speeds: list[int] = []
+    for day in wind_by_day:
+        am, pm = day.get("am"), day.get("pm")
+        if am and am.get("speed_mph") is not None:
+            am_speeds.append(am["speed_mph"])
+        if pm and pm.get("speed_mph") is not None:
+            pm_speeds.append(pm["speed_mph"])
+        rows += (
+            '<tr>'
+            f'<td style="padding:6px 10px;font-weight:700;white-space:nowrap;">{_escape_html(day.get("weekday",""))}</td>'
+            f'<td style="padding:6px 10px;">{_cell(am)}</td>'
+            f'<td style="padding:6px 10px;">{_cell(pm)}</td>'
+            '</tr>'
+        )
+
+    # Wave read: which half of the draw gets the lighter wind on average.
+    wave = ""
+    if am_speeds and pm_speeds:
+        am_avg = sum(am_speeds) / len(am_speeds)
+        pm_avg = sum(pm_speeds) / len(pm_speeds)
+        if abs(am_avg - pm_avg) < 1.5:
+            wave = "Little AM/PM split in the forecast — wind stays fairly even across the draw."
+        elif am_avg < pm_avg:
+            wave = f"Mornings play calmer (~{round(am_avg)} vs ~{round(pm_avg)} mph) — a slight edge to AM-wave tee times."
+        else:
+            wave = f"Afternoons play calmer (~{round(pm_avg)} vs ~{round(am_avg)} mph) — a slight edge to PM-wave tee times."
+    wave_html = f'<div style="margin-top:10px;font-size:13px;color:#333;">🌊 <em>{_escape_html(wave)}</em></div>' if wave else ""
+
+    return (
+        '<div class="wind-by-day" style="background:#f8f9fa;border-left:4px solid #b8860b;'
+        'padding:16px 20px;margin:24px 0;font-size:14px;line-height:1.5;">'
+        '<strong style="font-size:16px;display:block;margin-bottom:10px;">🌬️ Wind by Day — Morning &amp; Afternoon</strong>'
+        '<div style="overflow-x:auto;">'
+        '<table style="border-collapse:collapse;width:100%;max-width:520px;">'
+        '<thead><tr style="text-align:left;color:#666;font-size:12px;text-transform:uppercase;letter-spacing:.04em;">'
+        '<th style="padding:6px 10px;">Day</th><th style="padding:6px 10px;">8 AM</th><th style="padding:6px 10px;">12 PM</th></tr></thead>'
+        f'<tbody>{rows}</tbody></table></div>{wave_html}</div>'
+    )
+
+
 def load_storylines(tournament_slug: str, year: int) -> dict:
     """Load AI-generated storylines if available."""
     storylines_path = PROJECT_ROOT / "data" / f"{tournament_slug}_{year}_storylines.json"
@@ -197,6 +296,175 @@ def load_recent_form(tournament_slug: str, year: int) -> dict:
     if recent_form_path.exists():
         return json.loads(recent_form_path.read_text(encoding="utf-8"))
     return {}
+
+
+# --- Climber selection (shared by the v2 site HTML and the email newsletter) ---
+# The email imports these via `gt.` — keep the selection logic here so both
+# surfaces pick the same players; only the rendering differs per surface.
+
+def finish_num(v) -> "int | None":
+    """Numeric finish (T28->28, '1'->1). None for NA/—/MC/WD — non-finishes break a trend."""
+    s = (str(v) if v is not None else "").strip().upper()
+    if s in ("", "NA", "N/A", "—", "MC", "WD", "CUT", "DQ"):
+        return None
+    s = s.replace("T", "")
+    return int(s) if s.isdigit() else None
+
+
+def finish_disp(v) -> str:
+    s = (str(v) if v is not None else "").strip()
+    return "—" if s.upper() in ("", "NA", "N/A", "—") else s
+
+
+def pick_trending_player(players: list, year: int):
+    """Biggest climber AT THIS VENUE across the 3 prior years.
+
+    Returns (player, [(year, finish_num, finish_display)]) or (None, None).
+    Requires 2+ made cuts, an 8-spot jump, and a newest finish inside the top 25.
+    """
+    best = None
+    for p in players:
+        yearly = [
+            (year - 3, p.get("history_prev3")),
+            (year - 2, p.get("history_prev2")),
+            (year - 1, p.get("history_prev1")),
+        ]
+        pts = [(y, finish_num(v), finish_disp(v)) for y, v in yearly]
+        pts = [(y, n, d) for (y, n, d) in pts if n is not None]
+        if len(pts) < 2:
+            continue
+        improvement = pts[0][1] - pts[-1][1]
+        if improvement < 8 or pts[-1][1] > 25:
+            continue
+        score = (improvement, len(pts), -pts[-1][1])
+        if best is None or score > best[0]:
+            best = (score, p, pts)
+    return (best[1], best[2]) if best else (None, None)
+
+
+_FORM_LEG_RE = re.compile(r"\s*(.+?)\s*\(([^)]*)\):\s*(\S+?)\s*$")
+
+
+def parse_recent_form(blob: str) -> list:
+    """Parse a recent-form string into chronological [(event, when, finish)].
+
+    Source format is newest-first, bullet-separated:
+        "Rocket Classic (Jul 2026): T8 • 3M Open (Jul 2026): T31 • ..."
+    Returned oldest-first so a climb reads left-to-right.
+    """
+    legs = []
+    for chunk in (blob or "").split("•"):
+        m = _FORM_LEG_RE.match(chunk.strip())
+        if m:
+            legs.append((m.group(1), m.group(2), m.group(3)))
+    return legs[::-1]
+
+
+def pick_form_climbers(players: list, count: int = 3, exclude: str = "") -> list:
+    """Players whose last 3 starts show an improving finish trend.
+
+    Strict pass: three consecutive made cuts, each better than the last
+    (the "T53 -> T24 -> T15" shape). If that yields fewer than `count`, a
+    relaxed pass fills the rest with players who still improved overall
+    (first -> last) across three made cuts.
+
+    Returns [{name, legs: [(event, finish)], improvement, best}] ranked by
+    total improvement, then by how strong the most recent finish is.
+    """
+    def _rank(p, strict: bool):
+        legs = parse_recent_form(p.get("recent_form", ""))
+        if len(legs) < 3:
+            return None
+        last3 = legs[-3:]
+        fins = [finish_num(f) for _, _, f in last3]
+        if any(f is None for f in fins):          # an MC/WD breaks the story
+            return None
+        improved = fins[0] > fins[1] > fins[2] if strict else fins[0] > fins[2]
+        if not improved:
+            return None
+        return {
+            "name": p["name"],
+            "legs": [(e, f) for e, _, f in last3],
+            "improvement": fins[0] - fins[2],
+            "best": fins[2],
+        }
+
+    picked, seen = [], {exclude} if exclude else set()
+    for strict in (True, False):
+        pool = [r for r in (_rank(p, strict) for p in players) if r and r["name"] not in seen]
+        pool.sort(key=lambda r: (-r["improvement"], r["best"]))
+        for r in pool:
+            if len(picked) >= count:
+                break
+            picked.append(r)
+            seen.add(r["name"])
+        if len(picked) >= count:
+            break
+    return picked[:count]
+
+
+def shorten_event(name: str) -> str:
+    """Trim sponsor cruft so three legs fit on one line."""
+    n = re.sub(r"\s+presented by .*$", "", name or "", flags=re.I)
+    for long, short in (
+        ("The Open Championship", "The Open"), ("Genesis Scottish Open", "Scottish Open"),
+        ("Corales Puntacana Championship", "Corales"), ("The CJ Cup Byron Nelson", "Byron Nelson"),
+        ("The Memorial Tournament", "The Memorial"), ("Charles Schwab Challenge", "Colonial"),
+        ("John Deere Classic", "John Deere"), ("Travelers Championship", "Travelers"),
+        ("RBC Canadian Open", "Canadian Open"), ("ISCO Championship", "ISCO"),
+        ("Myrtle Beach Classic", "Myrtle Beach"), ("Rocket Classic", "Rocket"),
+    ):
+        if n == long:
+            return short
+    return n
+
+
+def _render_climbers_v2(trending: tuple, climbers: list, course: str) -> str:
+    """Trend bands for the v2/Shopify page: venue climber (gold) + form climbers (green).
+
+    Mirrors the email's two bands so the site and the newsletter tell the same story.
+    Returns '' when neither has data, so the section never renders as an empty shell.
+    """
+    blocks = ""
+
+    tp, tpts = (trending or (None, None))
+    if tp and tpts:
+        path = ' <span class="clmb-arrow">&rarr;</span> '.join(
+            f'<span class="clmb-leg{" clmb-now" if i == len(tpts) - 1 else ""}">'
+            f'{_escape_html(str(y))} <strong>{_escape_html(d)}</strong></span>'
+            for i, (y, n, d) in enumerate(tpts)
+        )
+        gain = tpts[0][1] - tpts[-1][1]
+        blocks += f"""
+            <div class="clmb-band clmb-venue">
+                <div class="clmb-kicker">&#128200; Biggest Climber &middot; {_escape_html(course or "the host course")}</div>
+                <div class="clmb-row">
+                    <div class="clmb-who">{_escape_html(tp["name"])}</div>
+                    <div class="clmb-path">{path}</div>
+                    <div class="clmb-gain">&#9650;{gain}<span>spots</span></div>
+                </div>
+            </div>"""
+
+    if climbers:
+        rows = ""
+        for c in climbers:
+            path = ' <span class="clmb-arrow">&rarr;</span> '.join(
+                f'<span class="clmb-leg{" clmb-now" if i == len(c["legs"]) - 1 else ""}">'
+                f'{_escape_html(shorten_event(e))} <strong>{_escape_html(f)}</strong></span>'
+                for i, (e, f) in enumerate(c["legs"])
+            )
+            rows += f"""
+                    <div class="clmb-row">
+                        <div class="clmb-who">{_escape_html(c["name"])}</div>
+                        <div class="clmb-path">{path}</div>
+                        <div class="clmb-gain">&#9650;{c["improvement"]}<span>spots</span></div>
+                    </div>"""
+        blocks += f"""
+            <div class="clmb-band clmb-form">
+                <div class="clmb-kicker">&#128293; Form Climbers &middot; Last 3 Starts</div>{rows}
+            </div>"""
+
+    return f'<div class="climbers-v2">{blocks}</div>' if blocks else ""
 
 
 def load_datagolf_data(tournament_slug: str, year: int) -> dict:
@@ -599,6 +867,7 @@ def generate_html(
         insights = {"executive_summary": "", "insights": []}
 
     weather_forecast = load_weather_forecast()
+    wind_by_day_html_full = _render_wind_by_day_html(load_weather_periods())
 
     matchups_html = _render_matchups_html(matchups) if matchups else ""
     # When matchups exist, lead the tab with the AI analysis placeholder so
@@ -1873,6 +2142,8 @@ def generate_html(
             {_escape_html(weather_forecast)}
         </div>
 
+        {wind_by_day_html_full}
+
         <div class="crew-picks">
             <div class="crew-grid">
 '''
@@ -2430,8 +2701,14 @@ def generate_v2_html(
     year: int,
     insights: dict,
     matchups: Optional[dict],
+    all_players: Optional[list] = None,
 ) -> str:
-    """Generate paste-ready v2 HTML: header, WM image, crew, exec summary, compact insight cards, search, tabs, 4-col table with dropdowns, matchups, PDF script. Same light-mode design."""
+    """Generate paste-ready v2 HTML: header, WM image, crew, exec summary, compact insight cards, search, tabs, 4-col table with dropdowns, matchups, PDF script. Same light-mode design.
+
+    `players` is the truncated board (top N by odds); `all_players` is the full field.
+    The trend bands select from the full field so the site and the email — which has no
+    truncation — never disagree about who's climbing.
+    """
     tournament_name = tournament.get("name", "PGA Tour Tournament")
     tournament_dates = format_dates(tournament.get("dates", {}))
     tournament_location = tournament.get("location", "TBD")
@@ -2443,6 +2720,7 @@ def generate_v2_html(
     course_img_src = course_image_src(tournament_name)
 
     weather_forecast = _escape_html(load_weather_forecast())
+    wind_by_day_html = _render_wind_by_day_html(load_weather_periods())
 
     matchups_rendered = _render_matchups_html(matchups) if matchups else ""
     # Only surface the Daily Matchups tab when real matchup data exists; otherwise
@@ -2492,6 +2770,15 @@ def generate_v2_html(
             )
             insights_html += f'<div class="insight-card-v2 {cat}"><div class="insight-title-v2">{title}</div><div class="insight-text-v2">{text}</div><div class="insight-players-v2">{players_list}</div></div>'
         insights_html += "</div>"
+
+    # Trend bands — same picks as the email newsletter (shared selection helpers,
+    # run over the full field so truncating the board can't change the picks)
+    _pool = all_players or players
+    _trending = pick_trending_player(_pool, year)
+    _climbers = pick_form_climbers(
+        _pool, count=3, exclude=_trending[0]["name"] if _trending[0] else ""
+    )
+    climbers_html = _render_climbers_v2(_trending, _climbers, tournament_course)
 
     # Crew picks HTML — interim builds (picks not finalized) show a placeholder instead of the grid
     crew_placeholder = load_crew_placeholder()
@@ -2605,6 +2892,23 @@ def generate_v2_html(
     .cosmos-betting-preview .insight-title-v2{{font-weight:700;color:var(--primary-blue);margin-bottom:6px;font-size:11px;text-transform:uppercase;}}
     .cosmos-betting-preview .insight-text-v2{{line-height:1.35;margin-bottom:6px;}}
     .cosmos-betting-preview .insight-players-v2{{font-size:11px;color:var(--text-muted);}}
+    /* Trend bands: venue climber (gold) + recent-form climbers (green) */
+    .cosmos-betting-preview .climbers-v2{{display:flex;flex-direction:column;gap:10px;margin:16px 0 4px;}}
+    .cosmos-betting-preview .clmb-band{{background:var(--bg-light,#f8f9fa);border:1px solid var(--border-light);border-radius:8px;padding:10px 14px;}}
+    .cosmos-betting-preview .clmb-band.clmb-venue{{border-left:4px solid var(--accent-gold);}}
+    .cosmos-betting-preview .clmb-band.clmb-form{{border-left:4px solid var(--accent-green);}}
+    .cosmos-betting-preview .clmb-kicker{{font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:8px;}}
+    .cosmos-betting-preview .clmb-venue .clmb-kicker{{color:var(--accent-gold);}}
+    .cosmos-betting-preview .clmb-form .clmb-kicker{{color:var(--accent-green);}}
+    .cosmos-betting-preview .clmb-row{{display:flex;align-items:center;gap:12px;padding:6px 0;border-top:1px solid var(--border-light);}}
+    .cosmos-betting-preview .clmb-row:first-of-type{{border-top:none;}}
+    .cosmos-betting-preview .clmb-who{{flex:0 0 150px;min-width:0;font-size:13px;font-weight:700;color:var(--primary-blue);}}
+    .cosmos-betting-preview .clmb-path{{flex:1 1 auto;min-width:0;font-size:12px;color:var(--text-muted);line-height:1.5;}}
+    .cosmos-betting-preview .clmb-leg{{white-space:nowrap;}}
+    .cosmos-betting-preview .clmb-now{{color:var(--accent-green);font-weight:700;}}
+    .cosmos-betting-preview .clmb-arrow{{color:#c9ced3;}}
+    .cosmos-betting-preview .clmb-gain{{flex:0 0 auto;text-align:right;font-size:15px;font-weight:700;color:var(--accent-green);line-height:1.1;white-space:nowrap;}}
+    .cosmos-betting-preview .clmb-gain span{{display:block;font-size:9px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--text-muted);}}
     .cosmos-betting-preview .insight-players-v2 .insight-player-tag{{display:inline-block;margin-right:6px;margin-top:2px;padding:2px 6px;background:var(--bg-light);border-radius:4px;}}
     .cosmos-betting-preview .section-header{{margin:24px 0 12px;}}
     .cosmos-betting-preview .section-header h2{{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:800;letter-spacing:1px;margin:0 0 8px 0;}}
@@ -2700,6 +3004,13 @@ def generate_v2_html(
     .cosmos-betting-preview .fit-label{{min-width:80px;font-size:11px;}}
     .cosmos-betting-preview .fit-indicator{{padding:7px 0;gap:8px;}}
     .cosmos-betting-preview h1{{font-size:20px;}}
+    /* Trend bands stack: name + gain on line 1, the three legs wrap below.
+       `order` puts the gain chip before the full-width path so it shares line 1. */
+    .cosmos-betting-preview .clmb-band{{padding:10px 12px;}}
+    .cosmos-betting-preview .clmb-row{{flex-wrap:wrap;gap:4px 10px;}}
+    .cosmos-betting-preview .clmb-who{{order:1;flex:1 1 auto;font-size:13px;}}
+    .cosmos-betting-preview .clmb-gain{{order:2;font-size:14px;}}
+    .cosmos-betting-preview .clmb-path{{order:3;flex:1 1 100%;font-size:11px;}}
     }}
     @media(max-width:480px){{
     .cosmos-betting-preview .storyline-text{{-webkit-line-clamp:2;line-clamp:2;}}
@@ -2709,6 +3020,9 @@ def generate_v2_html(
     .cosmos-betting-preview th{{padding:7px 4px;}}
     .cosmos-betting-preview td{{padding:7px 4px;}}
     .cosmos-betting-preview .odds-cell{{width:50px;font-size:12px;}}
+    .cosmos-betting-preview .clmb-kicker{{font-size:9px;letter-spacing:1px;}}
+    .cosmos-betting-preview .clmb-path{{font-size:10px;}}
+    .cosmos-betting-preview .clmb-gain{{font-size:13px;}}
     }}
     </style>
     <header>
@@ -2727,9 +3041,11 @@ def generate_v2_html(
         <strong style="font-size:16px;display:block;margin-bottom:8px;">⛅ Tournament Weather Forecast</strong>
         {weather_forecast}
     </div>
+    {wind_by_day_html}
     <div class="container">
         <div class="crew-picks"><div class="crew-grid">{crew_html}</div></div>
         <div class="ai-insights-v2">{insights_html}</div>
+        {climbers_html}
         <div class="section-header"><h2>Complete Betting Board</h2><div class="section-line"></div></div>
         {tab_nav_v2}
         <div id="tournament-odds" class="tab-content active">
@@ -3296,7 +3612,8 @@ def main() -> int:
     if args.v2:
         v2_players = players[: args.v2_max_players]
         v2_html = generate_v2_html(
-            tournament, v2_players, crew_picks, year, insights, matchups
+            tournament, v2_players, crew_picks, year, insights, matchups,
+            all_players=players,
         )
         v2_path = PROJECT_ROOT / f"{slug}_{year}_v2.html"
         v2_path.write_text(v2_html, encoding="utf-8")

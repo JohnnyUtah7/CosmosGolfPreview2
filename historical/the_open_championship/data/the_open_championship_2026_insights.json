@@ -1,0 +1,89 @@
+{
+  "tournament": "The Open Championship",
+  "generated_at": "2026-07-14T01:25:18Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler returns to The Open Championship as the defending champion and our model's top-ranked player, projecting an 8.8% win probability against +1030 odds — an enormous edge that makes him the clear cornerstone of any betting card. Matt Fitzpatrick (+1917) ranks #2 in the field in SG Approach at +0.91 with a near-neutral course fit (-0.014) and a T4 finish last year, offering roughly 5.0% model win probability at a price that barely reflects his elite ball-striking. Among longshots, Collin Morikawa (+5642) stands out as the #3 ball-striker in the field with a 16.3% top-10 probability, making him one of the most compelling value plays at Royal Birkdale Golf Club this week.",
+  "insights": [
+    {
+      "title": "Scheffler Is the Clear Best Bet",
+      "insight": "The defending champion leads the field in SG Total (+2.68) and SG Approach (+1.03), with an 8.8% model win probability against +1030 odds. His 1-T7-T23 record over his last three Opens confirms elite major pedigree, and no other player in this field combines his raw skill ceiling with this kind of value edge.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Fitzpatrick's Ball-Striking Demands Attention",
+      "insight": "Matt Fitzpatrick ranks #2 in the entire field in SG Approach (+0.91) and #3 in SG Total (+1.95) while carrying a near-perfect course fit score of -0.014. At +1917 with a 5.0% model win probability and a T4 at last year's Open, he's arguably the best risk-reward play on the board.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Fleetwood Fits Royal Birkdale Perfectly",
+      "insight": "Tommy Fleetwood boasts the best course fit among the top-10 favorites at -0.002, essentially a perfect stylistic match for Royal Birkdale Golf Club. With a 5.3% model win probability at +1802 and a strong SG Total of +1.85 (#5 in the field), the Englishman profiles as a genuine contender on home soil.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Morikawa Is the Premier Longshot",
+      "insight": "Collin Morikawa ranks #3 in the field in SG Approach (+0.81) and carries a 16.3% top-10 probability at +5642 odds. His iron play is tailor-made for links golf precision, and he offers significant upside as a two-time major champion at a price that undersells his talent level.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "McIlroy's Course Fit Raises Caution",
+      "insight": "Despite ranking #2 in SG Total (+2.14) with a 5.8% model win probability, Rory McIlroy carries the worst course fit among the top favorites at -0.344. His missed cut at the 2024 Open and volatile history in this event suggest his ceiling is high but his floor is dangerously low at Royal Birkdale Golf Club.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Si Woo Kim: Best Course Fit, Big Price",
+      "insight": "Si Woo Kim is the only player among the top-10 favorites with a positive course fit score (+0.043) and ranks #10 in SG Total (+1.64). At +4892 with a 2.0% model win probability, he's a creative dart throw — though his MC at the 2025 Open and inconsistent history temper enthusiasm slightly.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Rahm Offers Sneaky Value at +2738",
+      "insight": "Jon Rahm ranks #4 in SG Total (+1.94) and has finished T2 and T7 in his last two Open appearances entering 2025. His 3.5% model win probability represents a meaningful edge at +2738, and his elite ball-striking should translate well despite a -0.218 course fit adjustment.",
+      "players": [
+        "Jon Rahm"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Cameron Young for Top-10 Value",
+      "insight": "Cameron Young's 15.9% top-10 probability at +5200 outright makes him an intriguing top-10 or top-20 play. His SG Total of +1.67 (#6 in the field) suggests he's severely underpriced, and his aggressive style could thrive at Royal Birkdale Golf Club if conditions allow for attacking play.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Schauffele Overpriced as 2024 Champion",
+      "insight": "Xander Schauffele won the 2024 Open Championship but sits at +3436 with just a 2.8% model win probability, well behind several players ranked above him in raw SG metrics. A -0.204 course fit score and an SG Total that ranks only #11 in the field suggest the market may be slightly over-weighting his name value relative to current form.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Hatton and Lowry: Links Pedigree Longshots",
+      "insight": "Tyrrell Hatton (+5487, 16.3% top-10 probability) and Shane Lowry (+5714, 16.0% top-10 probability) both bring proven links pedigree at prices that offer genuine each-way value. Hatton's SG Total of +1.10 and Lowry's +1.00 may look modest, but their comfort in Open conditions at Royal Birkdale Golf Club makes them strong top-10 or top-20 bets.",
+      "players": [
+        "Tyrrell Hatton",
+        "Shane Lowry"
+      ],
+      "category": "longshot"
+    }
+  ]
+}

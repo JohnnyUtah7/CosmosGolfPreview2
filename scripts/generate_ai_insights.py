@@ -150,23 +150,34 @@ def build_analysis_context(data: dict, tournament_name: str, course_info: dict |
             line += f" | History: {hist_str}"
         context_lines.append(line)
 
-    # Value plays (high win prob relative to odds)
-    context_lines.append("\n\nPOTENTIAL VALUE PLAYS (model sees more value than odds suggest):")
-    value_plays = []
+    # NOTE: the displayed odds are Data Golf FAIR odds — the model's own probabilities
+    # inverted into a price (the field's implied probabilities sum to ~100%). So
+    # "model % vs implied %" is always ~0 and there is no edge to compute. Ranking by
+    # profile strength relative to tier is the honest substitute.
+    context_lines.append(
+        "\n\nMODEL STANDOUTS (strongest profiles outside the top tier — these are NOT market "
+        "edges; the odds shown are the model's own fair value):"
+    )
+    standouts = []
     for name, win_odds in players_by_odds:
         dg = datagolf.get(name, {})
-        win_prob = dg.get("win_prob")
-        if win_prob:
-            # Rough conversion: +500 odds ≈ 16.7% implied prob
-            implied_prob = 100 / (win_odds + 100) if win_odds > 0 else 100 / (100 - win_odds)
-            edge = win_prob - implied_prob
-            if edge > 2:  # 2% edge or more
-                value_plays.append((name, win_odds, win_prob, implied_prob, edge, dg))
-
-    value_plays.sort(key=lambda x: x[4], reverse=True)
-    for name, odds_val, win_prob, implied, edge, dg in value_plays[:8]:
         sg_total = dg.get("sg_total")
-        context_lines.append(f"  {name}: Odds {'+' if odds_val >= 0 else ''}{odds_val} (implied {implied:.1f}%) vs Model {win_prob:.1f}% | Edge: +{edge:.1f}%{f' | SG Total: {sg_total:+.2f}' if sg_total else ''}")
+        top10_prob = dg.get("top_10_prob")
+        if sg_total is None or top10_prob is None:
+            continue
+        # Profile strength the headline price alone doesn't convey: good ball-striking
+        # plus a positive course adjustment, further down the board.
+        fit = dg.get("course_fit") or 0
+        hist_adj = dg.get("course_history") or 0
+        if win_odds >= 2500 and sg_total > 0:
+            standouts.append((name, win_odds, sg_total, top10_prob, fit, hist_adj))
+
+    standouts.sort(key=lambda x: (x[2] + (x[4] or 0) + (x[5] or 0)), reverse=True)
+    for name, odds_val, sg_total, top10_prob, fit, hist_adj in standouts[:8]:
+        context_lines.append(
+            f"  {name}: Fair {'+' if odds_val >= 0 else ''}{odds_val} | SG Total: {sg_total:+.2f} "
+            f"| Model Top 10: {top10_prob:.1f}% | Course Fit: {fit:+.3f} | Course History: {hist_adj:+.3f}"
+        )
 
     # Best ball-strikers in field
     context_lines.append("\n\nTOP BALL-STRIKERS (SG Approach):")
@@ -266,7 +277,7 @@ Course Profile:
 {context}
 
 Generate a JSON response with:
-1. "executive_summary" - A compelling 3-4 sentence paragraph that gives the key takeaways for bettors this week. Mention 2-3 specific players and why they stand out. Be specific with numbers. Make it sound authoritative and data-driven.
+1. "executive_summary" - A compelling 3-4 sentence paragraph that gives the key takeaways for bettors this week. Mention 2-3 specific players and why they stand out. Be specific with numbers. Make it sound authoritative and data-driven. Never claim an edge between a model percentage and its own fair-odds implied probability (see CRITICAL note above) — state what the model projects and what drives it.
 
 2. "insights" - An array of 7-10 specific betting insights. Each insight should be an object with:
    - "title" - Short punchy title (4-8 words)
@@ -274,8 +285,20 @@ Generate a JSON response with:
    - "players" - Array of 1-3 player names mentioned
    - "category" - One of: "value", "favorite", "longshot", "course_fit", "form", "avoid"
 
+CRITICAL — WHAT THE ODDS ARE:
+Every price in this data is Data Golf's VIG-FREE FAIR ODDS: the model's own win/top-5/top-10
+probabilities expressed as a price. The whole field sums to ~100% implied probability. There is
+no sportsbook, no market, and NO EDGE to identify — the price and the model agree by construction,
+always. Do NOT write that anything is "underpriced", "overpriced", "mispriced", "a market
+inefficiency", "an overreaction", "ahead of the market", or "priced closer to +X than the +Y on
+offer". Never compare a model percentage to its own implied probability and call the difference an
+edge — that sentence is self-contradictory and is the single worst error you can make here.
+Frame everything as a MODEL PROJECTION: what the model gives a player, what drives it (SG, course
+fit, course history, form), and which market best fits the profile. The "value" category means
+"strong profile relative to his tier", not "the market is wrong".
+
 Focus on:
-- Players where the model sees more value than the odds suggest
+- Players whose underlying profile is strongest relative to their tier on the board
 - Course fit advantages (match skills to what the course demands)
 - Recent form and strokes gained leaders
 - Historical performance at this venue

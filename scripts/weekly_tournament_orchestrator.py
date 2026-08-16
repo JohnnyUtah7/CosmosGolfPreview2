@@ -370,6 +370,11 @@ def main() -> int:
         help="Skip fetching tournament weather from NOAA"
     )
     parser.add_argument(
+        "--skip-matchups",
+        action="store_true",
+        help="Skip fetching Data Golf matchup odds (2-ball/3-ball + tee-time pairings)"
+    )
+    parser.add_argument(
         "--skip-audit",
         action="store_true",
         help="Skip the content fact-check audit (champions/venue/finishes vs data)"
@@ -511,7 +516,8 @@ def main() -> int:
         print("  4. Fetch tournament result caches from Data Golf + build recent form")
         print("  5. Generate AI storylines")
         print("  5.5. Generate AI insights (executive summary + betting insight cards)")
-        print("  5.75. Fetch tournament weather (NOAA)")
+        print("  5.75. Fetch tournament weather (NOAA/Open-Meteo + AM/PM wind)")
+        print("  5.8. Fetch Data Golf matchup odds (2-ball/3-ball + tee times)")
         print("  6. Generate HTML preview (main + v2 for Shopify)")
         if args.deploy:
             print("  7. Deploy to Shopify")
@@ -586,9 +592,12 @@ def main() -> int:
 
     # Step 2.75: Apply Data Golf analytics (strokes gained, predictions, course fit) for player detail panels
     if not args.skip_datagolf and players_data_path.exists():
+        analytics_args = ["--tournament", tournament_name, "--year", str(year), "--slug", slug]
+        if args.skip_event_check:
+            analytics_args.append("--skip-event-check")
         exit_code = run_script(
             "apply_datagolf_to_players.py",
-            ["--tournament", tournament_name, "--year", str(year), "--slug", slug],
+            analytics_args,
             "Applying Data Golf analytics (SG, predictions, course fit)"
         )
         if exit_code == 0:
@@ -729,6 +738,26 @@ def main() -> int:
             steps_failed += 1
     else:
         print("[SKIP] Weather step skipped (--skip-weather)")
+
+    # Step 4.8: Fetch Data Golf matchup odds (2-ball/3-ball + tee-time pairings).
+    # Non-fatal: early in the week daily pairings/tee times may not be posted yet
+    # (stale groups are dropped by --expected-event), and the Daily Matchups tab
+    # only renders when real data exists.
+    if not args.skip_matchups:
+        exit_code = run_script(
+            "fetch_matchups_from_datagolf.py",
+            ["--output", f"data/{slug}_{year}_matchups.json",
+             "--tour", "pga",
+             "--expected-event", tournament_name],
+            "Fetching Data Golf Matchup Odds (2-ball/3-ball + tee times)"
+        )
+        if exit_code == 0:
+            steps_completed += 1
+        else:
+            print("[WARNING] Matchups fetch failed - HTML will render without the Daily Matchups tab")
+            steps_failed += 1
+    else:
+        print("[SKIP] Matchups step skipped (--skip-matchups)")
 
     # Step 5: Generate HTML (main + v2 compact for Shopify)
     if not args.skip_html:

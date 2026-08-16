@@ -47,7 +47,14 @@ def _event_key_tokens(name: str) -> set[str]:
         "an", "a", "cup", "championships", "event",
     }
     toks = re.findall(r"[a-z0-9]+", (name or "").lower())
-    return {t for t in toks if t not in stop and len(t) > 2}
+    distinctive = {t for t in toks if t not in stop and len(t) > 2}
+    if distinctive:
+        return distinctive
+    # Fallback for events named entirely from stopwords (e.g. "The Open Championship",
+    # "Tour Championship"): keep everything but trivial articles so the guard still
+    # discriminates last week's event from this one instead of always mismatching.
+    trivial = {"the", "of", "at", "in", "and", "a", "an", "by", "presented"}
+    return {t for t in toks if t not in trivial and len(t) > 2}
 
 
 def _event_matches(expected: str | None, actual: str | None) -> bool:
@@ -137,8 +144,20 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=PROJECT_ROOT / "data" / "wm_phoenix_open_2026_matchups.json",
-        help="Output JSON path",
+        default=None,
+        help="Output JSON path (default: data/{slug}_{year}_matchups.json)",
+    )
+    parser.add_argument(
+        "--slug",
+        type=str,
+        default=None,
+        help="Tournament slug used to build the default output path",
+    )
+    parser.add_argument(
+        "--year",
+        type=int,
+        default=None,
+        help="Tournament year used to build the default output path (default: current year)",
     )
     parser.add_argument(
         "--tour",
@@ -155,6 +174,12 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    # Derive the output path from --slug/--year when not given explicitly, so the
+    # default never points at a stale hardcoded event.
+    if args.output is None:
+        slug = args.slug or "tournament"
+        year = args.year or datetime.now().year
+        args.output = PROJECT_ROOT / "data" / f"{slug}_{year}_matchups.json"
     out_path = args.output if args.output.is_absolute() else PROJECT_ROOT / args.output
     out_path.parent.mkdir(parents=True, exist_ok=True)
 

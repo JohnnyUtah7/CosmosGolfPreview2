@@ -1,54 +1,168 @@
 {
-  "tournament": "Genesis Scottish Open",
-  "location": "North Berwick, Scotland",
-  "dates": "July 9-12, 2026",
-  "forecast": "Expect partly cloudy skies with highs in the 59F range and breezy conditions up to 20 mph throughout the week. No rain is forecast, making for challenging scoring conditions.",
-  "source": "Open-Meteo (free global forecast)",
+  "tournament": "FedEx St. Jude Championship",
+  "location": "Memphis, Tennessee",
+  "dates": "August 13-16, 2026",
+  "forecast": "Expect sunny skies with highs in the 97F range and light winds around 5 mph throughout the week. No rain is forecast, making for ideal scoring conditions.",
+  "source": "NOAA National Weather Service",
   "coordinates": {
-    "lat": 56.0546,
-    "lon": -2.6612
+    "lat": 35.1495,
+    "lon": -90.049
   },
-  "fetched_at": "2026-07-06T12:20:40.530437",
+  "fetched_at": "2026-08-10T16:34:14.631414",
   "raw_periods": [
     {
-      "name": "2026-07-09",
-      "temperature": 61,
-      "temperatureLow": 58,
+      "name": "This Afternoon",
+      "temperature": 96,
       "temperatureUnit": "F",
-      "windSpeed": "14 mph",
-      "shortForecast": "Partly Cloudy",
-      "probabilityOfPrecipitation": 0,
-      "isDaytime": true
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SW",
+      "shortForecast": "Slight Chance Showers And Thunderstorms",
+      "isDaytime": true,
+      "probabilityOfPrecipitation": 17
     },
     {
-      "name": "2026-07-10",
-      "temperature": 60,
-      "temperatureLow": 57,
+      "name": "Tonight",
+      "temperature": 78,
       "temperatureUnit": "F",
-      "windSpeed": "20 mph",
-      "shortForecast": "Partly Cloudy",
-      "probabilityOfPrecipitation": 8,
-      "isDaytime": true
+      "windSpeed": "5 mph",
+      "windDirection": "S",
+      "shortForecast": "Slight Chance Showers And Thunderstorms then Clear",
+      "isDaytime": false,
+      "probabilityOfPrecipitation": 24
     },
     {
-      "name": "2026-07-11",
-      "temperature": 58,
-      "temperatureLow": 56,
+      "name": "Tuesday",
+      "temperature": 97,
       "temperatureUnit": "F",
-      "windSpeed": "19 mph",
-      "shortForecast": "Partly Cloudy",
-      "probabilityOfPrecipitation": 14,
-      "isDaytime": true
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SW",
+      "shortForecast": "Sunny",
+      "isDaytime": true,
+      "probabilityOfPrecipitation": 2
     },
     {
-      "name": "2026-07-12",
-      "temperature": 57,
-      "temperatureLow": 56,
+      "name": "Tuesday Night",
+      "temperature": 79,
       "temperatureUnit": "F",
-      "windSpeed": "11 mph",
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SSW",
+      "shortForecast": "Mostly Clear",
+      "isDaytime": false,
+      "probabilityOfPrecipitation": 3
+    },
+    {
+      "name": "Wednesday",
+      "temperature": 98,
+      "temperatureUnit": "F",
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SW",
+      "shortForecast": "Sunny",
+      "isDaytime": true,
+      "probabilityOfPrecipitation": 5
+    },
+    {
+      "name": "Wednesday Night",
+      "temperature": 79,
+      "temperatureUnit": "F",
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SSW",
+      "shortForecast": "Mostly Clear",
+      "isDaytime": false,
+      "probabilityOfPrecipitation": 5
+    },
+    {
+      "name": "Thursday",
+      "temperature": 99,
+      "temperatureUnit": "F",
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SW",
+      "shortForecast": "Sunny",
+      "isDaytime": true,
+      "probabilityOfPrecipitation": 1
+    },
+    {
+      "name": "Thursday Night",
+      "temperature": 80,
+      "temperatureUnit": "F",
+      "windSpeed": "5 to 10 mph",
+      "windDirection": "SSW",
       "shortForecast": "Partly Cloudy",
-      "probabilityOfPrecipitation": 2,
-      "isDaytime": true
+      "isDaytime": false,
+      "probabilityOfPrecipitation": 1
+    }
+  ],
+  "wind_by_day": [
+    {
+      "date": "2026-08-13",
+      "weekday": "Thu",
+      "am": {
+        "hour": "8 AM",
+        "speed_mph": 10,
+        "gust_mph": 25,
+        "dir": "SW",
+        "deg": 226
+      },
+      "pm": {
+        "hour": "12 PM",
+        "speed_mph": 11,
+        "gust_mph": 15,
+        "dir": "W",
+        "deg": 261
+      }
+    },
+    {
+      "date": "2026-08-14",
+      "weekday": "Fri",
+      "am": {
+        "hour": "8 AM",
+        "speed_mph": 10,
+        "gust_mph": 24,
+        "dir": "SW",
+        "deg": 231
+      },
+      "pm": {
+        "hour": "12 PM",
+        "speed_mph": 9,
+        "gust_mph": 12,
+        "dir": "W",
+        "deg": 270
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "weekday": "Sat",
+      "am": {
+        "hour": "8 AM",
+        "speed_mph": 5,
+        "gust_mph": 12,
+        "dir": "WSW",
+        "deg": 252
+      },
+      "pm": {
+        "hour": "12 PM",
+        "speed_mph": 7,
+        "gust_mph": 8,
+        "dir": "WNW",
+        "deg": 284
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "weekday": "Sun",
+      "am": {
+        "hour": "8 AM",
+        "speed_mph": 4,
+        "gust_mph": 9,
+        "dir": "WSW",
+        "deg": 238
+      },
+      "pm": {
+        "hour": "12 PM",
+        "speed_mph": 9,
+        "gust_mph": 6,
+        "dir": "W",
+        "deg": 276
+      }
     }
   ]
 }

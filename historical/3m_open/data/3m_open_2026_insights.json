@@ -1,0 +1,88 @@
+{
+  "tournament": "3M Open",
+  "generated_at": "2026-07-20T21:56:10Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler is the most dominant favorite we've modeled all season at TPC Twin Cities, with a 23.9% model win probability at +318 — a staggering edge over implied odds. Behind him, a cluster of mid-range contenders led by Maverick McNealy (+2915, SG Total +1.21, best putter in the field) and defending champion Kurt Kitayama (+3041, SG Approach #3) offer compelling value at 29/1 and 30/1 respectively. In the longshot tier, Corey Conners (+5168) stands out with elite ball-striking (SG Approach #4) and the best course fit score among serious contenders at +0.088, making him a prime each-way target.",
+  "insights": [
+    {
+      "title": "Scheffler Is a Generational Lock",
+      "insight": "Scottie Scheffler's SG Total of +2.78 is more than double the next-best player in the field (McNealy at +1.21). His 23.9% model win probability dwarfs the implied 23.9% vs. roughly 24% bookmaker probability — but the real edge is that he leads the field in SG Approach (+1.11) AND ranks #3 in SG Putting (+0.47), an unusually complete profile that demands heavy allocation.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "McNealy's Putter Drives Massive Edge",
+      "insight": "Maverick McNealy leads the entire field in SG Putting (+0.52) and ranks #2 overall in SG Total (+1.21) at +2915. He posted a T3 finish at TPC Twin Cities in 2024, and our model gives him a 3.3% win probability — roughly 10x what his odds imply. The missed cut in 2025 is a concern, but his current form profile suggests that was an outlier.",
+      "players": [
+        "Maverick McNealy"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Defending Champion Kitayama Fits Perfectly",
+      "insight": "Kurt Kitayama won this event in 2025 and added a T6 in 2024, giving him the fifth-best course history adjustment in the field (+0.064 strokes). He ranks #3 in SG Approach (+0.62) and carries a 3.2% model win probability at +3041 — a clear value play given his proven ability to contend at TPC Twin Cities.",
+      "players": [
+        "Kurt Kitayama"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Tom Kim's Iron Play Fits Perfectly",
+      "insight": "Tom Kim boasts the highest positive course fit adjustment among top-10 favorites (+0.078) and ranks #2 in the field in SG Approach (+0.69). At +3620 with a 2.7% model win probability, he's a premium ball-striker whose skill set aligns with what TPC Twin Cities demands. His T28 in 2025 is modest, but this is a form-over-history play.",
+      "players": [
+        "Tom Kim"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Conners Is the Best Longshot Target",
+      "insight": "Corey Conners at +5168 owns the best course fit score among all top-10 favorites (+0.088) and ranks #4 in SG Approach (+0.57). Our model gives him a 17.7% top-10 probability — making him an elite each-way candidate. His consistent iron play translates week to week, and the odds offer substantial overlay.",
+      "players": [
+        "Corey Conners"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Mac Meissner Is a Hidden Gem",
+      "insight": "At +6942, Mac Meissner quietly owns the second-best SG Total in the longshot tier (+0.82) and a 15.2% top-10 probability. He's outperforming several players priced significantly shorter and offers a massive price tag for a player whose underlying strokes gained numbers suggest he should be closer to 50/1.",
+      "players": [
+        "Mac Meissner"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Keith Mitchell's Course Fit Warns Caution",
+      "insight": "Despite ranking #6 in SG Total (+0.88), Keith Mitchell carries the worst course fit adjustment among all top-10 favorites at -0.106. He's missed the cut in two of three starts at TPC Twin Cities (MC in 2025, T46 in 2024), and his lone strong finish (T5 in 2023) looks increasingly like an outlier. The -0.106 adjustment is a significant red flag at +4739.",
+      "players": [
+        "Keith Mitchell"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Matsuyama Offers Elite Upside at 35/1",
+      "insight": "Hideki Matsuyama (+3559) pairs elite ball-striking (SG Approach +0.52, #5 in field) with a positive course fit (+0.031) and limited but neutral course history (T30 in 2023). At 2.7% model win probability, he's a proven winner at longer odds who profiles as a top-5 talent in this weakened field.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Jordan Smith Is a Sneaky Contender",
+      "insight": "Jordan Smith at +5835 ranks #9 in the field in SG Total (+0.74) with a positive course fit (+0.043) and a 16.4% top-10 probability. He's priced behind several players with weaker overall profiles, making him a quality addition to any longshot portfolio this week at TPC Twin Cities.",
+      "players": [
+        "Jordan Smith"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Grillo's Course History Doesn't Match Price",
+      "insight": "Emiliano Grillo owns the best course history adjustment in the field (+0.089 strokes) but is priced at a distant +16116. While his overall SG Total doesn't support a win bet, his proven comfort at TPC Twin Cities makes him worth monitoring for top-20 or matchup plays where his course knowledge can offset weaker current form.",
+      "players": [
+        "Emiliano Grillo"
+      ],
+      "category": "course_fit"
+    }
+  ]
+}

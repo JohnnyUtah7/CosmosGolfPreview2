@@ -1,0 +1,88 @@
+{
+  "tournament": "Rocket Classic",
+  "generated_at": "2026-07-27T22:22:29Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Cameron Young commands the top of the board at the Rocket Classic with the field's best SG Total (+1.93) and SG Approach (+0.78), giving him an 8.1% model win probability — nearly double the next closest competitor. J.J. Spaun profiles as one of the most compelling names in the mid-tier: he ranks second in the field in SG Approach (+0.76), owns the best course history adjustment at Detroit Golf Club (+0.133 strokes), and posted a T10 here in 2024. Among longshots, Nicolai Hojgaard stands out with a positive course history adjustment (+0.026) across three straight starts at Detroit Golf Club and a 15.6% top-10 probability, making him a legitimate contender in a wide-open event where 143 players are vying for the title.",
+  "insights": [
+    {
+      "title": "Cameron Young Is the Clear Model Alpha",
+      "insight": "Young leads the field in SG Total (+1.93), SG Approach (+0.78), and model win probability (8.1%). His T6 at Detroit Golf Club in 2024 adds historical substance to an elite statistical profile, and his ball-striking dominance is tailor-made for a course that rewards precision iron play.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "J.J. Spaun's Detroit Golf Club Pedigree Shines",
+      "insight": "Spaun boasts the field's highest course history adjustment (+0.133 strokes) at Detroit Golf Club, backed by finishes of T10 (2024) and T33 (2023). He also ranks second in SG Approach (+0.76) and has the best course fit score (-0.042) among the top 10 favorites, giving him a 22.2% model top-10 probability.",
+      "players": [
+        "J.J. Spaun"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Schauffele Brings Elite Talent, No Course Data",
+      "insight": "Xander Schauffele ranks second in SG Total (+1.68) and fifth in SG Approach (+0.63), projecting for a 4.7% win probability. With no prior starts at Detroit Golf Club, there's no course history to lean on, but his pure skill ceiling in this field is surpassed only by Young.",
+      "players": [
+        "Xander Schauffele"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Ben Griffin: Dual-Threat Ball-Striker and Putter",
+      "insight": "Griffin is one of only two players to rank in the top 7 in both SG Total (+1.39) and SG Putting (+0.45, 5th in the field). His three consecutive starts at Detroit Golf Club (T33, T31, T13) show a clear upward trend, and the model projects him for a 21.5% top-10 probability.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Wyndham Clark's Putter Could Unlock Upside",
+      "insight": "Clark ranks second in the entire field in SG Putting (+0.54) while carrying a strong +1.39 SG Total, yielding a 21.9% model top-10 probability. His missed cut in 2025 at Detroit Golf Club is a flag, but his positive course history adjustment (+0.038) suggests the MC may have been an outlier rather than a pattern.",
+      "players": [
+        "Wyndham Clark"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Nicolai Hojgaard Tops Course Fit Leaderboard",
+      "insight": "Hojgaard owns the best course fit score in the field at -0.027 and carries a solid +1.00 SG Total with a 15.6% top-10 probability. His positive course history adjustment (+0.026) complements the fit profile, making him the model's strongest longshot projection.",
+      "players": [
+        "Nicolai Hojgaard"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Rickie Fowler: 2023 Champion Returns at Range",
+      "insight": "Fowler, the 2023 Rocket Classic champion, projects for a 13.2% top-10 probability at +7190. His SG Total of +0.80 is modest relative to the top tier, but his proven ability to win at Detroit Golf Club provides a history-based floor that pure stats may not fully capture.",
+      "players": [
+        "Rickie Fowler"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Si Woo Kim's Iron Play Belies Poor History",
+      "insight": "Kim ranks third in SG Approach (+0.74) and third in SG Total (+1.66), driving a 4.0% win probability. However, his Detroit Golf Club results are alarming — 84th in 2025, MC in 2024, and T74 in 2023 — and his course fit (-0.073) is one of the weakest among favorites. The talent is undeniable, but the venue has not rewarded it.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Cantlay's Iron Play Anchors Top-10 Projection",
+      "insight": "Patrick Cantlay ranks fourth in SG Approach (+0.67) and carries a 23.1% model top-10 probability — the highest among all model standouts. His T32 in 2025 at Detroit Golf Club was unremarkable, but a positive course history adjustment (+0.021) and elite ball-striking suggest a higher ceiling this week.",
+      "players": [
+        "Patrick Cantlay"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Akshay Bhatia: Putter-Driven Sleeper at +6222",
+      "insight": "Bhatia ranks third in the field in SG Putting (+0.50) and carries a +0.99 SG Total, projecting for a 14.3% top-10 probability. On a Donald Ross design like Detroit Golf Club where scrambling and touch around the greens can separate players, his flat-stick prowess makes him a compelling longshot play.",
+      "players": [
+        "Akshay Bhatia"
+      ],
+      "category": "longshot"
+    }
+  ]
+}

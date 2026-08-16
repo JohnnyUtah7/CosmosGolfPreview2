@@ -390,41 +390,6 @@ def _news_section(items: list) -> str:
 
 
 # --- Trending player (biggest course climber) ---------------------------------
-def _finish_num(v) -> "int | None":
-    """Numeric finish (T28->28, '1'->1). None for NA/—/MC/WD (non-finishes excluded from trend)."""
-    s = (str(v) if v is not None else "").strip().upper()
-    if s in ("", "NA", "N/A", "—", "MC", "WD", "CUT", "DQ"):
-        return None
-    s = s.replace("T", "")
-    return int(s) if s.isdigit() else None
-
-
-def pick_trending_player(players: list, year: int):
-    """Player with the best improving finish trend at this venue. Returns (player, points) or (None, None).
-
-    points = [(year, finish_num, finish_display)] in chronological order (2+ made-cut finishes).
-    """
-    best = None  # (score_tuple, player, points)
-    for p in players:
-        yearly = [
-            (year - 3, p.get("history_prev3")),
-            (year - 2, p.get("history_prev2")),
-            (year - 1, p.get("history_prev1")),
-        ]
-        pts = [(y, _finish_num(v), _finish_disp(v)) for y, v in yearly]
-        pts = [(y, n, d) for (y, n, d) in pts if n is not None]
-        if len(pts) < 2:
-            continue
-        oldest, newest = pts[0][1], pts[-1][1]
-        improvement = oldest - newest          # positive == improved (lower finish is better)
-        if improvement < 8 or newest > 25:     # require a real jump that ends strong
-            continue
-        score = (improvement, len(pts), -newest)
-        if best is None or score > best[0]:
-            best = (score, p, pts)
-    return (best[1], best[2]) if best else (None, None)
-
-
 def _trend_chart_url(pts: list, color: str = "#0a7a3f") -> str:
     """QuickChart line graph (hosted PNG, email-safe). Y reversed so a better finish trends up."""
     labels = [str(y) for (y, n, d) in pts]
@@ -473,6 +438,112 @@ def _trending_section(player: dict, pts: list, course: str, photo: str) -> str:
       </td></tr>"""
 
 
+# --- Form climbers (improving finishes across the last 3 starts) --------------
+GREEN = "#0a7a3f"
+
+def _climber_row(c: dict, photo: str, last: bool = False) -> str:
+    """One climber line: avatar + name + the three legs with arrows."""
+    parts = []
+    for i, (event, finish) in enumerate(c["legs"]):
+        newest = i == len(c["legs"]) - 1
+        col = GREEN if newest else MUTED
+        wt = "bold" if newest else "normal"
+        parts.append(
+            f'<span style="color:{col};font-weight:{wt};white-space:nowrap;">'
+            f'{escape(gt.shorten_event(event))} <strong>{escape(finish)}</strong></span>'
+        )
+    path = ' <span style="color:#c9ced3;">&rarr;</span> '.join(parts)
+    border = "" if last else f"border-bottom:1px solid {BORDER};"
+    return f"""
+              <tr>
+                <td width="52" valign="middle" align="center" style="padding:10px 0 10px 10px;{border}">{_avatar(c['name'], photo, 38, ring=GREEN)}</td>
+                <td valign="middle" style="padding:10px 10px;{border}">
+                  <div style="font-family:{FONT};font-size:14px;font-weight:bold;color:{DARK};">{escape(c['name'])}</div>
+                  <div style="font-family:{FONT};font-size:12px;color:{MUTED};margin-top:3px;line-height:18px;">{path}</div>
+                </td>
+                <td width="58" valign="middle" align="right" style="padding:10px 10px 10px 0;{border}">
+                  <div style="font-family:{FONT};font-size:15px;font-weight:bold;color:{GREEN};white-space:nowrap;">&#9650;{c['improvement']}</div>
+                  <div style="font-family:{FONT};font-size:9px;color:{MUTED};letter-spacing:0.5px;text-transform:uppercase;">spots</div>
+                </td>
+              </tr>"""
+
+
+def _form_climbers_section(climbers: list, photos: dict) -> str:
+    """Trend band listing players heating up across their last three starts."""
+    if not climbers:
+        return ""
+    rows = "".join(
+        _climber_row(c, photos.get(c["name"], ""), last=(i == len(climbers) - 1))
+        for i, c in enumerate(climbers)
+    )
+    return f"""
+      <tr><td style="padding:12px 0 0 0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+               bgcolor="{BG_LIGHT}" style="background:{BG_LIGHT};border:1px solid {BORDER};border-left:4px solid {GREEN};border-radius:8px;">
+          <tr><td style="padding:12px 12px 4px 12px;">
+            <div style="font-family:{FONT};font-size:10px;font-weight:bold;letter-spacing:1.5px;color:{GREEN};text-transform:uppercase;">&#128293; Form Climbers &middot; Last 3 Starts</div>
+          </td></tr>
+          <tr><td style="padding:0 2px 4px 2px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">{rows}</table>
+          </td></tr>
+        </table>
+      </td></tr>"""
+
+
+def _wind_email_block(wind_by_day: list) -> str:
+    """Compact AM/PM wind table for the email — pure table + inline styles, no CSS
+    transforms (Outlook/Gmail safe). Returns '' when there's no per-day wind data."""
+    if not wind_by_day:
+        return ""
+
+    def _fmt(block):
+        if not block or block.get("speed_mph") is None:
+            return '<span style="color:#999999;">&mdash;</span>'
+        d = escape(block.get("dir", "") or "")
+        gust = block.get("gust_mph")
+        g = f' <span style="color:#888888;">G{gust}</span>' if gust else ""
+        return f'<strong>{block.get("speed_mph")}</strong> mph {d}{g}'
+
+    rows = ""
+    am_speeds, pm_speeds = [], []
+    for day in wind_by_day:
+        am, pm = day.get("am"), day.get("pm")
+        if am and am.get("speed_mph") is not None:
+            am_speeds.append(am["speed_mph"])
+        if pm and pm.get("speed_mph") is not None:
+            pm_speeds.append(pm["speed_mph"])
+        rows += (
+            f'<tr><td style="padding:4px 12px 4px 0;font-family:{FONT};font-size:13px;color:{DARK};font-weight:700;white-space:nowrap;">{escape(day.get("weekday",""))}</td>'
+            f'<td style="padding:4px 12px 4px 0;font-family:{FONT};font-size:13px;color:#333333;">{_fmt(am)}</td>'
+            f'<td style="padding:4px 0;font-family:{FONT};font-size:13px;color:#333333;">{_fmt(pm)}</td></tr>'
+        )
+
+    wave = ""
+    if am_speeds and pm_speeds:
+        am_avg = sum(am_speeds) / len(am_speeds)
+        pm_avg = sum(pm_speeds) / len(pm_speeds)
+        if abs(am_avg - pm_avg) < 1.5:
+            wave = "Even AM/PM wind across the draw."
+        elif am_avg < pm_avg:
+            wave = f"Mornings calmer (~{round(am_avg)} vs ~{round(pm_avg)} mph) &mdash; slight edge to AM tee times."
+        else:
+            wave = f"Afternoons calmer (~{round(pm_avg)} vs ~{round(am_avg)} mph) &mdash; slight edge to PM tee times."
+    wave_html = (f'<div style="margin-top:8px;font-family:{FONT};font-size:12px;color:#555555;font-style:italic;">&#127754; {wave}</div>'
+                 if wave else "")
+
+    return f"""
+              <div style="margin-top:12px;padding-top:10px;border-top:1px solid #e2e2e2;">
+                <strong style="font-family:{FONT};color:{DARK};letter-spacing:.5px;font-size:13px;">&#127788; WIND BY DAY &middot; 8AM / 12PM</strong>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;">
+                  <tr><td style="padding:0 12px 4px 0;font-family:{FONT};font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:.04em;">Day</td>
+                      <td style="padding:0 12px 4px 0;font-family:{FONT};font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:.04em;">8 AM</td>
+                      <td style="padding:0 0 4px 0;font-family:{FONT};font-size:11px;color:#888888;text-transform:uppercase;letter-spacing:.04em;">12 PM</td></tr>
+                  {rows}
+                </table>
+                {wave_html}
+              </div>"""
+
+
 # --- Main render --------------------------------------------------------------
 def build_email_html(
     tournament: dict,
@@ -486,6 +557,7 @@ def build_email_html(
     logo_url: str,
     news_items: list = None,
     trending: tuple = None,
+    climbers: list = None,
 ) -> str:
     name = tournament.get("name", "PGA Tour Tournament")
     dates = gt.format_dates(tournament.get("dates", {}))
@@ -526,14 +598,18 @@ def build_email_html(
         _tp, _tpts = trending
         trending_block = _trending_section(_tp, _tpts, course, photos.get(_tp["name"], ""))
 
+    climbers_block = _form_climbers_section(climbers or [], photos)
+
     weather_block = ""
     if weather and "will be updated" not in weather.lower():
+        wind_strip = _wind_email_block(gt.load_weather_periods())
         weather_block = f"""
         <tr><td style="padding:18px 0 0 0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
                  bgcolor="{BG_LIGHT}" style="background:{BG_LIGHT};border-left:4px solid {GOLD};border-radius:6px;">
             <tr><td style="padding:13px 16px;font-family:{FONT};font-size:13px;line-height:1.55;color:#333333;">
               <strong style="color:{DARK};letter-spacing:.5px;">&#9925; WEATHER &middot;</strong> {escape(weather)}
+              {wind_strip}
             </td></tr>
           </table>
         </td></tr>"""
@@ -579,6 +655,7 @@ def build_email_html(
           {exec_block}
           {mid_cta}
           {trending_block}
+          {climbers_block}
 
           {_section_header("Top Storylines", "The plays our model and the board disagree on most")}
           <tr><td>
@@ -658,6 +735,7 @@ def main() -> int:
     ap.add_argument("--logo-url", default=LOGO_URL, help="Header logo image URL (hosted; white logo on transparent works best)")
     ap.add_argument("--max-storylines", type=int, default=10, help="Number of storyline cards (default 10)")
     ap.add_argument("--news-count", type=int, default=6, help="How many featured players to show news for (0 disables)")
+    ap.add_argument("--climber-count", type=int, default=3, help="How many recent-form climbers to show (0 disables the band)")
     ap.add_argument("--no-network", action="store_true", help="Skip ESPN headshot + news lookups (cache/fallback only)")
     ap.add_argument("--refresh-photos", action="store_true", help="Re-resolve all headshots even if cached")
     ap.add_argument("--refresh-news", action="store_true", help="Re-fetch player news even if cached today")
@@ -691,10 +769,22 @@ def main() -> int:
     needed = list(dict.fromkeys(needed))  # de-dup, keep order
 
     # Trending player (biggest course climber) — also needs a headshot
-    trending_player, trending_pts = pick_trending_player(players, year)
+    trending_player, trending_pts = gt.pick_trending_player(players, year)
     if trending_player:
         print(f"[INFO] Trending player: {trending_player['name']} ({' -> '.join(d for _,_,d in trending_pts)})")
+    # Form climbers (improving across their last 3 starts) — each needs a headshot
+    climbers = gt.pick_form_climbers(
+        players, count=args.climber_count,
+        exclude=trending_player["name"] if trending_player else "",
+    )
+    for c in climbers:
+        legs = " -> ".join(f"{gt.shorten_event(e)} {f}" for e, f in c["legs"])
+        print(f"[INFO] Form climber: {c['name']} ({legs}, +{c['improvement']})")
+    if not climbers:
+        print("[INFO] Form climbers: none qualified (section omitted)")
+
     photo_names = needed + ([trending_player["name"]] if trending_player else [])
+    photo_names += [c["name"] for c in climbers]
     photo_names = list(dict.fromkeys(photo_names))
 
     print(f"[INFO] Resolving {len(photo_names)} player headshots (network={'off' if args.no_network else 'on'})...")
@@ -717,6 +807,7 @@ def main() -> int:
         tournament, players, insights, weather, photos,
         link=link, max_storylines=args.max_storylines, year=year, logo_url=args.logo_url,
         news_items=news_items, trending=(trending_player, trending_pts),
+        climbers=climbers,
     )
     html = _force_full_width_tables(html)  # Shopify-safe: inline width:100% on layout tables
 

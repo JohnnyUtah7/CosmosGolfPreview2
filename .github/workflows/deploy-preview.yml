@@ -1,42 +1,51 @@
-name: Weekly Tournament Preview Generator
+name: Weekly Publish
 
+# Phone: GitHub app → Actions → Weekly Publish → Run workflow.
+# Leave tournament blank to auto-detect. Shopify deploy is on by default.
 on:
-  # Manual trigger with optional tournament override
   workflow_dispatch:
     inputs:
       tournament_name:
-        description: 'Tournament name (optional - auto-detects from schedule)'
+        description: 'Tournament name (blank = auto-detect from schedule)'
         required: false
         type: string
+      skip_event_check:
+        description: 'Skip Data Golf event-name guard if names differ'
+        required: false
+        type: boolean
+        default: false
+      skip_build:
+        description: 'Skip build — redeploy existing HTML to Shopify only'
+        required: false
+        type: boolean
+        default: false
       skip_archive:
-        description: 'Skip archiving previous tournament'
+        description: 'Skip moving last week into historical/'
         required: false
         type: boolean
         default: false
-      deploy_to_shopify:
-        description: 'Deploy to Shopify after generation'
+      no_notify:
+        description: 'Skip the review email'
         required: false
         type: boolean
         default: false
 
-  # Scheduled run - Every Monday at 12 PM PST (8 PM UTC)
-  schedule:
-    - cron: '0 20 * * 1'
-
-  # Can also trigger on push to main (for testing)
-  push:
-    branches:
-      - main
-    paths:
-      - 'scripts/weekly_tournament_orchestrator.py'
-      - 'scripts/refresh_odds_from_datagolf.py'
-      - 'scripts/generate_tournament_html.py'
-      - 'data/pga_schedule_2026.json'
-      - '.github/workflows/deploy-preview.yml'
+permissions:
+  contents: write
 
 jobs:
-  generate-preview:
+  publish:
     runs-on: ubuntu-latest
+    env:
+      DATAGOLF_API_KEY: ${{ secrets.DATAGOLF_API_KEY }}
+      SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
+      SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
+      GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      NOTIFY_RECIPIENTS: ${{ secrets.NOTIFY_RECIPIENTS }}
 
     steps:
       - name: Checkout repository
@@ -49,52 +58,63 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Create directories
+      - name: Preflight secrets
         run: |
-          mkdir -p data/tournament_results_cache
-          mkdir -p archive
-          mkdir -p logs
+          missing=0
+          for key in DATAGOLF_API_KEY SHOPIFY_STORE_URL SHOPIFY_ACCESS_TOKEN; do
+            if [ -z "${!key}" ]; then
+              echo "::error::$key is not set in repo secrets"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            echo "Add the missing secrets under Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          echo "Required secrets are present"
 
-      - name: Test API connections
-        env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
+      - name: Publish weekly (build + Shopify + menu)
         run: |
-          python scripts/test_apis.py || echo "API test completed with warnings"
-
-      - name: Run Weekly Tournament Orchestrator
-        env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          # Data Golf used for odds; set in mcp_server/config or env
-        run: |
-          # Orchestrator runs: archive, odds, OWGR, historical (cache), storylines, HTML
-          # Build command with optional flags
-          CMD="python scripts/weekly_tournament_orchestrator.py"
-
-          # Add tournament override if provided
+          CMD="python scripts/publish_weekly.py"
           if [ -n "${{ inputs.tournament_name }}" ]; then
             CMD="$CMD --tournament '${{ inputs.tournament_name }}'"
           fi
-
-          # Skip archive if requested
+          if [ "${{ inputs.skip_event_check }}" = "true" ]; then
+            CMD="$CMD --skip-event-check"
+          fi
+          if [ "${{ inputs.skip_build }}" = "true" ]; then
+            CMD="$CMD --skip-build"
+          fi
           if [ "${{ inputs.skip_archive }}" = "true" ]; then
             CMD="$CMD --skip-archive"
           fi
-
-          # Add deploy flag if requested
-          if [ "${{ inputs.deploy_to_shopify }}" = "true" ]; then
-            CMD="$CMD --deploy"
+          if [ "${{ inputs.no_notify }}" = "true" ]; then
+            CMD="$CMD --no-notify"
           fi
-
           echo "Running: $CMD"
-          eval $CMD
+          eval "$CMD"
+
+      - name: Commit generated preview back to repo
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- \
+            '*.html' \
+            data \
+            historical \
+            out
+          if git diff --staged --quiet; then
+            echo "No generated files to commit"
+            exit 0
+          fi
+          git commit -m "Publish weekly tournament preview"
+          git push
 
       - name: Upload HTML preview as artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: tournament-preview-html
@@ -102,58 +122,21 @@ jobs:
           retention-days: 30
           if-no-files-found: warn
 
-      - name: Upload data files as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: tournament-data
-          path: |
-            data/*_players_data.json
-            data/*_odds.json
-            data/*_storylines.json
-          retention-days: 30
-          if-no-files-found: warn
-
-      - name: Create deployment summary
+      - name: Summary
+        if: always()
         run: |
-          echo "## Weekly Tournament Preview Generation" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Date**: $(date '+%A, %B %d, %Y')" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          # List generated HTML files
-          if compgen -G "*.html" > /dev/null 2>&1; then
-            echo "### Generated Previews" >> $GITHUB_STEP_SUMMARY
-            for f in *.html; do
-              size=$(ls -lh "$f" | awk '{print $5}')
-              echo "- **$f** ($size)" >> $GITHUB_STEP_SUMMARY
-            done
-            echo "" >> $GITHUB_STEP_SUMMARY
-          fi
-
-          # List data files
-          echo "### Data Files" >> $GITHUB_STEP_SUMMARY
-          if compgen -G "data/*_players_data.json" > /dev/null 2>&1; then
-            for f in data/*_players_data.json; do
-              echo "- $f" >> $GITHUB_STEP_SUMMARY
-            done
-          fi
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
-          echo "1. Download artifacts to review the preview" >> $GITHUB_STEP_SUMMARY
-          echo "2. Upload course image to Shopify Files" >> $GITHUB_STEP_SUMMARY
-          echo "3. Update crew picks if needed" >> $GITHUB_STEP_SUMMARY
-          echo "4. Deploy to Shopify (manual or re-run with deploy flag)" >> $GITHUB_STEP_SUMMARY
-
-      - name: Notify on failure
-        if: failure()
-        run: |
-          echo "## Preview Generation Failed" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Check the logs above for error details." >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Common issues:**" >> $GITHUB_STEP_SUMMARY
-          echo "- API keys not configured in repository secrets" >> $GITHUB_STEP_SUMMARY
-          echo "- Rate limits exceeded" >> $GITHUB_STEP_SUMMARY
-          echo "- Tournament not found in schedule" >> $GITHUB_STEP_SUMMARY
-          echo "- Missing dependencies" >> $GITHUB_STEP_SUMMARY
+          {
+            echo "## Weekly Publish"
+            echo ""
+            echo "**Date**: $(date '+%A, %B %d, %Y')"
+            echo ""
+            echo "Live site: https://www.golfinthecosmos.com"
+            echo ""
+            if compgen -G "*.html" > /dev/null 2>&1; then
+              echo "### Generated previews"
+              for f in *.html; do
+                size=$(ls -lh "$f" | awk '{print $5}')
+                echo "- **$f** ($size)"
+              done
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

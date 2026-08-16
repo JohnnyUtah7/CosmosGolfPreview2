@@ -12,6 +12,10 @@
 # Agent / editor tooling (personal, machine-specific — not project deliverables)
 .claude/
 .cursor/
+.mcp.json
+
+# Leftover files from a previous event (not source of truth)
+*.stale-*
 
 # Environment variables
 .env
@@ -52,3 +56,4 @@ preview_data_*.json
 # Note: key HTML templates under docs/ (e.g. shopify-embed.html) are tracked
 # If you generate preview files with a different naming pattern, add them here
 # Example: generated_preview_*.html
+.venv-mcp/

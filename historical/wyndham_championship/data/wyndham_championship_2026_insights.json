@@ -1,0 +1,88 @@
+{
+  "tournament": "Wyndham Championship",
+  "generated_at": "2026-08-03T19:49:45Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Cameron Young returns to Sedgefield Country Club as the defending champion with the field's best SG Total (+1.97) and SG Approach (+0.80), commanding a 9.5% model win probability that towers over the rest of the field. Aaron Rai, the 2024 champion, profiles as perhaps the strongest course fit play in the entire field at +0.402, combining elite ball-striking (4th in SG Approach at +0.56) with back-to-back top-5 finishes at this venue. Further down the board, Mac Meissner (+6022) stands out as a compelling longshot with a 16.0% top-10 probability and +0.92 SG Total \u2014 a stronger model projection than several players priced well above him.",
+  "insights": [
+    {
+      "title": "Young's Dominant Profile Justifies Favoritism",
+      "insight": "Cameron Young leads the field in SG Total (+1.97, nearly half a stroke clear of second-ranked Justin Thomas at +1.32) and SG Approach (+0.80). His 9.5% model win probability is nearly triple the next closest player, and his defending title at Sedgefield Country Club (1st in 2025, T22 in 2024) confirms he thrives on this layout.",
+      "players": [
+        "Cameron Young"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Rai's Course Fit Is Off the Charts",
+      "insight": "Aaron Rai's +0.402 course fit score is the highest in the entire field by a massive margin, and his Sedgefield Country Club history reads 1st (2024) and T5 (2025). The model gives him a 21.4% top-10 probability and 2.8% win probability, driven by his elite SG Approach (+0.56, 4th in field) matching perfectly with what this course demands.",
+      "players": [
+        "Aaron Rai"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Koivun's Projection Belies Limited History",
+      "insight": "Jackson Koivun sits second in the model at 3.9% win probability despite having only one start at Sedgefield Country Club (T5 in 2025). His +0.084 course fit is solid and his profile clearly impresses the model, but bettors should weigh the small sample of course history against the aggressive projection.",
+      "players": [
+        "Jackson Koivun"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Griffin Combines Putting With Course Pedigree",
+      "insight": "Ben Griffin ranks 4th in the field in SG Putting (+0.44) and owns the best course history adjustment among serious contenders at +0.075 strokes, built on finishes of T11 (2025) and T7 (2024) at Sedgefield Country Club. The model gives him a 22.3% top-10 probability and 3.1% win chance, making him one of the most well-rounded profiles in this tier.",
+      "players": [
+        "Ben Griffin"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Thomas Brings Elite Strokes Gained, Thin History",
+      "insight": "Justin Thomas ranks 2nd in the field in SG Total (+1.32) but has just one Sedgefield Country Club start (T12 in 2023) and a slightly negative course fit (-0.035). The model projects him at 2.7% to win and 19.9% for a top 10 \u2014 a profile powered almost entirely by raw ball-striking talent rather than course-specific advantages.",
+      "players": [
+        "Justin Thomas"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Meissner Leads Longshot Value Profiles",
+      "insight": "At +6022, Mac Meissner carries a 16.0% top-10 projection \u2014 the highest of any player priced +6000 or longer \u2014 and a +0.92 SG Total that ranks 11th in the field, better than five players priced shorter than him. The course record backs it up: a runner-up finish at Sedgefield in 2025 and a T12 in 2024 make him the model's top pick in the deep longshot tier.",
+      "players": [
+        "Mac Meissner"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "McNealy's Putter Fuels Sleeper Profile",
+      "insight": "Maverick McNealy leads the entire field in SG Putting (+0.53) and carries a strong +1.17 SG Total, yet his -0.125 course fit and -0.030 course history adjustment introduce real concerns about his Sedgefield Country Club suitability. The model still projects him at 15.4% for a top 10 at +5410, a profile driven by flatstick dominance that could overcome fit concerns if his iron play holds up.",
+      "players": [
+        "Maverick McNealy"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Fitzpatrick: Under-the-Radar Ball-Striker",
+      "insight": "Alex Fitzpatrick ranks 3rd in the field in SG Approach (+0.67) with a +1.09 SG Total and positive course fit (+0.125). The model projects a 17.6% top-10 probability at +4669 \u2014 a strong mid-tier profile built on the approach-game prowess that Sedgefield Country Club historically rewards.",
+      "players": [
+        "Alex Fitzpatrick"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Bradley's All-Around Game Fits the Tier",
+      "insight": "Keegan Bradley at +5450 carries a 15.8% model top-10 probability with +0.98 SG Total, placing him as one of the strongest overall profiles in the 50/1-plus range. His well-rounded strokes gained profile lacks a glaring weakness, which suits a Sedgefield Country Club layout that doesn't overwhelmingly favor one skill.",
+      "players": [
+        "Keegan Bradley"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "Simpson's History Can't Overcome Current Form",
+      "insight": "Webb Simpson owns the field's best course history adjustment (+0.204 strokes) at Sedgefield Country Club, but at +62400 the model projects just a fraction of a percent win probability. His current form simply cannot support the weight of past glory \u2014 a classic nostalgia trap for bettors at this venue.",
+      "players": [
+        "Webb Simpson"
+      ],
+      "category": "avoid"
+    }
+  ]
+}

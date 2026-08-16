@@ -101,7 +101,10 @@ def build_rich_player_context(player_name: str, data: dict, recent_form_data: di
     win_odds = odds_data.get("odds")
     tier = _infer_tier(win_odds)
     lines.append(f"  Tier: {tier.upper()}")
-    lines.append(f"  Win: {_format_odds(win_odds)} | Top 5: {_format_odds(odds_data.get('top5'))} | Top 10: {_format_odds(odds_data.get('top10'))}")
+    # These are Data Golf FAIR odds — the model's own probabilities inverted into a
+    # price, with no bookmaker margin. They are NOT a sportsbook line, so they can
+    # never disagree with the model percentages below. See rule 5 in SYSTEM_PROMPT.
+    lines.append(f"  Model Fair Odds (vig-free, NOT a sportsbook line) — Win: {_format_odds(win_odds)} | Top 5: {_format_odds(odds_data.get('top5'))} | Top 10: {_format_odds(odds_data.get('top10'))}")
 
     # Player info
     player_info = data.get("players", {}).get(player_name, {})
@@ -142,6 +145,8 @@ def build_rich_player_context(player_name: str, data: dict, recent_form_data: di
         t20_prob = dg.get("top_20_prob", "—")
         mc_prob = dg.get("make_cut_prob", "—")
         lines.append(f"  Model: Win {win_prob}% | Top 10: {t10_prob}% | Top 20: {t20_prob}% | Make Cut: {mc_prob}%")
+        lines.append("  (The fair odds above are these same percentages expressed as a price — "
+                     "quoting one 'against' the other is a contradiction, not an edge.)")
 
         course_fit = dg.get("course_fit", "—")
         course_hist_adj = dg.get("course_history", "—")
@@ -176,7 +181,21 @@ HARD RULES:
    - Course fit: "This course rewards precision iron play, and nobody in the field..."
    - Blunt: "The 2017 champion is priced like a contender. He shouldn't be."
 4. USE THE DATA. Every storyline must cite at least 3 distinct, specific data points (e.g., a signed SG number, a course-fit/history adjustment, a model win %, a year-tagged finish, a recent T-finish at a named event, or an OWGR rank). Bettors want numbers, not vibes.
-5. Make a CLEAR betting implication in every storyline — is this player underpriced, overpriced, a fade, or a lock?
+5. ODDS ARE MODEL FAIR VALUE, NOT A MARKET PRICE. The Win/Top 5/Top 10 numbers you are given are
+   Data Golf's vig-free fair odds — they are the model's own probabilities inverted into a price.
+   The whole field's implied probabilities sum to ~100%. This means:
+   - There is NO market, NO bookmaker, and NO edge to find. The price and the model AGREE by
+     construction, always. Claiming otherwise is a factual error.
+   - NEVER write that a player is "underpriced", "overpriced", "mispriced", "a market
+     inefficiency", "an overreaction", "value the market is missing", "ahead of the market
+     implied", "the market is discounting", or that a number is "closer to +X than the +Y on
+     offer". There is no "on offer".
+   - Instead, make the betting implication as a MODEL PROJECTION: what the model thinks his real
+     chance is, which market (win / top 5 / top 10) best fits that profile, and whether the
+     profile is strong or thin. Good: "the model makes him +333 to crack the top 10, and the
+     iron play backs it up." Bad: "+334 is a mispricing."
+   - You may still be opinionated about whether a player is worth backing — just ground it in the
+     data (SG, course fit, form, history), never in a price disagreement that does not exist.
 6. DO NOT use these phrases (they are banned):
    - "keep mistakes off the card"
    - "the win path is straightforward"
@@ -195,9 +214,16 @@ HARD RULES:
    - "keep an eye on"
    - "sleeper pick"
    - "last week" / "this week" / "two weeks ago" (any relative-week phrasing — name the event instead)
+   - "underpriced" / "overpriced" / "mispriced" / "market inefficiency" / "the market is
+     discounting" / "on offer" / "market implied" / "overreaction" (see rule 5 — there is no market)
 7. For LONGSHOTS (odds > +10000): Be honest. Don't oversell. Focus on the ONE thing that makes them interesting. It's ok to say "hard to see a win path" if the data doesn't support it.
-8. For FAVORITES/CONTENDERS: Be specific about WHY the price is right or wrong. Don't just say they're good.
-9. Include the player's odds naturally in the text (e.g., "at +845" or "the +7381 price"), but never as the opening word.
+8. For FAVORITES/CONTENDERS: Be specific about WHAT DRIVES the model's number — which skills, which
+   course-fit or history adjustment, which recent results. Don't just say they're good, and don't
+   frame it as the price being right or wrong (see rule 5).
+9. Include the player's fair odds naturally in the text (e.g., "at +845" or "the +7381 number"), but
+   never as the opening word. Only ever quote the three prices you are given (Win, Top 5, Top 10).
+   NEVER invent a price for any other market — there is no top-20 or make-cut price in your data.
+   Top 20 and Make Cut exist ONLY as percentages; cite them as percentages or not at all.
 10. Every storyline MUST be unique in structure, word choice, and angle. If you find yourself writing something similar to another player's storyline, scrap it and find a different angle.
 11. NEVER invent tournament history. Only state a finish or title at THIS event if it appears on the player's "Course History at THIS event" line. If that line says NO PRIOR STARTS or "did not play" for a year, you must NOT claim any finish/win for that year. The word "champion"/"defending champion" for THIS event may ONLY be used for the players named in the FACTS block of the prompt — never anyone else."""
 
@@ -298,8 +324,12 @@ No markdown, no explanation, just valid JSON."""
         return result
 
     except Exception as e:
-        print(f"❌ Error generating content for batch: {e}")
-        return {player: {"storyline": default_storyline} for player in players_batch}
+        # RAISE — do not swallow. The caller runs a 3-attempt retry loop, but returning
+        # fallback storylines here looks like success, so the retry never fired and a
+        # single transient JSON parse error silently cost 8 players their storylines
+        # (Rocket Classic 2026 batch 13). The caller writes the defaults if all
+        # attempts fail.
+        raise RuntimeError(f"batch generation failed: {e}") from e
 
 
 def main() -> int:
@@ -335,6 +365,24 @@ def main() -> int:
     data = json.loads(players_data_path.read_text(encoding="utf-8"))
     tournament_name = data.get("tournament", {}).get("name", args.tournament)
     course = data.get("tournament", {}).get("course", "")
+
+    # refresh_odds_from_datagolf.py builds the tournament block from the Data Golf event
+    # name and leaves course/location empty, so this was silently blank on every run —
+    # storylines were written without ever being told the venue. Fall back to the
+    # schedule, which is the authoritative source for venue metadata.
+    if not course:
+        sched_path = ROOT / "data" / f"pga_schedule_{args.year}.json"
+        try:
+            sched = json.loads(sched_path.read_text(encoding="utf-8"))
+            slug = args.slug or _slugify(args.tournament)
+            for t in sched.get("tournaments", []) + sched.get("fall_schedule", []):
+                if t.get("slug") == slug or args.tournament.lower() in (t.get("name") or "").lower():
+                    course = t.get("course", "") or ""
+                    break
+        except Exception as e:
+            print(f"   [WARN] could not read venue from schedule: {e}")
+    if not course:
+        print("   [WARN] no course name resolved — storylines will lack venue context")
     default_storyline = f"Competing at {tournament_name}."
 
     def _is_raw_finish(s: str) -> bool:
@@ -377,34 +425,45 @@ def main() -> int:
         total_batches = (len(players) - 1) // batch_size + 1
         print(f"  Batch {batch_num}/{total_batches} ({', '.join(batch[:3])}{'...' if len(batch) > 3 else ''})...", end=" ", flush=True)
 
-        try:
-            results = generate_content_batch(
-                batch, data, recent_form_data, tournament_name, course,
-                default_storyline, previously_written_openers, champions_facts
-            )
+        # Claude occasionally emits malformed JSON for a batch; retry before falling
+        # back so a single transient parse error doesn't cost 8 players real storylines.
+        results = None
+        last_err = None
+        for attempt in range(3):
+            try:
+                results = generate_content_batch(
+                    batch, data, recent_form_data, tournament_name, course,
+                    default_storyline, previously_written_openers, champions_facts
+                )
+                break
+            except Exception as e:
+                last_err = e
+                if attempt < 2:
+                    print(f"retry{attempt + 1}…", end=" ", flush=True)
 
-            for player in batch:
-                if player in results:
-                    raw = results[player].get("storyline", default_storyline)
-                    if _is_raw_finish(raw):
-                        storylines[player] = default_storyline
-                    else:
-                        storylines[player] = raw
-                        # Track openers for anti-repetition
-                        first_sentence = raw.split(". ")[0] if ". " in raw else raw[:100]
-                        previously_written_openers.append(first_sentence)
-                    form_analyses[player] = results[player].get("form_analysis", "—")
-                else:
-                    storylines[player] = default_storyline
-                    form_analyses[player] = "—"
-
-            print("✓")
-
-        except Exception as e:
-            print(f"❌ {e}")
+        if results is None:
+            print(f"❌ {last_err}")
             for player in batch:
                 storylines[player] = default_storyline
                 form_analyses[player] = "—"
+            continue
+
+        for player in batch:
+            if player in results:
+                raw = results[player].get("storyline", default_storyline)
+                if _is_raw_finish(raw):
+                    storylines[player] = default_storyline
+                else:
+                    storylines[player] = raw
+                    # Track openers for anti-repetition
+                    first_sentence = raw.split(". ")[0] if ". " in raw else raw[:100]
+                    previously_written_openers.append(first_sentence)
+                form_analyses[player] = results[player].get("form_analysis", "—")
+            else:
+                storylines[player] = default_storyline
+                form_analyses[player] = "—"
+
+        print("✓")
 
     output = {
         "storylines": storylines,

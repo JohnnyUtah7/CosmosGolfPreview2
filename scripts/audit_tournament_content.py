@@ -76,6 +76,8 @@ def main() -> int:
     storylines = (load_json(dd / f"{slug}_{year}_storylines.json") or {}).get("storylines", {})
     insights = load_json(dd / f"{slug}_{year}_insights.json") or {}
     sched = load_json(dd / f"pga_schedule_{year}.json") or {}
+    players_data = load_json(dd / f"{slug}_{year}_players_data.json") or {}
+    odds_map = players_data.get("odds", {})
 
     # Scheduled venue
     venue = None
@@ -117,6 +119,28 @@ def main() -> int:
         r"(?: (?:Golf|Country|Club|G&CC|GC|Links|National|Course)))"
     )
 
+    # Phrases that assert a disagreement between our model and "the market". The prices
+    # we publish ARE the model's fair value, so such a disagreement cannot exist.
+    EDGE_RE = re.compile(
+        r"\b(?:under-?priced|over-?priced|mis-?priced|market inefficienc\w*|"
+        r"market is (?:discounting|missing|wrong|overreacting)|"
+        r"(?:an?|a real|a massive|a huge) (?:edge|overreaction)|"
+        r"ahead of the market|market[- ]implied|implied odds of just|"
+        r"on offer|the market (?:hasn't|has not) (?:caught|fully)|"
+        r"more value than the (?:odds|market))\b",
+        re.I,
+    )
+
+    # A price attached to a market we don't publish odds for. The price must be TIGHTLY
+    # bound to the market word — no comma or clause break between them — otherwise we
+    # catch innocent prose like "seven events without a top-30 tells the story at +108991"
+    # (that +108991 is the player's win price) or "the 29.8% make-cut projection, and at
+    # +749900". Both were false positives during the Rocket Classic 2026 audit.
+    PHANTOM_MARKET_RE = re.compile(
+        r"\b(top[- ]?20|top[- ]?30|make[- ]cut|missed[- ]cut)\b[^.,;]{0,18}?\+\d{3,6}",
+        re.I,
+    )
+
     def check(player: str | None, text: str, where: str):
         if not isinstance(text, str) or not text.strip():
             return
@@ -141,10 +165,28 @@ def main() -> int:
         ):
             wy = won_years(player)
             if not wy:
-                errors.append(
-                    f"[{where}] {player}: claims a win/championship at this event, but has NO winning "
-                    f"finish in the result caches (years on file: {sorted(cache_years) or 'none'})."
+                # A championship tied to a year BEFORE the cache window (e.g. a 2022
+                # or 2001 Open champion when only 2023-2025 are on file) cannot be
+                # verified OR refuted from the caches — that's a WARNING (confirm
+                # manually), not a fabricated-win ERROR. Only claims with no cited
+                # year, or an in-cache year the player didn't win, are hard errors.
+                earliest_cache = min(cache_years) if cache_years else None
+                claimed_years = [int(y) for y in re.findall(r"\b(?:19|20)\d\d\b", text)]
+                pre_cache_claim = (
+                    earliest_cache is not None
+                    and any(y < earliest_cache for y in claimed_years)
                 )
+                if pre_cache_claim:
+                    warns.append(
+                        f"[{where}] {player}: cites a championship in a year before the result "
+                        f"cache (years on file: {sorted(cache_years)}) — unverifiable from cache, "
+                        f"confirm the past-champion claim manually."
+                    )
+                else:
+                    errors.append(
+                        f"[{where}] {player}: claims a win/championship at this event, but has NO winning "
+                        f"finish in the result caches (years on file: {sorted(cache_years) or 'none'})."
+                    )
             # A win-word attributes a win to year `ym` only when the span between them
             # crosses neither another 4-digit year NOR a finish token. Finish tokens
             # (T2, MC, WD, runner-up, 2nd/3rd, solo) bind a year to a NON-win result, so
@@ -153,11 +195,15 @@ def main() -> int:
             # finish-token guard, a legitimately-worded past champion with other years
             # cited in the same sentence trips false "claims a YYYY win" errors.
             gap = r"(?:(?!\b20\d\d\b)(?!\bt\d)(?!\b(?:mc|wd|runner|2nd|3rd|solo)\b)[^.]){0,40}"
+            # "title defense/defence" describes DEFENDING a title, not winning one, so it
+            # must not count as a win-word: "the 2023 champion ... an MC title defense in
+            # 2025" was read as claiming a 2025 win (Rickie Fowler, Rocket Classic 2026).
+            winword = r"(?:champion|won|winner|title(?!\s+defen[sc]e))"
             for ym in re.findall(r"\b(20\d\d)\b", text):
                 yi = int(ym)
                 if yi in cache_years and re.search(
-                    rf"(champion|won|winner|title){gap}{ym}"
-                    rf"|{ym}{gap}(champion|won|winner|title)", low
+                    rf"{winword}{gap}{ym}"
+                    rf"|{ym}{gap}{winword}", low
                 ) and not _win(finish(player, yi)):
                     errors.append(f"[{where}] {player}: claims a {ym} win here, but cache finish = {finish(player, yi)}.")
 
@@ -208,6 +254,65 @@ def main() -> int:
                     continue
                 if not (set(norm(cand).split()) & vtok):
                     warns.append(f"[{where}] mentions venue '{cand}', but scheduled venue is '{venue}'.")
+
+        # 5) "edge" language against our own fair odds.
+        # The displayed prices are Data Golf VIG-FREE FAIR ODDS — the model's own
+        # probabilities inverted into a price (the field sums to ~100% implied). There is
+        # no sportsbook line in the data, so any claim that the model disagrees with "the
+        # market" is self-contradictory. This shipped once (Rocket Classic 2026 exec
+        # summary: "8.1% win probability against implied odds of just 8.1% — a massive
+        # edge"), hence the hard check.
+        for m in EDGE_RE.finditer(text):
+            errors.append(
+                f"[{where}] market/edge language '{m.group(0).strip()}' — the odds shown are "
+                f"vig-free model fair value, so no market edge exists. Reframe as a model projection."
+            )
+
+        # 6) a price quoted for a market we don't carry. Only Win / Top 5 / Top 10 have
+        # prices; Top 20 / Top 30 / Make Cut exist only as probabilities.
+        #
+        # A conjunction can legitimately put a real price next to a phantom-market word —
+        # "14.4% for a top 20 and +1424 for a top 10" and "a 47.6% make-cut projection and
+        # +38610 to win" are both CORRECT (those are the top-10 and win prices). So only
+        # ERROR when the quoted number is not one of this player's three real prices;
+        # otherwise warn, since a real price beside a phantom market may just be a label
+        # slip and needs a human read. All five of these were false positives on the first
+        # pass (Rocket Classic 2026).
+        for m in PHANTOM_MARKET_RE.finditer(text):
+            market = m.group(1).lower()
+            cited = re.search(r"\+(\d{3,6})", m.group(0))
+            real = set()
+            if player and player in odds_map:
+                o = odds_map[player]
+                real = {str(o.get("odds")), str(o.get("top5")), str(o.get("top10"))}
+            if cited and cited.group(1) in real:
+                warns.append(
+                    f"[{where}] {player}: '{m.group(0).strip()}' puts a real price next to the "
+                    f"{market} market — verify it is labelled with the right market."
+                )
+            else:
+                errors.append(
+                    f"[{where}] quotes a price for the {market} market "
+                    f"('{m.group(0).strip()}'), but only Win / Top 5 / Top 10 have odds. "
+                    f"Cite {market} as a percentage instead."
+                )
+
+        # 7) a cited price that matches none of this player's three real prices.
+        if player and player in odds_map:
+            o = odds_map[player]
+            real = {str(o.get("odds")), str(o.get("top5")), str(o.get("top10"))}
+            for m in re.finditer(r"\+(\d{3,6})\b", text):
+                cited = m.group(1)
+                if cited in real:
+                    continue
+                # tolerate rounding of a real price (e.g. +4000 for +4032)
+                if any(v.isdigit() and abs(int(cited) - int(v)) <= max(50, int(v) * 0.01)
+                       for v in real if v and v != "None"):
+                    continue
+                warns.append(
+                    f"[{where}] {player}: cites +{cited}, which is not his Win "
+                    f"(+{o.get('odds')}) / Top 5 (+{o.get('top5')}) / Top 10 (+{o.get('top10')}) price."
+                )
 
     # Run checks
     for player, txt in storylines.items():

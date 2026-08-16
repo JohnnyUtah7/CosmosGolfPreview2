@@ -1,0 +1,90 @@
+{
+  "tournament": "FedEx St. Jude Championship",
+  "generated_at": "2026-08-10T23:34:13Z",
+  "model": "claude-opus-4-6",
+  "executive_summary": "Scottie Scheffler towers over the FedEx St. Jude Championship field at TPC Southwind with a +2.77 SG Total — more than half a stroke clear of anyone else — and the model projects him at a 13.9% win probability, nearly triple that of next-best Rory McIlroy (5.2%). Below the top tier, Tommy Fleetwood's profile is arguably the most complete: his +1.84 SG Total is tied for third in the field, his +0.053 course history adjustment is among the strongest of any contender, and his TPC Southwind record includes T3 finishes in both 2023 and 2025. Among longshots, Robert MacIntyre (+6836) and Ryan Gerard (+6157) flash legitimate top-10 upside north of 17%, driven by strong current form rather than name recognition.",
+  "insights": [
+    {
+      "title": "Scheffler's Ball-Striking Edge Is Historic",
+      "insight": "Scheffler leads the field in SG Total (+2.77), SG Approach (+1.09), and ranks third in SG Putting (+0.53) — a rare combination of elite tee-to-green play and hot flatstick form. His three consecutive top-4 finishes at TPC Southwind (T31, 4th, T3) show a clear upward trajectory at this venue.",
+      "players": [
+        "Scottie Scheffler"
+      ],
+      "category": "favorite"
+    },
+    {
+      "title": "Fleetwood's Course Fit Is Field-Best",
+      "insight": "Among players with SG Total above +1.80, Tommy Fleetwood has the best course fit score (-0.012, essentially neutral) and the strongest course history adjustment (+0.053). His two T3 finishes in the last two editions at TPC Southwind confirm the model's view that his skillset — particularly his precision iron play — matches what this course demands.",
+      "players": [
+        "Tommy Fleetwood"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Fitzpatrick's Iron Play Fits Perfectly",
+      "insight": "Matt Fitzpatrick ranks third in the field in SG Approach (+0.82) and carries a near-neutral course fit (-0.035), projecting for a 27.1% top-10 probability. His methodical, accuracy-first style suits TPC Southwind's tight corridors, and at +3195 fair odds, the model sees him as one of the strongest profiles in the 30/1-and-up tier.",
+      "players": [
+        "Matt Fitzpatrick"
+      ],
+      "category": "form"
+    },
+    {
+      "title": "Matsuyama's TPC Southwind Pedigree Unmatched",
+      "insight": "The 2024 champion Hideki Matsuyama owns the field's highest course history adjustment (+0.070 strokes), reflecting his dominant win here last year. While his current SG Total of +1.30 is modest, that venue-specific boost makes him a compelling course history play at +3987 fair odds.",
+      "players": [
+        "Hideki Matsuyama"
+      ],
+      "category": "course_fit"
+    },
+    {
+      "title": "Burns Pairs Hot Putter With History",
+      "insight": "Sam Burns leads the entire field in SG Putting (+0.60) and carries the second-best course history adjustment (+0.066) at TPC Southwind, where he finished T5 in 2024. The model projects a 25.7% top-10 probability, making him a strong top-10 and top-5 profile in the +3000 range.",
+      "players": [
+        "Sam Burns"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Morikawa's Approach Game Suits Southwind",
+      "insight": "Collin Morikawa ranks fourth in SG Approach (+0.80) and is one of only two players in the field with a positive course fit score (+0.013). His TPC Southwind history is solid across three years (T13, T22, T22), and the model gives him a 23.6% top-10 projection at +3690 fair odds.",
+      "players": [
+        "Collin Morikawa"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Si Woo Kim: Sneaky Course Fit",
+      "insight": "Si Woo Kim posts the field's best course fit score (+0.024) among players outside the top 10 on the board, pairing it with a respectable +1.54 SG Total. The model projects a 23.6% top-10 probability — identical to Morikawa — making him one of the most interesting profiles in the 40/1 tier.",
+      "players": [
+        "Si Woo Kim"
+      ],
+      "category": "value"
+    },
+    {
+      "title": "Gerard and MacIntyre Lead Longshot Tier",
+      "insight": "Ryan Gerard (+6157, +1.27 SG Total, 18.1% top-10 probability) and Robert MacIntyre (+6836, +1.32 SG Total, 17.2% top-10 probability) offer the strongest model profiles among players priced +5000 or longer. Gerard's quiet consistency and MacIntyre's solid overall game give both legitimate upside in this 69-player field.",
+      "players": [
+        "Ryan Gerard",
+        "Robert MacIntyre"
+      ],
+      "category": "longshot"
+    },
+    {
+      "title": "McIlroy's Course Fit Raises Caution",
+      "insight": "Despite ranking second in SG Total (+2.14), Rory McIlroy carries the worst course fit score (-0.219) among the top 10 favorites, and his T68 finish at TPC Southwind in 2024 underscores the concern. The model still projects him at 5.2% to win on raw talent, but his skill-to-course matchup is the weakest among elite contenders.",
+      "players": [
+        "Rory McIlroy"
+      ],
+      "category": "avoid"
+    },
+    {
+      "title": "Cantlay and Hovland: Solid Mid-Tier Profiles",
+      "insight": "Patrick Cantlay (+3960, 23.5% top-10) and Viktor Hovland (+4384, 21.5% top-10) both project as steady mid-tier contenders with near-neutral course fits (-0.051 and -0.032 respectively). Neither carries red flags, and both offer clean top-10 and top-20 profiles for bettors looking to diversify exposure beyond the favorites.",
+      "players": [
+        "Patrick Cantlay",
+        "Viktor Hovland"
+      ],
+      "category": "value"
+    }
+  ]
+}
