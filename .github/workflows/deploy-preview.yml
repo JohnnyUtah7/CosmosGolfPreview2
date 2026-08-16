@@ -76,6 +76,8 @@ jobs:
           echo "Required secrets are present"
 
       - name: Publish weekly (build + Shopify + menu)
+        id: publish
+        continue-on-error: true
         run: |
           CMD="python scripts/publish_weekly.py"
           if [ -n "${{ inputs.tournament_name }}" ]; then
@@ -97,7 +99,7 @@ jobs:
           eval "$CMD"
 
       - name: Commit generated preview back to repo
-        if: success()
+        if: always() && steps.publish.conclusion != 'skipped'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -132,6 +134,10 @@ jobs:
             echo ""
             echo "Live site: https://www.golfinthecosmos.com"
             echo ""
+            if [ "${{ steps.publish.outcome }}" = "failure" ]; then
+              echo "⚠️ **Publish finished with errors** — generated files were still committed if present."
+              echo ""
+            fi
             if compgen -G "*.html" > /dev/null 2>&1; then
               echo "### Generated previews"
               for f in *.html; do
@@ -140,3 +146,9 @@ jobs:
               done
             fi
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Propagate publish failure
+        if: steps.publish.outcome == 'failure'
+        run: |
+          echo "::error::Weekly publish finished with errors (see publish step logs). Generated files were committed when present."
+          exit 1
