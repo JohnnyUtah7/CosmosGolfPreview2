@@ -78,7 +78,7 @@ Successfully generated AI-powered "Why They Could Win" storylines for all 163 pl
 ## API Keys Used
 
 ### Gemini API
-- **Key**: AIzaSyD6rD_B7b5GNj9LvNW41kQPAaQFZcrXJJc
+- **Key**: REDACTED (do not commit API keys)
 - **Issue**: Free tier has strict rate limits (5 requests/minute)
 - **Result**: Not practical for 163 players (would take 65+ minutes)
 

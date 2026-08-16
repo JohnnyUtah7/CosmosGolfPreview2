@@ -194,7 +194,7 @@ final_storylines = {**claude_storylines, **gemini_storylines}
 - Estimated cost: ~$5-10
 
 **Gemini API** (available, not used for final run):
-- Key: AIzaSyD6rD_B7b5GNj9LvNW41kQPAaQFZcrXJJc
+- Key: REDACTED (do not commit API keys)
 - Model: gemini-2.0-flash-exp / gemini-2.5-flash
 - Rate limit: 5 requests/minute (free tier)
 - Cost: $0 (free tier)
