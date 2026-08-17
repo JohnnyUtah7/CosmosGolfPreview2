@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>COSMOS Research — Hot List</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        :root {
+            --black: #0a0a0a;
+            --chrome: #1a1a1a;
+            --paper: #f5f3f0;
+            --paper-dim: #e8e6e3;
+            --red: #c41e3a;
+            --green: #2d8a4e;
+            --text: #1a1a1a;
+            --text-muted: #6b6b6b;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+            background: var(--black);
+            color: var(--paper);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Header */
+        .header {
+            padding: 20px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+        }
+        .header img {
+            height: 28px;
+            width: auto;
+            filter: invert(1);
+        }
+        .sample-badge {
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            background: var(--paper);
+            padding: 4px 8px;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+        
+        /* Course strip */
+        .course-strip {
+            height: 80px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%),
+                        url('https://cdn.shopify.com/s/files/1/0775/8928/3061/files/stjude.avif?v=1786404177') center/cover;
+        }
+        
+        /* Main panel */
+        .panel {
+            background: var(--paper);
+            color: var(--text);
+            margin: 0;
+            min-height: calc(100vh - 130px);
+        }
+        
+        .panel-header {
+            padding: 20px 16px 12px;
+            border-bottom: 1px solid var(--paper-dim);
+        }
+        .panel-title {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .panel-event {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        .archive-link {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-top: 8px;
+            display: inline-block;
+        }
+        .archive-link:hover { text-decoration: underline; }
+        
+        /* Board rows */
+        .board { padding: 0 0 20px; }
+        
+        .row {
+            display: grid;
+            grid-template-columns: 48px 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--paper-dim);
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .row:hover { background: var(--paper-dim); }
+        .row.expanded { background: var(--paper-dim); }
+        
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--paper-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-muted);
+            overflow: hidden;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .player-info { min-width: 0; }
+        .player-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .player-why {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        .lock-col {
+            text-align: right;
+            min-width: 70px;
+        }
+        .lock-price {
+            font-size: 18px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+        }
+        .lock-result {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        .lock-result.hit { color: var(--green); }
+        .lock-result.miss { color: var(--red); }
+        
+        /* Drawer */
+        .drawer {
+            display: none;
+            background: var(--paper);
+            border-bottom: 1px solid var(--paper-dim);
+        }
+        .drawer.open { display: block; }
+        
+        .drawer-content {
+            padding: 0 16px 20px;
+        }
+        
+        /* Chart container */
+        .chart-container {
+            background: var(--chrome);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .chart-player {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--paper);
+            opacity: 0.7;
+        }
+        .chart-tooltip {
+            background: var(--paper);
+            color: var(--text);
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            text-align: right;
+        }
+        .chart-tooltip-event {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .chart-tooltip-pos {
+            color: var(--text-muted);
+        }
+        
+        .chart-area {
+            position: relative;
+            height: 180px;
+            margin: 0 -4px;
+        }
+        
+        /* SVG Chart */
+        .chart-svg {
+            width: 100%;
+            height: 100%;
+        }
+        .chart-line {
+            fill: none;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .chart-line-green { stroke: var(--green); }
+        .chart-line-red { stroke: var(--red); }
+        .chart-point {
+            fill: var(--paper);
+            stroke-width: 2;
+            cursor: pointer;
+            transition: r 0.15s;
+        }
+        .chart-point:hover { r: 6; }
+        .chart-point-green { stroke: var(--green); }
+        .chart-point-red { stroke: var(--red); }
+        .chart-point-active {
+            fill: var(--green);
+            stroke: var(--paper);
+            stroke-width: 2;
+        }
+        .chart-label {
+            font-size: 9px;
+            font-weight: 600;
+            fill: var(--paper);
+            text-anchor: middle;
+        }
+        .chart-axis-label {
+            font-size: 8px;
+            fill: var(--paper);
+            opacity: 0.5;
+        }
+        .chart-t10-band {
+            fill: var(--green);
+            opacity: 0.08;
+        }
+        .chart-mc-floor {
+            stroke: var(--red);
+            stroke-width: 1;
+            stroke-dasharray: 4 3;
+            opacity: 0.6;
+        }
+        .chart-x-label {
+            font-size: 8px;
+            fill: var(--paper);
+            opacity: 0.6;
+            text-anchor: middle;
+        }
+        
+        .chart-legend {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 12px;
+            font-size: 10px;
+            color: var(--paper);
+            opacity: 0.6;
+        }
+        .chart-legend span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .legend-dot {
+            width: 8px;
+            height: 2px;
+            border-radius: 1px;
+        }
+        .legend-dot.green { background: var(--green); }
+        .legend-dot.red { background: var(--red); }
+        
+        /* SG Stack - compact */
+        .sg-stack {
+            background: var(--paper-dim);
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+        .sg-stack-title {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .sg-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--paper);
+        }
+        .sg-row:last-child { border-bottom: none; }
+        .sg-label {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .sg-label.hero {
+            color: var(--text);
+            font-weight: 600;
+        }
+        .sg-value {
+            font-size: 14px;
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+        }
+        .sg-value.positive { color: var(--green); }
+        
+        /* Course history (hidden when fit off) */
+        .here-strip {
+            display: none;
+        }
+        .here-strip.show {
+            display: block;
+            background: var(--paper-dim);
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+        
+        /* Lock result bar */
+        .lock-bar {
+            background: var(--chrome);
+            border-radius: 6px;
+            padding: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lock-bar-left {
+            color: var(--paper);
+        }
+        .lock-bar-label {
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            opacity: 0.6;
+            margin-bottom: 2px;
+        }
+        .lock-bar-price {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .lock-bar-right {
+            text-align: right;
+        }
+        .lock-bar-result {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 14px;
+            border-radius: 4px;
+        }
+        .lock-bar-result.hit {
+            background: var(--green);
+            color: white;
+        }
+        .lock-bar-result.miss {
+            background: var(--red);
+            color: white;
+        }
+        .lock-bar-payout {
+            font-size: 11px;
+            color: var(--paper);
+            opacity: 0.6;
+            margin-top: 4px;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 20px 16px;
+            text-align: center;
+            font-size: 11px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="../assets/brand/COSMOS Research-Logo.001.png" alt="COSMOS Research">
+        <span class="sample-badge">Sample</span>
+    </header>
+    
+    <!-- Course strip -->
+    <div class="course-strip"></div>
+    
+    <!-- Main panel -->
+    <main class="panel">
+        <div class="panel-header">
+            <div class="panel-title">Hot List</div>
+            <div class="panel-event">FedEx St. Jude Championship</div>
+            <a href="#" class="archive-link">Season One archive →</a>
+        </div>
+        
+        <div class="board">
+            <!-- Row 1: Scottie Scheffler (expanded) -->
+            <div class="row expanded" data-player="scheffler">
+                <div class="avatar">
+                    <img src="https://a.espncdn.com/i/headshots/golf/players/full/9478.png" alt="Scottie Scheffler">
+                </div>
+                <div class="player-info">
+                    <div class="player-name">Scottie Scheffler</div>
+                    <div class="player-why">Form · Edge</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">−121</div>
+                    <div class="lock-result hit">HIT</div>
+                </div>
+            </div>
+            
+            <!-- Scheffler Drawer (open) -->
+            <div class="drawer open" id="drawer-scheffler">
+                <div class="drawer-content">
+                    
+                    <!-- Season chart -->
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <div class="chart-player">Scottie Scheffler</div>
+                            <div class="chart-tooltip" id="chart-tooltip">
+                                <div class="chart-tooltip-event">FedEx St. Jude</div>
+                                <div class="chart-tooltip-pos">1 · TPC Southwind</div>
+                            </div>
+                        </div>
+                        <div class="chart-area">
+                            <svg class="chart-svg" viewBox="0 0 320 160" preserveAspectRatio="none">
+                                <!-- T10 band (top 14% of chart = positions 1-10) -->
+                                <rect class="chart-t10-band" x="0" y="0" width="320" height="22" />
+                                
+                                <!-- MC floor line -->
+                                <line class="chart-mc-floor" x1="0" y1="145" x2="320" y2="145" />
+                                
+                                <!-- Y-axis labels -->
+                                <text class="chart-axis-label" x="4" y="14">1</text>
+                                <text class="chart-axis-label" x="4" y="26" style="fill: var(--green);">T10</text>
+                                <text class="chart-axis-label" x="4" y="148" style="fill: var(--red);">MC</text>
+                                
+                                <!-- Smooth spline path - normalized: 1=0, MC=145 -->
+                                <!-- Starts: Amex 1, Memorial T12, US Open T4, Travelers 2, Scottish MC, The Open T4, 3M 2, St. Jude 1 -->
+                                <!-- Normalized Y: 1→0, T4→5, T12→17, 2→2, MC→145 -->
+                                <path class="chart-line chart-line-green" 
+                                      d="M 20,0 
+                                         C 40,0, 50,12, 65,17
+                                         C 80,22, 95,3, 110,5
+                                         C 125,7, 140,0, 155,2" />
+                                <path class="chart-line chart-line-red" 
+                                      d="M 155,2
+                                         C 170,4, 185,100, 200,145" />
+                                <path class="chart-line chart-line-green" 
+                                      d="M 200,145
+                                         C 215,90, 230,10, 245,5
+                                         C 260,0, 275,2, 290,2
+                                         C 305,2, 315,0, 320,0" />
+                                
+                                <!-- Data points -->
+                                <circle class="chart-point chart-point-green" cx="20" cy="0" r="4" data-event="The American Express" data-pos="1" />
+                                <circle class="chart-point chart-point-green" cx="65" cy="17" r="4" data-event="Memorial Tournament" data-pos="T12" />
+                                <circle class="chart-point chart-point-green" cx="110" cy="5" r="4" data-event="U.S. Open" data-pos="T4" />
+                                <circle class="chart-point chart-point-green" cx="155" cy="2" r="4" data-event="Travelers Championship" data-pos="2" />
+                                <circle class="chart-point chart-point-red" cx="200" cy="145" r="4" data-event="Genesis Scottish Open" data-pos="MC" />
+                                <circle class="chart-point chart-point-green" cx="245" cy="5" r="4" data-event="The Open Championship" data-pos="T4" />
+                                <circle class="chart-point chart-point-green" cx="290" cy="2" r="4" data-event="3M Open" data-pos="2" />
+                                <circle class="chart-point chart-point-active" cx="320" cy="0" r="5" data-event="FedEx St. Jude" data-pos="1" />
+                                
+                                <!-- Point labels -->
+                                <text class="chart-label" x="20" y="-8">1</text>
+                                <text class="chart-label" x="65" y="32">T12</text>
+                                <text class="chart-label" x="110" y="-8">T4</text>
+                                <text class="chart-label" x="155" y="-8">2</text>
+                                <text class="chart-label" x="200" y="132" style="fill: var(--red);">MC</text>
+                                <text class="chart-label" x="245" y="-8">T4</text>
+                                <text class="chart-label" x="290" y="-8">2</text>
+                                <text class="chart-label" x="320" y="-8">1</text>
+                                
+                                <!-- X-axis labels -->
+                                <text class="chart-x-label" x="20" y="158">AMX</text>
+                                <text class="chart-x-label" x="65" y="158">MEM</text>
+                                <text class="chart-x-label" x="110" y="158">USO</text>
+                                <text class="chart-x-label" x="155" y="158">TRA</text>
+                                <text class="chart-x-label" x="200" y="158">SCO</text>
+                                <text class="chart-x-label" x="245" y="158">OPN</text>
+                                <text class="chart-x-label" x="290" y="158">3M</text>
+                                <text class="chart-x-label" x="320" y="158">STJ</text>
+                            </svg>
+                        </div>
+                        <div class="chart-legend">
+                            <span><span class="legend-dot green"></span> 1 → Top</span>
+                            <span><span class="legend-dot red"></span> MC → Floor</span>
+                        </div>
+                    </div>
+                    
+                    <!-- SG Stack - compact, approach emphasized -->
+                    <div class="sg-stack">
+                        <div class="sg-stack-title">Strokes Gained</div>
+                        <div class="sg-row">
+                            <span class="sg-label">Off-the-Tee</span>
+                            <span class="sg-value positive">+0.79</span>
+                        </div>
+                        <div class="sg-row">
+                            <span class="sg-label hero">Approach</span>
+                            <span class="sg-value positive">+1.09</span>
+                        </div>
+                        <div class="sg-row">
+                            <span class="sg-label">Around Green</span>
+                            <span class="sg-value positive">+0.36</span>
+                        </div>
+                        <div class="sg-row">
+                            <span class="sg-label">Putting</span>
+                            <span class="sg-value positive">+0.53</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Course history (hidden - fit is off) -->
+                    <div class="here-strip">
+                        <!-- Would show: 2025 T3 · 2024 4 · 2023 T31 -->
+                    </div>
+                    
+                    <!-- Lock bar with result -->
+                    <div class="lock-bar">
+                        <div class="lock-bar-left">
+                            <div class="lock-bar-label">TOP 10 LOCK</div>
+                            <div class="lock-bar-price">−121</div>
+                        </div>
+                        <div class="lock-bar-right">
+                            <div class="lock-bar-result hit">HIT</div>
+                            <div class="lock-bar-payout">Won at −17</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Row 2: Rory McIlroy -->
+            <div class="row" data-player="mcilroy">
+                <div class="avatar">RM</div>
+                <div class="player-info">
+                    <div class="player-name">Rory McIlroy</div>
+                    <div class="player-why">Form</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+201</div>
+                </div>
+            </div>
+            
+            <!-- Row 3: Cameron Young -->
+            <div class="row" data-player="young">
+                <div class="avatar">CY</div>
+                <div class="player-info">
+                    <div class="player-name">Cameron Young</div>
+                    <div class="player-why">Form · Edge</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+228</div>
+                </div>
+            </div>
+            
+            <!-- Row 4: Tommy Fleetwood -->
+            <div class="row" data-player="fleetwood">
+                <div class="avatar">TF</div>
+                <div class="player-info">
+                    <div class="player-name">Tommy Fleetwood</div>
+                    <div class="player-why">Edge · Fit</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+224</div>
+                </div>
+            </div>
+            
+            <!-- Row 5: Sam Burns -->
+            <div class="row" data-player="burns">
+                <div class="avatar">SB</div>
+                <div class="player-info">
+                    <div class="player-name">Sam Burns</div>
+                    <div class="player-why">Form · Fit</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+289</div>
+                </div>
+            </div>
+            
+            <!-- Row 6: Matt Fitzpatrick -->
+            <div class="row" data-player="fitzpatrick">
+                <div class="avatar">MF</div>
+                <div class="player-info">
+                    <div class="player-name">Matt Fitzpatrick</div>
+                    <div class="player-why">Edge</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+269</div>
+                </div>
+            </div>
+            
+            <!-- Row 7: Collin Morikawa -->
+            <div class="row" data-player="morikawa">
+                <div class="avatar">CM</div>
+                <div class="player-info">
+                    <div class="player-name">Collin Morikawa</div>
+                    <div class="player-why">Edge · Fit</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+323</div>
+                </div>
+            </div>
+            
+            <!-- Row 8: Hideki Matsuyama -->
+            <div class="row" data-player="matsuyama">
+                <div class="avatar">HM</div>
+                <div class="player-info">
+                    <div class="player-name">Hideki Matsuyama</div>
+                    <div class="player-why">Fit</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+331</div>
+                </div>
+            </div>
+            
+            <!-- Row 9: Ryan Gerard -->
+            <div class="row" data-player="gerard">
+                <div class="avatar">RG</div>
+                <div class="player-info">
+                    <div class="player-name">Ryan Gerard</div>
+                    <div class="player-why">Form</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+453</div>
+                </div>
+            </div>
+            
+            <!-- Row 10: Robert MacIntyre -->
+            <div class="row" data-player="macintyre">
+                <div class="avatar">RM</div>
+                <div class="player-info">
+                    <div class="player-name">Robert MacIntyre</div>
+                    <div class="player-why">Form</div>
+                </div>
+                <div class="lock-col">
+                    <div class="lock-price">+482</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        COSMOS Research · Not for publication
+    </footer>
+    
+    <script>
+        // Chart point hover
+        document.querySelectorAll('.chart-point').forEach(point => {
+            point.addEventListener('mouseenter', function() {
+                const event = this.dataset.event;
+                const pos = this.dataset.pos;
+                document.querySelector('.chart-tooltip-event').textContent = event;
+                document.querySelector('.chart-tooltip-pos').textContent = pos;
+            });
+        });
+        
+        // Row toggle (demo only)
+        document.querySelectorAll('.row').forEach(row => {
+            row.addEventListener('click', function() {
+                const player = this.dataset.player;
+                if (player === 'scheffler') {
+                    this.classList.toggle('expanded');
+                    document.getElementById('drawer-scheffler').classList.toggle('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
