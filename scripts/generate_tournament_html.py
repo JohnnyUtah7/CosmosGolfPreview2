@@ -2630,7 +2630,7 @@ def generate_html(
                 const mupSub = subText;
                 bodyHtml += '<div class="pg"><div class="hdr"><div class="hdr-l"><strong>DAILY MATCHUPS</strong> <span class="sub">' + mupSub + '</span></div><div class="hdr-r"><span class="pn">Matchups</span></div></div>' + matchupsInner + '<div class="ftr">COSMOS GOLF · Odds &amp; Data as of ' + new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) + '</div></div>';
             }
-            const printHtml = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + pageTitle + '</title><style>' + css + '</style></head><body>' + bodyHtml + '<script>window.onload=function(){setTimeout(function(){window.print()},300)};<\\/script></body></html>';
+            const printHtml = '<!DOCTYPE html><html><head><meta charset="UTF-8"><' + 'title>' + pageTitle + '</' + 'title><style>' + css + '</style></head><body>' + bodyHtml + '<script>window.onload=function(){setTimeout(function(){window.print()},300)};<\\/script></body></html>';
             const w = window.open('', '_blank', 'width=1100,height=800');
             w.document.write(printHtml);
             w.document.close();
@@ -3206,7 +3206,7 @@ def generate_v2_html(
                 var matchupsInner = matchupsBlocks.length ? Array.from(matchupsBlocks).map(function(b) {{ return b.outerHTML; }}).join('') : matchupsEl.innerHTML;
                 bodyHtml += '<div class="pg"><div class="hdr"><div class="hdr-l"><strong>DAILY MATCHUPS</strong> <span class="sub">' + subText + '</span></div><div class="hdr-r"><span class="pn">Matchups</span></div></div>' + matchupsInner + '<div class="ftr">COSMOS GOLF · ' + new Date().toLocaleDateString('en-US', {{ month: 'short', year: 'numeric' }}) + '</div></div>';
             }}
-            var printHtml = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + pageTitle + '</title><style>' + css + '</style></head><body>' + bodyHtml + '<script>window.onload=function(){{setTimeout(function(){{window.print()}},300)}};<\\/script></body></html>';
+            var printHtml = '<!DOCTYPE html><html><head><meta charset="UTF-8"><' + 'title>' + pageTitle + '</' + 'title><style>' + css + '</style></head><body>' + bodyHtml + '<script>window.onload=function(){{setTimeout(function(){{window.print()}},300)}};<\\/script></body></html>';
             var w = window.open('', '_blank', 'width=1100,height=800');
             w.document.write(printHtml);
             w.document.close();
