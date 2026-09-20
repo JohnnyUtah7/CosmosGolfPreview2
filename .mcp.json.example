@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "equity-research": {
+      "command": "python3",
+      "args": ["investment-research/server.py"]
+    }
+  }
+}

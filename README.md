@@ -148,6 +148,7 @@ CosmosGolfBetting/
 ├── .github/
 │   └── workflows/
 │       └── deploy-preview.yml     # GitHub Actions automation
+├── investment-research/           # Equity research plugin (official SEC EDGAR APIs)
 ├── mcp_server/                    # MCP Server for API integrations
 │   ├── __init__.py
 │   ├── config.py                  # Configuration and environment variables

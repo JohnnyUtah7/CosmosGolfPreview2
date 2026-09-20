@@ -1,0 +1,20 @@
+{
+  "name": "equity-research",
+  "displayName": "COSMOS Equity Research",
+  "version": "1.0.0",
+  "description": "Equity research plugin hooked to the official SEC EDGAR APIs (submissions, XBRL companyfacts/companyconcept, ticker maps, archives, and EFTS search). No third-party filing APIs.",
+  "author": {
+    "name": "COSMOS Research"
+  },
+  "license": "MIT",
+  "keywords": [
+    "equity-research",
+    "sec",
+    "edgar",
+    "filings",
+    "xbrl",
+    "mcp"
+  ],
+  "category": "finance",
+  "mcpServers": "./mcp.json"
+}

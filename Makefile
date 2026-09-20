@@ -9,4 +9,8 @@ weekly:
 weekly-dry:
 	python3 scripts/weekly_tournament_orchestrator.py --dry-run
 
-.PHONY: weekly weekly-dry
+# Live check that the equity research plugin reaches official SEC EDGAR APIs.
+test-edgar:
+	python3 investment-research/test_edgar_api.py
+
+.PHONY: weekly weekly-dry test-edgar
