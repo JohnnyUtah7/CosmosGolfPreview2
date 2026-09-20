@@ -47,6 +47,7 @@ ENV/
 
 # Cache
 mcp_server/cache/
+investment-research/cache/
 
 # Browser logs
 .cursor/browser-logs/
